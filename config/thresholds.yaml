@@ -1,0 +1,55 @@
+# Thresholds used by the rules engine, the matchers, the agents and the guardrails.
+
+# Sections:
+# beneficial_ownership: per jurisdiction, the share or control a holder must strictly EXCEED to be a beneficial owner, with its legal basis (exactly 25% in GB {United Kingdom (Great Britain)} is not enough)
+# entity_matching: name-score bands (0-1) for picking the registry match: accept automatically, send to the LLM adjudicator, or drop
+# screening: score at which a sanctions-list entry is adjudicated and how many candidates to keep per party screened
+# documents: name and address scores for matching a document to the registry and the documents required per jurisdiction
+# ownership: how many company layers to follow upwards and the depth at which every layer must be documented
+# budgets: limits on tokens, tool calls and time for one run; past a limit, steps degrade instead of crashing
+# guardrails: prompt-injection and PII-masking score thresholds
+# All scores run from 0 to 1. Percentages are whole numbers (25 means 25%).
+
+beneficial_ownership:
+  GB:
+    more_than_pct: 25
+    basis: "Companies Act 2006 Schedule 1A (persons with significant control): more than 25% of the shares or voting rights."
+  IN:
+    more_than_pct: 10
+    basis: "Prevention of Money-laundering (Maintenance of Records) Rules 2005, rule 9(3)(a), as amended on 7 March 2023: more than 10% of shares, capital or profits of a company."
+
+entity_matching:
+  auto_accept: 0.92
+  margin: 0.05 # when it beats the runner-up by at least this much
+  review: 0.75 # between review and auto_accept the LLM adjudicates; below it a candidate is dropped
+
+screening:
+  candidate_score: 0.85
+  max_candidates: 5
+
+documents:
+  name_score: 0.85
+  address_score: 0.85
+  required:
+    IN:
+      [
+        certificate_of_incorporation,
+        pan_card,
+        gst_certificate,
+        shareholding_extract,
+      ]
+
+ownership:
+  max_depth: 6
+  layers_needing_documentation: 3
+
+budgets:
+  screening_tool_calls: 30
+  run_tokens: 400_000
+  run_tool_calls: 150
+  run_seconds: 900 # 15 min
+
+guardrails:
+  injection_score: 0.9
+  document_injection_score: 0.99
+  pii_score: 0.3

@@ -1,2 +1,5 @@
-def main() -> None:
-    print("Hello from 15-verikyb!")
+"""VeriKYB"""
+
+from importlib.metadata import version
+
+__version__ = version("verikyb")

@@ -1,0 +1,157 @@
+# Standard KYB questionnaire, filled in automatically by the agents.
+# 25 questions in six sections: identity, regulatory, ownership, screening, financial, customer.
+
+# Fields for each question:
+# id: unique, lower case; used everywhere to refer to the question
+# section: identity | regulatory | ownership | screening | financial | customer
+# text: the question as shown to the user
+# answer_type: text | date | list | yes_no (default: text)
+# sources: where the agents look, in order. Values are: companies_house, ch_accounts, india_registry, fca, gleif, edgar, sanctions, news, document, analyst
+# customer_input: true for questions only the customer can answer. These are never filled in automatically and start as "needs customer input".
+
+questions:
+  # Identity
+  # Q1.
+  - id: legal_name
+    section: identity
+    text: What is the customer's registered legal name?
+    sources: [companies_house, india_registry, gleif]
+  # Q2.
+  - id: trading_names
+    section: identity
+    text: Does the customer trade under any other names?
+    answer_type: list
+    sources: [fca, companies_house]
+  # Q3.
+  - id: company_number
+    section: identity
+    text: What is the company registration number?
+    sources: [companies_house, india_registry, document]
+  # Q4.
+  - id: lei
+    section: identity
+    text: What is the customer's Legal Entity Identifier (LEI)?
+    sources: [gleif]
+  # Q5.
+  - id: registered_address
+    section: identity
+    text: What is the registered office address?
+    sources: [companies_house, india_registry, document]
+  # Q6.
+  - id: incorporation_date
+    section: identity
+    text: When was the company incorporated?
+    answer_type: date
+    sources: [companies_house, india_registry, document]
+  # Q7.
+  - id: legal_form
+    section: identity
+    text: What is the legal form of the entity?
+    sources: [companies_house, india_registry, gleif]
+  # Q8.
+  - id: nature_of_business
+    section: identity
+    text: What is the nature of the business, and which SIC codes apply?
+    sources: [companies_house, fca, document]
+  # Q9.
+  - id: countries_of_operation
+    section: identity
+    text: In which countries does the customer operate?
+    answer_type: list
+    sources: [companies_house, gleif, edgar, document]
+  # Q10.
+  - id: website
+    section: identity
+    text: What is the customer's website?
+    sources: [fca, document]
+  # Regulatory
+  # Q11.
+  - id: fca_status
+    section: regulatory
+    text: What is the customer's FCA Firm Reference Number (FRN) and register status?
+    sources: [fca]
+  # Q12.
+  - id: fca_permissions
+    section: regulatory
+    text: Which regulated activities is the customer permitted to carry on?
+    answer_type: list
+    sources: [fca]
+  # Ownership and control
+  # Q13.
+  - id: directors
+    section: ownership
+    text: Who are the current directors?
+    answer_type: list
+    sources: [companies_house, india_registry, document]
+  # Q14.
+  - id: pscs
+    section: ownership
+    text: Who are the persons with significant control?
+    answer_type: list
+    sources: [companies_house, document]
+  # Q15.
+  - id: ubos
+    section: ownership
+    text: Who are the ultimate beneficial owners above the jurisdiction's threshold?
+    answer_type: list
+    sources: [companies_house, gleif, document]
+  # Q16.
+  - id: parent_group
+    section: ownership
+    text: Which parent companies and group does the customer belong to?
+    sources: [gleif, companies_house, edgar]
+  # Screening
+  # Q17.
+  - id: sanctions_exposure
+    section: screening
+    text: Are the customer, its directors or its owners subject to sanctions?
+    answer_type: yes_no
+    sources: [sanctions]
+  # Q18.
+  - id: pep_exposure
+    section: screening
+    text: Is any director, owner or controller a politically exposed person (PEP)?
+    answer_type: yes_no
+    sources: [sanctions]
+  # Q19.
+  - id: adverse_media
+    section: screening
+    text: Is there adverse media about the customer or its key people?
+    answer_type: yes_no
+    sources: [news]
+  # Financial and filing
+  # Q20.
+  - id: latest_accounts_date
+    section: financial
+    text: What is the period end date of the latest filed accounts?
+    answer_type: date
+    sources: [companies_house, ch_accounts, edgar]
+  # Q21.
+  - id: overdue_filings
+    section: financial
+    text: Are any accounts or confirmation statements overdue?
+    answer_type: yes_no
+    sources: [companies_house]
+  # Q22.
+  - id: insolvency_history
+    section: financial
+    text: Does the company have any insolvency history?
+    answer_type: yes_no
+    sources: [companies_house]
+  # Q23.
+  - id: charges
+    section: financial
+    text: Are any charges registered against the company still outstanding?
+    answer_type: yes_no
+    sources: [companies_house]
+  # Customer input
+  # Q24.
+  - id: source_of_funds
+    section: customer
+    text: What is the source of the customer's funds?
+    customer_input: true
+  # Q25.
+  - id: expected_volumes
+    section: customer
+    text: What transaction volumes and values does the customer expect?
+    customer_input: true
