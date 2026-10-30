@@ -1,0 +1,32 @@
+# FATF high-risk and monitored jurisdictions, used for geographic concentration and risk rules.
+# Re-check after every FATF plenary (February, June, October) and update as_of.
+
+source: https://www.fatf-gafi.org/en/publications/High-risk-and-other-monitored-jurisdictions.html
+as_of: 2026-10-30
+
+# High-risk jurisdictions subject to a call for action ("black list").
+call_for_action:
+  IR: Iran
+  KP: Democratic People's Republic of Korea
+  MM: Myanmar
+
+# Jurisdictions under increased monitoring ("grey list").
+increased_monitoring:
+  AO: Angola
+  BA: Bosnia and Herzegovina
+  BO: Bolivia
+  CM: Cameroon
+  HT: Haiti
+  IQ: Iraq
+  KE: Kenya
+  KW: Kuwait
+  LA: Lao People's Democratic Republic
+  LB: Lebanon
+  NP: Nepal
+  PG: Papua New Guinea
+  SS: South Sudan
+  SY: Syria
+  VE: Venezuela
+  VG: British Virgin Islands
+  VN: Vietnam
+  YE: Yemen

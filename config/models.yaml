@@ -1,0 +1,118 @@
+# Job Type:
+# extraction: cheap and fast; document fields, news classification, nature of business
+# vision: reads scanned document images; the model must accept images
+# chat: streamed chat answers; fast and cheap
+# reasoning: the strong model; screening agent and verdicts, entity adjudication, the risk report
+# embedding: evaluations only, compared with the local bge-small model
+#
+# Keys and endpoints come from the environment only, never this file:
+# MESH_API_KEY: your Mesh API key
+# MESH_API_BASE: Mesh's OpenAI-compatible base URL, ending in /v1
+# OLLAMA_API_BASE: the local model server (default http://localhost:11434)
+
+model_list:
+  # Extraction
+  - model_name: extraction
+    litellm_params:
+      model: openai/openai/gpt-oss-20b
+      api_base: os.environ/MESH_API_BASE
+      api_key: os.environ/MESH_API_KEY
+  - model_name: extraction-2
+    litellm_params:
+      model: openai/openai/gpt-5.6-luna
+      api_base: os.environ/MESH_API_BASE
+      api_key: os.environ/MESH_API_KEY
+  - model_name: extraction-3
+    litellm_params:
+      model: openai/meta-llama/llama-3.3-70b-instruct-turbo
+      api_base: os.environ/MESH_API_BASE
+      api_key: os.environ/MESH_API_KEY
+  - model_name: extraction-local # last resort
+    litellm_params:
+      model: ollama/llama3.1
+      api_base: os.environ/OLLAMA_API_BASE
+
+  # Vision
+  - model_name: vision
+    litellm_params:
+      model: openai/meta-llama/llama-4-scout
+      api_base: os.environ/MESH_API_BASE
+      api_key: os.environ/MESH_API_KEY
+  - model_name: vision-2
+    litellm_params:
+      model: openai/openai/gpt-5.6-luna
+      api_base: os.environ/MESH_API_BASE
+      api_key: os.environ/MESH_API_KEY
+  - model_name: vision-3
+    litellm_params:
+      model: openai/qwen/qwen2.5-vl-72b-instruct
+      api_base: os.environ/MESH_API_BASE
+      api_key: os.environ/MESH_API_KEY
+  - model_name: vision-4
+    litellm_params:
+      model: openai/anthropic/claude-haiku-4.5
+      api_base: os.environ/MESH_API_BASE
+      api_key: os.environ/MESH_API_KEY
+  - model_name: vision-local
+    litellm_params:
+      model: ollama/llama3.2-vision
+      api_base: os.environ/OLLAMA_API_BASE
+
+  # Chat
+  - model_name: chat
+    litellm_params:
+      model: openai/openai/gpt-oss-20b
+      api_base: os.environ/MESH_API_BASE
+      api_key: os.environ/MESH_API_KEY
+  - model_name: chat-2
+    litellm_params:
+      model: openai/openai/gpt-5.6-luna
+      api_base: os.environ/MESH_API_BASE
+      api_key: os.environ/MESH_API_KEY
+  - model_name: chat-3
+    litellm_params:
+      model: openai/meta-llama/llama-3.3-70b-instruct-turbo
+      api_base: os.environ/MESH_API_BASE
+      api_key: os.environ/MESH_API_KEY
+  - model_name: chat-4
+    litellm_params:
+      model: openai/anthropic/claude-haiku-4.5
+      api_base: os.environ/MESH_API_BASE
+      api_key: os.environ/MESH_API_KEY
+  - model_name: chat-local
+    litellm_params:
+      model: ollama/llama3.1
+      api_base: os.environ/OLLAMA_API_BASE
+
+  # Reasoning: the judgement calls; tool calling and JSON output required.
+  - model_name: reasoning
+    litellm_params:
+      model: openai/deepseek-ai/deepseek-v3
+      api_base: os.environ/MESH_API_BASE
+      api_key: os.environ/MESH_API_KEY
+  - model_name: reasoning-2 # a thinking model: slower and uses more tokens
+    litellm_params:
+      model: openai/qwen/qwen3-235b-a22b-thinking-2507
+      api_base: os.environ/MESH_API_BASE
+      api_key: os.environ/MESH_API_KEY
+  - model_name: reasoning-local
+    litellm_params:
+      model: ollama/llama3.1
+      api_base: os.environ/OLLAMA_API_BASE
+
+  # Evaluations only
+  - model_name: embedding
+    litellm_params:
+      model: openai/openai/text-embedding-3-small
+      api_base: os.environ/MESH_API_BASE
+      api_key: os.environ/MESH_API_KEY
+
+# Tried in order when a task's main route fails after its retries: pricier, then local.
+fallbacks:
+  extraction: [extraction-2, extraction-3, extraction-local]
+  vision: [vision-2, vision-3, vision-4, vision-local]
+  chat: [chat-2, chat-3, chat-4, chat-local]
+  reasoning: [reasoning-2, reasoning-local]
+
+num_retries: 2
+timeout_seconds: 60
