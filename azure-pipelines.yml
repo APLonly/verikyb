@@ -1,0 +1,55 @@
+trigger:
+  branches:
+    include:
+      - dev
+      - main
+
+pr:
+  branches:
+    include:
+      - dev
+      - main
+
+pool:
+  vmImage: ubuntu-24.04
+
+steps:
+  - checkout: self
+    persistCredentials: false
+
+  - task: UsePythonVersion@0
+    name: selectPython
+    displayName: Use Python 3.14
+    inputs:
+      versionSpec: '3.14'
+      architecture: x64
+
+  - script: python -m pip install uv==0.12.5
+    displayName: Install uv 0.12.5
+
+  - script: uv sync --locked --python "$(selectPython.pythonLocation)/bin/python"
+    displayName: Install locked dependencies
+
+  - script: uv run --no-sync ruff check .
+    displayName: Check lint
+
+  - script: uv run --no-sync ruff format --check .
+    displayName: Check formatting
+
+  - script: uv run --no-sync mypy
+    displayName: Check types
+
+  - script: uv run --no-sync pytest
+    displayName: Run tests
+    env:
+      PYTEST_ADDOPTS: '--junitxml=$(Common.TestResultsDirectory)/pytest.xml'
+
+  - task: PublishTestResults@2
+    displayName: Publish pytest results
+    condition: succeededOrFailed()
+    inputs:
+      testResultsFormat: JUnit
+      testResultsFiles: pytest.xml
+      searchFolder: '$(Common.TestResultsDirectory)'
+      failTaskOnFailedTests: true
+      testRunTitle: VeriKYB pytest
