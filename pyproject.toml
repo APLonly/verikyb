@@ -1,7 +1,7 @@
 [project]
 name = "verikyb"
 version = "0.1.0"
-description = "dev-kyb"
+description = "Agentic Know-Your-Business workbench: agents gather evidence, rules set the risk tier, a person decides."
 readme = "README.md"
 authors = [
     { name = "abhishek-tiwari-nitrr", email = "abhishek.tiwari.nitrr@gmail.com" }
@@ -43,7 +43,8 @@ target-version = "py314"
 src = ["src", "tests"]
 
 [tool.ruff.lint]
-select = ["E", "F", "I", "B", "UP", "S"]
+select = ["E", "W", "F", "I", "N", "B", "UP", "SIM", "PT", "RUF"]
+ignore = ["RUF012"]
 
 [tool.ruff.lint.per-file-ignores]
 "tests/**" = ["S101"]
@@ -51,6 +52,16 @@ select = ["E", "F", "I", "B", "UP", "S"]
 [tool.mypy]
 strict = true
 files = ["src"]
+plugins = ["pydantic.mypy"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+addopts = ["--import-mode=importlib", "--strict-markers", "--strict-config", "-ra"]
+filterwarnings = [
+    "ignore:Using `httpx` with `starlette.testclient` is deprecated",
+    "ignore:Item 'summary' on TypedDict class 'ChatCompletionReasoningItem':UserWarning",
+]
+
+[tool.pydantic-mypy]
+init_forbid_extra = true
+init_typed = true
