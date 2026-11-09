@@ -1,9 +1,12 @@
 import pytest
+from fastapi.testclient import TestClient
 from flask import Flask
 from flask.testing import FlaskClient
 from pydantic import HttpUrl
 
+from verikyb.api.app import create_app as create_api
 from verikyb.settings import Settings, get_settings
+from verikyb.web.api_client import ApiClient
 from verikyb.web.app import SETTINGS_KEY, create_app
 
 SETTINGS = Settings(api_url=HttpUrl("http://api.test:9000"), api_timeout_seconds=3)
@@ -11,7 +14,8 @@ SETTINGS = Settings(api_url=HttpUrl("http://api.test:9000"), api_timeout_seconds
 
 @pytest.fixture
 def web() -> FlaskClient:
-    return create_app(SETTINGS).test_client()
+    # The home page asks the API for its health: the real one, in process.
+    return create_app(SETTINGS, api_client=ApiClient(TestClient(create_api()))).test_client()
 
 
 def test_the_app_is_built_from_the_settings_it_is_given() -> None:
@@ -26,7 +30,7 @@ def test_without_settings_the_app_reads_them_from_the_environment(
     try:
         app: Flask = create_app()
     finally:
-        get_settings.cache_clear()
+        get_settings.cache_clear()  # later tests must not see this environment
 
     assert str(app.extensions[SETTINGS_KEY].api_url) == "http://api.from-env.test:8100/"
 
