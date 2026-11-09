@@ -4,4 +4,23 @@
 <h1 class="h3 mb-4">KYB workbench</h1>
 <p class="lead">Agents gather and structure the evidence, deterministic rules set the risk tier,
   and a person makes the decision.</p>
+<section class="card" aria-labelledby="service-status">
+  <div class="card-body">
+    <h2 id="service-status" class="h5 card-title">Service status</h2>
+    {% if health %}
+      <p class="mb-0">
+        <span class="badge text-bg-success">Online</span>
+        API version {{ health.version }}
+      </p>
+    {% elif refused %}
+      <div class="alert alert-warning mb-0" role="alert">
+        <strong>API refused the request.</strong> {{ refused }}
+      </div>
+    {% else %}
+      <div class="alert alert-danger mb-0" role="alert">
+        <strong>API unavailable.</strong> The workbench cannot reach the VeriKYB API service.
+      </div>
+    {% endif %}
+  </div>
+</section>
 {% endblock %}
