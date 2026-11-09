@@ -15,7 +15,9 @@
 # First-time setup order:  install make -> install uv -> make setup
 
 .DEFAULT_GOAL := help
-.PHONY: help setup test fix
+.PHONY: help setup test fix api web run
+
+ENV_FILE := $(if $(wildcard .env),--env-file .env)
 
 help: ## List the targets
 	@uv run python scripts/help.py $(MAKEFILE_LIST)
@@ -33,3 +35,12 @@ test: ## Lint, type-check and run the offline test suite
 fix: ## Auto-fix lint issues and reformat
 	uv run ruff check --fix .
 	uv run ruff format .
+
+api: ## Run the API on http://127.0.0.1:8000, reloading on code changes
+	uv run $(ENV_FILE) uvicorn verikyb.api.app:create_app --factory --port 8000 --reload
+
+web: ## Run the UI on http://127.0.0.1:5000, reloading on code changes
+	uv run $(ENV_FILE) flask --app verikyb.web.app:create_app run --port 5000 --debug
+
+run: ## Run the API and the UI together; Ctrl+C stops both
+	$(MAKE) -j2 api web
