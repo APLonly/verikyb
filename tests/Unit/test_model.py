@@ -113,10 +113,7 @@ def test_cleared_risk_flag_needs_a_reason() -> None:
     with pytest.raises(ValidationError, match="needs a reason"):
         RiskFlag.model_validate(FLAG | {"status": "cleared"})
 
-    cleared = FLAG | {
-        "status": "cleared",
-        "cleared_reason": "Accounts filed on 2026-10-01",
-    }
+    cleared = FLAG | {"status": "cleared", "cleared_reason": "Accounts filed on 2026-10-01"}
     assert RiskFlag.model_validate(cleared).status is FlagStatus.CLEARED
 
 
