@@ -66,6 +66,22 @@ class HighRiskCountries(DomainModel):
         return self
 
 
+class RealFirm(DomainModel):
+    name: str
+    company_number: str = Field(pattern=r"^[A-Z0-9]{8}$")  # Companies House: 8 characters
+
+
+class DemoSet(DomainModel):
+    real_firms: list[RealFirm] = Field(min_length=1)
+
+    @model_validator(mode="after")
+    def _unique_firms(self) -> Self:
+        numbers = [firm.company_number for firm in self.real_firms]
+        if len(numbers) != len(set(numbers)):
+            raise ValueError("each demo firm must have its own company number")
+        return self
+
+
 def load_questionnaire(config_dir: Path) -> Questionnaire:
     return load_yaml(config_dir / "questionnaire.yaml", Questionnaire)
 
@@ -76,3 +92,7 @@ def load_thresholds(config_dir: Path) -> Thresholds:
 
 def load_high_risk_countries(config_dir: Path) -> HighRiskCountries:
     return load_yaml(config_dir / "high_risk_countries.yaml", HighRiskCountries)
+
+
+def load_demo_set(config_dir: Path) -> DemoSet:
+    return load_yaml(config_dir / "demo_set.yaml", DemoSet)
