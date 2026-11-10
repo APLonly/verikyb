@@ -15,7 +15,7 @@
 # First-time setup order:  install make -> install uv -> make setup
 
 .DEFAULT_GOAL := help
-.PHONY: help setup test fix api web run
+.PHONY: help setup test fix api web run record
 
 ENV_FILE := $(if $(wildcard .env),--env-file .env)
 
@@ -44,3 +44,6 @@ web: ## Run the UI on http://127.0.0.1:5000, reloading on code changes
 
 run: ## Run the API and the UI together; Ctrl+C stops both
 	$(MAKE) -j2 api web
+
+record: ## Record the demo firms from the live APIs into data/fixtures (needs the API keys)
+	uv run $(ENV_FILE) python data/scripts/record.py
