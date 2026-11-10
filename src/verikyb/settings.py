@@ -1,9 +1,16 @@
 """Run time Settings"""
 
+from enum import StrEnum
 from functools import lru_cache
+from pathlib import Path
 
-from pydantic import HttpUrl, PositiveFloat, SecretStr
+from pydantic import HttpUrl, NonNegativeFloat, PositiveFloat, SecretStr
 from pydantic_settings import BaseSettings, SettingsConfigDict
+
+
+class SourceMode(StrEnum):
+    REPLAY = "replay"
+    LIVE = "live"
 
 
 class Settings(BaseSettings):
@@ -20,6 +27,9 @@ class Settings(BaseSettings):
     langfuse_secret_key: SecretStr | None = None
     langfuse_public_key: str | None = None
     langfuse_host: HttpUrl = HttpUrl("https://us.cloud.langfuse.com")
+    sources: SourceMode = SourceMode.REPLAY
+    fixtures_dir: Path = Path("data/fixtures")
+    cache_ttl_hours: NonNegativeFloat = 24.0
 
 
 @lru_cache
