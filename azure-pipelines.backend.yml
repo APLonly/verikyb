@@ -1,0 +1,689 @@
+# Manual release only. The existing azure-pipelines.yml remains the CI authority.
+# Before use, fill these non-secret settings after review, authorize this pipeline
+# for verikyb-azure-wif, and pre-create the Azure DevOps deployment environments.
+# Configure QA approvals (no self-approval) and exclusive locks outside this YAML.
+trigger: none
+pr: none
+
+parameters:
+  - name: ciRunId
+    displayName: Successful CI run ID for the exact selected commit
+    type: number
+    default: 0
+  - name: promoteQa
+    displayName: Promote the successful Dev digest to protected QA
+    type: boolean
+    default: false
+  - name: syncUat
+    displayName: Synchronize approved source to UAT (protected clearance required)
+    type: boolean
+    default: false
+
+variables:
+  # Keep these trusted settings under review; do not allow queue-time overrides.
+  ciDefinitionId: '2'
+  expectedSubscriptionId: '99ab2920-ca72-45a1-9f21-a21e36ba1e02'
+  resourceGroup: verikyb-rg
+  acrName: verikybacrps2026
+  imageRepository: verikyb-backend
+
+pool:
+  vmImage: ubuntu-24.04
+
+stages:
+  - stage: Build
+    displayName: Verify CI, build and publish immutable release
+    jobs:
+      - job: Image
+        timeoutInMinutes: 45
+        workspace:
+          clean: all
+        steps:
+          - checkout: self
+            clean: true
+            persistCredentials: false
+
+          - bash: |
+              set -euo pipefail
+              python3 - <<'PY'
+              import json
+              import os
+              import subprocess
+              import urllib.parse
+              import urllib.request
+              import uuid
+              from pathlib import Path
+
+              def require(condition, message):
+                  if not condition:
+                      raise SystemExit(message)
+
+              def validate_ci(run, definition, commit, branch, repository):
+                  require(run.get("status") == "completed" and run.get("result") == "succeeded",
+                          "CI must have completed with result succeeded.")
+                  require(run.get("definition", {}).get("id") == definition,
+                          "The CI run belongs to a different pipeline definition.")
+                  require(run.get("sourceVersion") == commit, "CI did not validate this exact commit.")
+                  require(run.get("sourceBranch") == branch, "CI branch differs from the release branch.")
+                  require(str(run.get("repository", {}).get("id", "")).casefold() == repository.casefold(),
+                          "CI and CD must use the same repository.")
+                  require(run.get("reason", "").casefold() != "pullrequest",
+                          "Use successful branch CI, not PR merge validation.")
+
+              def validate_qa_approval(checks, environment_id):
+                  require(isinstance(checks, dict) and isinstance(checks.get("value"), list),
+                          "Unexpected QA checks response; refusing promotion.")
+                  for check in checks["value"]:
+                      resource = check.get("resource", {})
+                      settings = check.get("settings", {})
+                      if (check.get("type", {}).get("name", "").casefold() == "approval"
+                              and check.get("isDisabled") is False
+                              and resource.get("type") == "environment"
+                              and str(resource.get("id")) == str(environment_id)
+                              and isinstance(settings, dict)
+                              and isinstance(settings.get("approvers"), list)
+                              and settings["approvers"]
+                              and settings.get("requesterCannotBeApprover") is True):
+                          return
+                  raise SystemExit("Cannot confirm an enabled QA environment approval with designated approvers and no self-approval.")
+
+              def main():
+                  require(os.environ["BUILD_REASON"] == "Manual", "CD permits manual runs only.")
+                  sync_requested = os.environ["SYNC_UAT"].casefold() == "true"
+                  require(os.environ["PROMOTE_QA"].casefold() != "true" or sync_requested,
+                          "QA requires UAT synchronization and verified provenance in this run.")
+                  branch = os.environ["BUILD_SOURCEBRANCH"]
+                  require(branch in ("refs/heads/dev", "refs/heads/main"), "Release only from dev or main.")
+                  run_id = int(os.environ["CI_RUN_ID"])
+                  definition = int(os.environ["CI_DEFINITION_ID"])
+                  require(run_id > 0 and definition > 0,
+                          "Set the verified ciDefinitionId and supply the successful ciRunId before release.")
+                  try:
+                      uuid.UUID(os.environ["EXPECTED_SUBSCRIPTION"])
+                  except ValueError:
+                      raise SystemExit("Set expectedSubscriptionId to the verified subscription ID before release.")
+                  commit = os.environ["BUILD_SOURCEVERSION"]
+                  require(subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip() == commit,
+                          "The checkout does not match the selected source commit.")
+                  require(os.environ["BUILD_REPOSITORY_NAME"] == "APLonly/verikyb",
+                          "Release only from the verified Dev repository.")
+                  tree = subprocess.check_output(["git", "rev-parse", "HEAD^{tree}"], text=True).strip()
+                  base = os.environ["SYSTEM_COLLECTIONURI"] + os.environ["SYSTEM_TEAMPROJECTID"] + "/_apis/"
+                  token = os.environ.get("ADO_TOKEN", "")
+                  require(bool(token) and not token.startswith("$("), "System.AccessToken is unavailable.")
+
+                  def get(path, **query):
+                      request = urllib.request.Request(
+                          base + path + "?" + urllib.parse.urlencode(query),
+                          headers={"Authorization": "Bearer " + token},
+                      )
+                      try:
+                          with urllib.request.urlopen(request, timeout=30) as response:
+                              return json.load(response)
+                      except (urllib.error.URLError, ValueError):
+                          raise SystemExit("Azure DevOps evidence/configuration read failed. Check build/environment/check-view permissions.")
+
+                  run = get(f"build/builds/{run_id}", **{"api-version": "7.1"})
+                  validate_ci(run, definition, commit, branch, os.environ["BUILD_REPOSITORY_ID"])
+                  qa_requested = os.environ["PROMOTE_QA"].casefold() == "true"
+                  for name in (["verikyb-dev", "verikyb-qa"] if qa_requested else ["verikyb-dev"]):
+                      response = get("distributedtask/environments", name=name, **{"api-version": "7.1"})
+                      environments = [e for e in response.get("value", []) if e.get("name") == name]
+                      require(len(environments) == 1, f"Pre-create and authorize the Azure DevOps environment {name}.")
+                      if name == "verikyb-qa":
+                          environment_id = environments[0]["id"]
+                          checks = get("pipelines/checks/configurations", resourceType="environment",
+                                       resourceId=environment_id,
+                                       **{"$expand": "settings", "api-version": "7.1-preview.1"})
+                          validate_qa_approval(checks, environment_id)
+
+                  release = {
+                      "ciRunId": run_id, "ciDefinitionId": definition,
+                      "ciStatus": run["status"], "ciResult": run["result"],
+                      "sourceCommit": commit, "sourceBranch": branch,
+                      "sourceTree": tree, "sourceRepository": "APLonly/verikyb",
+                      "repositoryId": os.environ["BUILD_REPOSITORY_ID"],
+                      "subscriptionId": os.environ["EXPECTED_SUBSCRIPTION"],
+                      "cdRunId": os.environ["BUILD_BUILDID"], "qaRequested": qa_requested,
+                      "cdDefinitionId": os.environ["SYSTEM_DEFINITIONID"], "uatSyncRequested": sync_requested,
+                  }
+                  directory = Path(os.environ["RELEASE_DIR"])
+                  directory.mkdir(parents=True, exist_ok=True)
+                  (directory / "release.json").write_text(json.dumps(release, indent=2), encoding="utf-8")
+                  print(f"Verified successful CI run {run_id} for {commit}.")
+
+              if __name__ == "__main__":
+                  main()
+              PY
+            displayName: Require exact-commit CI and protected deployment environments
+            env:
+              ADO_TOKEN: $(System.AccessToken)
+              CI_RUN_ID: '${{ parameters.ciRunId }}'
+              CI_DEFINITION_ID: $(ciDefinitionId)
+              EXPECTED_SUBSCRIPTION: $(expectedSubscriptionId)
+              PROMOTE_QA: '${{ parameters.promoteQa }}'
+              SYNC_UAT: '${{ parameters.syncUat }}'
+              RELEASE_DIR: $(Pipeline.Workspace)/release
+
+          # Generate a shared deployment helper inside this run's release artifact.
+          # No extra repository files are needed, and QA executes the same helper.
+          - bash: |
+              set -euo pipefail
+              cat > "$RELEASE_DIR/deploy.py" <<'PY'
+              import hashlib
+              import json
+              import os
+              import re
+              import subprocess
+              import time
+              from datetime import datetime, timezone
+              from pathlib import Path
+
+              API = "?api-version=2025-01-01"
+              APP_QUERY = """{
+                id:id,location:location,identity:identity,
+                environment:properties.environmentId,
+                mode:properties.configuration.activeRevisionsMode,
+                ingress:properties.configuration.ingress,
+                registries:properties.configuration.registries[].{
+                  server:server,identity:identity,
+                  hasUsername:username != null && username != `""`,
+                  hasPassword:passwordSecretRef != null && passwordSecretRef != `""`
+                },
+                secretNames:properties.configuration.secrets[].name,
+                scale:properties.template.scale,
+                state:properties.provisioningState,
+                latest:properties.latestRevisionName,ready:properties.latestReadyRevisionName,
+                containers:properties.template.containers[].{
+                  fields:keys(@),name:name,image:image,resources:resources,
+                  envCount:length(env || `[]`),mountCount:length(volumeMounts || `[]`),
+                  commandCount:length(command || `[]`),argsCount:length(args || `[]`),
+                  probeHeaderCount:length(probes[].httpGet.httpHeaders[] || `[]`)
+                }
+              }"""
+              REVISION_QUERY = """{
+                state:properties.provisioningState,health:properties.healthState,
+                running:properties.runningState,replicas:properties.replicas,
+                containers:properties.template.containers[].{name:name,image:image,probes:probes}
+              }"""
+
+              def require(condition, message):
+                  if not condition:
+                      raise SystemExit(message)
+
+              def azure_json(url, query):
+                  result = subprocess.run(
+                      ["az", "rest", "--method", "get", "--url", url, "--query", query,
+                       "--output", "json", "--only-show-errors"],
+                      check=True, capture_output=True, text=True, timeout=90,
+                  )
+                  return json.loads(result.stdout)
+
+              def validate_release(release, environment):
+                  require(release["sourceCommit"] == environment["BUILD_SOURCEVERSION"], "Release commit mismatch.")
+                  require(release["sourceBranch"] == environment["BUILD_SOURCEBRANCH"], "Release branch mismatch.")
+                  require(re.fullmatch(r"[0-9a-f]{40}", release.get("sourceTree", "")) is not None,
+                          "Missing source tree identity.")
+                  require(release["ciRunId"] == int(environment["CI_RUN_ID"]), "Release CI run mismatch.")
+                  require(release["ciDefinitionId"] == int(environment["CI_DEFINITION_ID"]), "Release CI pipeline mismatch.")
+                  require(release["cdRunId"] == environment["BUILD_BUILDID"], "Release belongs to another CD run.")
+                  require(release["cdDefinitionId"] == environment["SYSTEM_DEFINITIONID"], "CD pipeline mismatch.")
+                  require(release["repositoryId"].casefold() == environment["BUILD_REPOSITORY_ID"].casefold(),
+                          "Release repository mismatch.")
+                  require(release["subscriptionId"].casefold() == environment["EXPECTED_SUBSCRIPTION"].casefold(),
+                          "Release subscription mismatch.")
+                  require(release["imageRepository"] == environment["IMAGE_REPOSITORY"], "Unexpected image repository.")
+                  require(re.fullmatch(r"sha256:[0-9a-f]{64}", release["digest"]) is not None, "Invalid image digest.")
+                  require(re.fullmatch(r"[a-z0-9.-]+\.azurecr\.io", release["registry"]) is not None,
+                          "Unexpected registry hostname.")
+                  image = f'{release["registry"]}/{release["imageRepository"]}@{release["digest"]}'
+                  require(release["imageReference"] == image, "Image reference/digest mismatch.")
+                  return image
+
+              def bindings(state):
+                  return sorted(state.get("registries") or [], key=lambda r: r["server"].casefold())
+
+              def inspect(state, app_id, environment_id, registry):
+                  require(state["id"].casefold() == app_id.casefold(), "Unexpected app resource ID.")
+                  require(state["location"].casefold() == "centralindia", "Unexpected app region.")
+                  require(state["environment"].casefold() == environment_id.casefold(), "Unexpected app environment.")
+                  require(state["mode"] == "Single", "Single-revision mode is required.")
+                  ingress = state["ingress"]
+                  require(isinstance(ingress, dict) and ingress.get("external") is False,
+                          "Internal ingress is required; refusing to change public/private access.")
+                  require(not ingress.get("additionalPortMappings"), "Additional ingress ports require separate review.")
+                  require(ingress.get("targetPort") in (80, 8000), "Unexpected target port.")
+                  scale = state["scale"]
+                  require(scale.get("minReplicas") == 0 and scale.get("maxReplicas") == 1,
+                          "Replica limits must already be 0-1.")
+                  identity = state["identity"]
+                  require(identity.get("principalId") and "SystemAssigned" in
+                          [part.strip() for part in identity.get("type", "").split(",")],
+                          "The existing system-assigned identity is required.")
+                  matching = [r for r in bindings(state) if r["server"].casefold() == registry.casefold()]
+                  require(len(matching) == 1 and matching[0].get("identity") == "system"
+                          and matching[0].get("hasUsername") is False and matching[0].get("hasPassword") is False,
+                          "Existing system-identity registry authentication is required.")
+
+              def make_probes():
+                  return [
+                      {"type": kind, "httpGet": {"path": "/health", "port": 8000, "scheme": "HTTP"},
+                       "initialDelaySeconds": delay, "periodSeconds": period, "timeoutSeconds": 2,
+                       "successThreshold": 1, "failureThreshold": failures}
+                      for kind, delay, period, failures in (
+                          ("Startup", 5, 10, 10), ("Readiness", 5, 5, 3), ("Liveness", 10, 30, 3)
+                      )
+                  ]
+
+              def plan_patch(state, image, suffix):
+                  require(len(state["containers"]) == 1, "Multiple containers require separate review.")
+                  container = state["containers"][0]
+                  allowed = {"name", "image", "resources", "probes", "env", "volumeMounts", "command", "args"}
+                  require(set(container["fields"]) <= allowed, "Unknown container settings would be lost; refusing update.")
+                  require(all(container[k] == 0 for k in (
+                      "envCount", "mountCount", "commandCount", "argsCount", "probeHeaderCount"
+                  )), "Container environment, mounts, commands or authenticated probes require separate review.")
+                  resources = container["resources"]
+                  require(set(resources) <= {"cpu", "memory", "ephemeralStorage", "gpu"}
+                          and resources.get("gpu") in (None, 0), "Unexpected native resource settings.")
+                  cpu, memory = resources.get("cpu"), resources.get("memory")
+                  require(type(cpu) in (int, float) and cpu > 0 and isinstance(memory, str) and bool(memory),
+                          "Existing CPU/memory configuration is required.")
+                  # ephemeralStorage is an allocated/read-only response field; retain CPU/memory.
+                  updated = {"name": container["name"], "image": image,
+                             "resources": {"cpu": cpu, "memory": memory}, "probes": make_probes()}
+                  # Explicitly retain any existing empty customization arrays.
+                  for field in ("env", "volumeMounts", "command", "args"):
+                      if field in container["fields"]:
+                          updated[field] = []
+                  return {"location": state["location"], "properties": {
+                      "configuration": {"ingress": {"targetPort": 8000}},
+                      "template": {"revisionSuffix": suffix, "containers": [updated]},
+                  }}
+
+              def preserved(before, current):
+                  require(current["identity"] == before["identity"], "Managed identity changed unexpectedly.")
+                  require(bindings(current) == bindings(before), "Registry authentication changed unexpectedly.")
+                  require(sorted(current.get("secretNames") or []) == sorted(before.get("secretNames") or []),
+                          "Secret names changed unexpectedly.")
+                  require(current["scale"] == before["scale"], "Scale configuration changed unexpectedly.")
+                  # Revision routing and generated hostname are platform-managed, not patched here.
+                  ignored = {"targetPort", "traffic", "fqdn"}
+                  static = lambda ingress: {k: v for k, v in ingress.items() if k not in ignored}
+                  require(static(current["ingress"]) == static(before["ingress"]),
+                          "Other ingress settings changed unexpectedly.")
+                  old_resources = before["containers"][0]["resources"]
+                  new_resources = current["containers"][0]["resources"]
+                  require(all(new_resources.get(k) == old_resources.get(k) for k in ("cpu", "memory")),
+                          "CPU/memory changed unexpectedly.")
+
+              def native_health_observed(revision, image, container_name):
+                  containers = revision.get("containers") or []
+                  require(len(containers) == 1 and containers[0].get("image") == image
+                          and containers[0].get("name") == container_name, "Unexpected revision image/container.")
+                  observed_probes = {p.get("type"): p for p in containers[0].get("probes") or []}
+                  for expected in make_probes():
+                      actual = observed_probes.get(expected["type"], {})
+                      require(all(actual.get(k) == v for k, v in expected.items() if k != "httpGet"),
+                              "Revision health probes differ.")
+                      http = actual.get("httpGet") or {}
+                      require(all(http.get(k) == v for k, v in expected["httpGet"].items())
+                              and not http.get("httpHeaders") and not http.get("host"),
+                              "Revision HTTP health target differs.")
+                  replicas = revision.get("replicas")
+                  return (revision.get("state") == "Provisioned" and revision.get("health") == "Healthy"
+                          and revision.get("running") == "Running" and type(replicas) is int and replicas > 0)
+
+              def main():
+                  environment = os.environ
+                  directory = Path(environment["RELEASE_DIR"])
+                  release = json.loads((directory / "release.json").read_text(encoding="utf-8"))
+                  image = validate_release(release, environment)
+                  app = environment["TARGET_APP"]
+                  require(app in ("verikyb-dev", "verikyb-qa"), "Unexpected deployment target.")
+                  require(app != "verikyb-qa" or release.get("qaRequested") is True, "QA was not requested for this release.")
+                  if app == "verikyb-qa":
+                      proof = json.loads((Path(environment["UAT_PROVENANCE_DIR"]) / "uat-provenance.json").read_text(encoding="utf-8"))
+                      require(release.get("uatSyncRequested") is True and proof.get("status") == "verified"
+                              and proof.get("uatRepository") == "abhishek-tiwari-nitrr/verikyb-qa"
+                              and proof.get("uatBranch") == "refs/heads/main", "Verified UAT synchronization is required.")
+                      require(all(proof.get(k) == release[k] for k in (
+                          "sourceCommit", "sourceTree", "ciRunId", "cdRunId", "digest", "imageReference"
+                      )) and proof.get("uatCommit") == release["sourceCommit"]
+                          and proof.get("uatTree") == release["sourceTree"], "QA provenance mismatch.")
+                  selected = subprocess.check_output(
+                      ["az", "account", "show", "--query", "id", "-o", "tsv", "--only-show-errors"], text=True,
+                  ).strip()
+                  require(selected.casefold() == release["subscriptionId"].casefold(), "Unexpected active subscription.")
+                  root = (f'https://management.azure.com/subscriptions/{release["subscriptionId"]}'
+                          f'/resourceGroups/{environment["RESOURCE_GROUP"]}/providers/Microsoft.App')
+                  app_id = root.removeprefix("https://management.azure.com") + "/containerApps/" + app
+                  environment_id = root.removeprefix("https://management.azure.com") + "/managedEnvironments/verikyb-env"
+                  url = root + "/containerApps/" + app
+                  before = azure_json(url + API, APP_QUERY)
+                  inspect(before, app_id, environment_id, release["registry"])
+                  suffix = f'r{environment["BUILD_BUILDID"]}-a{environment["SYSTEM_JOBATTEMPT"]}'
+                  patch = plan_patch(before, image, suffix)
+                  revision_name = app + "--" + suffix
+                  print(f"Updating existing {app} to {image}; preserving identity, registry, secrets and scale.")
+                  # JSON Merge Patch: do not send identity, registries, secrets or scale.
+                  subprocess.run(
+                      ["az", "rest", "--method", "patch", "--url", url + API,
+                       "--body", json.dumps(patch), "--output", "none", "--only-show-errors"],
+                      check=True, timeout=180,
+                  )
+                  deadline = time.monotonic() + 600
+                  while time.monotonic() < deadline:
+                      current = azure_json(url + API, APP_QUERY)
+                      inspect(current, app_id, environment_id, release["registry"])
+                      preserved(before, current)
+                      require(current["state"] != "Failed", "Container App provisioning failed; inspect before retrying.")
+                      if (current["state"] == "Succeeded" and current["latest"] == revision_name
+                              and current["ready"] == revision_name):
+                          require(current["ingress"].get("targetPort") == 8000, "Target port verification failed.")
+                          revision = azure_json(url + "/revisions/" + revision_name + API, REVISION_QUERY)
+                          require(revision.get("state") != "Failed" and revision.get("running") != "Failed",
+                                  "The intended revision failed.")
+                          if native_health_observed(revision, image, before["containers"][0]["name"]):
+                              print(f"Verified native /health readiness: {revision_name} -> {image}")
+                              if app == "verikyb-dev":
+                                  receipt = {key: release[key] for key in (
+                                      "sourceRepository", "sourceCommit", "sourceTree", "sourceBranch", "repositoryId",
+                                      "ciDefinitionId", "ciRunId", "cdDefinitionId", "cdRunId", "digest", "imageReference"
+                                  )}
+                                  receipt.update({
+                                      "status": "succeeded", "targetApp": app, "revision": revision_name,
+                                      "healthVerified": True, "healthEndpoint": "/health",
+                                      "releaseSha256": hashlib.sha256((directory / "release.json").read_bytes()).hexdigest(),
+                                      "verifiedAtUtc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                                  })
+                                  evidence = Path(environment["DEV_EVIDENCE_DIR"])
+                                  evidence.mkdir(parents=True, exist_ok=True)
+                                  (evidence / "dev-verified.json").write_text(json.dumps(receipt, indent=2) + "\n", encoding="utf-8")
+                              return
+                      time.sleep(5)
+                  raise SystemExit("Runtime health was not observed within 10 minutes (possibly zero replicas). "
+                                   "Release is not verified; QA is blocked. No public access, scale-up or rollback was performed.")
+
+              if __name__ == "__main__":
+                  main()
+              PY
+            displayName: Prepare shared update-only deployment helper
+            env:
+              RELEASE_DIR: $(Pipeline.Workspace)/release
+
+          - task: AzureCLI@2
+            displayName: Build, smoke-test, push and record image digest
+            inputs:
+              azureSubscription: 'verikyb-azure-wif'
+              scriptType: bash
+              scriptLocation: inlineScript
+              visibleAzLogin: false
+              addSpnToEnvironment: false
+              inlineScript: |
+                set -euo pipefail
+                selected=$(az account show --query id -o tsv --only-show-errors)
+                [[ "${selected,,}" == "${EXPECTED_SUBSCRIPTION,,}" ]] \
+                  || { echo "Unexpected Azure subscription."; exit 1; }
+                server=$(az acr show --name "$ACR_NAME" --query loginServer -o tsv --only-show-errors)
+                tag="ado-${SYSTEM_TEAMPROJECTID}-${BUILD_BUILDID}-${SYSTEM_JOBATTEMPT}"
+                tagged="${server}/${IMAGE_REPOSITORY}:${tag}"
+                export DOCKER_CONFIG
+                DOCKER_CONFIG=$(mktemp -d)
+                container_id=""
+                cleanup() {
+                  if [[ -n "$container_id" ]]; then
+                    docker rm --force "$container_id" >/dev/null 2>&1 || true
+                  fi
+                  docker logout "$server" >/dev/null 2>&1 || true
+                  rm -rf -- "$DOCKER_CONFIG"
+                }
+                trap cleanup EXIT
+                docker build --pull --file Dockerfile \
+                  --label "org.opencontainers.image.revision=${BUILD_SOURCEVERSION}" --tag "$tagged" .
+                [[ "$(docker image inspect "$tagged" --format '{{.Config.User}}')" == "10001:10001" ]] \
+                  || { echo "Unexpected runtime user."; exit 1; }
+                docker image inspect "$tagged" --format 'SizeBytes={{.Size}}'
+                container_id=$(docker run --detach --publish 127.0.0.1::8000 "$tagged")
+                export BASE_URL="http://$(docker port "$container_id" 8000/tcp)"
+                python3 - <<'PY'
+                import json
+                import os
+                import time
+                import urllib.error
+                import urllib.request
+
+                base = os.environ["BASE_URL"].strip()
+                for attempt in range(90):
+                    try:
+                        with urllib.request.urlopen(base + "/health", timeout=2) as response:
+                            if response.status == 200 and json.load(response).get("status") == "ok":
+                                break
+                    except (urllib.error.URLError, TimeoutError, ValueError):
+                        pass
+                    time.sleep(1)
+                else:
+                    raise SystemExit("Local image /health did not pass.")
+                with urllib.request.urlopen(base + "/openapi.json", timeout=10) as response:
+                    schema = json.load(response)
+                    if response.status != 200 or not schema.get("openapi") or "/health" not in schema.get("paths", {}):
+                        raise SystemExit("OpenAPI smoke test failed.")
+                with urllib.request.urlopen(base + "/docs", timeout=10) as response:
+                    if response.status != 200 or b"swagger-ui" not in response.read():
+                        raise SystemExit("Swagger smoke test failed.")
+                print("Local /health, /openapi.json and /docs passed.")
+                PY
+                docker rm --force "$container_id" >/dev/null
+                container_id=""
+                az acr login --name "$ACR_NAME" --only-show-errors
+                docker push "$tagged"
+                digest=$(az acr repository show --name "$ACR_NAME" --image "${IMAGE_REPOSITORY}:${tag}" \
+                  --query digest -o tsv --only-show-errors)
+                [[ "$digest" =~ ^sha256:[0-9a-f]{64}$ ]] || { echo "Invalid registry digest."; exit 1; }
+                export REGISTRY="$server" IMAGE_TAG="$tag" IMAGE_DIGEST="$digest"
+                python3 - <<'PY'
+                import hashlib
+                import json
+                import os
+                from pathlib import Path
+
+                directory = Path(os.environ["RELEASE_DIR"])
+                path = directory / "release.json"
+                release = json.loads(path.read_text(encoding="utf-8"))
+                release.update({
+                    "registry": os.environ["REGISTRY"], "imageRepository": os.environ["IMAGE_REPOSITORY"],
+                    "imageTag": os.environ["IMAGE_TAG"], "digest": os.environ["IMAGE_DIGEST"],
+                    "deploymentHelperSha256": hashlib.sha256((directory / "deploy.py").read_bytes()).hexdigest(),
+                })
+                release["imageReference"] = f'{release["registry"]}/{release["imageRepository"]}@{release["digest"]}'
+                path.write_text(json.dumps(release, indent=2), encoding="utf-8")
+                print("Immutable release image:", release["imageReference"])
+                PY
+            env:
+              EXPECTED_SUBSCRIPTION: $(expectedSubscriptionId)
+              ACR_NAME: $(acrName)
+              IMAGE_REPOSITORY: $(imageRepository)
+              RELEASE_DIR: $(Pipeline.Workspace)/release
+
+          - task: PublishPipelineArtifact@1
+            displayName: Publish immutable image, CI evidence and deployment helper
+            inputs:
+              targetPath: $(Pipeline.Workspace)/release
+              artifact: release
+
+  - stage: Deploy_dev
+    displayName: Deploy immutable image to existing Dev app
+    dependsOn: Build
+    condition: succeeded()
+    lockBehavior: sequential
+    jobs:
+      - deployment: DeployDev
+        environment: verikyb-dev
+        timeoutInMinutes: 20
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                - checkout: none
+                - download: none
+                - download: current
+                  artifact: release
+                - task: AzureCLI@2
+                  displayName: Update Dev and observe private native readiness
+                  inputs:
+                    azureSubscription: 'verikyb-azure-wif'
+                    scriptType: bash
+                    scriptLocation: inlineScript
+                    visibleAzLogin: false
+                    addSpnToEnvironment: false
+                    inlineScript: |
+                      set -euo pipefail
+                      python3 - <<'PY'
+                      import hashlib
+                      import json
+                      import os
+                      import runpy
+                      from pathlib import Path
+
+                      directory = Path(os.environ["RELEASE_DIR"])
+                      release = json.loads((directory / "release.json").read_text(encoding="utf-8"))
+                      helper = directory / "deploy.py"
+                      if hashlib.sha256(helper.read_bytes()).hexdigest() != release["deploymentHelperSha256"]:
+                          raise SystemExit("Release deployment helper checksum mismatch.")
+                      runpy.run_path(str(helper), run_name="__main__")
+                      PY
+                  env:
+                    RELEASE_DIR: $(Pipeline.Workspace)/release
+                    EXPECTED_SUBSCRIPTION: $(expectedSubscriptionId)
+                    RESOURCE_GROUP: $(resourceGroup)
+                    IMAGE_REPOSITORY: $(imageRepository)
+                    TARGET_APP: verikyb-dev
+                    CI_RUN_ID: '${{ parameters.ciRunId }}'
+                    CI_DEFINITION_ID: $(ciDefinitionId)
+                    DEV_EVIDENCE_DIR: $(Pipeline.Workspace)/dev-verified
+
+                - task: PublishPipelineArtifact@1
+                  displayName: Publish successfully verified Dev revision and health evidence
+                  inputs:
+                    targetPath: $(Pipeline.Workspace)/dev-verified
+                    artifact: dev-verified
+
+  # Compile out GitHub credentials, secure-file access and synchronization by default.
+  - ${{ if eq(parameters.syncUat, true) }}:
+      - stage: Sync_uat
+        displayName: Synchronize approved Dev history and verify UAT provenance
+        dependsOn:
+          - Build
+          - Deploy_dev
+        condition: succeeded()
+        lockBehavior: sequential
+        variables:
+          - group: verikyb-uat-github
+        jobs:
+          - deployment: SyncUat
+            # Pre-create with approval (no self-approval) AND exclusive-lock checks.
+            environment: verikyb-uat-sync
+            timeoutInMinutes: 20
+            strategy:
+              runOnce:
+                deploy:
+                  steps:
+                    - checkout: self
+                      clean: true
+                      persistCredentials: false
+                    - download: none
+                    - download: current
+                      artifact: release
+                    - download: current
+                      artifact: dev-verified
+                    - task: DownloadSecureFile@1
+                      name: clearance
+                      displayName: Load separately reviewed reachable-history clearance
+                      inputs:
+                        secureFile: verikyb-uat-clearance.json
+                    - bash: |
+                        set +x
+                        set -euo pipefail
+                        bash "$BUILD_SOURCESDIRECTORY/deploy/uat/sync.sh" sync
+                      displayName: Check evidence, push fast-forward only and verify commit/tree
+                      env:
+                        ADO_TOKEN: $(System.AccessToken)
+                        GITHUB_TOKEN: $(uatGitHubToken)
+                        UAT_CLEARANCE_FILE: $(clearance.secureFilePath)
+                        RELEASE_DIR: $(Pipeline.Workspace)/release
+                        DEV_EVIDENCE_DIR: $(Pipeline.Workspace)/dev-verified
+                        UAT_PROVENANCE_DIR: $(Pipeline.Workspace)/uat-provenance
+                        CI_RUN_ID: '${{ parameters.ciRunId }}'
+                    - task: PublishPipelineArtifact@1
+                      displayName: Publish verified UAT commit/tree and Dev image provenance
+                      inputs:
+                        targetPath: $(Pipeline.Workspace)/uat-provenance
+                        artifact: uat-provenance
+
+  - ${{ if and(eq(parameters.syncUat, true), eq(parameters.promoteQa, true)) }}:
+      - stage: Deploy_qa
+        displayName: Promote the same verified UAT/Dev digest to protected QA
+        dependsOn:
+          - Build
+          - Deploy_dev
+          - Sync_uat
+        condition: succeeded()
+        lockBehavior: sequential
+        jobs:
+          - deployment: DeployQA
+            # Mandatory external approval: designated approvers, no self-approval.
+            environment: verikyb-qa
+            timeoutInMinutes: 20
+            strategy:
+              runOnce:
+                deploy:
+                  steps:
+                    - checkout: self
+                      clean: true
+                      persistCredentials: false
+                    - download: none
+                    - download: current
+                      artifact: release
+                    - download: current
+                      artifact: dev-verified
+                    - download: current
+                      artifact: uat-provenance
+                    - task: AzureCLI@2
+                      displayName: Reverify UAT provenance and deploy the approved Dev digest
+                      inputs:
+                        azureSubscription: 'verikyb-azure-wif'
+                        scriptType: bash
+                        scriptLocation: inlineScript
+                        visibleAzLogin: false
+                        addSpnToEnvironment: false
+                        inlineScript: |
+                          set +x
+                          set -euo pipefail
+                          # Read-only GitHub verification; no GitHub write credential in this job.
+                          bash "$BUILD_SOURCESDIRECTORY/deploy/uat/sync.sh" verify
+                          python3 - <<'PY'
+                          import hashlib
+                          import json
+                          import os
+                          import runpy
+                          from pathlib import Path
+
+                          directory = Path(os.environ["RELEASE_DIR"])
+                          release = json.loads((directory / "release.json").read_text(encoding="utf-8"))
+                          helper = directory / "deploy.py"
+                          if hashlib.sha256(helper.read_bytes()).hexdigest() != release["deploymentHelperSha256"]:
+                              raise SystemExit("Release deployment helper checksum mismatch.")
+                          runpy.run_path(str(helper), run_name="__main__")
+                          PY
+                      env:
+                        ADO_TOKEN: $(System.AccessToken)
+                        RELEASE_DIR: $(Pipeline.Workspace)/release
+                        DEV_EVIDENCE_DIR: $(Pipeline.Workspace)/dev-verified
+                        UAT_PROVENANCE_DIR: $(Pipeline.Workspace)/uat-provenance
+                        PROMOTE_QA: '${{ parameters.promoteQa }}'
+                        EXPECTED_SUBSCRIPTION: $(expectedSubscriptionId)
+                        RESOURCE_GROUP: $(resourceGroup)
+                        IMAGE_REPOSITORY: $(imageRepository)
+                        TARGET_APP: verikyb-qa
+                        CI_RUN_ID: '${{ parameters.ciRunId }}'
+                        CI_DEFINITION_ID: $(ciDefinitionId)
