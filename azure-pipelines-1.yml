@@ -1,0 +1,37 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+
+trigger: none
+pr: none
+
+pool:
+  vmImage: ubuntu-24.04
+
+steps:
+  - task: AzureCLI@2
+    displayName: Verify WIF authentication
+    inputs:
+      azureSubscription: 'verikyb-azure-wif'
+      scriptType: bash
+      scriptLocation: inlineScript
+      inlineScript: |
+        set -euo pipefail
+
+        ACTUAL=$(az account show --query id -o tsv)
+
+        EXPECTED="99ab2920-ca72-45a1-9f21-a21e36ba1e02"
+
+        if [ "$ACTUAL" != "$EXPECTED" ]; then
+          echo "FAIL: Incorrect subscription"
+          exit 1
+        fi
+
+        az group show \
+          --name verikyb-rg \
+          --query "{Name:name,Location:location}" \
+          -o table
+
+        echo "PASS: WIF authentication verified"
