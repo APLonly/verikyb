@@ -1,0 +1,569 @@
+{
+  "url": "https://api.company-information.service.gov.uk/search/companies?q=PayPal+UK+Ltd&items_per_page=20",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-10T06:45:51.886745Z",
+  "synthetic": false,
+  "body": {
+    "items": [
+      {
+        "address": {
+          "address_line_1": "Upper Ground,",
+          "locality": "London",
+          "postal_code": "SE1 9PZ",
+          "premises": "76"
+        },
+        "address_snippet": "76 Upper Ground,, London, SE1 9PZ",
+        "company_number": "14741686",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2023-03-20",
+        "description": "14741686 - Incorporated on 20 March 2023",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/14741686"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "PAYPAL UK LTD"
+      },
+      {
+        "address": {
+          "address_line_1": "Wellington Place",
+          "locality": "Leeds",
+          "postal_code": "LS1 4AP",
+          "premises": "12"
+        },
+        "address_snippet": "12 Wellington Place, Leeds, LS1 4AP",
+        "company_number": "05468033",
+        "company_status": "dissolved",
+        "company_type": "ltd",
+        "date_of_cessation": "2025-06-11",
+        "date_of_creation": "2005-06-01",
+        "description": "05468033 - Dissolved on 11 June 2025",
+        "description_identifier": [
+          "dissolved-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/05468033"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "PAYPAL (UK)",
+        "title": "05468033 LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "Upper Ground",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "SE1 9PP",
+          "premises": "76"
+        },
+        "address_snippet": "76 Upper Ground, London, England, SE1 9PP",
+        "company_number": "05507404",
+        "company_status": "active",
+        "company_type": "private-limited-guarant-nsc-limited-exemption",
+        "date_of_creation": "2005-07-13",
+        "description": "05507404 - Incorporated on 13 July 2005",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/05507404"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "MISSIONFISH - UK · POINTS OF LIGHT FOUNDATION - UK",
+        "title": "PAYPAL GIVING FUND UK"
+      },
+      {
+        "address": {
+          "address_line_1": "Upper Ground",
+          "locality": "London",
+          "postal_code": "SE1 9PZ",
+          "premises": "76"
+        },
+        "address_snippet": "76 Upper Ground, London, SE1 9PZ",
+        "company_number": "BR022982",
+        "company_status": "open",
+        "company_type": "uk-establishment",
+        "date_of_creation": "2020-11-24",
+        "description": "BR022982 - Opened on 24 November 2020",
+        "description_identifier": [
+          "opened-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/BR022982"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "PAYPAL LIMITED, UK BRANCH"
+      },
+      {
+        "address": {
+          "address_line_1": "Blanchardstown",
+          "country": "Ireland",
+          "locality": "Dublin",
+          "premises": "Ballycoolin Business Park Ballycoolin Road",
+          "region": "15"
+        },
+        "address_snippet": "Ballycoolin Business Park Ballycoolin Road, Blanchardstown, Dublin, 15, Ireland",
+        "company_number": "FC037891",
+        "company_status": "active",
+        "company_type": "oversea-company",
+        "date_of_creation": "2020-11-24",
+        "description": "FC037891 - First UK establishment opened on 24 November 2020",
+        "description_identifier": [
+          "first-uk-establishment-opened-on"
+        ],
+        "external_registration_number": "646492",
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/FC037891"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "PAYPAL LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "New Street Square",
+          "locality": "London",
+          "postal_code": "EC4A 3TW",
+          "premises": "5"
+        },
+        "address_snippet": "5 New Street Square, London, EC4A 3TW",
+        "company_number": "SE000007",
+        "company_status": "closed",
+        "company_type": "european-public-limited-liability-company-se",
+        "date_of_creation": "2008-09-30",
+        "description": "SE000007 - Closed",
+        "description_identifier": [
+          "closed"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/SE000007"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "PAYPAL SE"
+      },
+      {
+        "address": {
+          "address_line_1": "Blanchardstown",
+          "country": "Ireland",
+          "locality": "Dublin 15",
+          "premises": "Ballycoolin Business Park Ballycoolin Road"
+        },
+        "address_snippet": "Ballycoolin Business Park Ballycoolin Road, Blanchardstown, Dublin 15, Ireland",
+        "company_number": "OE024818",
+        "company_status": "registered",
+        "company_type": "registered-overseas-entity",
+        "date_of_creation": "2023-02-08",
+        "description": "OE024818 - Registered on 8 February 2023",
+        "description_identifier": [
+          null,
+          "registered"
+        ],
+        "external_registration_number": "646492",
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/OE024818"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "PAYPAL LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "- COMPANIES HOUSE DEFAULT ADDRESS",
+          "locality": "Cardiff",
+          "po_box": "4385",
+          "postal_code": "CF14 8LH",
+          "premises": "14052256"
+        },
+        "address_snippet": "4385, 14052256 - COMPANIES HOUSE DEFAULT ADDRESS, Cardiff, CF14 8LH",
+        "company_number": "14052256",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2022-04-19",
+        "description": "14052256 - Incorporated on 19 April 2022",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/14052256"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "PAYPALA LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "Wenlock Road",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "N1 7GU",
+          "premises": "20"
+        },
+        "address_snippet": "20 Wenlock Road, London, England, N1 7GU",
+        "company_number": "15266363",
+        "company_status": "dissolved",
+        "company_type": "ltd",
+        "date_of_cessation": "2025-04-15",
+        "date_of_creation": "2023-11-07",
+        "description": "15266363 - Dissolved on 15 April 2025",
+        "description_identifier": [
+          "dissolved-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/15266363"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "PAYPALUX LTD"
+      },
+      {
+        "address": {
+          "address_line_1": "- COMPANIES HOUSE DEFAULT ADDRESS",
+          "locality": "Cardiff",
+          "po_box": "4385",
+          "postal_code": "CF14 8LH",
+          "premises": "12086290"
+        },
+        "address_snippet": "4385, 12086290 - COMPANIES HOUSE DEFAULT ADDRESS, Cardiff, CF14 8LH",
+        "company_number": "12086290",
+        "company_status": "dissolved",
+        "company_type": "ltd",
+        "date_of_cessation": "2025-01-07",
+        "date_of_creation": "2019-07-04",
+        "description": "12086290 - Dissolved on 7 January 2025",
+        "description_identifier": [
+          "dissolved-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/12086290"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "PEDAL PAYPAL",
+        "title": "12086290 LTD."
+      },
+      {
+        "address": {
+          "address_line_1": "Shelton Street 71-75 Shelton Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "WC2H 9JQ",
+          "premises": "71-75",
+          "region": "London"
+        },
+        "address_snippet": "71-75 Shelton Street 71-75 Shelton Street, London, London, United Kingdom, WC2H 9JQ",
+        "company_number": "13679010",
+        "company_status": "dissolved",
+        "company_type": "ltd",
+        "date_of_cessation": "2023-04-11",
+        "date_of_creation": "2021-10-14",
+        "description": "13679010 - Dissolved on 11 April 2023",
+        "description_identifier": [
+          "dissolved-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/13679010"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "PAYPAL DANİSMAN LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "Ashley Avenue",
+          "country": "England",
+          "locality": "Ilford",
+          "postal_code": "IG6 2JE",
+          "premises": "8"
+        },
+        "address_snippet": "8 Ashley Avenue, Ilford, England, IG6 2JE",
+        "company_number": "06593623",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2008-05-14",
+        "description": "06593623 - Incorporated on 14 May 2008",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/06593623"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "PAYPAL BUSINESS SOLUTIONS LTD",
+        "title": "REVENUE & TAX MANAGEMENT LTD"
+      },
+      {
+        "address": {
+          "address_line_1": "Bushberry Avenue",
+          "country": "England",
+          "locality": "Coventry",
+          "postal_code": "CV4 9NU",
+          "premises": "92"
+        },
+        "address_snippet": "92 Bushberry Avenue, Coventry, England, CV4 9NU",
+        "company_number": "12494369",
+        "company_status": "dissolved",
+        "company_type": "ltd",
+        "date_of_cessation": "2021-09-07",
+        "date_of_creation": "2020-03-03",
+        "description": "12494369 - Dissolved on 7 September 2021",
+        "description_identifier": [
+          "dissolved-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/12494369"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "PAYPAL VCC LTD"
+      },
+      {
+        "address": {
+          "address_line_1": "Bridgewater Place",
+          "address_line_2": "Water Lane",
+          "locality": "Leeds",
+          "postal_code": "LS11 5QR",
+          "premises": "1"
+        },
+        "address_snippet": "1 Bridgewater Place, Water Lane, Leeds, LS11 5QR",
+        "company_number": "04056498",
+        "company_status": "dissolved",
+        "company_type": "ltd",
+        "date_of_cessation": "2024-03-01",
+        "date_of_creation": "2000-08-21",
+        "description": "04056498 - Dissolved on 1 March 2024",
+        "description_identifier": [
+          "dissolved-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/04056498"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "PAYPAL (EUROPE)",
+        "title": "04056498 LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "Paul Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC2A 4NE",
+          "premises": "86-90",
+          "region": "England"
+        },
+        "address_snippet": "86-90 Paul Street, London, England, United Kingdom, EC2A 4NE",
+        "company_number": "13252549",
+        "company_status": "dissolved",
+        "company_type": "ltd",
+        "date_of_cessation": "2021-06-22",
+        "date_of_creation": "2021-03-08",
+        "description": "13252549 - Dissolved on 22 June 2021",
+        "description_identifier": [
+          "dissolved-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/13252549"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "PAYPAL INNOVATIONS LTD"
+      },
+      {
+        "address": {
+          "address_line_1": "Adelaide Road",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "E10 5NW",
+          "premises": "47"
+        },
+        "address_snippet": "47 Adelaide Road, London, England, E10 5NW",
+        "company_number": "09808727",
+        "company_status": "dissolved",
+        "company_type": "ltd",
+        "date_of_cessation": "2016-06-07",
+        "date_of_creation": "2015-10-04",
+        "description": "09808727 - Dissolved on 7 June 2016",
+        "description_identifier": [
+          "dissolved-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/09808727"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "PAYPAL@NISA LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "Birks Holt Drive",
+          "address_line_2": "Maltby",
+          "locality": "Rotherham",
+          "postal_code": "S66 7JZ",
+          "premises": "86",
+          "region": "South Yorkshire"
+        },
+        "address_snippet": "86 Birks Holt Drive, Maltby, Rotherham, South Yorkshire, S66 7JZ",
+        "company_number": "04986426",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2003-12-05",
+        "description": "04986426 - Incorporated on 5 December 2003",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/04986426"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "PAYPAL LTD",
+        "title": "KASHBOOKS LTD"
+      },
+      {
+        "address": {
+          "address_line_1": "Broughton Street",
+          "locality": "Edinburgh",
+          "postal_code": "EH1 3SA",
+          "premises": "58a",
+          "region": "Midlothian"
+        },
+        "address_snippet": "58a Broughton Street, Edinburgh, Midlothian, EH1 3SA",
+        "company_number": "SC354259",
+        "company_status": "dissolved",
+        "company_type": "ltd",
+        "date_of_cessation": "2010-03-05",
+        "date_of_creation": "2009-01-30",
+        "description": "SC354259 - Dissolved on 5 March 2010",
+        "description_identifier": [
+          "dissolved-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/SC354259"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "PAYPAL LTD"
+      },
+      {
+        "address": {
+          "address_line_1": "Floor Arcadia House",
+          "address_line_2": "15 Forlease Road",
+          "locality": "Maidenhead",
+          "postal_code": "SL6 1RX",
+          "premises": "2nd"
+        },
+        "address_snippet": "2nd Floor Arcadia House, 15 Forlease Road, Maidenhead, SL6 1RX",
+        "company_number": "10271908",
+        "company_status": "dissolved",
+        "company_type": "ltd",
+        "date_of_cessation": "2026-05-06",
+        "date_of_creation": "2016-07-11",
+        "description": "10271908 - Dissolved on 6 May 2026",
+        "description_identifier": [
+          "dissolved-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/10271908"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "AAA ACCELERATORS GROUP UK LTD"
+      },
+      {
+        "address": {
+          "address_line_1": "Clews Road",
+          "address_line_2": "United Kingdom",
+          "country": "United Kingdom",
+          "locality": "Redditch",
+          "postal_code": "B98 7ST",
+          "premises": "4",
+          "region": "Worcestershire"
+        },
+        "address_snippet": "4 Clews Road, United Kingdom, Redditch, Worcestershire, United Kingdom, B98 7ST",
+        "company_number": "12854836",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2020-09-03",
+        "description": "12854836 - Incorporated on 3 September 2020",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/12854836"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "AAA ADVANCED DRIVERS UK LTD"
+      }
+    ],
+    "items_per_page": 20,
+    "kind": "search#companies",
+    "page_number": 1,
+    "start_index": 0,
+    "total_results": 10000
+  }
+}

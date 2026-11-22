@@ -1,0 +1,71 @@
+{
+  "url": "https://api.company-information.service.gov.uk/search/companies?q=Remitly+U.K.%2C+Ltd&items_per_page=20",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-10T06:45:53.595488Z",
+  "synthetic": false,
+  "body": {
+    "items": [
+      {
+        "address": {
+          "address_line_1": "78 Cannon Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC4N 6AF",
+          "premises": "Cannon Place"
+        },
+        "address_snippet": "Cannon Place, 78 Cannon Street, London, United Kingdom, EC4N 6AF",
+        "company_number": "09896841",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2015-12-01",
+        "description": "09896841 - Incorporated on 1 December 2015",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/09896841"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "REMITLY U.K., LTD"
+      },
+      {
+        "address": {
+          "address_line_1": "Hardy Terrace",
+          "country": "United Kingdom",
+          "locality": "Leeds",
+          "postal_code": "LS11 6NB",
+          "premises": "9"
+        },
+        "address_snippet": "9 Hardy Terrace, Leeds, United Kingdom, LS11 6NB",
+        "company_number": "12056462",
+        "company_status": "dissolved",
+        "company_type": "private-limited-guarant-nsc",
+        "date_of_cessation": "2020-01-14",
+        "date_of_creation": "2019-06-18",
+        "description": "12056462 - Dissolved on 14 January 2020",
+        "description_identifier": [
+          "dissolved-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/12056462"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "GLOBAL REMITLY LIMITED"
+      }
+    ],
+    "items_per_page": 20,
+    "kind": "search#companies",
+    "page_number": 1,
+    "start_index": 0,
+    "total_results": 2
+  }
+}

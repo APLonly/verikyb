@@ -1,0 +1,52 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/09896841/persons-with-significant-control?items_per_page=100&start_index=0",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-10T06:45:54.169303Z",
+  "synthetic": false,
+  "body": {
+    "items_per_page": 100,
+    "items": [
+      {
+        "etag": "8e6c3f547aba073c2ee62089a2a4eb4ce86d653c",
+        "notified_on": "2018-12-31",
+        "name": "Remitly Global, Inc.",
+        "links": {
+          "self": "/company/09896841/persons-with-significant-control/corporate-entity/KpFIgdFJlFzzUK3LOW_V1L2_NFI",
+          "persons_with_significant_control": {
+            "notifications": "/persons-with-significant-control/TkQ2KqafQkr5uoLGmobDqEVlIOY/notifications"
+          }
+        },
+        "identification": {
+          "legal_form": "Corporation",
+          "legal_authority": "Delaware, U.S.A",
+          "country_registered": "United States",
+          "place_registered": "Delaware Division Of Corporate",
+          "registration_number": "7085413"
+        },
+        "ceased": false,
+        "kind": "corporate-entity-person-with-significant-control",
+        "address": {
+          "address_line_1": "Union Street",
+          "address_line_2": "Suite 1000",
+          "country": "United States",
+          "locality": "Seattle",
+          "premises": "401",
+          "region": "98101"
+        },
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ]
+      }
+    ],
+    "start_index": 0,
+    "total_results": 1,
+    "active_count": 1,
+    "ceased_count": 0,
+    "links": {
+      "self": "/company/09896841/persons-with-significant-control"
+    }
+  }
+}

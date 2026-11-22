@@ -1,0 +1,391 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/09896841/officers?items_per_page=100&start_index=0",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-10T06:45:53.980187Z",
+  "synthetic": false,
+  "body": {
+    "active_count": 4,
+    "etag": "c4ca38b85fd2ccc9a74c8e40c2fe19420e540cb9",
+    "items": [
+      {
+        "etag": "c4ca38b85fd2ccc9a74c8e40c2fe19420e540cb9",
+        "address": {
+          "address_line_1": "Whitfield Street",
+          "locality": "London",
+          "postal_code": "W1T 4EZ",
+          "premises": "90"
+        },
+        "appointed_on": "2025-09-05",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United Kingdom",
+        "date_of_birth": {
+          "month": 10,
+          "year": 1991
+        },
+        "links": {
+          "self": "/company/09896841/appointments/jL63008VDONp4DQfX6FCgtDzE10",
+          "officer": {
+            "appointments": "/officers/4sKwRj1iyX7QpMZhGVdZ00hptDo/appointments"
+          }
+        },
+        "name": "HALPIN, Joseph",
+        "nationality": "British",
+        "officer_role": "director",
+        "person_number": "342516790001",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-05-06"
+        }
+      },
+      {
+        "etag": "917e39101c4879524105e221b47ee668c8a022fc",
+        "address": {
+          "address_line_1": "Whitfield Street",
+          "locality": "London",
+          "postal_code": "W1T 4EZ",
+          "premises": "90"
+        },
+        "appointed_on": "2024-12-02",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United Kingdom",
+        "date_of_birth": {
+          "month": 11,
+          "year": 1986
+        },
+        "links": {
+          "self": "/company/09896841/appointments/Ky17t432b0bQj9vFyqQYsj86lIQ",
+          "officer": {
+            "appointments": "/officers/lopP37M3Rff2hjDJuKkgXnZnOcM/appointments"
+          }
+        },
+        "name": "SHEPHERD, William Harry Monks",
+        "nationality": "British",
+        "officer_role": "director",
+        "person_number": "329972500001",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-05-06"
+        }
+      },
+      {
+        "etag": "e9d4a6e23738d1866a0265249884f2ae8e77a795",
+        "address": {
+          "address_line_1": "Whitfield Street",
+          "locality": "London",
+          "postal_code": "W1T 4EZ",
+          "premises": "90"
+        },
+        "appointed_on": "2024-04-12",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 6,
+          "year": 1985
+        },
+        "links": {
+          "self": "/company/09896841/appointments/2ueYHiZY4KrJ8ilpQvo6drLODUI",
+          "officer": {
+            "appointments": "/officers/FuPxYt8b5mAZeiFGTrkzTrIPYcU/appointments"
+          }
+        },
+        "name": "TREHARNE, Danielle",
+        "nationality": "British",
+        "officer_role": "director",
+        "person_number": "322323370001",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-05-06"
+        }
+      },
+      {
+        "etag": "95ae5e74b4f6e7708536fcc9afa9c4ee12880f1c",
+        "address": {
+          "locality": "Cardiff",
+          "po_box": "4385",
+          "postal_code": "CF14 8LH",
+          "premises": "09896841 - Companies House Default Address"
+        },
+        "appointed_on": "2025-02-01",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United Kingdom",
+        "date_of_birth": {
+          "month": 1,
+          "year": 1980
+        },
+        "links": {
+          "self": "/company/09896841/appointments/oNmC6S0Bx0R4WR2WndEzNxcVeX4",
+          "officer": {
+            "appointments": "/officers/cd5If6llTzwWPyHuWxuqV3CiFyU/appointments"
+          }
+        },
+        "name": "YAHALOM, Saar",
+        "nationality": "Israeli",
+        "officer_role": "director",
+        "person_number": "332008560001",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-05-06"
+        }
+      },
+      {
+        "etag": "27979fadf55abd304ab2ea4662199577fe50f858",
+        "address": {
+          "address_line_1": "Whitfield Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "W1T 4EZ",
+          "premises": "90"
+        },
+        "appointed_on": "2022-04-21",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "self": "/company/09896841/appointments/kSi617DTwPUXPk43mSTgdg-NNjA",
+          "officer": {
+            "appointments": "/officers/eqiooT4NJdSUJ36xhk2_E2Qf8cw/appointments"
+          }
+        },
+        "name": "LOHBECK, Meredith Ann",
+        "officer_role": "secretary",
+        "resigned_on": "2022-05-19",
+        "person_number": "295204720001"
+      },
+      {
+        "etag": "a27845b7d666770f2d8230633eace34112241451",
+        "address": {
+          "address_line_1": "Whitfield Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "W1T 4EZ",
+          "premises": "90"
+        },
+        "appointed_on": "2024-04-12",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United Kingdom",
+        "date_of_birth": {
+          "month": 3,
+          "year": 1969
+        },
+        "links": {
+          "self": "/company/09896841/appointments/gPfXAurbN4gwYgUJ41ACp1CHh8g",
+          "officer": {
+            "appointments": "/officers/G02QWyDrcHUw7O3ybIfPh8m2qKE/appointments"
+          }
+        },
+        "name": "ELSEA-BELOUSEK, Cristina Alejandra, Ms.",
+        "nationality": "American",
+        "officer_role": "director",
+        "resigned_on": "2024-10-03",
+        "person_number": "304178060001"
+      },
+      {
+        "etag": "7ab597b87f4bc30186ecf8d938480f2f0bcd2296",
+        "address": {
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 4TT",
+          "premises": "68-89 Mile End Road"
+        },
+        "appointed_on": "2015-12-01",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United States",
+        "date_of_birth": {
+          "month": 7,
+          "year": 1978
+        },
+        "links": {
+          "self": "/company/09896841/appointments/6VUSYhUC0gO5Y7IN669JdbUbme8",
+          "officer": {
+            "appointments": "/officers/Bn_19XJ_ObHs02MCyJ6gU3ZTT0M/appointments"
+          }
+        },
+        "name": "HUG, Joshua",
+        "nationality": "American",
+        "officer_role": "director",
+        "resigned_on": "2024-04-12",
+        "person_number": "203137890001"
+      },
+      {
+        "etag": "e040ec32579b1afa052b677c655ef814f8a23aca",
+        "address": {
+          "address_line_1": "Whitfield Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "W1T 4EZ",
+          "premises": "90"
+        },
+        "appointed_on": "2022-04-21",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 9,
+          "year": 1992
+        },
+        "links": {
+          "self": "/company/09896841/appointments/jExDjJ5BbKqd3mjc3shJRDKPHL0",
+          "officer": {
+            "appointments": "/officers/gjKMKRnci38aySZ4fXpOHdhjYtI/appointments"
+          }
+        },
+        "name": "MCKENZIE, Jago Tremethick",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2024-04-12",
+        "person_number": "275609870001"
+      },
+      {
+        "etag": "bb748746a0f883495e7b2953f89ddedc57fae701",
+        "address": {
+          "address_line_1": "96 Wilton Road",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "SW1V 1DW",
+          "premises": "Welby House"
+        },
+        "appointed_on": "2018-12-20",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United Kingdom",
+        "date_of_birth": {
+          "month": 6,
+          "year": 1977
+        },
+        "links": {
+          "self": "/company/09896841/appointments/2Ko7z0heAg17VlIDpFR8UYGBKSQ",
+          "officer": {
+            "appointments": "/officers/l8sxADObVwW67c1HryJJFAo93bQ/appointments"
+          }
+        },
+        "name": "NOVOKRESHCHENOVA, Elena, Ms.",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2021-05-14",
+        "person_number": "213452920001"
+      },
+      {
+        "etag": "6567ed8281f41ca1092534785dc0f1df420923fe",
+        "address": {
+          "address_line_1": "Whitfield Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "W1T 4EZ",
+          "premises": "90"
+        },
+        "appointed_on": "2016-03-02",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United Kingdom",
+        "date_of_birth": {
+          "month": 1,
+          "year": 1975
+        },
+        "links": {
+          "self": "/company/09896841/appointments/l24liqa-uANsAlOUf7-qCE6aMxQ",
+          "officer": {
+            "appointments": "/officers/cdXKuz4tuvnTiWOHYEeFKDgl89s/appointments"
+          }
+        },
+        "name": "OLSEN, Anthony James",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2024-03-02",
+        "person_number": "172520070001"
+      },
+      {
+        "etag": "ea1137e3e833c1f6c72d11b82b0677ec2ff225dd",
+        "address": {
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 4TT",
+          "premises": "68-89 Mile End Road"
+        },
+        "appointed_on": "2015-12-01",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United States",
+        "date_of_birth": {
+          "month": 7,
+          "year": 1982
+        },
+        "links": {
+          "self": "/company/09896841/appointments/LyvuIGvhIF_UT1QH8akcxP0bSHM",
+          "officer": {
+            "appointments": "/officers/5eJXPgm7lxacV962HNQ1Y6DkJGQ/appointments"
+          }
+        },
+        "name": "OPPENHEIMER, Matthew",
+        "nationality": "American",
+        "officer_role": "director",
+        "resigned_on": "2022-04-20",
+        "person_number": "203137880001"
+      },
+      {
+        "etag": "f64553b080ac97fbb54be19135fe344bc963ddd6",
+        "address": {
+          "address_line_1": "Whitfield Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "W1T 4EZ",
+          "premises": "90"
+        },
+        "appointed_on": "2024-04-12",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United States",
+        "date_of_birth": {
+          "month": 7,
+          "year": 1984
+        },
+        "links": {
+          "self": "/company/09896841/appointments/2awFvByoRIchR8XUgu9eVeRd-o4",
+          "officer": {
+            "appointments": "/officers/nMHieOXqC1WY9tGWxT_PYGZaGPI/appointments"
+          }
+        },
+        "name": "RAMAKRISHNA, Rithvik, Mr.",
+        "nationality": "American",
+        "officer_role": "director",
+        "resigned_on": "2024-12-02",
+        "person_number": "322271590001"
+      },
+      {
+        "etag": "1fe6fc1767b4f9b61dc96c84bb7b3e76ccdae236",
+        "address": {
+          "address_line_1": "Bressenden Place",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "SW1E 5RS",
+          "premises": "Portland House"
+        },
+        "appointed_on": "2017-09-20",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 4,
+          "year": 1985
+        },
+        "links": {
+          "self": "/company/09896841/appointments/1fbCo4EZ7DpJ4QXt7VUXUrPUIhg",
+          "officer": {
+            "appointments": "/officers/4TRHyIvfx4cDNVWKqTcy447RNGE/appointments"
+          }
+        },
+        "name": "SHI, Zuwen Daniel",
+        "nationality": "American",
+        "officer_role": "director",
+        "resigned_on": "2018-12-20",
+        "former_names": [
+          {
+            "surname": "DANIEL SHI"
+          }
+        ],
+        "person_number": "238190790001"
+      }
+    ],
+    "items_per_page": 100,
+    "kind": "officer-list",
+    "links": {
+      "self": "/company/09896841/officers"
+    },
+    "resigned_count": 9,
+    "inactive_count": 0,
+    "start_index": 0,
+    "total_results": 13
+  }
+}
