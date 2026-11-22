@@ -1,0 +1,262 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/14741686/officers?items_per_page=100&start_index=0",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-10T06:45:52.451402Z",
+  "synthetic": false,
+  "body": {
+    "active_count": 5,
+    "etag": "139d95b013a1422ba3aca7b5bfc18ee283e7e51a",
+    "items": [
+      {
+        "etag": "139d95b013a1422ba3aca7b5bfc18ee283e7e51a",
+        "address": {
+          "address_line_1": "Upper Ground,",
+          "locality": "London",
+          "postal_code": "SE1 9PZ",
+          "premises": "76"
+        },
+        "appointed_on": "2023-11-01",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 3,
+          "year": 1962
+        },
+        "links": {
+          "self": "/company/14741686/appointments/-keARalYH8Y1NK5MJtpUtwOFKJ0",
+          "officer": {
+            "appointments": "/officers/2jUtQj3SDEy0nbIni0QZdyzP-lM/appointments"
+          }
+        },
+        "name": "BENNETT, David Jonathan",
+        "nationality": "British",
+        "officer_role": "director",
+        "person_number": "315411700001",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-03-24"
+        }
+      },
+      {
+        "etag": "fea03b92709b3b4b74e36ec4305297e1d4499fd7",
+        "address": {
+          "address_line_1": "Upper Ground,",
+          "locality": "London",
+          "postal_code": "SE1 9PZ",
+          "premises": "76"
+        },
+        "appointed_on": "2024-04-17",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 9,
+          "year": 1973
+        },
+        "links": {
+          "self": "/company/14741686/appointments/VlI-3YqlS9rMO7jQOTLxFum2uxQ",
+          "officer": {
+            "appointments": "/officers/ES9vm4af9mUdy85KupHG95bH0AM/appointments"
+          }
+        },
+        "name": "BLADON, Simon Daniel",
+        "nationality": "British",
+        "officer_role": "director",
+        "person_number": "158776490002",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-03-24"
+        }
+      },
+      {
+        "etag": "bd09564d6fbcd6ac95037902bb6ae224420e9e19",
+        "address": {
+          "address_line_1": "Upper Ground,",
+          "locality": "London",
+          "postal_code": "SE1 9PZ",
+          "premises": "76"
+        },
+        "appointed_on": "2024-07-08",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United States",
+        "date_of_birth": {
+          "month": 10,
+          "year": 1982
+        },
+        "links": {
+          "self": "/company/14741686/appointments/ef9DmhsILtsrdM5i9HjtStlkoto",
+          "officer": {
+            "appointments": "/officers/gCbHE3lQBkPWSvq68SROOjAIBo4/appointments"
+          }
+        },
+        "name": "CINO, Kate Rochford",
+        "nationality": "American",
+        "officer_role": "director",
+        "former_names": [
+          {
+            "surname": "KATE SALOTTOLO"
+          }
+        ],
+        "person_number": "324914960001",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-03-24"
+        }
+      },
+      {
+        "etag": "335f2ffc3f07222b353b51ecfd3b2cab85525d06",
+        "address": {
+          "address_line_1": "Upper Ground,",
+          "locality": "London",
+          "postal_code": "SE1 9PZ",
+          "premises": "76"
+        },
+        "appointed_on": "2024-07-08",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 1,
+          "year": 1972
+        },
+        "links": {
+          "self": "/company/14741686/appointments/7Mdp0z_xdQo8nU3BtN6Ox-GivI8",
+          "officer": {
+            "appointments": "/officers/QR6Vr2dRxDGh6OKxR5adFMJ1SQc/appointments"
+          }
+        },
+        "name": "DAVEY, Benjamin Nicholas",
+        "nationality": "British",
+        "officer_role": "director",
+        "person_number": "106514890002",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-03-24"
+        }
+      },
+      {
+        "etag": "dd300c77866c9be190540c3153b3d7787ffeb8d5",
+        "address": {
+          "address_line_1": "Upper Ground,",
+          "locality": "London",
+          "postal_code": "SE1 9PZ",
+          "premises": "76"
+        },
+        "appointed_on": "2024-07-08",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 5,
+          "year": 1966
+        },
+        "links": {
+          "self": "/company/14741686/appointments/lAoWctGyqegXnnoNXaZ4EtEH2qY",
+          "officer": {
+            "appointments": "/officers/mflih1l7Xs0pcYmXE1fzJwmR37s/appointments"
+          }
+        },
+        "name": "LEACH, Jane Susannah",
+        "nationality": "British",
+        "officer_role": "director",
+        "former_names": [
+          {
+            "surname": "JANE LEACH"
+          }
+        ],
+        "person_number": "324914770003",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-03-24"
+        }
+      },
+      {
+        "etag": "bc36a7e67cf06455357a1d57f0a080b005fd0c78",
+        "address": {
+          "address_line_1": "Whittaker Avenue",
+          "country": "United Kingdom",
+          "locality": "Richmond-Upon-Thames",
+          "postal_code": "TW9 1EH",
+          "premises": "Whittaker House",
+          "region": "Surrey"
+        },
+        "appointed_on": "2023-11-01",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "self": "/company/14741686/appointments/THFWXCLh8Cf2-a-8YOUH05KDVS4",
+          "officer": {
+            "appointments": "/officers/DmQtWHnljNzQBLuF_ev0rcKD5Rc/appointments"
+          }
+        },
+        "name": "DONG, Elaine Yuh",
+        "officer_role": "secretary",
+        "resigned_on": "2024-05-21",
+        "person_number": "315405800001"
+      },
+      {
+        "etag": "bc36a7e67cf06455357a1d57f0a080b005fd0c78",
+        "address": {
+          "address_line_1": "Fleet Place",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC4M 7RD",
+          "premises": "5"
+        },
+        "appointed_on": "2024-07-08",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 4,
+          "year": 1976
+        },
+        "links": {
+          "self": "/company/14741686/appointments/5pjLUFTgVUXYwMAlsschJd8bpX4",
+          "officer": {
+            "appointments": "/officers/TxUTJRh07nT2bnBEVv_irAo_MWc/appointments"
+          }
+        },
+        "name": "BELLOC, Vincent Jean Claude",
+        "nationality": "British,French",
+        "officer_role": "director",
+        "resigned_on": "2024-12-06",
+        "person_number": "324915130001"
+      },
+      {
+        "etag": "bc36a7e67cf06455357a1d57f0a080b005fd0c78",
+        "address": {
+          "address_line_1": "Whittaker Avenue",
+          "country": "United Kingdom",
+          "locality": "Richmond-Upon-Thames",
+          "postal_code": "TW9 1EH",
+          "premises": "Whittaker House",
+          "region": "Surrey"
+        },
+        "appointed_on": "2023-03-20",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "Luxembourg",
+        "date_of_birth": {
+          "month": 8,
+          "year": 1968
+        },
+        "links": {
+          "self": "/company/14741686/appointments/8kJ0qW_qgURPydDtl8bJXhFoU8w",
+          "officer": {
+            "appointments": "/officers/D5lKSWIDktvMVmEpOXPFIchwI1Y/appointments"
+          }
+        },
+        "name": "BYRNE, Sean Anthony",
+        "nationality": "Irish",
+        "officer_role": "director",
+        "resigned_on": "2024-07-10",
+        "person_number": "306891290001"
+      }
+    ],
+    "items_per_page": 100,
+    "kind": "officer-list",
+    "links": {
+      "self": "/company/14741686/officers"
+    },
+    "resigned_count": 3,
+    "inactive_count": 0,
+    "start_index": 0,
+    "total_results": 8
+  }
+}

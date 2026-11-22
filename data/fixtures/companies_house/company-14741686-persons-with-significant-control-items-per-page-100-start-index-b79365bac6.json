@@ -1,0 +1,52 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/14741686/persons-with-significant-control?items_per_page=100&start_index=0",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-10T06:45:52.650280Z",
+  "synthetic": false,
+  "body": {
+    "items_per_page": 100,
+    "items": [
+      {
+        "etag": "b771011bb4df972b9866d07fd988aab8a476a87a",
+        "notified_on": "2023-03-20",
+        "name": "Paypal Holdings, Inc.",
+        "links": {
+          "self": "/company/14741686/persons-with-significant-control/corporate-entity/OT4hcpDlSt18KjaoUQNcKZFbJKQ",
+          "persons_with_significant_control": {
+            "notifications": "/persons-with-significant-control/sjRaphnuFh0k1PQSdLTTKMs6Rfg/notifications"
+          }
+        },
+        "identification": {
+          "legal_form": "Us Public Incorporated Company",
+          "legal_authority": "Delaware",
+          "country_registered": "United States",
+          "place_registered": "Delaware Department Of State Division Of Corporations",
+          "registration_number": "5684361"
+        },
+        "ceased": false,
+        "kind": "corporate-entity-person-with-significant-control",
+        "address": {
+          "address_line_1": "1209 Orange Street",
+          "country": "United States",
+          "locality": "Wilmington",
+          "postal_code": "19801",
+          "premises": "The Corporation Trust Company",
+          "region": "Delaware"
+        },
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ]
+      }
+    ],
+    "start_index": 0,
+    "total_results": 1,
+    "active_count": 1,
+    "ceased_count": 0,
+    "links": {
+      "self": "/company/14741686/persons-with-significant-control"
+    }
+  }
+}

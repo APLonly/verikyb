@@ -21,7 +21,7 @@ parameters:
 
 variables:
   # Keep these trusted settings under review; do not allow queue-time overrides.
-  ciDefinitionId: '2'
+  ciDefinitionId: '1'
   expectedSubscriptionId: '99ab2920-ca72-45a1-9f21-a21e36ba1e02'
   resourceGroup: verikyb-rg
   acrName: verikybacrps2026
