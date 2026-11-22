@@ -1,0 +1,4 @@
+"id","schema","name","aliases","birth_date","countries","addresses","identifiers","sanctions","phones","emails","program_ids","dataset","first_seen","last_seen","last_change"
+"NK-1","Company","Yatai Holding Co., LTD.","Yatai New City;Shwe Kokko","","mm","","","","","","US-GLOMAG","US OFAC","2023-01-01","2026-11-21","2025-01-01"
+"Q1","Person","Jane Minister","Jane A. Minister","1970-05-01;1970","gb;fr","","","","","","","Every Politician","2023-01-01","2026-11-21","2025-01-01"
+"V-1","Vessel","SHIP TWO","","","ir","","","","","","","US OFAC","2023-01-01","2026-11-21","2025-01-01"
