@@ -46,6 +46,7 @@ class ScreeningList(StrEnum):
     OPENSANCTIONS = "opensanctions"
     OFAC_SDN = "ofac_sdn"
     UN_CONSOLIDATED = "un_consolidated"
+    SYNTHETIC = "synthetic"
 
 
 class HitKind(StrEnum):

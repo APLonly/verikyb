@@ -1,0 +1,55 @@
+# Data sources and licensing
+
+VeriKYB draws on public registers, open data and published sanctions lists. This page lists every external source the project uses, how it is accessed, the rate limit the project observes and the licence or terms that govern its use.
+
+> **Last reviewed: 22 October 2026.** Providers change their terms from time to time. Review each
+> source's current terms before any public or commercial deployment. This page describes how the
+> project uses each source; it is not legal advice.
+
+## Principles
+
+- **Offline by default.** Tests and the demonstration replay recorded responses stored under
+  `data/fixtures/`. They never contact a live service.
+- **Within published limits.** In live mode, each client enforces the provider's published rate
+  limit, or a conservative limit of its own where none is published (`sources/http.py`).
+- **No credentials in the repository.** API keys are read from environment variables only.
+- **Real firms, factual data only.** Sanctions, politically exposed person (PEP) and
+  adverse-media scenarios use fictional companies and a fictional list, never real firms or
+  real people.
+
+## Registers and APIs
+
+| Source | Data used | Access | Rate limit (published → applied) | Licence and terms |
+| --- | --- | --- | --- | --- |
+| [Companies House API](https://developer.company-information.service.gov.uk/) | Company search and profile, officers, persons with significant control, filing history; iXBRL accounts through the Document API | Free API key, HTTP basic authentication | 600 requests per 5 minutes → 600 per 300 s | Crown copyright, reusable under the UK Government licensing framework. Keys must not be embedded in code or stored in the source tree. |
+| [FCA Financial Services Register API](https://register.fca.org.uk/Developer/s/) | Firm search, firm details, permissions and related firm records | Free API key, sent as the `X-Auth-Email` and `X-Auth-Key` headers | 50 requests per 10 s → 50 per 10 s | Intended for single-entity look-ups, not bulk retrieval. No separate reuse licence for register data has been identified, and the FCA's terms for its online systems restrict supplying its data to other websites without permission. Contact registerapisupport@fca.org.uk before deploying publicly. |
+| [GLEIF API](https://api.gleif.org/docs) | Legal Entity Identifier (LEI) records and reported direct and ultimate parents | No key required | None published → 60 per minute | [CC0 1.0](https://www.gleif.org/en/meta/lei-data-terms-of-use). Use must not imply endorsement by GLEIF. |
+| [SEC EDGAR](https://www.sec.gov/search-filings/edgar-search-assistance/accessing-edgar-data) | Company submissions and XBRL financial facts for US-listed parent companies | No key required; every request carries a `User-Agent` naming the requester and a contact email, set in `VERIKYB_SEC_USER_AGENT` | 10 requests per second → 10 per second | US government data, subject to the SEC's fair access policy. |
+| [GDELT DOC 2.0 API](https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/) | News article metadata: title, outlet and date (no article text) | No key required | None published; rapid requests are refused → 1 request per 6 s | [Unlimited and unrestricted use](https://www.gdeltproject.org/about.html) for academic, commercial and governmental purposes. Any use must cite the GDELT Project and link to gdeltproject.org. |
+| India company registry (MCA) | Indian company records for demonstration scenarios | Simulated (`sources/mock_india.py`) | Not applicable | No data from India's Ministry of Corporate Affairs is used. |
+
+## Sanctions and PEP lists
+
+`make data` downloads the published lists to `data/raw/` and converts each to a common entry
+format (`SanctionsEntry`, in `sources/sanctions.py`), written as JSON Lines to
+`data/processed/sanctions/`. Neither folder is committed: the files are large, and the
+OpenSanctions licence does not permit redistribution.
+
+| List | Files | Entries retained | Licence and terms |
+| --- | --- | --- | --- |
+| [OFAC SDN list](https://sanctionslistservice.ofac.treas.gov/) | `SDN.CSV`, with aliases from `ALT.CSV` | Individuals and entities; vessels and aircraft are excluded | US government work, in the public domain. |
+| [UN Security Council Consolidated List](https://main.un.org/securitycouncil/en/content/un-sc-consolidated-list) | `consolidated.xml` | Individuals and entities | Published by the United Nations for the implementation of sanctions measures; no separate licence is stated. |
+| [OpenSanctions](https://www.opensanctions.org/docs/bulk/) | `targets.simple.csv` from the `sanctions` and `peps` datasets | Persons, companies, organisations, legal entities and public bodies; entries from the `peps` dataset are flagged as PEPs | **CC BY-NC 4.0, non-commercial use only**, with attribution. OpenSanctions regards a business screening its clients or suppliers as commercial use, which requires a [commercial data licence](https://www.opensanctions.org/faq/29/pricing-tier/). |
+| Synthetic list | `data/fixtures/sanctions/synthetic.jsonl`, committed to the repository; no download required | Fictional entries used by the demonstration's screening scenarios | Created for this project. Every name in it is fictional. |
+
+## Attribution
+
+Where this project, or a deployment of it, displays data from these sources:
+
+- **GDELT:** cite the GDELT Project and link to [gdeltproject.org](https://www.gdeltproject.org/).
+- **OpenSanctions:** credit OpenSanctions as the source, under CC BY-NC 4.0.
+- **GLEIF:** state the source without implying GLEIF's endorsement.
+
+## Reporting a problem
+
+If you represent a data provider, or believe a source is used here in a way its terms do not allow, please open an issue in this repository or email us on (abhishek.tiwari.nitrr@gmail.com) and it will be addressed promptly.

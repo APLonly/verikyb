@@ -15,7 +15,7 @@
 # First-time setup order:  install make -> install uv -> make setup
 
 .DEFAULT_GOAL := help
-.PHONY: help setup test fix api web run record
+.PHONY: help setup test fix api web run record data
 
 ENV_FILE := $(if $(wildcard .env),--env-file .env)
 
@@ -47,3 +47,6 @@ run: ## Run the API and the UI together; Ctrl+C stops both
 
 record: ## Record the demo firms from the live APIs into data/fixtures (needs the API keys)
 	uv run $(ENV_FILE) python data/scripts/record.py
+
+data: ## Download the sanctions and PEP lists and turn them into one shape (network)
+	uv run python data/scripts/download.py
