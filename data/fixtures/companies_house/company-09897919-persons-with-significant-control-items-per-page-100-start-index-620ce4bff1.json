@@ -1,0 +1,124 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/09897919/persons-with-significant-control?items_per_page=100&start_index=0",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:36.573760Z",
+  "synthetic": false,
+  "body": {
+    "items_per_page": 100,
+    "items": [
+      {
+        "etag": "737965bd18b303a46ca27c92cafcd723359a6b6e",
+        "notified_on": "2016-04-06",
+        "ceased_on": "2021-01-27",
+        "country_of_residence": "Scotland",
+        "date_of_birth": {
+          "month": 12,
+          "year": 1971
+        },
+        "name": "Mr Myles Christian Stephenson",
+        "name_elements": {
+          "title": "Mr",
+          "surname": "Stephenson",
+          "forename": "Myles",
+          "middle_name": "Christian"
+        },
+        "links": {
+          "self": "/company/09897919/persons-with-significant-control/individual/8fsehMxteIVFivZvQ45ZRNN7oUY",
+          "persons_with_significant_control": {
+            "notifications": "/persons-with-significant-control/1VJe6QsnIN9K0y-t5xs7Qx1jFe8/notifications"
+          }
+        },
+        "nationality": "British",
+        "ceased": true,
+        "kind": "individual-person-with-significant-control",
+        "address": {
+          "address_line_1": "27 New Dover Road",
+          "country": "United Kingdom",
+          "locality": "Canterbury",
+          "postal_code": "CT1 3DN",
+          "premises": "Camburgh House",
+          "region": "Kent"
+        },
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ]
+      },
+      {
+        "etag": "41ec76e53fdf9ba56d29f37fc022a8d9402241b6",
+        "notified_on": "2016-04-06",
+        "ceased_on": "2021-01-27",
+        "country_of_residence": "United Kingdom",
+        "date_of_birth": {
+          "month": 5,
+          "year": 1954
+        },
+        "name": "Kevin Andrew Hayes",
+        "name_elements": {
+          "surname": "Hayes",
+          "forename": "Kevin",
+          "middle_name": "Andrew"
+        },
+        "links": {
+          "self": "/company/09897919/persons-with-significant-control/individual/y5MM-hl5gSb5MQpIV0xNeWskO-4",
+          "persons_with_significant_control": {
+            "notifications": "/persons-with-significant-control/Nq1g2Fs5JquQw8UOlbuiIKMJF9s/notifications"
+          }
+        },
+        "nationality": "British",
+        "ceased": true,
+        "kind": "individual-person-with-significant-control",
+        "address": {
+          "address_line_1": "27 New Dover Road",
+          "country": "United Kingdom",
+          "locality": "Canterbury",
+          "postal_code": "CT1 3DN",
+          "premises": "Camburgh House",
+          "region": "Kent"
+        },
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ]
+      },
+      {
+        "etag": "627109648c604c0420143e639815644457359007",
+        "notified_on": "2016-04-06",
+        "name": "Modulr Holdings Limited",
+        "links": {
+          "self": "/company/09897919/persons-with-significant-control/corporate-entity/xstYgMaMumruPQLy70CBm4JgWSA",
+          "persons_with_significant_control": {
+            "notifications": "/persons-with-significant-control/DeKIg3dxfdosYisd_exrPo2_IBk/notifications"
+          }
+        },
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "09895588"
+        },
+        "ceased": false,
+        "kind": "corporate-entity-person-with-significant-control",
+        "address": {
+          "address_line_1": "66 City Road",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC1Y 2AL",
+          "premises": "The Featherstone Building"
+        },
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ]
+      }
+    ],
+    "start_index": 0,
+    "total_results": 3,
+    "active_count": 1,
+    "ceased_count": 2,
+    "links": {
+      "self": "/company/09897919/persons-with-significant-control"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "url": "https://api.company-information.service.gov.uk/officers/4sKwRj1iyX7QpMZhGVdZ00hptDo/appointments?items_per_page=50",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:09:44.967903Z",
+  "synthetic": false,
+  "body": {
+    "active_count": 1,
+    "date_of_birth": {
+      "month": 10,
+      "year": 1991
+    },
+    "etag": "c4ca38b85fd2ccc9a74c8e40c2fe19420e540cb9",
+    "inactive_count": 0,
+    "is_corporate_officer": false,
+    "items": [
+      {
+        "address": {
+          "address_line_1": "Whitfield Street",
+          "locality": "London",
+          "postal_code": "W1T 4EZ",
+          "premises": "90"
+        },
+        "appointed_on": "2025-09-05",
+        "appointed_to": {
+          "company_name": "REMITLY U.K., LTD",
+          "company_number": "09896841",
+          "company_status": "active"
+        },
+        "name": "Joseph HALPIN",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/09896841"
+        },
+        "name_elements": {
+          "forename": "Joseph",
+          "title": "Mr",
+          "surname": "HALPIN"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-05-06"
+        }
+      }
+    ],
+    "items_per_page": 50,
+    "kind": "personal-appointment",
+    "links": {
+      "self": "/officers/4sKwRj1iyX7QpMZhGVdZ00hptDo/appointments"
+    },
+    "name": "Joseph HALPIN",
+    "resigned_count": 0,
+    "start_index": 0,
+    "total_results": 1
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "url": "https://register.fca.org.uk/services/V0.1/Firm/900573/Address",
+  "status": 200,
+  "content_type": "application/json;charset=UTF-8",
+  "recorded_at": "2026-11-25T07:10:49.562091Z",
+  "synthetic": false,
+  "body": {
+    "Status": "FSR-API-02-02-00",
+    "ResultInfo": {
+      "page": "1",
+      "per_page": "2",
+      "total_count": "2"
+    },
+    "Message": "Ok. Firm Address Found",
+    "Data": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/900573/Address?Type=PPOB",
+        "Website Address": "www.modulrfinance.com",
+        "Phone Number": "+443033130060",
+        "Country": "UNITED KINGDOM",
+        "Postcode": "EC1Y 2AL",
+        "County": "",
+        "Town": "London",
+        "Address Line 4": "",
+        "Address LIne 3": "",
+        "Address Line 2": "",
+        "Address Line 1": "66 City Road",
+        "Address Type": "Principal Place of Business"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/900573/Address?Type=Complaint",
+        "Website Address": "",
+        "Phone Number": "+443033130060",
+        "Country": "UNITED KINGDOM",
+        "Postcode": "W12 7RZ",
+        "County": "",
+        "Town": "London",
+        "Address Line 4": "",
+        "Address LIne 3": "58 Wood Lane",
+        "Address Line 2": "",
+        "Address Line 1": "Scale Space",
+        "Individual": "",
+        "Address Type": "Complaints Contact"
+      }
+    ]
+  }
+}

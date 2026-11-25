@@ -1,0 +1,59 @@
+{
+  "url": "https://api.company-information.service.gov.uk/officers/FuPxYt8b5mAZeiFGTrkzTrIPYcU/appointments?items_per_page=50",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:09:45.351440Z",
+  "synthetic": false,
+  "body": {
+    "active_count": 1,
+    "date_of_birth": {
+      "month": 6,
+      "year": 1985
+    },
+    "etag": "e9d4a6e23738d1866a0265249884f2ae8e77a795",
+    "inactive_count": 0,
+    "is_corporate_officer": false,
+    "items": [
+      {
+        "address": {
+          "address_line_1": "Whitfield Street",
+          "locality": "London",
+          "postal_code": "W1T 4EZ",
+          "premises": "90"
+        },
+        "appointed_on": "2024-04-12",
+        "appointed_to": {
+          "company_name": "REMITLY U.K., LTD",
+          "company_number": "09896841",
+          "company_status": "active"
+        },
+        "name": "Danielle TREHARNE",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/09896841"
+        },
+        "name_elements": {
+          "forename": "Danielle",
+          "title": "Ms",
+          "surname": "TREHARNE"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-05-06"
+        }
+      }
+    ],
+    "items_per_page": 50,
+    "kind": "personal-appointment",
+    "links": {
+      "self": "/officers/FuPxYt8b5mAZeiFGTrkzTrIPYcU/appointments"
+    },
+    "name": "Danielle TREHARNE",
+    "resigned_count": 0,
+    "start_index": 0,
+    "total_results": 1
+  }
+}

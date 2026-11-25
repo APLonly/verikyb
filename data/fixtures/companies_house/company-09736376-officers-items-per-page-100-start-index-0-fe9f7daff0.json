@@ -1,0 +1,652 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/09736376/officers?items_per_page=100&start_index=0",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:16.028541Z",
+  "synthetic": false,
+  "body": {
+    "active_count": 7,
+    "etag": "f04061363850cea99ebc005697d906ec38951242",
+    "items": [
+      {
+        "etag": "f04061363850cea99ebc005697d906ec38951242",
+        "address": {
+          "address_line_1": "20 Primrose Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC2A 2EW",
+          "premises": "Level 27, The Broadgate Tower"
+        },
+        "appointed_on": "2024-12-18",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "self": "/company/09736376/appointments/nOSzgHjMXPOEfoMTwZ0yOkWE6HI",
+          "officer": {
+            "appointments": "/officers/jOwjhpKEDrC-6PU0mAi8pRK4bNs/appointments"
+          }
+        },
+        "name": "WOODS, Sian",
+        "officer_role": "secretary",
+        "person_number": "330816900001"
+      },
+      {
+        "etag": "3b399b855221cdad077925e86f4846a3668a7cec",
+        "address": {
+          "address_line_1": "20 Primrose Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC2A 2EW",
+          "premises": "Level 27, The Broadgate Tower"
+        },
+        "appointed_on": "2020-02-28",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 9,
+          "year": 1956
+        },
+        "links": {
+          "self": "/company/09736376/appointments/Xrd4ETNurSL7VfqPJ_pGdScjnSA",
+          "officer": {
+            "appointments": "/officers/u5XGb6TKtrfTvcR930DxxEGUjx4/appointments"
+          }
+        },
+        "name": "DORAN, Catherine Martina",
+        "nationality": "Irish",
+        "officer_role": "director",
+        "person_number": "13894010001",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-09-20"
+        }
+      },
+      {
+        "etag": "a6fa274c7c846e1f4d08fb41ce7c7e7dafd5b3ef",
+        "address": {
+          "address_line_1": "20 Primrose Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC2A 2EW",
+          "premises": "Level 27, The Broadgate Tower"
+        },
+        "appointed_on": "2026-04-09",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United Kingdom",
+        "date_of_birth": {
+          "month": 6,
+          "year": 1983
+        },
+        "links": {
+          "self": "/company/09736376/appointments/CvNFY1SnHHORQ5u42QiRkcsfrB4",
+          "officer": {
+            "appointments": "/officers/96kHE9BkEeMX7z8BL5GFN1gCOKY/appointments"
+          }
+        },
+        "name": "EMERY, Samantha Jayne",
+        "nationality": "British",
+        "officer_role": "director",
+        "person_number": "239035400001",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-04-14"
+        }
+      },
+      {
+        "etag": "86cb44c056e29049fe332d461611271fbb795d10",
+        "address": {
+          "address_line_1": "20 Primrose Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC2A 2EW",
+          "premises": "Level 27, The Broadgate Tower"
+        },
+        "appointed_on": "2016-07-28",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United Kingdom",
+        "date_of_birth": {
+          "month": 3,
+          "year": 1960
+        },
+        "links": {
+          "self": "/company/09736376/appointments/M9WbiO8DVatxTZg3rLHmgAbom64",
+          "officer": {
+            "appointments": "/officers/AL1a69d-Nc8yH39oGN41yIFTpPA/appointments"
+          }
+        },
+        "name": "JEMMETT-PAGE, Shonaid Christina Ross",
+        "nationality": "British",
+        "officer_role": "director",
+        "person_number": "133875880001",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-09-20"
+        }
+      },
+      {
+        "etag": "620a257c193b4dd86f6f5279c68e96208c399609",
+        "address": {
+          "address_line_1": "20 Primrose Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC2A 2EW",
+          "premises": "Level 27, The Broadgate Tower"
+        },
+        "appointed_on": "2024-01-25",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 2,
+          "year": 1962
+        },
+        "links": {
+          "self": "/company/09736376/appointments/lZ0G4CLuAtERO5JP_yuWP522-oU",
+          "officer": {
+            "appointments": "/officers/bJgm1Z5FuOCojL12fEST9xc9mmQ/appointments"
+          }
+        },
+        "name": "NEDEN, Andrew Frederick John",
+        "nationality": "British",
+        "officer_role": "director",
+        "person_number": "53477800006",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-09-20"
+        }
+      },
+      {
+        "etag": "61b1820217395111c45e2f03e0dd9d702f547983",
+        "address": {
+          "address_line_1": "20 Primrose Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC2A 2EW",
+          "premises": "Level 27, The Broadgate Tower"
+        },
+        "appointed_on": "2024-09-25",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 10,
+          "year": 1980
+        },
+        "links": {
+          "self": "/company/09736376/appointments/bmVehm7P-jaSeHZzTazohDHvibU",
+          "officer": {
+            "appointments": "/officers/Bag5mnf6pa_-Sk0tMfV4YqqKAR8/appointments"
+          }
+        },
+        "name": "ROMANOVSKAYA, Valerie",
+        "nationality": "British",
+        "officer_role": "director",
+        "person_number": "327778070001",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-09-20"
+        }
+      },
+      {
+        "etag": "bbf05506ff76c85d47498b48c8e72ce2d5262d68",
+        "address": {
+          "address_line_1": "20 Primrose Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC2A 2EW",
+          "premises": "Level 27, The Broadgate Tower"
+        },
+        "appointed_on": "2024-09-25",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United Kingdom",
+        "date_of_birth": {
+          "month": 4,
+          "year": 1983
+        },
+        "links": {
+          "self": "/company/09736376/appointments/SlJiBwa9zhCzhJZiPh3Bkn0eLPw",
+          "officer": {
+            "appointments": "/officers/d9rt_VUcVtEJSv5MptrlMHx6ljc/appointments"
+          }
+        },
+        "name": "WALLACE, Emma Louise",
+        "nationality": "British",
+        "officer_role": "director",
+        "former_names": [
+          {
+            "surname": "EMMA HAGAN"
+          }
+        ],
+        "person_number": "327916680001",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-09-20"
+        }
+      },
+      {
+        "etag": "784430cef63e4e48efd6dc1ad460cabdb144dc8e",
+        "address": {
+          "address_line_1": "13 Dirty Lane",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "SE1 9PA",
+          "premises": "Borough Yards"
+        },
+        "appointed_on": "2016-06-29",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "self": "/company/09736376/appointments/-EDjC2bGsFarFCP02-8a1UXhmSg",
+          "officer": {
+            "appointments": "/officers/IDyFDzK51auRvb8468Ls1Atf2eE/appointments"
+          }
+        },
+        "name": "HOUSE, Philip Matthew",
+        "officer_role": "secretary",
+        "resigned_on": "2024-12-18",
+        "person_number": "209560820001"
+      },
+      {
+        "etag": "784430cef63e4e48efd6dc1ad460cabdb144dc8e",
+        "address": {
+          "address_line_1": "13 Dirty Lane",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "SE1 9PA",
+          "premises": "Borough Yards"
+        },
+        "appointed_on": "2016-04-19",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United Kingdom",
+        "date_of_birth": {
+          "month": 8,
+          "year": 1962
+        },
+        "links": {
+          "self": "/company/09736376/appointments/E8ncP0xIbNTps0d1purXpwNdVQQ",
+          "officer": {
+            "appointments": "/officers/QfdpSCEFSzhggVCiXZX_1xPw5oU/appointments"
+          }
+        },
+        "name": "CARVILL, Mel Gerard",
+        "nationality": "British,Irish",
+        "officer_role": "director",
+        "resigned_on": "2022-11-24",
+        "person_number": "197126640002"
+      },
+      {
+        "etag": "784430cef63e4e48efd6dc1ad460cabdb144dc8e",
+        "address": {
+          "address_line_1": "Dirty Lane",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "SE1 9PA",
+          "premises": "13"
+        },
+        "appointed_on": "2023-01-19",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 11,
+          "year": 1983
+        },
+        "links": {
+          "self": "/company/09736376/appointments/LXSfl9nDs-0Fz06K5X_gWMUh1zs",
+          "officer": {
+            "appointments": "/officers/8NLTYe5iERFpyj6tEQAkjRgRX3o/appointments"
+          }
+        },
+        "name": "FAIRLESS, Mark Alexander",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2024-09-25",
+        "person_number": "296290990001"
+      },
+      {
+        "etag": "784430cef63e4e48efd6dc1ad460cabdb144dc8e",
+        "address": {
+          "address_line_1": "Skinners Lane",
+          "address_line_2": "Wroxham",
+          "country": "England",
+          "locality": "Norwich",
+          "postal_code": "NR12 8SJ",
+          "premises": "Hill House"
+        },
+        "appointed_on": "2015-12-18",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 2,
+          "year": 1966
+        },
+        "links": {
+          "self": "/company/09736376/appointments/J18-BKNIrB0Y-fsGLxNOfzShfGY",
+          "officer": {
+            "appointments": "/officers/aowkWeqXgv-cWOiPApgpp5MKiMI/appointments"
+          }
+        },
+        "name": "FARRAR, James Charles Deane",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2016-11-28",
+        "person_number": "139355390001"
+      },
+      {
+        "etag": "784430cef63e4e48efd6dc1ad460cabdb144dc8e",
+        "address": {
+          "address_line_1": "13 Dirty Lane",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "SE1 9PA",
+          "premises": "Borough Yards"
+        },
+        "appointed_on": "2018-09-03",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 2,
+          "year": 1955
+        },
+        "links": {
+          "self": "/company/09736376/appointments/R2l_BfvzDzAsBmPWwgJtyKEeLrE",
+          "officer": {
+            "appointments": "/officers/UbWOAbSpjOhbMo-_S__QgGLVmyg/appointments"
+          }
+        },
+        "name": "GAGIE, David Ronald",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2023-10-31",
+        "person_number": "116900490004"
+      },
+      {
+        "etag": "784430cef63e4e48efd6dc1ad460cabdb144dc8e",
+        "address": {
+          "address_line_1": "25 Marsh Street",
+          "country": "England",
+          "locality": "Bristol",
+          "postal_code": "BS1 4AX",
+          "premises": "4th Floor, Prologue Works"
+        },
+        "appointed_on": "2020-06-08",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 4,
+          "year": 1976
+        },
+        "links": {
+          "self": "/company/09736376/appointments/gbT9WVlgHLBFr24PFzw_Dss0f5A",
+          "officer": {
+            "appointments": "/officers/osEZYIIRy6IEex5H15I8B8w9ssw/appointments"
+          }
+        },
+        "name": "HOPKINSON, James William Alistair, Mr.",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2022-06-30",
+        "person_number": "270611460001"
+      },
+      {
+        "etag": "784430cef63e4e48efd6dc1ad460cabdb144dc8e",
+        "address": {
+          "address_line_1": "Houndsditch",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC3A 7BX",
+          "premises": "133"
+        },
+        "appointed_on": "2017-01-26",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 12,
+          "year": 1965
+        },
+        "links": {
+          "self": "/company/09736376/appointments/0IBO_sPnnDo9jbx_pMxOxYsUEm4",
+          "officer": {
+            "appointments": "/officers/0iLbS8O_8_UnmZwVD25u_VNpf2w/appointments"
+          }
+        },
+        "name": "JENKINS, Marc",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2020-06-08",
+        "person_number": "199255940001"
+      },
+      {
+        "etag": "57d3daa962ee8e8315c2ccddf2bfdb21c320b661",
+        "address": {
+          "address_line_1": "20 Primrose Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC2A 2EW",
+          "premises": "Level 27, The Broadgate Tower"
+        },
+        "appointed_on": "2017-06-29",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 1,
+          "year": 1965
+        },
+        "links": {
+          "self": "/company/09736376/appointments/rAAnNhpHvnGNnVX9OCdReomgljU",
+          "officer": {
+            "appointments": "/officers/5O0FLya5nZ-pSkJVnwxUHOUiZUw/appointments"
+          }
+        },
+        "name": "KENWORTHY, Philip John",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2026-06-30",
+        "person_number": "234701830002",
+        "identity_verification_details": {
+          "appointment_verification_statement_due_on": "2026-09-08"
+        }
+      },
+      {
+        "etag": "784430cef63e4e48efd6dc1ad460cabdb144dc8e",
+        "address": {
+          "address_line_1": "13 Dirty Lane",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "SE1 9PA",
+          "premises": "Borough Yards"
+        },
+        "appointed_on": "2022-06-30",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 3,
+          "year": 1959
+        },
+        "links": {
+          "self": "/company/09736376/appointments/jJvCB2eCjBdi-BlTKA2JmsQoUOQ",
+          "officer": {
+            "appointments": "/officers/dExHbmJEP2C2-rj6TohF3fyjzwg/appointments"
+          }
+        },
+        "name": "LUCKEN, Glen",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2023-01-12",
+        "person_number": "231905820001"
+      },
+      {
+        "etag": "784430cef63e4e48efd6dc1ad460cabdb144dc8e",
+        "address": {
+          "address_line_1": "13 Dirty Lane",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "SE1 9PA",
+          "premises": "Borough Yards"
+        },
+        "appointed_on": "2015-12-18",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 11,
+          "year": 1961
+        },
+        "links": {
+          "self": "/company/09736376/appointments/zS29Iz6HroUGB1fJIVfKFkoWLvY",
+          "officer": {
+            "appointments": "/officers/yaa3G__SPXvebyVJDHPNtBri_Yw/appointments"
+          }
+        },
+        "name": "MCMANUS, Charles Ashley",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2024-09-25",
+        "person_number": "207683530001"
+      },
+      {
+        "etag": "784430cef63e4e48efd6dc1ad460cabdb144dc8e",
+        "address": {
+          "address_line_1": "25 Marsh Street",
+          "country": "England",
+          "locality": "Bristol",
+          "postal_code": "BS1 4AX",
+          "premises": "4th Floor, Prologue Works"
+        },
+        "appointed_on": "2015-08-17",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United Kingdom",
+        "date_of_birth": {
+          "month": 11,
+          "year": 1955
+        },
+        "links": {
+          "self": "/company/09736376/appointments/KE-N-uykbxwGm1-SVf5l-vb085Q",
+          "officer": {
+            "appointments": "/officers/EiasSs01TnhZPzfTD8-SPVutQws/appointments"
+          }
+        },
+        "name": "OGDEN, Jonathan Nicholas",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2021-08-02",
+        "person_number": "207683410001"
+      },
+      {
+        "etag": "784430cef63e4e48efd6dc1ad460cabdb144dc8e",
+        "address": {
+          "address_line_1": "25 Marsh Street",
+          "country": "England",
+          "locality": "Bristol",
+          "postal_code": "BS1 4AX",
+          "premises": "4th Floor, Prologue Works"
+        },
+        "appointed_on": "2016-04-19",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "Canada",
+        "date_of_birth": {
+          "month": 4,
+          "year": 1948
+        },
+        "links": {
+          "self": "/company/09736376/appointments/hUtK8rZk-R6a4jQFx_Y0xKQqtW0",
+          "officer": {
+            "appointments": "/officers/HhJjUq1vcDZGlUISKYyZexQ-mAg/appointments"
+          }
+        },
+        "name": "RISLEY, John Carter",
+        "nationality": "Canadian",
+        "officer_role": "director",
+        "resigned_on": "2021-04-29",
+        "person_number": "200195230001"
+      },
+      {
+        "etag": "784430cef63e4e48efd6dc1ad460cabdb144dc8e",
+        "address": {
+          "address_line_1": "Houndsditch",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC3A 7BX",
+          "premises": "133"
+        },
+        "appointed_on": "2016-07-28",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "Jersey",
+        "date_of_birth": {
+          "month": 10,
+          "year": 1961
+        },
+        "links": {
+          "self": "/company/09736376/appointments/_wskHymPOJNRSs9k2lCvq7i0I5s",
+          "officer": {
+            "appointments": "/officers/hqMxERJ8hnF2I22wbYf1417J2pI/appointments"
+          }
+        },
+        "name": "SMITH, Graeme",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2020-06-30",
+        "person_number": "213395100001"
+      },
+      {
+        "etag": "784430cef63e4e48efd6dc1ad460cabdb144dc8e",
+        "address": {
+          "address_line_1": "13 Dirty Lane",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "SE1 9PA",
+          "premises": "Borough Yards"
+        },
+        "appointed_on": "2016-04-19",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United States",
+        "date_of_birth": {
+          "month": 3,
+          "year": 1959
+        },
+        "links": {
+          "self": "/company/09736376/appointments/UeBVSgQx2WBxdI0ASLrVd6-lLIw",
+          "officer": {
+            "appointments": "/officers/CtlgcPQKAWERcQ44D0kNHKl62dA/appointments"
+          }
+        },
+        "name": "SPAVOLD, Stan William Leo",
+        "nationality": "Canadian",
+        "officer_role": "director",
+        "resigned_on": "2022-11-24",
+        "person_number": "207483770001"
+      },
+      {
+        "etag": "784430cef63e4e48efd6dc1ad460cabdb144dc8e",
+        "address": {
+          "address_line_1": "13 Dirty Lane",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "SE1 9PA",
+          "premises": "Borough Yards"
+        },
+        "appointed_on": "2021-04-29",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United Kingdom",
+        "date_of_birth": {
+          "month": 9,
+          "year": 1963
+        },
+        "links": {
+          "self": "/company/09736376/appointments/j4OtI1HxrHNiiotB6is5wSRcxag",
+          "officer": {
+            "appointments": "/officers/tTd5dqLTFWlE0nbSG3p1hCZmEWM/appointments"
+          }
+        },
+        "name": "TREACHER, Marcus John",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2022-11-24",
+        "person_number": "152259060001"
+      }
+    ],
+    "items_per_page": 100,
+    "kind": "officer-list",
+    "links": {
+      "self": "/company/09736376/officers"
+    },
+    "resigned_count": 15,
+    "inactive_count": 0,
+    "start_index": 0,
+    "total_results": 22
+  }
+}

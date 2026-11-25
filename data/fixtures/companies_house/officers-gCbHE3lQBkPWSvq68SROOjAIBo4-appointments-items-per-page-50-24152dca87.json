@@ -1,0 +1,65 @@
+{
+  "url": "https://api.company-information.service.gov.uk/officers/gCbHE3lQBkPWSvq68SROOjAIBo4/appointments?items_per_page=50",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:09:38.243805Z",
+  "synthetic": false,
+  "body": {
+    "active_count": 1,
+    "date_of_birth": {
+      "month": 10,
+      "year": 1982
+    },
+    "etag": "bd09564d6fbcd6ac95037902bb6ae224420e9e19",
+    "inactive_count": 0,
+    "is_corporate_officer": false,
+    "items": [
+      {
+        "address": {
+          "address_line_1": "Upper Ground,",
+          "locality": "London",
+          "postal_code": "SE1 9PZ",
+          "premises": "76"
+        },
+        "appointed_on": "2024-07-08",
+        "appointed_to": {
+          "company_name": "PAYPAL UK LTD",
+          "company_number": "14741686",
+          "company_status": "active"
+        },
+        "name": "Kate Rochford CINO",
+        "country_of_residence": "United States",
+        "former_names": [
+          {
+            "surname": "KATE SALOTTOLO"
+          }
+        ],
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/14741686"
+        },
+        "name_elements": {
+          "forename": "Kate",
+          "title": "Ms",
+          "other_forenames": "Rochford",
+          "surname": "CINO"
+        },
+        "nationality": "American",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-03-24"
+        }
+      }
+    ],
+    "items_per_page": 50,
+    "kind": "personal-appointment",
+    "links": {
+      "self": "/officers/gCbHE3lQBkPWSvq68SROOjAIBo4/appointments"
+    },
+    "name": "Kate Rochford CINO",
+    "resigned_count": 0,
+    "start_index": 0,
+    "total_results": 1
+  }
+}

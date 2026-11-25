@@ -1,0 +1,13 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/09897919/insolvency",
+  "status": 404,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:36.945515Z",
+  "synthetic": false,
+  "body": {
+    "timestamp": "2026-11-25T07:10:35.908Z",
+    "status": 404,
+    "error": "Not Found",
+    "path": "/company/09897919/insolvency"
+  }
+}

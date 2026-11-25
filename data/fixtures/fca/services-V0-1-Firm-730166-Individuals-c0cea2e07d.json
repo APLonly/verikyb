@@ -1,0 +1,139 @@
+{
+  "url": "https://register.fca.org.uk/services/V0.1/Firm/730166/Individuals",
+  "status": 200,
+  "content_type": "application/json;charset=UTF-8",
+  "recorded_at": "2026-11-25T07:09:59.917463Z",
+  "synthetic": false,
+  "body": {
+    "Status": "FSR-API-02-05-00",
+    "ResultInfo": {
+      "Next": "https://register.fca.org.uk/services/V0.1/Firm/730166/Individuals?pgnp=2",
+      "page": "1",
+      "per_page": "20",
+      "total_count": "138"
+    },
+    "Message": "Ok. Firm Individuals found",
+    "Data": [
+      {
+        "Status": "Approved by regulator",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/BXS14109",
+        "IRN": "BXS14109",
+        "Name": "Bernadette Smith"
+      },
+      {
+        "Status": "Approved by regulator",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DXF71007",
+        "IRN": "DXF71007",
+        "Name": "Declan Ferguson"
+      },
+      {
+        "Status": "Approved by regulator",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CML01124",
+        "IRN": "CML01124",
+        "Name": "Christina Marie Lewis"
+      },
+      {
+        "Status": "Approved by regulator",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/HXR00187",
+        "IRN": "HXR00187",
+        "Name": "Harriet Rees"
+      },
+      {
+        "Status": "Approved by regulator",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/RXB09022",
+        "IRN": "RXB09022",
+        "Name": "Raman Bhatia"
+      },
+      {
+        "Status": "Approved by regulator",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DSD01037",
+        "IRN": "DSD01037",
+        "Name": "Darren Scott Pope"
+      },
+      {
+        "Status": "Approved by regulator",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/IXC01129",
+        "IRN": "IXC01129",
+        "Name": "Ian Barry Cox"
+      },
+      {
+        "Status": "Approved by regulator",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXG31560",
+        "IRN": "JXG31560",
+        "Name": "Joseph Gordon"
+      },
+      {
+        "Status": "Approved by regulator",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CXA00253",
+        "IRN": "CXA00253",
+        "Name": "Catarina Abrantes"
+      },
+      {
+        "Status": "Approved by regulator",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/KXA00157",
+        "IRN": "KXA00157",
+        "Name": "Keith Algie"
+      },
+      {
+        "Status": "Approved by regulator",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CWB01085",
+        "IRN": "CWB01085",
+        "Name": "Colin William Bell"
+      },
+      {
+        "Status": "Approved by regulator",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JKH01063",
+        "IRN": "JKH01063",
+        "Name": "Jessie Kathleen Harrington Broome"
+      },
+      {
+        "Status": "Approved by regulator;Certified / assessed by firm",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXC01414",
+        "IRN": "JXC01414",
+        "Name": "Julie Chakraverty"
+      },
+      {
+        "Status": "Certified / assessed by firm",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/WXM00194",
+        "IRN": "WXM00194",
+        "Name": "William Edward Patrick McSheehy"
+      },
+      {
+        "Status": "Certified / assessed by firm",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CXR35087",
+        "IRN": "CXR35087",
+        "Name": "Carol Ann Roberts"
+      },
+      {
+        "Status": "Certified / assessed by firm",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/FXO00062",
+        "IRN": "FXO00062",
+        "Name": "Felim O'Donnell"
+      },
+      {
+        "Status": "Certified / assessed by firm",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AXH03369",
+        "IRN": "AXH03369",
+        "Name": "Alexander William Heathcote"
+      },
+      {
+        "Status": "Certified / assessed by firm",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CXM02464",
+        "IRN": "CXM02464",
+        "Name": "Carl George Membery"
+      },
+      {
+        "Status": "Certified / assessed by firm",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DXH00214",
+        "IRN": "DXH00214",
+        "Name": "Damian Leigh Harland"
+      },
+      {
+        "Status": "Certified / assessed by firm",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/HXK00285",
+        "IRN": "HXK00285",
+        "Name": "Harjinder Kooner"
+      }
+    ]
+  }
+}

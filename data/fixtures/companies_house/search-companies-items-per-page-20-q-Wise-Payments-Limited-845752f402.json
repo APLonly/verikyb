@@ -1,0 +1,569 @@
+{
+  "url": "https://api.company-information.service.gov.uk/search/companies?q=Wise+Payments+Limited&items_per_page=20",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:06.216112Z",
+  "synthetic": false,
+  "body": {
+    "items": [
+      {
+        "address": {
+          "address_line_1": "Floor Worship Square",
+          "address_line_2": "65 Clifton Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC2A 4JE",
+          "premises": "1st"
+        },
+        "address_snippet": "1st Floor Worship Square, 65 Clifton Street, London, England, EC2A 4JE",
+        "company_number": "07209813",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2010-03-31",
+        "description": "07209813 - Incorporated on 31 March 2010",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/07209813"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "WISE PAYMENTS LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "Floor The Tea Building",
+          "address_line_2": "56 Shoreditch High Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "E1 6JJ",
+          "premises": "6th"
+        },
+        "address_snippet": "6th Floor The Tea Building, 56 Shoreditch High Street, London, England, E1 6JJ",
+        "company_number": "13211683",
+        "company_status": "dissolved",
+        "company_type": "ltd",
+        "date_of_cessation": "2022-07-12",
+        "date_of_creation": "2021-02-18",
+        "description": "13211683 - Dissolved on 12 July 2022",
+        "description_identifier": [
+          "dissolved-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/13211683"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "WISE PAYMENTS",
+        "title": "PARROT 2 LTD"
+      },
+      {
+        "address": {
+          "address_line_1": "Floor Suite",
+          "address_line_2": "207 Regent Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "W1B 3HH",
+          "premises": "3rd"
+        },
+        "address_snippet": "3rd Floor Suite, 207 Regent Street, London, England, W1B 3HH",
+        "company_number": "15790489",
+        "company_status": "dissolved",
+        "company_type": "ltd",
+        "date_of_cessation": "2025-11-25",
+        "date_of_creation": "2024-06-20",
+        "description": "15790489 - Dissolved on 25 November 2025",
+        "description_identifier": [
+          "dissolved-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/15790489"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "WISE GUYS PAYMENTS LIMITED",
+        "title": "THE WISE GUYS COACHING LTD"
+      },
+      {
+        "address": {
+          "address_line_1": "Shelton Street",
+          "address_line_2": "Covent Garden",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "WC2H 9JQ",
+          "premises": "71-75"
+        },
+        "address_snippet": "71-75 Shelton Street, Covent Garden, London, United Kingdom, WC2H 9JQ",
+        "company_number": "10058050",
+        "company_status": "dissolved",
+        "company_type": "ltd",
+        "date_of_cessation": "2017-10-03",
+        "date_of_creation": "2016-03-11",
+        "description": "10058050 - Dissolved on 3 October 2017",
+        "description_identifier": [
+          "dissolved-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/10058050"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "WISE PAYMENT SOLUTIONS LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "Langton Place",
+          "country": "United Kingdom",
+          "locality": "Bury St. Edmunds",
+          "postal_code": "IP33 1NE",
+          "premises": "16-18"
+        },
+        "address_snippet": "16-18 Langton Place, Bury St. Edmunds, United Kingdom, IP33 1NE",
+        "company_number": "17282361",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2026-06-18",
+        "description": "17282361 - Incorporated on 18 June 2026",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/17282361"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "A&CO PAYMENTS LTD"
+      },
+      {
+        "address": {
+          "address_line_1": "Wenlock Road",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "N1 7GU",
+          "premises": "20-22"
+        },
+        "address_snippet": "20-22 Wenlock Road, London, England, N1 7GU",
+        "company_number": "08589686",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2013-06-28",
+        "description": "08589686 - Incorporated on 28 June 2013",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/08589686"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "ABACI PAYMENTS LTD"
+      },
+      {
+        "address": {
+          "address_line_1": "Perry Common Road",
+          "country": "England",
+          "locality": "Birmingham",
+          "postal_code": "B23 7AB",
+          "premises": "3b",
+          "region": "Westmidland"
+        },
+        "address_snippet": "3b Perry Common Road, Birmingham, Westmidland, England, B23 7AB",
+        "company_number": "15202630",
+        "company_status": "dissolved",
+        "company_type": "ltd",
+        "date_of_cessation": "2026-03-17",
+        "date_of_creation": "2023-10-10",
+        "description": "15202630 - Dissolved on 17 March 2026",
+        "description_identifier": [
+          "dissolved-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/15202630"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "AB PAYMENTS LTD"
+      },
+      {
+        "address": {
+          "address_line_1": "Floor, The Cavendish Building",
+          "address_line_2": "Agard Street",
+          "country": "England",
+          "locality": "Derby",
+          "postal_code": "DE1 1DZ",
+          "premises": "6th"
+        },
+        "address_snippet": "6th Floor, The Cavendish Building, Agard Street, Derby, England, DE1 1DZ",
+        "company_number": "11440485",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2018-06-29",
+        "description": "11440485 - Incorporated on 29 June 2018",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/11440485"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "ABSOLUTE PAYMENTS LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "72 Chase Side",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "N14 5PH",
+          "premises": "Suite 2"
+        },
+        "address_snippet": "Suite 2 72 Chase Side, London, England, N14 5PH",
+        "company_number": "14148235",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2022-06-03",
+        "description": "14148235 - Incorporated on 3 June 2022",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/14148235"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "ACADEMY PAYMENTS LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "Waterloo Road",
+          "country": "Ireland",
+          "locality": "Dublin 4",
+          "premises": "Waterloo Exchange",
+          "region": "Do4 E5w7"
+        },
+        "address_snippet": "Waterloo Exchange, Waterloo Road, Dublin 4, Do4 E5w7, Ireland",
+        "company_number": "FC037279",
+        "company_status": "active",
+        "company_type": "oversea-company",
+        "date_of_creation": "2020-05-05",
+        "description": "FC037279 - First UK establishment opened on 5 May 2020",
+        "description_identifier": [
+          "first-uk-establishment-opened-on"
+        ],
+        "external_registration_number": "596119",
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/FC037279"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "ACCELERATED PAYMENTS LIMITED"
+      },
+      {
+        "address": {
+          "locality": "Milton Keynes",
+          "postal_code": "MK11 1BN",
+          "premises": "The Stable Yard Vicarage Road",
+          "region": "Stony Stratford"
+        },
+        "address_snippet": "The Stable Yard Vicarage Road, Milton Keynes, Stony Stratford, MK11 1BN",
+        "company_number": "BR022369",
+        "company_status": "open",
+        "company_type": "uk-establishment",
+        "date_of_creation": "2020-05-05",
+        "description": "BR022369 - Opened on 5 May 2020",
+        "description_identifier": [
+          "opened-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/BR022369"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "ACCELERATED PAYMENTS LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "Stony Stratford",
+          "country": "England",
+          "locality": "Milton Keynes",
+          "postal_code": "MK11 1BN",
+          "premises": "The Stable Yard Vicarage Road",
+          "region": "Buckinghamshire"
+        },
+        "address_snippet": "The Stable Yard Vicarage Road, Stony Stratford, Milton Keynes, Buckinghamshire, England, MK11 1BN",
+        "company_number": "11923529",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2019-04-03",
+        "description": "11923529 - Incorporated on 3 April 2019",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/11923529"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "ACCELERATED PAYMENTS UK LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "Whaley Bridge",
+          "country": "England",
+          "locality": "High Peak",
+          "postal_code": "SK23 7HR",
+          "premises": "Venus Accounting Old Road"
+        },
+        "address_snippet": "Venus Accounting Old Road, Whaley Bridge, High Peak, England, SK23 7HR",
+        "company_number": "13127227",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2021-01-12",
+        "description": "13127227 - Incorporated on 12 January 2021",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/13127227"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "ACE CARD PAYMENTS LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "Allied Business Centre",
+          "address_line_2": "Coldharbour Lane",
+          "country": "England",
+          "locality": "Harpenden",
+          "postal_code": "AL5 4UT",
+          "premises": "1"
+        },
+        "address_snippet": "1 Allied Business Centre, Coldharbour Lane, Harpenden, England, AL5 4UT",
+        "company_number": "17075760",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2026-03-06",
+        "description": "17075760 - Incorporated on 6 March 2026",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/17075760"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "ACG PAYMENTS LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "More London Riverside",
+          "locality": "London",
+          "postal_code": "SE1 2JT",
+          "premises": "2"
+        },
+        "address_snippet": "2 More London Riverside, London, SE1 2JT",
+        "company_number": "LP019943",
+        "company_status": "active",
+        "company_type": "limited-partnership",
+        "date_of_creation": "2018-12-20",
+        "description": "LP019943 - Registered on 20 December 2018",
+        "description_identifier": [
+          "registered-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/LP019943"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "ACTIS EGYPT PAYMENTS LP"
+      },
+      {
+        "address": {
+          "address_line_1": "Lothian Road",
+          "address_line_2": "Festival Square",
+          "locality": "Edinburgh",
+          "postal_code": "EH3 9WJ",
+          "premises": "50"
+        },
+        "address_snippet": "50 Lothian Road, Festival Square, Edinburgh, EH3 9WJ",
+        "company_number": "SL033848",
+        "company_status": "active",
+        "company_type": "limited-partnership",
+        "date_of_creation": "2019-06-26",
+        "description": "SL033848 - Registered on 26 June 2019",
+        "description_identifier": [
+          "registered-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/SL033848"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "ACTIS EGYPT PAYMENTS CIP LP"
+      },
+      {
+        "address": {
+          "address_line_1": "37 North Wharf Road",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W2 1AF",
+          "premises": "The Point"
+        },
+        "address_snippet": "The Point, 37 North Wharf Road, London, United Kingdom, W2 1AF",
+        "company_number": "11958940",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2019-04-23",
+        "description": "11958940 - Incorporated on 23 April 2019",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/11958940"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "ADDISON LEE PAYMENTS LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "Rickmansworth Road",
+          "country": "England",
+          "locality": "Northwood",
+          "postal_code": "HA6 1HA",
+          "premises": "28"
+        },
+        "address_snippet": "28 Rickmansworth Road, Northwood, England, HA6 1HA",
+        "company_number": "10536454",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2016-12-22",
+        "description": "10536454 - Incorporated on 22 December 2016",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/10536454"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "ADEPT PAYMENTS LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "121 Elborough Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "SW18 5DS",
+          "premises": "Flat B"
+        },
+        "address_snippet": "Flat B, 121 Elborough Street, London, England, SW18 5DS",
+        "company_number": "16481841",
+        "company_status": "dissolved",
+        "company_type": "ltd",
+        "date_of_cessation": "2026-01-06",
+        "date_of_creation": "2025-05-29",
+        "description": "16481841 - Dissolved on 6 January 2026",
+        "description_identifier": [
+          "dissolved-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/16481841"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "ADS PAYMENTS ADVISORY LTD"
+      },
+      {
+        "address": {
+          "address_line_1": "- COMPANIES HOUSE DEFAULT ADDRESS",
+          "locality": "Cardiff",
+          "po_box": "4385",
+          "postal_code": "CF14 8LH",
+          "premises": "16392700"
+        },
+        "address_snippet": "4385, 16392700 - COMPANIES HOUSE DEFAULT ADDRESS, Cardiff, CF14 8LH",
+        "company_number": "16392700",
+        "company_status": "dissolved",
+        "company_type": "ltd",
+        "date_of_cessation": "2026-03-10",
+        "date_of_creation": "2025-04-16",
+        "description": "16392700 - Dissolved on 10 March 2026",
+        "description_identifier": [
+          "dissolved-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/16392700"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "A.E PAYMENTS LIMITED"
+      }
+    ],
+    "items_per_page": 20,
+    "kind": "search#companies",
+    "page_number": 1,
+    "start_index": 0,
+    "total_results": 7842
+  }
+}

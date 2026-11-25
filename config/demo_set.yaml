@@ -1,5 +1,26 @@
 real_firms:
   - name: PayPal UK Ltd
     company_number: "14741686"
+    lei: 5493000JZXMYSD1G6W13
+    us_parent_cik: "1633917" # PayPal Holdings, Inc. (NASDAQ: PYPL)
+
   - name: Remitly U.K., Ltd
     company_number: "09896841"
+    lei: 549300ZFMWSXLGV3QC86
+    us_parent_cik: "1782170" # Remitly Global, Inc. (NASDAQ: RELY)
+
+  - name: Starling Bank Limited
+    company_number: "09092149"
+    lei: 213800AE5VSF3V1PAV23
+
+  - name: Wise Payments Limited
+    company_number: "07209813"
+    lei: 213800U4GNTXRFYZKG18
+
+  - name: ClearBank Limited
+    company_number: "09736376"
+    lei: 213800PERENGATFCHD95
+
+  - name: Modulr FS Limited
+    company_number: "09897919"
+    lei: 984500BFFA6CBFA57C93

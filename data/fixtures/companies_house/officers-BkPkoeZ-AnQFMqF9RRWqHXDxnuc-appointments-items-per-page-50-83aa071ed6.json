@@ -1,0 +1,1624 @@
+{
+  "url": "https://api.company-information.service.gov.uk/officers/BkPkoeZ_AnQFMqF9RRWqHXDxnuc/appointments?items_per_page=50",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:39.596805Z",
+  "synthetic": false,
+  "body": {
+    "active_count": 14,
+    "date_of_birth": {
+      "month": 11,
+      "year": 1968
+    },
+    "etag": "769d5d3ac996b9824a7378d7556b3f168ed4824c",
+    "inactive_count": 9,
+    "is_corporate_officer": false,
+    "items": [
+      {
+        "address": {
+          "address_line_1": "Edcity Walk",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W12 7TF",
+          "premises": "1 Edcity"
+        },
+        "appointed_on": "2025-07-14",
+        "appointed_to": {
+          "company_name": "EDCITY MANAGEMENT COMPANY LIMITED",
+          "company_number": "11528726",
+          "company_status": "active"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/11528726"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-08-24"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "27 New Dover Road",
+          "country": "United Kingdom",
+          "locality": "Canterbury",
+          "postal_code": "CT1 3DN",
+          "premises": "Camburgh House",
+          "region": "Kent"
+        },
+        "appointed_on": "2022-01-10",
+        "appointed_to": {
+          "company_name": "ORYX AVIATION LTD",
+          "company_number": "13837304",
+          "company_status": "active"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/13837304"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-01-23"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "Imperial College, White City Campus",
+          "address_line_2": "58 Wood Lane",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W12 7RZ",
+          "premises": "Scale Space"
+        },
+        "appointed_on": "2021-07-30",
+        "appointed_to": {
+          "company_name": "ARCH GRADUATES LIMITED",
+          "company_number": "10273864",
+          "company_status": "dissolved"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/10273864"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director"
+      },
+      {
+        "address": {
+          "address_line_1": "66 City Road",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC1Y 2AL",
+          "premises": "The Featherstone Building"
+        },
+        "appointed_on": "2021-01-27",
+        "appointed_to": {
+          "company_name": "MODULR LTD",
+          "company_number": "10027371",
+          "company_status": "active"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/10027371"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2025-12-15"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "66 City Road",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC1Y 2AL",
+          "premises": "The Featherstone Building"
+        },
+        "appointed_on": "2021-01-27",
+        "appointed_to": {
+          "company_name": "MODULR TECHNOLOGY LIMITED",
+          "company_number": "09897906",
+          "company_status": "active"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/09897906"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2025-12-15"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "66 City Road",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC1Y 2AL",
+          "premises": "The Featherstone Building"
+        },
+        "appointed_on": "2021-01-27",
+        "appointed_to": {
+          "company_name": "MODULR NOMINEE LIMITED",
+          "company_number": "09897934",
+          "company_status": "active"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/09897934"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2025-12-15"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "66 City Road",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC1Y 2AL",
+          "premises": "The Featherstone Building"
+        },
+        "appointed_on": "2021-01-27",
+        "appointed_to": {
+          "company_name": "MODULR FINANCE LIMITED",
+          "company_number": "09897957",
+          "company_status": "active"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/09897957"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2025-12-15"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "Farringdon Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC4A 4AB",
+          "premises": "20",
+          "region": "England"
+        },
+        "appointed_on": "2020-11-06",
+        "appointed_to": {
+          "company_name": "NOVA WEALTH HOLDINGS LTD",
+          "company_number": "10738861",
+          "company_status": "active"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/10738861"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-06-25"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "Wenlock Road",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "N1 7GU",
+          "premises": "20-22"
+        },
+        "appointed_on": "2019-12-09",
+        "appointed_to": {
+          "company_name": "URBAN JUNGLE SERVICES LTD",
+          "company_number": "10414152",
+          "company_status": "active"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/10414152"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-10-13"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "27 New Dover Road",
+          "care_of": "Oryx Advisors Llp",
+          "country": "England",
+          "locality": "Canterbury",
+          "postal_code": "CT1 3DN",
+          "premises": "Camburgh House",
+          "region": "Kent"
+        },
+        "appointed_on": "2019-10-08",
+        "appointed_to": {
+          "company_name": "HAMMERSMITH & FULHAM YOUTH ZONE",
+          "company_number": "10381611",
+          "company_status": "active"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/10381611"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-09-16"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "New Dover Road",
+          "care_of": "Onyx Advisors Llp",
+          "country": "England",
+          "locality": "Canterbury",
+          "postal_code": "CT1 3DN",
+          "premises": "Camburgh House"
+        },
+        "appointed_on": "2018-12-01",
+        "appointed_to": {
+          "company_name": "CATHEDRAL LODGE LIMITED",
+          "company_number": "11455503",
+          "company_status": "active"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/11455503"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-07-11"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "66 City Road",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC1Y 2AL",
+          "premises": "The Featherstone Building"
+        },
+        "appointed_on": "2018-10-07",
+        "appointed_to": {
+          "company_name": "MODULR HOLDINGS LIMITED",
+          "company_number": "09895588",
+          "company_status": "active"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/09895588"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2025-12-01"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "27 New Dover Road",
+          "country": "United Kingdom",
+          "locality": "Canterbury",
+          "postal_code": "CT1 3DN",
+          "premises": "Camburgh House",
+          "region": "Kent"
+        },
+        "appointed_on": "2017-11-28",
+        "appointed_to": {
+          "company_name": "ORYX ADVISORS LLP",
+          "company_number": "OC420077",
+          "company_status": "active"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/OC420077"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "officer_role": "llp-designated-member",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2025-12-01"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "27 New Dover Road",
+          "country": "United Kingdom",
+          "locality": "Canterbury",
+          "postal_code": "CT1 3DN",
+          "premises": "Camburgh House",
+          "region": "Kent"
+        },
+        "appointed_on": "2017-11-24",
+        "appointed_to": {
+          "company_name": "ORYX ADVISORY MEMBER LTD",
+          "company_number": "11082314",
+          "company_status": "active"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/11082314"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2025-11-28"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "66 City Road",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC1Y 2AL",
+          "premises": "The Featherstone Building"
+        },
+        "appointed_on": "2017-11-01",
+        "appointed_to": {
+          "company_name": "MODULR FS LIMITED",
+          "company_number": "09897919",
+          "company_status": "active"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/09897919"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2025-12-15"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "Western Road",
+          "care_of": "Jacqueline Gregory, Company Secretary",
+          "country": "England",
+          "locality": "Bracknell",
+          "postal_code": "RG12 1TL",
+          "premises": "Towry House",
+          "region": "Berkshire"
+        },
+        "appointed_on": "2015-05-07",
+        "appointed_to": {
+          "company_name": "UKWM CORPORATE SOLUTIONS LIMITED",
+          "company_number": "07531152",
+          "company_status": "dissolved"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/07531152"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director"
+      },
+      {
+        "address": {
+          "address_line_1": "Western Road",
+          "care_of": "Jacqueline Gregory, Company Secretary",
+          "country": "England",
+          "locality": "Bracknell",
+          "postal_code": "RG12 1TL",
+          "premises": "Towry House",
+          "region": "Berkshire"
+        },
+        "appointed_on": "2015-05-07",
+        "appointed_to": {
+          "company_name": "UKWM FINANCIAL PLANNING LIMITED",
+          "company_number": "07531512",
+          "company_status": "dissolved"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/07531512"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director"
+      },
+      {
+        "address": {
+          "address_line_1": "Western Road",
+          "care_of": "Jacqueline Gregory, Company Secretary",
+          "country": "England",
+          "locality": "Bracknell",
+          "postal_code": "RG12 1TL",
+          "premises": "Towry House",
+          "region": "Berkshire"
+        },
+        "appointed_on": "2015-05-07",
+        "appointed_to": {
+          "company_name": "UKWM BUSINESS SOLUTIONS LIMITED",
+          "company_number": "04731792",
+          "company_status": "dissolved"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/04731792"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director"
+      },
+      {
+        "address": {
+          "address_line_1": "Western Road",
+          "care_of": "Jacqueline Gregory, Company Secretary",
+          "country": "England",
+          "locality": "Bracknell",
+          "postal_code": "RG12 1TL",
+          "premises": "Towry House",
+          "region": "Berkshire"
+        },
+        "appointed_on": "2015-05-07",
+        "appointed_to": {
+          "company_name": "UKWM LIMITED",
+          "company_number": "07531101",
+          "company_status": "dissolved"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/07531101"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director"
+      },
+      {
+        "address": {
+          "address_line_1": "Western Road",
+          "care_of": "C/O Jacqueline Gregory, Company Secretary",
+          "country": "England",
+          "locality": "Bracknell",
+          "postal_code": "RG12 1TL",
+          "premises": "Towry House",
+          "region": "Berkshire"
+        },
+        "appointed_on": "2015-05-07",
+        "appointed_to": {
+          "company_name": "ST. PAULS NOMINEES LIMITED",
+          "company_number": "03428751",
+          "company_status": "dissolved"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/03428751"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director"
+      },
+      {
+        "address": {
+          "address_line_1": "Western Road",
+          "care_of": "Jacqueline Gregory, Company Secretary",
+          "country": "England",
+          "locality": "Bracknell",
+          "postal_code": "RG12 1TL",
+          "premises": "Towry House",
+          "region": "Berkshire"
+        },
+        "appointed_on": "2015-05-07",
+        "appointed_to": {
+          "company_name": "YORKSHIRESTAKEHOLDER LIMITED",
+          "company_number": "04101291",
+          "company_status": "dissolved"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/04101291"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director"
+      },
+      {
+        "address": {
+          "address_line_1": "Western Road",
+          "care_of": "Jacqueline Gregory, Company Secretary",
+          "country": "England",
+          "locality": "Bracknell",
+          "postal_code": "RG12 1TL",
+          "premises": "Towry House",
+          "region": "Berkshire"
+        },
+        "appointed_on": "2015-05-07",
+        "appointed_to": {
+          "company_name": "YORKSHIREMONEY LIMITED",
+          "company_number": "04101287",
+          "company_status": "dissolved"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/04101287"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director"
+      },
+      {
+        "address": {
+          "address_line_1": "Western Road",
+          "care_of": "Jacqueline Gregory, Company Secretary",
+          "country": "England",
+          "locality": "Bracknell",
+          "postal_code": "RG12 1TL",
+          "premises": "Towry House",
+          "region": "Berkshire"
+        },
+        "appointed_on": "2015-05-07",
+        "appointed_to": {
+          "company_name": "UKWM GROUP LIMITED",
+          "company_number": "07531507",
+          "company_status": "dissolved"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/07531507"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director"
+      },
+      {
+        "address": {
+          "address_line_1": "Holborn",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC1N 2HT",
+          "premises": "6th Floor, 33"
+        },
+        "appointed_on": "2013-09-18",
+        "appointed_to": {
+          "company_name": "OCTOPUS INVESTMENTS LIMITED",
+          "company_number": "03942880",
+          "company_status": "active"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/03942880"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2023-07-21"
+      },
+      {
+        "address": {
+          "address_line_1": "1-6 Tavistock Square",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "WC1H 9NA",
+          "premises": "Tavis House"
+        },
+        "appointed_on": "2017-01-26",
+        "appointed_to": {
+          "company_name": "HELPAGE INTERNATIONAL UK",
+          "company_number": "07897113",
+          "company_status": "active"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/07897113"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2023-02-23"
+      },
+      {
+        "address": {
+          "address_line_1": "Holborn",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC1N 2HT",
+          "premises": "6th Floor, 33"
+        },
+        "appointed_on": "2013-09-18",
+        "appointed_to": {
+          "company_name": "OCTOPUS CAPITAL LIMITED",
+          "company_number": "03981143",
+          "company_status": "active"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/03981143"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2022-08-26"
+      },
+      {
+        "address": {
+          "address_line_1": "White City Campus",
+          "address_line_2": "58 Wood Lane",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W12 7RZ",
+          "premises": "Scale Space, Imperial College"
+        },
+        "appointed_on": "2021-07-30",
+        "appointed_to": {
+          "company_name": "QUAYSHELFCO 1218 LIMITED",
+          "company_number": "06434856",
+          "company_status": "active"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/06434856"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2022-03-31"
+      },
+      {
+        "address": {
+          "address_line_1": "White City Campus",
+          "address_line_2": "58 Wood Lane",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W12 7RZ",
+          "premises": "Scale Space, Imperial College"
+        },
+        "appointed_on": "2021-07-30",
+        "appointed_to": {
+          "company_name": "QUAYSHELFCO 1216 LIMITED",
+          "company_number": "06177616",
+          "company_status": "active"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/06177616"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2022-03-31"
+      },
+      {
+        "address": {
+          "address_line_1": "Imperial College, White City Campus",
+          "address_line_2": "58 Wood Lane",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W12 7RZ",
+          "premises": "Scale Space"
+        },
+        "appointed_on": "2021-03-31",
+        "appointed_to": {
+          "company_name": "FASTFUTURES LIMITED",
+          "company_number": "09225093",
+          "company_status": "dissolved"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/09225093"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2022-03-31"
+      },
+      {
+        "address": {
+          "address_line_1": "Imperial College, White City Campus",
+          "address_line_2": "58 Wood Lane",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W12 7RZ",
+          "premises": "Scale Space"
+        },
+        "appointed_on": "2021-03-31",
+        "appointed_to": {
+          "company_name": "AVADO APPRENTICESHIPS LIMITED",
+          "company_number": "08151723",
+          "company_status": "dissolved"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/08151723"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2022-03-31"
+      },
+      {
+        "address": {
+          "address_line_1": "White City Campus",
+          "address_line_2": "58 Wood Lane",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W12 7RZ",
+          "premises": "Scale Space, Imperial College"
+        },
+        "appointed_on": "2021-03-31",
+        "appointed_to": {
+          "company_name": "QUAYSHELFCO 2381 LIMITED",
+          "company_number": "07397746",
+          "company_status": "active"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/07397746"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2022-03-31"
+      },
+      {
+        "address": {
+          "address_line_1": "White City Campus",
+          "address_line_2": "58 Wood Lane",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W12 7RZ",
+          "premises": "Scale Space, Imperial College"
+        },
+        "appointed_on": "2021-07-30",
+        "appointed_to": {
+          "company_name": "AVADO GROUP EBT TRUSTEE LIMITED",
+          "company_number": "07470117",
+          "company_status": "dissolved"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/07470117"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2022-03-31"
+      },
+      {
+        "address": {
+          "address_line_1": "White City Campus",
+          "address_line_2": "58 Wood Lane",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W12 7RZ",
+          "premises": "Scale Space, Imperial College"
+        },
+        "appointed_on": "2021-07-30",
+        "appointed_to": {
+          "company_name": "THE KNOWLEDGE ENGINEERS NETWORK LIMITED",
+          "company_number": "05896266",
+          "company_status": "dissolved"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/05896266"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2022-03-31"
+      },
+      {
+        "address": {
+          "address_line_1": "Imperial College, White City Campus",
+          "address_line_2": "58 Wood Lane",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W12 7RZ",
+          "premises": "Scale Space"
+        },
+        "appointed_on": "2021-07-30",
+        "appointed_to": {
+          "company_name": "BC ARCH EBT TRUSTEES LIMITED",
+          "company_number": "08220836",
+          "company_status": "dissolved"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/08220836"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2022-03-31"
+      },
+      {
+        "address": {
+          "address_line_1": "Western Road",
+          "care_of": "C/O Jacqui Gregory, Company Secretary",
+          "country": "England",
+          "locality": "Bracknell",
+          "postal_code": "RG12 1TL",
+          "premises": "Towry House",
+          "region": "Berkshire"
+        },
+        "appointed_on": "2015-05-07",
+        "appointed_to": {
+          "company_name": "ASHCOURT ROWAN LIMITED",
+          "company_number": "05406945",
+          "company_status": "dissolved"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/05406945"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2016-07-29"
+      },
+      {
+        "address": {
+          "address_line_1": "Western Road",
+          "care_of": "C/O Jacqui Gregory, Company Secretary",
+          "country": "England",
+          "locality": "Bracknell",
+          "postal_code": "RG12 1TL",
+          "premises": "Towry House",
+          "region": "Berkshire"
+        },
+        "appointed_on": "2014-07-04",
+        "appointed_to": {
+          "company_name": "TOWRY PENSION TRUSTEES LIMITED",
+          "company_number": "00781047",
+          "company_status": "dissolved"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/00781047"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2016-07-29"
+      },
+      {
+        "address": {
+          "address_line_1": "Western Road",
+          "care_of": "C/O Jacqui Gregory, Company Secretary",
+          "country": "England",
+          "locality": "Bracknell",
+          "postal_code": "RG12 1TL",
+          "premises": "Towry House",
+          "region": "Berkshire"
+        },
+        "appointed_on": "2014-07-03",
+        "appointed_to": {
+          "company_name": "TILNEY NOMINEES LIMITED",
+          "company_number": "02988101",
+          "company_status": "active"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/02988101"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2016-07-29"
+      },
+      {
+        "address": {
+          "address_line_1": "Western Road",
+          "care_of": "C/O Jacqui Gregory, Company Secretary",
+          "country": "England",
+          "locality": "Bracknell",
+          "postal_code": "RG12 1TL",
+          "premises": "Towry House",
+          "region": "Berkshire"
+        },
+        "appointed_on": "2015-05-07",
+        "appointed_to": {
+          "company_name": "TILNEY ASSET MANAGEMENT SERVICES LIMITED",
+          "company_number": "03691998",
+          "company_status": "liquidation"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/03691998"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2016-07-29"
+      },
+      {
+        "address": {
+          "address_line_1": "Western Road",
+          "care_of": "C/O: Jacqui Gregory, Company Secretary",
+          "country": "England",
+          "locality": "Bracknell",
+          "postal_code": "RG12 1TL",
+          "premises": "Towry House",
+          "region": "Berkshire"
+        },
+        "appointed_on": "2015-05-07",
+        "appointed_to": {
+          "company_name": "MANOR MANAGEMENT SERVICES LIMITED",
+          "company_number": "01275799",
+          "company_status": "dissolved"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/01275799"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2016-07-29"
+      },
+      {
+        "address": {
+          "address_line_1": "Western Road",
+          "care_of": "C/O Jacqui Gregory, Company Secretary",
+          "country": "England",
+          "locality": "Bracknell",
+          "postal_code": "RG12 1TL",
+          "premises": "Towry House",
+          "region": "Berkshire"
+        },
+        "appointed_on": "2015-05-07",
+        "appointed_to": {
+          "company_name": "TOWRY LIMITED",
+          "company_number": "04036499",
+          "company_status": "dissolved"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/04036499"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2016-07-29"
+      },
+      {
+        "address": {
+          "address_line_1": "Western Road",
+          "care_of": "C/O Jacqui Gregory, Company Secretary",
+          "country": "England",
+          "locality": "Bracknell",
+          "postal_code": "RG12 1TL",
+          "premises": "Towry House",
+          "region": "Berkshire"
+        },
+        "appointed_on": "2015-05-07",
+        "appointed_to": {
+          "company_name": "TS&W GROUP SERVICES LIMITED",
+          "company_number": "07401649",
+          "company_status": "dissolved"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/07401649"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2016-07-29"
+      },
+      {
+        "address": {
+          "address_line_1": "Western Road",
+          "care_of": "C/O Jacqui Gregory, Company Secretary",
+          "country": "England",
+          "locality": "Bracknell",
+          "postal_code": "RG12 1TL",
+          "premises": "Towry House",
+          "region": "Berkshire"
+        },
+        "appointed_on": "2015-05-07",
+        "appointed_to": {
+          "company_name": "TOWRY NOMINEES NO.2 LIMITED",
+          "company_number": "07401578",
+          "company_status": "dissolved"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/07401578"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2016-07-29"
+      },
+      {
+        "address": {
+          "address_line_1": "Western Road",
+          "care_of": "C/O Jacqui Gregory, Company Secretary",
+          "country": "England",
+          "locality": "Bracknell",
+          "postal_code": "RG12 1TL",
+          "premises": "Towry House",
+          "region": "Berkshire"
+        },
+        "appointed_on": "2015-05-07",
+        "appointed_to": {
+          "company_name": "TOWRY ASSET MANAGEMENT LIMITED",
+          "company_number": "03268849",
+          "company_status": "dissolved"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/03268849"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2016-07-29"
+      },
+      {
+        "address": {
+          "address_line_1": "Western Road",
+          "care_of": "C/O Jacqui Gregory, Company Secretary",
+          "country": "England",
+          "locality": "Bracknell",
+          "postal_code": "RG12 1TL",
+          "premises": "Towry House",
+          "region": "Berkshire"
+        },
+        "appointed_on": "2015-05-07",
+        "appointed_to": {
+          "company_name": "ASHCOURT HOLDINGS LIMITED",
+          "company_number": "04499238",
+          "company_status": "dissolved"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/04499238"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2016-07-29"
+      },
+      {
+        "address": {
+          "address_line_1": "Western Road",
+          "care_of": "C/O Jacqueline Gregory, Company Secretary",
+          "country": "England",
+          "locality": "Bracknell",
+          "postal_code": "RG12 1TL",
+          "premises": "Towry House",
+          "region": "Berkshire"
+        },
+        "appointed_on": "2015-05-07",
+        "appointed_to": {
+          "company_name": "ASHCOURT ROWAN FINANCIAL PLANNING LIMITED",
+          "company_number": "01799538",
+          "company_status": "dissolved"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/01799538"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2016-07-29"
+      },
+      {
+        "address": {
+          "address_line_1": "Western Road",
+          "care_of": "C/O Jacqui Gregory, Company Secretary",
+          "country": "England",
+          "locality": "Bracknell",
+          "postal_code": "RG12 1TL",
+          "premises": "Towry House",
+          "region": "Berkshire"
+        },
+        "appointed_on": "2015-05-07",
+        "appointed_to": {
+          "company_name": "TILNEY BESTINVEST GROUP LIMITED",
+          "company_number": "04126418",
+          "company_status": "dissolved"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/04126418"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2016-07-29"
+      },
+      {
+        "address": {
+          "address_line_1": "Western Road",
+          "care_of": "C/O Jacqui Gregory, Company Secretary",
+          "country": "England",
+          "locality": "Bracknell",
+          "postal_code": "RG12 1TL",
+          "premises": "Towry House",
+          "region": "Berkshire"
+        },
+        "appointed_on": "2015-05-07",
+        "appointed_to": {
+          "company_name": "ROWAN & COMPANY CAPITAL MANAGEMENT LTD",
+          "company_number": "02201679",
+          "company_status": "dissolved"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/02201679"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2016-07-29"
+      },
+      {
+        "address": {
+          "address_line_1": "Western Road",
+          "care_of": "C/O Jacqui Gregory, Company Secretary",
+          "country": "England",
+          "locality": "Bracknell",
+          "postal_code": "RG12 1TL",
+          "premises": "Towry House",
+          "region": "Berkshire"
+        },
+        "appointed_on": "2015-05-07",
+        "appointed_to": {
+          "company_name": "INDEPENDENT FINANCIAL SOLUTIONS GROUP LIMITED",
+          "company_number": "03826289",
+          "company_status": "dissolved"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/03826289"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2016-07-29"
+      },
+      {
+        "address": {
+          "address_line_1": "Western Road",
+          "care_of": "C/O Jacqui Gregory, Company Secretary",
+          "country": "England",
+          "locality": "Bracknell",
+          "postal_code": "RG12 1TL",
+          "premises": "Towry House",
+          "region": "Berkshire"
+        },
+        "appointed_on": "2014-07-03",
+        "appointed_to": {
+          "company_name": "TILNEY DISCRETIONARY PORTFOLIO MANAGEMENT LIMITED",
+          "company_number": "00793636",
+          "company_status": "active"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/00793636"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2016-07-29"
+      },
+      {
+        "address": {
+          "address_line_1": "Western Road",
+          "care_of": "C/O Jacqui Gregory, Company Secretary",
+          "country": "England",
+          "locality": "Bracknell",
+          "postal_code": "RG12 1TL",
+          "premises": "Towry House",
+          "region": "Berkshire"
+        },
+        "appointed_on": "2014-07-03",
+        "appointed_to": {
+          "company_name": "EVELYN PARTNERS FINANCIAL PLANNING LIMITED",
+          "company_number": "00607039",
+          "company_status": "active"
+        },
+        "name": "Robert Alan DEVEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/00607039"
+        },
+        "name_elements": {
+          "forename": "Robert",
+          "title": "Mr",
+          "other_forenames": "Alan",
+          "surname": "DEVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2016-07-29"
+      }
+    ],
+    "items_per_page": 50,
+    "kind": "personal-appointment",
+    "links": {
+      "self": "/officers/BkPkoeZ_AnQFMqF9RRWqHXDxnuc/appointments"
+    },
+    "name": "Robert Alan DEVEY",
+    "resigned_count": 84,
+    "start_index": 0,
+    "total_results": 107
+  }
+}

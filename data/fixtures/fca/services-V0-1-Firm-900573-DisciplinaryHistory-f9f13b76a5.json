@@ -1,0 +1,13 @@
+{
+  "url": "https://register.fca.org.uk/services/V0.1/Firm/900573/DisciplinaryHistory",
+  "status": 200,
+  "content_type": "application/json;charset=UTF-8",
+  "recorded_at": "2026-11-25T07:10:54.271783Z",
+  "synthetic": false,
+  "body": {
+    "Status": "FSR-API-02-11-11",
+    "ResultInfo": null,
+    "Message": "Disciplinary history information not found",
+    "Data": null
+  }
+}

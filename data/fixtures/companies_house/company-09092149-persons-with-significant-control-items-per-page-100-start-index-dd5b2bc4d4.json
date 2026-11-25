@@ -1,0 +1,157 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/09092149/persons-with-significant-control?items_per_page=100&start_index=0",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:09:51.111508Z",
+  "synthetic": false,
+  "body": {
+    "items_per_page": 100,
+    "items": [
+      {
+        "etag": "9bc19b0b2817e42a64aaacb7fa510d2a54460ae8",
+        "notified_on": "2025-09-30",
+        "name": "Starling Intermediate Holdings Limited",
+        "links": {
+          "self": "/company/09092149/persons-with-significant-control/corporate-entity/n7AF28RhVleHW2793Vuv-c5esc0",
+          "persons_with_significant_control": {
+            "notifications": "/persons-with-significant-control/hVizIh0YionhK63LJuw8UZf2JVU/notifications"
+          }
+        },
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "England And Wales",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "16240204"
+        },
+        "ceased": false,
+        "kind": "corporate-entity-person-with-significant-control",
+        "address": {
+          "address_line_1": "1 Duval Square",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor, London Fruit And Wool Exchange"
+        },
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ]
+      },
+      {
+        "etag": "50dd69082c58f2f0b0d40c05a972dceb3b0aaa88",
+        "notified_on": "2025-06-27",
+        "ceased_on": "2025-09-30",
+        "name": "Starling Group Holdings Limited",
+        "links": {
+          "self": "/company/09092149/persons-with-significant-control/corporate-entity/QFAh_967FowFJBYGl48zgaGeTbk",
+          "persons_with_significant_control": {
+            "notifications": "/persons-with-significant-control/9vzk36KWuP7emzFnFvWOdSrx6Hw/notifications"
+          }
+        },
+        "identification": {
+          "legal_form": "Private Company Limited By Shares",
+          "legal_authority": "Companies Act 2006",
+          "country_registered": "United Kingdom",
+          "place_registered": "Companies House",
+          "registration_number": "13871603"
+        },
+        "ceased": true,
+        "kind": "corporate-entity-person-with-significant-control",
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ]
+      },
+      {
+        "etag": "3c9c44a0eabee3a39396280eed2e0441112cd6fa",
+        "notified_on": "2016-04-06",
+        "ceased_on": "2025-06-27",
+        "country_of_residence": "Bahamas",
+        "date_of_birth": {
+          "month": 4,
+          "year": 1958
+        },
+        "name": "Harald Mcpike-Zima",
+        "name_elements": {
+          "surname": "Mcpike-Zima",
+          "forename": "Harald"
+        },
+        "links": {
+          "self": "/company/09092149/persons-with-significant-control/individual/xGvwHC0GaZ2Xds1j-EbWin5_oKE",
+          "persons_with_significant_control": {
+            "notifications": "/persons-with-significant-control/SNQRST-DeRqSJ_wpp8jMEoGXsR4/notifications"
+          }
+        },
+        "nationality": "Austrian",
+        "ceased": true,
+        "kind": "individual-person-with-significant-control",
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ]
+      },
+      {
+        "etag": "c979cb4c6433acf069ccbc02e7fd268257e6f04c",
+        "notified_on": "2016-04-06",
+        "ceased_on": "2019-04-10",
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 1,
+          "year": 1960
+        },
+        "name": "Ms Anne Elizabeth Boden",
+        "name_elements": {
+          "title": "Ms",
+          "surname": "Boden",
+          "forename": "Anne",
+          "middle_name": "Elizabeth"
+        },
+        "links": {
+          "self": "/company/09092149/persons-with-significant-control/individual/l5UcwdjyOhngK4bMXfL7N1uYBdQ",
+          "persons_with_significant_control": {
+            "notifications": "/persons-with-significant-control/hE0wcYUNlHgf-VJD8QRt4JI6MuE/notifications"
+          }
+        },
+        "nationality": "British",
+        "ceased": true,
+        "kind": "individual-person-with-significant-control",
+        "address": {
+          "address_line_1": "2 Finsbury Avenue",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC2M 2PP",
+          "premises": "3rd Floor"
+        },
+        "natures_of_control": [
+          "voting-rights-25-to-50-percent"
+        ]
+      }
+    ],
+    "start_index": 0,
+    "total_results": 4,
+    "active_count": 1,
+    "ceased_count": 3,
+    "links": {
+      "self": "/company/09092149/persons-with-significant-control"
+    }
+  }
+}

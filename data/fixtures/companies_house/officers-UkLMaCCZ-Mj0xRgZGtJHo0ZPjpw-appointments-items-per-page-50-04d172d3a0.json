@@ -1,0 +1,289 @@
+{
+  "url": "https://api.company-information.service.gov.uk/officers/UkLMaCCZ-Mj0xRgZGtJHo0ZPjpw/appointments?items_per_page=50",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:09:52.679532Z",
+  "synthetic": false,
+  "body": {
+    "active_count": 8,
+    "date_of_birth": {
+      "month": 1,
+      "year": 1989
+    },
+    "etag": "609de98814ada4d49931c4c3409bcb835f4be06a",
+    "inactive_count": 0,
+    "is_corporate_officer": false,
+    "items": [
+      {
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange, 1 Duval Square",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "E1   6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2025-08-28",
+        "appointed_to": {
+          "company_name": "EMBER BY STARLING LIMITED",
+          "company_number": "11822163",
+          "company_status": "active"
+        },
+        "name": "Declan FERGUSON",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/11822163"
+        },
+        "name_elements": {
+          "forename": "Declan",
+          "title": "Mr",
+          "surname": "FERGUSON"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-02-24"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2025-08-05",
+        "appointed_to": {
+          "company_name": "ENGINE BY STARLING LIMITED",
+          "company_number": "13925405",
+          "company_status": "active"
+        },
+        "name": "Declan FERGUSON",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/13925405"
+        },
+        "name_elements": {
+          "forename": "Declan",
+          "title": "Mr",
+          "surname": "FERGUSON"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-02-20"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2025-02-10",
+        "appointed_to": {
+          "company_name": "STARLING INTERMEDIATE HOLDINGS LIMITED",
+          "company_number": "16240204",
+          "company_status": "active"
+        },
+        "name": "Declan FERGUSON",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/16240204"
+        },
+        "name_elements": {
+          "forename": "Declan",
+          "title": "Mr",
+          "surname": "FERGUSON"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-02-17"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange, 1 Duval Square",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2023-07-12",
+        "appointed_to": {
+          "company_name": "MURMUR FINANCIAL SERVICES LIMITED",
+          "company_number": "14999160",
+          "company_status": "active"
+        },
+        "name": "Declan FERGUSON",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/14999160"
+        },
+        "name_elements": {
+          "forename": "Declan",
+          "title": "Mr",
+          "surname": "FERGUSON"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-02-19"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2022-12-21",
+        "appointed_to": {
+          "company_name": "STARLING GROUP HOLDINGS PLC",
+          "company_number": "13871603",
+          "company_status": "active"
+        },
+        "name": "Declan FERGUSON",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/13871603"
+        },
+        "name_elements": {
+          "forename": "Declan",
+          "title": "Mr",
+          "surname": "FERGUSON"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-02-05"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2022-07-13",
+        "appointed_to": {
+          "company_name": "STARLING BANK LIMITED",
+          "company_number": "09092149",
+          "company_status": "active"
+        },
+        "name": "Declan FERGUSON",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/09092149"
+        },
+        "name_elements": {
+          "forename": "Declan",
+          "title": "Mr",
+          "surname": "FERGUSON"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-03-02"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2022-07-07",
+        "appointed_to": {
+          "company_name": "STARLING FS SERVICES LIMITED",
+          "company_number": "10091094",
+          "company_status": "active"
+        },
+        "name": "Declan FERGUSON",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/10091094"
+        },
+        "name_elements": {
+          "forename": "Declan",
+          "title": "Mr",
+          "surname": "FERGUSON"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-02-26"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "Reading Road North",
+          "locality": "Fleet",
+          "postal_code": "GU51 4WP",
+          "premises": "2nd Floor Flagship House",
+          "region": "Hampshire"
+        },
+        "appointed_on": "2021-07-23",
+        "appointed_to": {
+          "company_name": "FLEET MORTGAGES LIMITED",
+          "company_number": "08663979",
+          "company_status": "active"
+        },
+        "name": "Declan FERGUSON",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/08663979"
+        },
+        "name_elements": {
+          "forename": "Declan",
+          "title": "Mr",
+          "surname": "FERGUSON"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-02-17"
+        }
+      }
+    ],
+    "items_per_page": 50,
+    "kind": "personal-appointment",
+    "links": {
+      "self": "/officers/UkLMaCCZ-Mj0xRgZGtJHo0ZPjpw/appointments"
+    },
+    "name": "Declan FERGUSON",
+    "resigned_count": 0,
+    "start_index": 0,
+    "total_results": 8
+  }
+}

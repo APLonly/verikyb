@@ -1,0 +1,309 @@
+{
+  "url": "https://api.company-information.service.gov.uk/officers/Ec0g4zbeXHCsX0ljnOIHU0xdzxo/appointments?items_per_page=50",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:39.953619Z",
+  "synthetic": false,
+  "body": {
+    "active_count": 5,
+    "date_of_birth": {
+      "month": 12,
+      "year": 1964
+    },
+    "etag": "5263e55cd8c73ae78796e65e039fd015c657b103",
+    "inactive_count": 0,
+    "is_corporate_officer": false,
+    "items": [
+      {
+        "address": {
+          "address_line_1": "Berkeley Place",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "SW19 4NN",
+          "premises": "14"
+        },
+        "appointed_on": "2026-09-15",
+        "appointed_to": {
+          "company_name": "PINTUDA LIMITED",
+          "company_number": "17459184",
+          "company_status": "active"
+        },
+        "name": "Miguel Eduardo ORTIZ",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/17459184"
+        },
+        "name_elements": {
+          "forename": "Miguel",
+          "title": "Dr",
+          "other_forenames": "Eduardo",
+          "surname": "ORTIZ"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-09-15"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "33 Queen Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC4R 1AP",
+          "premises": "Swan House"
+        },
+        "appointed_on": "2025-12-24",
+        "appointed_to": {
+          "company_name": "TRIMSTONE LTD",
+          "company_number": "16931523",
+          "company_status": "active"
+        },
+        "name": "Miguel Eduardo ORTIZ",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/16931523"
+        },
+        "name_elements": {
+          "forename": "Miguel",
+          "title": "Dr",
+          "other_forenames": "Eduardo",
+          "surname": "ORTIZ"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2025-12-24"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "66 City Road",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC1Y 2AL",
+          "premises": "The Featherstone Building"
+        },
+        "appointed_on": "2024-06-13",
+        "appointed_to": {
+          "company_name": "MODULR FS LIMITED",
+          "company_number": "09897919",
+          "company_status": "active"
+        },
+        "name": "Miguel Eduardo ORTIZ",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/09897919"
+        },
+        "name_elements": {
+          "forename": "Miguel",
+          "title": "Dr",
+          "other_forenames": "Eduardo",
+          "surname": "ORTIZ"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2025-12-15"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "Queen Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC4R 1AP",
+          "premises": "33"
+        },
+        "appointed_on": "2024-04-29",
+        "appointed_to": {
+          "company_name": "TRIMSTONE PARTNERSHIP LLP",
+          "company_number": "OC452118",
+          "company_status": "active"
+        },
+        "name": "Miguel Eduardo ORTIZ",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/OC452118"
+        },
+        "name_elements": {
+          "forename": "Miguel",
+          "title": "Dr",
+          "other_forenames": "Eduardo",
+          "surname": "ORTIZ"
+        },
+        "officer_role": "llp-designated-member",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-06-27"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "City Road",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC1V 2NX",
+          "premises": "128"
+        },
+        "appointed_on": "2023-10-16",
+        "appointed_to": {
+          "company_name": "TRIMSTONE PARTNERS LTD",
+          "company_number": "15212506",
+          "company_status": "active"
+        },
+        "name": "Miguel Eduardo ORTIZ",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/15212506"
+        },
+        "name_elements": {
+          "forename": "Miguel",
+          "title": "Dr",
+          "other_forenames": "Eduardo",
+          "surname": "ORTIZ"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-10-22"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "Spicer Street",
+          "country": "England",
+          "locality": "St. Albans",
+          "postal_code": "AL3 4PQ",
+          "premises": "Arquen House 4-6"
+        },
+        "appointed_on": "2020-05-20",
+        "appointed_to": {
+          "company_name": "EVERUP LTD",
+          "company_number": "12462608",
+          "company_status": "active"
+        },
+        "name": "Miguel Eduardo ORTIZ",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/12462608"
+        },
+        "name_elements": {
+          "forename": "Miguel",
+          "title": "Dr",
+          "other_forenames": "Eduardo",
+          "surname": "ORTIZ"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2024-02-02"
+      },
+      {
+        "address": {
+          "address_line_1": "Hiranandani Business Park, Powai",
+          "country": "India",
+          "locality": "Mumbai",
+          "premises": "Prudential House, Central Avenue",
+          "region": "400076"
+        },
+        "appointed_on": "2018-02-20",
+        "appointed_to": {
+          "company_name": "M&G GLOBAL SERVICES PRIVATE LIMITED",
+          "company_number": "SF001002",
+          "company_status": "converted-closed"
+        },
+        "name": "Miguel Eduardo ORTIZ",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/SF001002"
+        },
+        "name_elements": {
+          "forename": "Miguel",
+          "title": "Dr",
+          "other_forenames": "Eduardo",
+          "surname": "ORTIZ"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2019-03-06"
+      },
+      {
+        "address": {
+          "address_line_1": "Laurence Pountney Hill",
+          "address_line_2": "London",
+          "postal_code": "EC4R 0HH"
+        },
+        "appointed_on": "2018-03-01",
+        "appointed_to": {
+          "company_name": "PGDS (UK ONE) LIMITED",
+          "company_number": "01967719",
+          "company_status": "active"
+        },
+        "name": "Miguel Eduardo ORTIZ",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/01967719"
+        },
+        "name_elements": {
+          "forename": "Miguel",
+          "title": "Dr",
+          "other_forenames": "Eduardo",
+          "surname": "ORTIZ"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2019-02-28"
+      },
+      {
+        "address": {
+          "address_line_1": "Manchester Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W1U 3PZ",
+          "premises": "20"
+        },
+        "appointed_on": "2011-04-01",
+        "appointed_to": {
+          "company_name": "THE BOSTON CONSULTING GROUP UK LLP",
+          "company_number": "OC359103",
+          "company_status": "active"
+        },
+        "name": "Miguel Eduardo ORTIZ",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/OC359103"
+        },
+        "name_elements": {
+          "forename": "Miguel",
+          "title": "Dr",
+          "other_forenames": "Eduardo",
+          "surname": "ORTIZ"
+        },
+        "officer_role": "llp-member",
+        "resigned_on": "2017-11-30"
+      }
+    ],
+    "items_per_page": 50,
+    "kind": "personal-appointment",
+    "links": {
+      "self": "/officers/Ec0g4zbeXHCsX0ljnOIHU0xdzxo/appointments"
+    },
+    "name": "Miguel Eduardo ORTIZ",
+    "resigned_count": 4,
+    "start_index": 0,
+    "total_results": 9
+  }
+}

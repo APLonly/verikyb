@@ -1,0 +1,178 @@
+{
+  "url": "https://api.gleif.org/api/v1/lei-records/213800PERENGATFCHD95/direct-parent",
+  "status": 200,
+  "content_type": "application/vnd.api+json",
+  "recorded_at": "2026-11-25T07:10:12.002796Z",
+  "synthetic": false,
+  "body": {
+    "meta": {
+      "goldenCopy": {
+        "publishDate": "2026-11-25T00:00:00Z"
+      }
+    },
+    "data": {
+      "type": "lei-records",
+      "id": "213800CGCT411FDRUL56",
+      "attributes": {
+        "lei": "213800CGCT411FDRUL56",
+        "entity": {
+          "legalName": {
+            "name": "CLEARBANK GROUP HOLDINGS LIMITED",
+            "language": "en"
+          },
+          "otherNames": [],
+          "transliteratedOtherNames": [],
+          "legalAddress": {
+            "language": "en",
+            "addressLines": [
+              "LEVEL 27",
+              "BROADGATE TOWER",
+              "Primrose Street"
+            ],
+            "addressNumber": null,
+            "addressNumberWithinBuilding": null,
+            "mailRouting": null,
+            "city": "LONDON",
+            "region": "GB-LND",
+            "country": "GB",
+            "postalCode": "EC2A 2EW"
+          },
+          "headquartersAddress": {
+            "language": "en",
+            "addressLines": [
+              "LEVEL 27",
+              "BROADGATE TOWER",
+              "Primrose Street"
+            ],
+            "addressNumber": null,
+            "addressNumberWithinBuilding": null,
+            "mailRouting": null,
+            "city": "LONDON",
+            "region": "GB-LND",
+            "country": "GB",
+            "postalCode": "EC2A 2EW"
+          },
+          "registeredAt": {
+            "id": "RA000585",
+            "other": null
+          },
+          "registeredAs": "14254435",
+          "jurisdiction": "GB",
+          "category": "GENERAL",
+          "legalForm": {
+            "id": "H0PO",
+            "other": null
+          },
+          "associatedEntity": {
+            "lei": null,
+            "name": null
+          },
+          "status": "ACTIVE",
+          "expiration": {
+            "date": null,
+            "reason": null
+          },
+          "successorEntity": {
+            "lei": null,
+            "name": null
+          },
+          "successorEntities": [],
+          "creationDate": "2022-07-25T00:00:00Z",
+          "subCategory": null,
+          "otherAddresses": [],
+          "eventGroups": [
+            {
+              "groupType": "STANDALONE",
+              "events": [
+                {
+                  "validationDocuments": "ACCOUNTS_FILING",
+                  "effectiveDate": "2026-01-06T00:00:00Z",
+                  "recordedDate": "2026-01-30T13:44:22Z",
+                  "type": "CHANGE_LEGAL_ADDRESS",
+                  "status": "COMPLETED"
+                }
+              ]
+            },
+            {
+              "groupType": "STANDALONE",
+              "events": [
+                {
+                  "validationDocuments": "ACCOUNTS_FILING",
+                  "effectiveDate": "2026-01-06T00:00:00Z",
+                  "recordedDate": "2026-01-30T13:43:45Z",
+                  "type": "CHANGE_HQ_ADDRESS",
+                  "status": "COMPLETED"
+                }
+              ]
+            }
+          ]
+        },
+        "registration": {
+          "initialRegistrationDate": "2024-02-01T00:00:00Z",
+          "lastUpdateDate": "2026-10-26T17:28:30Z",
+          "status": "ISSUED",
+          "nextRenewalDate": "2027-02-01T00:00:00Z",
+          "managingLou": "213800WAVVOPS85N2205",
+          "corroborationLevel": "FULLY_CORROBORATED",
+          "validatedAt": {
+            "id": "RA000585",
+            "other": null
+          },
+          "validatedAs": "14254435",
+          "otherValidationAuthorities": []
+        },
+        "bic": null,
+        "mic": null,
+        "ocid": "gb/14254435",
+        "qcc": "QGBED07ERG",
+        "gem": null,
+        "spglobal": [
+          "1870785649"
+        ],
+        "conformityFlag": "CONFORMING"
+      },
+      "relationships": {
+        "managing-lou": {
+          "links": {
+            "related": "https://api.gleif.org/api/v1/lei-records/213800CGCT411FDRUL56/managing-lou"
+          }
+        },
+        "lei-issuer": {
+          "links": {
+            "related": "https://api.gleif.org/api/v1/lei-records/213800CGCT411FDRUL56/lei-issuer"
+          }
+        },
+        "field-modifications": {
+          "links": {
+            "related": "https://api.gleif.org/api/v1/lei-records/213800CGCT411FDRUL56/field-modifications"
+          }
+        },
+        "direct-parent": {
+          "links": {
+            "reporting-exception": "https://api.gleif.org/api/v1/lei-records/213800CGCT411FDRUL56/direct-parent-reporting-exception"
+          }
+        },
+        "ultimate-parent": {
+          "links": {
+            "reporting-exception": "https://api.gleif.org/api/v1/lei-records/213800CGCT411FDRUL56/ultimate-parent-reporting-exception"
+          }
+        },
+        "direct-children": {
+          "links": {
+            "relationship-records": "https://api.gleif.org/api/v1/lei-records/213800CGCT411FDRUL56/direct-child-relationships",
+            "related": "https://api.gleif.org/api/v1/lei-records/213800CGCT411FDRUL56/direct-children"
+          }
+        },
+        "ultimate-children": {
+          "links": {
+            "relationship-records": "https://api.gleif.org/api/v1/lei-records/213800CGCT411FDRUL56/ultimate-child-relationships",
+            "related": "https://api.gleif.org/api/v1/lei-records/213800CGCT411FDRUL56/ultimate-children"
+          }
+        }
+      },
+      "links": {
+        "self": "https://api.gleif.org/api/v1/lei-records/213800CGCT411FDRUL56"
+      }
+    }
+  }
+}

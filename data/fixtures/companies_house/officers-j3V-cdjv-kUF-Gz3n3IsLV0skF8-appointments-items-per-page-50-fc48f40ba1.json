@@ -1,0 +1,94 @@
+{
+  "url": "https://api.company-information.service.gov.uk/officers/j3V_cdjv-kUF-Gz3n3IsLV0skF8/appointments?items_per_page=50",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:09:52.484211Z",
+  "synthetic": false,
+  "body": {
+    "active_count": 2,
+    "date_of_birth": {
+      "month": 10,
+      "year": 1971
+    },
+    "etag": "408d8a67cad048a1c87f2e0be8f6010937fab25c",
+    "inactive_count": 0,
+    "is_corporate_officer": false,
+    "items": [
+      {
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2024-06-28",
+        "appointed_to": {
+          "company_name": "STARLING GROUP HOLDINGS PLC",
+          "company_number": "13871603",
+          "company_status": "active"
+        },
+        "name": "Julie CHAKRAVERTY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/13871603"
+        },
+        "name_elements": {
+          "forename": "Julie",
+          "title": "Ms",
+          "surname": "CHAKRAVERTY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-02-05"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2024-03-01",
+        "appointed_to": {
+          "company_name": "STARLING BANK LIMITED",
+          "company_number": "09092149",
+          "company_status": "active"
+        },
+        "name": "Julie CHAKRAVERTY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/09092149"
+        },
+        "name_elements": {
+          "forename": "Julie",
+          "title": "Ms",
+          "surname": "CHAKRAVERTY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-03-02"
+        }
+      }
+    ],
+    "items_per_page": 50,
+    "kind": "personal-appointment",
+    "links": {
+      "self": "/officers/j3V_cdjv-kUF-Gz3n3IsLV0skF8/appointments"
+    },
+    "name": "Julie CHAKRAVERTY",
+    "resigned_count": 0,
+    "start_index": 0,
+    "total_results": 2
+  }
+}

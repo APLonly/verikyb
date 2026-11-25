@@ -1,0 +1,182 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/09736376/persons-with-significant-control?items_per_page=100&start_index=0",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:13.827715Z",
+  "synthetic": false,
+  "body": {
+    "items_per_page": 100,
+    "items": [
+      {
+        "etag": "60224ccf620de6c32d04d9ee7980e9340ea8ab89",
+        "notified_on": "2023-12-08",
+        "name": "Clearbank Group Holdings Limited",
+        "links": {
+          "self": "/company/09736376/persons-with-significant-control/corporate-entity/tg2VgejxQHskJDuCiChQd6bYd7U",
+          "persons_with_significant_control": {
+            "notifications": "/persons-with-significant-control/uQORegSFW0SQmNfz6HhQTAHGXW0/notifications"
+          }
+        },
+        "identification": {
+          "legal_form": "Private Limited Company",
+          "legal_authority": "England And Wales",
+          "country_registered": "United Kingdom",
+          "place_registered": "Registrar Of Companies, England And Wales",
+          "registration_number": "14254435"
+        },
+        "ceased": false,
+        "kind": "corporate-entity-person-with-significant-control",
+        "address": {
+          "address_line_1": "Dirty Lane",
+          "address_line_2": "Borough Yards",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "SE1 9PA",
+          "premises": "13"
+        },
+        "natures_of_control": [
+          "right-to-appoint-and-remove-directors"
+        ]
+      },
+      {
+        "etag": "85f67b203f84b9d97c4295c3e46c29b716c68dcc",
+        "notified_on": "2022-09-23",
+        "ceased_on": "2022-11-15",
+        "country_of_residence": "Czech Republic",
+        "date_of_birth": {
+          "month": 7,
+          "year": 1967
+        },
+        "name": "Ms Renata Kellnerova",
+        "name_elements": {
+          "title": "Ms",
+          "surname": "Kellnerova",
+          "forename": "Renata"
+        },
+        "links": {
+          "self": "/company/09736376/persons-with-significant-control/individual/OazqEtjKJmYPqw7kcdYVZ-nRii4",
+          "persons_with_significant_control": {
+            "notifications": "/persons-with-significant-control/3ZySMOUwujQDzMe40JbFIzzZuos/notifications"
+          }
+        },
+        "nationality": "Czech",
+        "ceased": true,
+        "kind": "individual-person-with-significant-control",
+        "address": {
+          "address_line_1": "Ppf A.S. Evropská",
+          "address_line_2": "2690/17",
+          "country": "Czech Republic",
+          "locality": "Prague",
+          "premises": "C/O Martin Pulpan"
+        },
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ]
+      },
+      {
+        "etag": "b28286cd66e788a51a06bbd41a298dded431760c",
+        "notified_on": "2016-04-19",
+        "ceased_on": "2022-11-15",
+        "name": "Ppf Financial Holdings A.S.",
+        "links": {
+          "self": "/company/09736376/persons-with-significant-control/corporate-entity/huQ3FCEg-Umg69IBb7TBFDm_Zc4",
+          "persons_with_significant_control": {
+            "notifications": "/persons-with-significant-control/R6sXfGSGFbL_MZLjNun_MYeOLiQ/notifications"
+          }
+        },
+        "identification": {
+          "legal_form": "Joint Stock Company",
+          "legal_authority": "Laws Of Czech Republic",
+          "country_registered": "Czech Republic",
+          "place_registered": "Commercial Registry Czech Republic",
+          "registration_number": "109 07718"
+        },
+        "ceased": true,
+        "kind": "corporate-entity-person-with-significant-control",
+        "address": {
+          "address_line_1": "Dejvice",
+          "country": "Czech Republic",
+          "locality": "160 00 Prague",
+          "premises": "Evropská 2690/17"
+        },
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ]
+      },
+      {
+        "etag": "8526e42d3a4629ab95e519388471824b555875a2",
+        "notified_on": "2016-04-19",
+        "ceased_on": "2022-11-15",
+        "name": "Cffi Uk Ventures (Barbados) Limited",
+        "links": {
+          "self": "/company/09736376/persons-with-significant-control/corporate-entity/XAjCHR-RhgL1dHD5Z-BG0c7KkpY",
+          "persons_with_significant_control": {
+            "notifications": "/persons-with-significant-control/Ht1NbKnszF-pM8rW0Xg0jLNV4no/notifications"
+          }
+        },
+        "identification": {
+          "legal_form": "Limited Company",
+          "legal_authority": "The International Business Companies Act (Laws Of Barbados)",
+          "country_registered": "Barbados",
+          "place_registered": "Corporate Affairs And Intellectual Property Office",
+          "registration_number": "40143"
+        },
+        "ceased": true,
+        "kind": "corporate-entity-person-with-significant-control",
+        "address": {
+          "address_line_1": "Suite 205-207 Dowell House",
+          "address_line_2": "Cr. Roebuck & Palmetto Streets",
+          "country": "Barbados",
+          "locality": "Bridgetown",
+          "premises": "Suite 205-207 Dowell House",
+          "region": "Barbados"
+        },
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ]
+      },
+      {
+        "etag": "c09448c2c17ecb74371ac829341a96a96029ddcb",
+        "notified_on": "2016-04-06",
+        "ceased_on": "2022-11-15",
+        "country_of_residence": "Canada",
+        "date_of_birth": {
+          "month": 4,
+          "year": 1948
+        },
+        "name": "Mr John Carter Risley",
+        "name_elements": {
+          "title": "Mr",
+          "surname": "Risley",
+          "forename": "John",
+          "middle_name": "Carter"
+        },
+        "links": {
+          "self": "/company/09736376/persons-with-significant-control/individual/pI-9oEjXFj81vXzsPQBASHqU6h0",
+          "persons_with_significant_control": {
+            "notifications": "/persons-with-significant-control/jxch42VmWyEjUSpow50A9qmsWG8/notifications"
+          }
+        },
+        "nationality": "Canadian",
+        "ceased": true,
+        "kind": "individual-person-with-significant-control",
+        "address": {
+          "address_line_1": "C/O Nanci Rorabeck",
+          "country": "Barbados",
+          "locality": "Bridgetown",
+          "premises": "Suite 205-207 Dowell House"
+        },
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent"
+        ]
+      }
+    ],
+    "start_index": 0,
+    "total_results": 5,
+    "active_count": 1,
+    "ceased_count": 4,
+    "links": {
+      "self": "/company/09736376/persons-with-significant-control"
+    }
+  }
+}

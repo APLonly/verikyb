@@ -1,0 +1,563 @@
+{
+  "url": "https://api.company-information.service.gov.uk/search/companies?q=Starling+Bank+Limited&items_per_page=20",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:09:50.732677Z",
+  "synthetic": false,
+  "body": {
+    "items": [
+      {
+        "address": {
+          "address_line_1": "Floor London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th"
+        },
+        "address_snippet": "5th Floor London Fruit And Wool Exchange, 1 Duval Square, London, United Kingdom, E1 6PW",
+        "company_number": "09092149",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2014-06-18",
+        "description": "09092149 - Incorporated on 18 June 2014",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/09092149"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "STARLING FS LIMITED",
+        "title": "STARLING BANK LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "Sansom Road",
+          "locality": "Leytonstone",
+          "postal_code": "E11 3HD",
+          "premises": "7",
+          "region": "The London Borough Of Waltham Forest"
+        },
+        "address_snippet": "7 Sansom Road, Leytonstone, The London Borough Of Waltham Forest, E11 3HD",
+        "company_number": "15806462",
+        "company_status": "dissolved",
+        "company_type": "ltd",
+        "date_of_cessation": "2026-08-11",
+        "date_of_creation": "2024-06-27",
+        "description": "15806462 - Dissolved on 11 August 2026",
+        "description_identifier": [
+          "dissolved-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/15806462"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "ALPHA STARLINGZ LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "Somerby Garth",
+          "country": "England",
+          "locality": "Peterborough",
+          "postal_code": "PE1 4TZ",
+          "premises": "52"
+        },
+        "address_snippet": "52 Somerby Garth, Peterborough, England, PE1 4TZ",
+        "company_number": "12525976",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2020-03-19",
+        "description": "12525976 - Incorporated on 19 March 2020",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/12525976"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "AP STARLING CONSTRUCTIO LTD"
+      },
+      {
+        "address": {
+          "address_line_1": "Nottingham.",
+          "postal_code": "NG2 3AY",
+          "premises": "Queens Drive,"
+        },
+        "address_snippet": "Queens Drive,, Nottingham., NG2 3AY",
+        "company_number": "02122329",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "1987-04-13",
+        "description": "02122329 - Incorporated on 13 April 1987",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/02122329"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "BLACKBURN, STARLING & CO., LIMITED",
+        "title": "BLACKBURN STARLING & COMPANY LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "2 Seager Place",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "SE8 4HJ",
+          "premises": "Unit E The Crescent"
+        },
+        "address_snippet": "Unit E The Crescent, 2 Seager Place, London, England, SE8 4HJ",
+        "company_number": "09809945",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2015-10-05",
+        "description": "09809945 - Incorporated on 5 October 2015",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/09809945"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "GREAT BLUE STARLING LIMITED",
+        "title": "BLUE STARLING MEDIA LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "Hollingbury Copse",
+          "country": "England",
+          "locality": "Brighton",
+          "postal_code": "BN1 6XD",
+          "premises": "7"
+        },
+        "address_snippet": "7 Hollingbury Copse, Brighton, England, BN1 6XD",
+        "company_number": "11931732",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2019-04-08",
+        "description": "11931732 - Incorporated on 8 April 2019",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/11931732"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "BRIGHTON STARLING LTD"
+      },
+      {
+        "address": {
+          "address_line_1": "- COMPANIES HOUSE DEFAULT ADDRESS",
+          "locality": "Cardiff",
+          "po_box": "4385",
+          "postal_code": "CF14 8LH",
+          "premises": "09814169"
+        },
+        "address_snippet": "4385, 09814169 - COMPANIES HOUSE DEFAULT ADDRESS, Cardiff, CF14 8LH",
+        "company_number": "09814169",
+        "company_status": "dissolved",
+        "company_type": "ltd",
+        "date_of_cessation": "2026-10-06",
+        "date_of_creation": "2015-10-07",
+        "description": "09814169 - Dissolved on 6 October 2026",
+        "description_identifier": [
+          "dissolved-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/09814169"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "CHIPRO STARLING ROAD LTD"
+      },
+      {
+        "address": {
+          "address_line_1": "Little Downham,",
+          "locality": "Ely",
+          "postal_code": "CB6 2EJ",
+          "premises": "Primrose Hill Farm,",
+          "region": "Cambridgeshire"
+        },
+        "address_snippet": "Primrose Hill Farm,, Little Downham,, Ely, Cambridgeshire, CB6 2EJ",
+        "company_number": "00530824",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "1954-03-23",
+        "description": "00530824 - Incorporated on 23 March 1954",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/00530824"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "C.N. STARLING LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "March Place",
+          "address_line_2": "Clare",
+          "country": "England",
+          "locality": "Sudbury",
+          "postal_code": "CO10 8RH",
+          "premises": "22"
+        },
+        "address_snippet": "22 March Place, Clare, Sudbury, England, CO10 8RH",
+        "company_number": "08049850",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2012-04-30",
+        "description": "08049850 - Incorporated on 30 April 2012",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/08049850"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "C STARLING CARPENTRY LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "Heath Farm",
+          "country": "England",
+          "locality": "Holt",
+          "postal_code": "NR25 6JU",
+          "premises": "Balfunning",
+          "region": "Norfolk"
+        },
+        "address_snippet": "Balfunning, Heath Farm, Holt, Norfolk, England, NR25 6JU",
+        "company_number": "08508341",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2013-04-29",
+        "description": "08508341 - Incorporated on 29 April 2013",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/08508341"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "DJ STARLING PLANT HIRE LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "Send Close",
+          "address_line_2": "Send",
+          "country": "England",
+          "locality": "Woking",
+          "postal_code": "GU23 7EL",
+          "premises": "8"
+        },
+        "address_snippet": "8 Send Close, Send, Woking, England, GU23 7EL",
+        "company_number": "07557308",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2011-03-09",
+        "description": "07557308 - Incorporated on 9 March 2011",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/07557308"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "EJ STARLING SERVICES LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "Floor",
+          "address_line_2": "London Fruit And Wool Exchange, 1 Duval Square",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "E1   6PW",
+          "premises": "5th"
+        },
+        "address_snippet": "5th Floor, London Fruit And Wool Exchange, 1 Duval Square, London, England, E1   6PW",
+        "company_number": "11822163",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2019-02-12",
+        "description": "11822163 - Incorporated on 12 February 2019",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/11822163"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "EMBER BY STARLING LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "Floor London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th"
+        },
+        "address_snippet": "5th Floor London Fruit And Wool Exchange, 1 Duval Square, London, United Kingdom, E1 6PW",
+        "company_number": "13925405",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2022-02-18",
+        "description": "13925405 - Incorporated on 18 February 2022",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/13925405"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "ENGINE BY STARLING LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "Floor London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th"
+        },
+        "address_snippet": "5th Floor London Fruit And Wool Exchange, 1 Duval Square, London, United Kingdom, E1 6PW",
+        "company_number": "16200786",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2025-01-22",
+        "description": "16200786 - Incorporated on 22 January 2025",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/16200786"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "ENGINE BY STARLING SERVICES LIMITED"
+      },
+      {
+        "address": {
+          "country": "Northern Ireland",
+          "locality": "Belfast",
+          "postal_code": "BT13 2DE",
+          "premises": "Unit B 3/2 5-7 Conway Street"
+        },
+        "address_snippet": "Unit B 3/2 5-7 Conway Street, Belfast, Northern Ireland, BT13 2DE",
+        "company_number": "NI602395",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2010-03-05",
+        "description": "NI602395 - Incorporated on 5 March 2010",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/NI602395"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "ERICA STARLING PRODUCTIONS LTD"
+      },
+      {
+        "address": {
+          "country": "Northern Ireland",
+          "locality": "Belfast",
+          "postal_code": "BT13 2DE",
+          "premises": "Unit B 3/2 5-7 Conway Street"
+        },
+        "address_snippet": "Unit B 3/2 5-7 Conway Street, Belfast, Northern Ireland, BT13 2DE",
+        "company_number": "NI675376",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2021-01-07",
+        "description": "NI675376 - Incorporated on 7 January 2021",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/NI675376"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "ERICA STARLING SPV2 LTD"
+      },
+      {
+        "address": {
+          "address_line_1": "Ashley Manor",
+          "country": "England",
+          "locality": "Atherington",
+          "postal_code": "EX37 9HW",
+          "premises": "The Barn",
+          "region": "Devon"
+        },
+        "address_snippet": "The Barn, Ashley Manor, Atherington, Devon, England, EX37 9HW",
+        "company_number": "13030704",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2020-11-19",
+        "description": "13030704 - Incorporated on 19 November 2020",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/13030704"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "GLOSSY STARLING LTD"
+      },
+      {
+        "address": {
+          "address_line_1": "The Hendre",
+          "country": "Wales",
+          "locality": "Monmouth",
+          "postal_code": "NP25 5HB",
+          "premises": "Hendre Hall"
+        },
+        "address_snippet": "Hendre Hall, The Hendre, Monmouth, Wales, NP25 5HB",
+        "company_number": "15075480",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2023-08-16",
+        "description": "15075480 - Incorporated on 16 August 2023",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/15075480"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "GLOSSY STARLING HOLDINGS LTD"
+      },
+      {
+        "address": {
+          "address_line_1": "Pantasaph",
+          "country": "United Kingdom",
+          "locality": "Holywell",
+          "postal_code": "CH8 8PL",
+          "premises": "Sursum Corda Monastery Road"
+        },
+        "address_snippet": "Sursum Corda Monastery Road, Pantasaph, Holywell, United Kingdom, CH8 8PL",
+        "company_number": "16373918",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2025-04-08",
+        "description": "16373918 - Incorporated on 8 April 2025",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/16373918"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "GRACIELLA STARLING MILLINERY LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "Elmete Walk",
+          "address_line_2": "Roundhay",
+          "locality": "Leeds",
+          "postal_code": "LS8 2LB",
+          "premises": "32",
+          "region": "West Yorkshire"
+        },
+        "address_snippet": "32 Elmete Walk, Roundhay, Leeds, West Yorkshire, LS8 2LB",
+        "company_number": "09250460",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2014-10-06",
+        "description": "09250460 - Incorporated on 6 October 2014",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/09250460"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "GRAY STARLING DESIGNS LTD"
+      }
+    ],
+    "items_per_page": 20,
+    "kind": "search#companies",
+    "page_number": 1,
+    "start_index": 0,
+    "total_results": 6252
+  }
+}

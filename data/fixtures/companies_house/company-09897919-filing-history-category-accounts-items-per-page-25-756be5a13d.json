@@ -1,0 +1,195 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/09897919/filing-history?category=accounts&items_per_page=25",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:40.963262Z",
+  "synthetic": false,
+  "body": {
+    "filing_history_status": "filing-history-available",
+    "items": [
+      {
+        "transaction_id": "MzU0ODc5MjE3OWFkaXF6a2N4",
+        "barcode": "AFBN19Z5",
+        "type": "AA",
+        "date": "2026-10-06",
+        "category": "accounts",
+        "description": "accounts-with-accounts-type-full",
+        "description_values": {
+          "made_up_date": "2025-12-31"
+        },
+        "pages": 29,
+        "action_date": "2025-12-31",
+        "paper_filed": true,
+        "links": {
+          "self": "/company/09897919/filing-history/MzU0ODc5MjE3OWFkaXF6a2N4",
+          "document_metadata": "https://document-api.company-information.service.gov.uk/document/rziNWbI9RNe5u-yom_UpBeSnyI3_qGpgl1Sm1aP-bIM"
+        }
+      },
+      {
+        "transaction_id": "MzQ4MDI2NDA2MGFkaXF6a2N4",
+        "barcode": "AEAIAG5D",
+        "type": "AA",
+        "date": "2025-09-11",
+        "category": "accounts",
+        "description": "accounts-with-accounts-type-full",
+        "description_values": {
+          "made_up_date": "2024-12-31"
+        },
+        "pages": 27,
+        "action_date": "2024-12-31",
+        "paper_filed": true,
+        "links": {
+          "self": "/company/09897919/filing-history/MzQ4MDI2NDA2MGFkaXF6a2N4",
+          "document_metadata": "https://document-api.company-information.service.gov.uk/document/Fd77mVvG030NdvaZNygzDqI0OXfyd5rWt1Eh9XJmva0"
+        }
+      },
+      {
+        "transaction_id": "MzQzODU1OTUzOGFkaXF6a2N4",
+        "barcode": "ADCQLOLU",
+        "type": "AA",
+        "date": "2024-10-12",
+        "category": "accounts",
+        "description": "accounts-with-accounts-type-full",
+        "description_values": {
+          "made_up_date": "2023-12-31"
+        },
+        "pages": 23,
+        "action_date": "2023-12-31",
+        "paper_filed": true,
+        "links": {
+          "self": "/company/09897919/filing-history/MzQzODU1OTUzOGFkaXF6a2N4",
+          "document_metadata": "https://document-api.company-information.service.gov.uk/document/0fMI4V_h7UwrBg0AkChqzMz4gKfvVQAs-1cXo0fzoCA"
+        }
+      },
+      {
+        "transaction_id": "MzM5NTE0MDYxNWFkaXF6a2N4",
+        "barcode": "ACCUP36W",
+        "type": "AA",
+        "date": "2023-10-04",
+        "category": "accounts",
+        "description": "accounts-with-accounts-type-full",
+        "description_values": {
+          "made_up_date": "2022-12-31"
+        },
+        "pages": 21,
+        "action_date": "2022-12-31",
+        "paper_filed": true,
+        "links": {
+          "self": "/company/09897919/filing-history/MzM5NTE0MDYxNWFkaXF6a2N4",
+          "document_metadata": "https://document-api.company-information.service.gov.uk/document/2-1JEpSCrtNBYqtbzmrTMC-h3HpmReZch9t6YDtpuPs"
+        }
+      },
+      {
+        "transaction_id": "MzM1Mzk1NjI1MmFkaXF6a2N4",
+        "barcode": "SBDO75FM",
+        "type": "AA",
+        "date": "2022-10-10",
+        "category": "accounts",
+        "description": "accounts-with-accounts-type-full",
+        "description_values": {
+          "made_up_date": "2021-12-31"
+        },
+        "pages": 22,
+        "action_date": "2021-12-31",
+        "paper_filed": true,
+        "links": {
+          "self": "/company/09897919/filing-history/MzM1Mzk1NjI1MmFkaXF6a2N4",
+          "document_metadata": "https://document-api.company-information.service.gov.uk/document/eYdejsF3WB8t6dYTo3U-UuH2PzJR17ont3rWoPEkvgM"
+        }
+      },
+      {
+        "transaction_id": "MzMxNDgwMDU5MmFkaXF6a2N4",
+        "barcode": "RADMGWC2",
+        "type": "AA",
+        "date": "2021-09-28",
+        "category": "accounts",
+        "description": "accounts-with-accounts-type-full",
+        "description_values": {
+          "made_up_date": "2020-12-31"
+        },
+        "pages": 20,
+        "action_date": "2020-12-31",
+        "paper_filed": true,
+        "links": {
+          "self": "/company/09897919/filing-history/MzMxNDgwMDU5MmFkaXF6a2N4",
+          "document_metadata": "https://document-api.company-information.service.gov.uk/document/Gce49Ea2wDIoadvRGb07gXhsHcDDmuEhjNIsK1xyxM8"
+        }
+      },
+      {
+        "transaction_id": "MzI3NTkyODk3N2FkaXF6a2N4",
+        "barcode": "A9BOJXHC",
+        "type": "AA",
+        "date": "2020-08-24",
+        "category": "accounts",
+        "description": "accounts-with-accounts-type-full",
+        "description_values": {
+          "made_up_date": "2019-12-31"
+        },
+        "pages": 20,
+        "action_date": "2019-12-31",
+        "paper_filed": true,
+        "links": {
+          "self": "/company/09897919/filing-history/MzI3NTkyODk3N2FkaXF6a2N4",
+          "document_metadata": "https://document-api.company-information.service.gov.uk/document/_F6ezADQOtnT3rJuZu56aB1s6hhWrGZEXW5ADCfDwNU"
+        }
+      },
+      {
+        "transaction_id": "MzI0NDExNzMzOWFkaXF6a2N4",
+        "barcode": "S8DQVKNS",
+        "type": "AA",
+        "date": "2019-09-16",
+        "category": "accounts",
+        "description": "accounts-with-accounts-type-full",
+        "description_values": {
+          "made_up_date": "2018-12-31"
+        },
+        "pages": 18,
+        "action_date": "2018-12-31",
+        "paper_filed": true,
+        "links": {
+          "self": "/company/09897919/filing-history/MzI0NDExNzMzOWFkaXF6a2N4",
+          "document_metadata": "https://document-api.company-information.service.gov.uk/document/kN6K9PBdp0I2TqIj5D7oMzZKSlyqgB1fNLGmJggC_ao"
+        }
+      },
+      {
+        "transaction_id": "MzIxMjA3ODkzOWFkaXF6a2N4",
+        "barcode": "A7C3158P",
+        "type": "AA",
+        "date": "2018-08-15",
+        "category": "accounts",
+        "description": "accounts-with-accounts-type-full",
+        "description_values": {
+          "made_up_date": "2017-12-31"
+        },
+        "pages": 18,
+        "action_date": "2017-12-31",
+        "paper_filed": true,
+        "links": {
+          "self": "/company/09897919/filing-history/MzIxMjA3ODkzOWFkaXF6a2N4",
+          "document_metadata": "https://document-api.company-information.service.gov.uk/document/f0KbM43cLv49PiJ4F-7M3qgICHtuGGi7KtKdyzUozUo"
+        }
+      },
+      {
+        "transaction_id": "MzE4NDYyNjI1NGFkaXF6a2N4",
+        "barcode": "A6DXW9ZT",
+        "type": "AA",
+        "date": "2017-09-06",
+        "category": "accounts",
+        "description": "accounts-with-accounts-type-full",
+        "description_values": {
+          "made_up_date": "2016-12-31"
+        },
+        "pages": 17,
+        "action_date": "2016-12-31",
+        "paper_filed": true,
+        "links": {
+          "self": "/company/09897919/filing-history/MzE4NDYyNjI1NGFkaXF6a2N4",
+          "document_metadata": "https://document-api.company-information.service.gov.uk/document/tX4CUNTKuqiIvXDmAxPU-zN0fgBWh8MAWbV-3tndC6A"
+        }
+      }
+    ],
+    "items_per_page": 25,
+    "start_index": 0,
+    "total_count": 10
+  }
+}

@@ -28,6 +28,17 @@ class Filing(DomainModel):
     document_url: str | None = None
 
 
+class Appointment(DomainModel):
+    """Another company an officer serves."""
+
+    company_number: str
+    company_name: str
+    company_status: str | None = None
+    role: str
+    appointed_on: date | None = None
+    resigned_on: date | None = None
+
+
 class CompaniesHouseClient(SourceClient):
     name = "companies_house"
     base_url = "https://api.company-information.service.gov.uk"
@@ -57,6 +68,11 @@ class CompaniesHouseClient(SourceClient):
         items = await self._all_items(f"/company/{number}/persons-with-significant-control")
         return [owner for item in items if (owner := _owner(item))]
 
+    async def officer_appointments(self, officer_id: str) -> list[Appointment]:
+        """Every company an officer serves: how a director shared with another company shows."""
+        data = await self._get_json(f"/officers/{officer_id}/appointments", {"items_per_page": "50"})
+        return [_appointment(item) for item in (data or {}).get("items", [])]
+
     async def filings(self, number: str, category: str = "accounts") -> list[Filing]:
         """Newest first, as Companies House returns them."""
         data = await self._get_json(f"/company/{number}/filing-history", {"category": category, "items_per_page": "25"})
@@ -71,6 +87,17 @@ class CompaniesHouseClient(SourceClient):
             return None
         response = await self._get(f"{filing.document_url}/content", accept=XHTML)
         return response.text if response else None
+
+    async def outstanding_charges(self, number: str) -> int:
+        """Charges (secured loans) not yet satisfied, in full or in part."""
+        data = await self._get_json(f"/company/{number}/charges")
+        items = (data or {}).get("items", [])
+        return sum(1 for item in items if item.get("status") in {"outstanding", "part-satisfied"})
+
+    async def insolvency_cases(self, number: str) -> list[str]:
+        """The type of each insolvency case; none when Companies House answers 404."""
+        data = await self._get_json(f"/company/{number}/insolvency")
+        return [case.get("type", "unknown") for case in (data or {}).get("cases", [])]
 
     async def _all_items(self, url: str) -> list[dict[str, Any]]:
         """Every item of a paged list; nothing when the company does not exist (404)."""
@@ -170,6 +197,18 @@ def _share_band(natures: list[str]) -> tuple[float | None, float | None]:
         if floor := _SHARE_FLOOR.search(nature):
             return float(floor[1]), 100.0
     return None, None
+
+
+def _appointment(raw: dict[str, Any]) -> Appointment:
+    company = raw.get("appointed_to", {})
+    return Appointment(
+        company_number=company["company_number"],
+        company_name=company.get("company_name", ""),
+        company_status=company.get("company_status"),
+        role=raw.get("officer_role", "unknown"),
+        appointed_on=raw.get("appointed_on"),
+        resigned_on=raw.get("resigned_on"),
+    )
 
 
 def _filing(raw: dict[str, Any]) -> Filing:

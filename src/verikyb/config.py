@@ -69,6 +69,8 @@ class HighRiskCountries(DomainModel):
 class RealFirm(DomainModel):
     name: str
     company_number: str = Field(pattern=r"^[A-Z0-9]{8}$")  # Companies House: 8 characters
+    lei: str | None = Field(default=None, pattern=r"^[A-Z0-9]{18}[0-9]{2}$")  # ISO 17442
+    us_parent_cik: str | None = Field(default=None, pattern=r"^\d{1,10}$")  # its filings: EDGAR
 
 
 class DemoSet(DomainModel):
@@ -80,6 +82,19 @@ class DemoSet(DomainModel):
         if len(numbers) != len(set(numbers)):
             raise ValueError("each demo firm must have its own company number")
         return self
+
+
+class PolicyDocument(DomainModel):
+    id: str
+    title: str
+    jurisdiction: str
+    path: Path  # where the document lives once downloaded, or in the repository
+    page: str | None = None  # its publication page, for a download by hand
+    url: str | None = None  # a direct link, where the publisher allows scripted downloads
+
+
+class PolicyCorpus(DomainModel):
+    documents: list[PolicyDocument] = Field(min_length=1)
 
 
 def load_questionnaire(config_dir: Path) -> Questionnaire:
@@ -96,3 +111,7 @@ def load_high_risk_countries(config_dir: Path) -> HighRiskCountries:
 
 def load_demo_set(config_dir: Path) -> DemoSet:
     return load_yaml(config_dir / "demo_set.yaml", DemoSet)
+
+
+def load_policy_corpus(config_dir: Path) -> PolicyCorpus:
+    return load_yaml(config_dir / "policy_corpus.yaml", PolicyCorpus)

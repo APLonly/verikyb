@@ -1,0 +1,80 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/09092149",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:09:50.916544Z",
+  "synthetic": false,
+  "body": {
+    "accounts": {
+      "accounting_reference_date": {
+        "day": "31",
+        "month": "03"
+      },
+      "last_accounts": {
+        "made_up_to": "2026-03-31",
+        "period_end_on": "2026-03-31",
+        "period_start_on": "2025-04-01",
+        "type": "group"
+      },
+      "next_accounts": {
+        "due_on": "2027-12-31",
+        "overdue": false,
+        "period_end_on": "2027-03-31",
+        "period_start_on": "2026-04-01"
+      },
+      "next_due": "2027-12-31",
+      "next_made_up_to": "2027-03-31",
+      "overdue": false
+    },
+    "can_file": true,
+    "company_name": "STARLING BANK LIMITED",
+    "company_number": "09092149",
+    "company_status": "active",
+    "confirmation_statement": {
+      "last_made_up_to": "2026-02-17",
+      "next_due": "2027-03-03",
+      "next_made_up_to": "2027-02-17",
+      "overdue": false
+    },
+    "date_of_creation": "2014-06-18",
+    "etag": "1321c88ebe6c56cdcdac74da5ef4ac2b61410047",
+    "has_been_liquidated": false,
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "jurisdiction": "england-wales",
+    "last_full_members_list_date": "2016-06-18",
+    "links": {
+      "charges": "/company/09092149/charges",
+      "filing_history": "/company/09092149/filing-history",
+      "officers": "/company/09092149/officers",
+      "persons_with_significant_control": "/company/09092149/persons-with-significant-control",
+      "self": "/company/09092149"
+    },
+    "previous_company_names": [
+      {
+        "ceased_on": "2016-07-15",
+        "effective_from": "2016-01-05",
+        "name": "STARLING FS LIMITED"
+      },
+      {
+        "ceased_on": "2016-01-05",
+        "effective_from": "2014-06-18",
+        "name": "POSSIBLE FS LIMITED"
+      }
+    ],
+    "registered_office_address": {
+      "address_line_1": "5th Floor London Fruit And Wool Exchange",
+      "address_line_2": "1 Duval Square",
+      "country": "United Kingdom",
+      "locality": "London",
+      "postal_code": "E1 6PW"
+    },
+    "registered_office_is_in_dispute": false,
+    "sic_codes": [
+      "64191"
+    ],
+    "type": "ltd",
+    "undeliverable_registered_office_address": false
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "url": "https://api.company-information.service.gov.uk/search/companies?q=ClearBank+Limited&items_per_page=20",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:12.492770Z",
+  "synthetic": false,
+  "body": {
+    "items": [
+      {
+        "address": {
+          "address_line_1": "The Broadgate Tower",
+          "address_line_2": "20 Primrose Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC2A 2EW",
+          "premises": "Level 27,"
+        },
+        "address_snippet": "Level 27, The Broadgate Tower, 20 Primrose Street, London, England, EC2A 2EW",
+        "company_number": "09736376",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2015-08-17",
+        "description": "09736376 - Incorporated on 17 August 2015",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/09736376"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "CLEARBANK LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "Floor, Prologue Works",
+          "address_line_2": "25 Marsh Street",
+          "country": "England",
+          "locality": "Bristol",
+          "postal_code": "BS1 4AX",
+          "premises": "4th"
+        },
+        "address_snippet": "4th Floor, Prologue Works, 25 Marsh Street, Bristol, England, BS1 4AX",
+        "company_number": "09708572",
+        "company_status": "dissolved",
+        "company_type": "ltd",
+        "date_of_cessation": "2022-07-12",
+        "date_of_creation": "2015-07-29",
+        "description": "09708572 - Dissolved on 12 July 2022",
+        "description_identifier": [
+          "dissolved-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/09708572"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "CLEARBANK",
+        "title": "CB INFRASTRUCTURE LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "East Street",
+          "locality": "Epsom",
+          "postal_code": "KT17 1HS",
+          "premises": "Emerald House",
+          "region": "Surrey"
+        },
+        "address_snippet": "Emerald House, East Street, Epsom, Surrey, KT17 1HS",
+        "company_number": "05257605",
+        "company_status": "dissolved",
+        "company_type": "ltd",
+        "date_of_cessation": "2011-04-26",
+        "date_of_creation": "2004-10-12",
+        "description": "05257605 - Dissolved on 26 April 2011",
+        "description_identifier": [
+          "dissolved-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/05257605"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "CLEARBANK",
+        "title": "OLD BEBL LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "5-7 Cranwood Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC1V 9EE",
+          "premises": "Finsgate"
+        },
+        "address_snippet": "Finsgate, 5-7 Cranwood Street, London, United Kingdom, EC1V 9EE",
+        "company_number": "05736934",
+        "company_status": "dissolved",
+        "company_type": "ltd",
+        "date_of_cessation": "2022-12-27",
+        "date_of_creation": "2006-03-09",
+        "description": "05736934 - Dissolved on 27 December 2022",
+        "description_identifier": [
+          "dissolved-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/05736934"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "CLEARBANK",
+        "title": "BUSINESS ENVIRONMENT GROVELAND LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "Broadgate Tower",
+          "address_line_2": "Primrose Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC2A 2EW",
+          "premises": "Level 27,"
+        },
+        "address_snippet": "Level 27, Broadgate Tower, Primrose Street, London, England, EC2A 2EW",
+        "company_number": "14254435",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2022-07-25",
+        "description": "14254435 - Incorporated on 25 July 2022",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/14254435"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "CLEARBANK GROUP HOLDINGS LIMITED"
+      }
+    ],
+    "items_per_page": 20,
+    "kind": "search#companies",
+    "page_number": 1,
+    "start_index": 0,
+    "total_results": 5
+  }
+}

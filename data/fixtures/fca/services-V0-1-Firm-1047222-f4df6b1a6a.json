@@ -1,0 +1,51 @@
+{
+  "url": "https://register.fca.org.uk/services/V0.1/Firm/1047222",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:09:48.083084Z",
+  "synthetic": false,
+  "body": {
+    "Status": "FSR-API-02-01-00",
+    "ResultInfo": {
+      "page": "1",
+      "per_page": "1",
+      "total_count": "1"
+    },
+    "Message": "Ok. Firm Found",
+    "Data": [
+      {
+        "Name": "https://register.fca.org.uk/services/V0.1/Firm/1047222/Names",
+        "Individuals": "https://register.fca.org.uk/services/V0.1/Firm/1047222/Individuals",
+        "Requirements": "https://register.fca.org.uk/services/V0.1/Firm/1047222/Requirements",
+        "Permission": "https://register.fca.org.uk/services/V0.1/Firm/1047222/Permissions",
+        "Passport": "https://register.fca.org.uk/services/V0.1/Firm/1047222/Passports",
+        "Regulators": "https://register.fca.org.uk/services/V0.1/Firm/1047222/Regulators",
+        "Appointed Representative": "https://register.fca.org.uk/services/V0.1/Firm/1047222/AR",
+        "Address": "https://register.fca.org.uk/services/V0.1/Firm/1047222/Address",
+        "Waivers": "https://register.fca.org.uk/services/V0.1/Firm/1047222/Waivers",
+        "Exclusions": "https://register.fca.org.uk/services/V0.1/Firm/1047222/Exclusions",
+        "DisciplinaryHistory": "https://register.fca.org.uk/services/V0.1/Firm/1047222/DisciplinaryHistory",
+        "System Timestamp": "25/11/2026 07:00",
+        "Exceptional Info Details": [],
+        "Status Effective Date": "22/06/2026",
+        "E-Money Agent Status": "",
+        "PSD / EMD Effective Date": "22/06/2026",
+        "Client Money Permission": "",
+        "Sub Status Effective from": "",
+        "Sub-Status": "",
+        "Mutual Society Number": "",
+        "Companies House Number": "09896841",
+        "MLRs Status Effective Date": "",
+        "MLRs Status": "",
+        "E-Money Agent Status Effective Date": "",
+        "PSD Agent Status Effective Date": "",
+        "PSD Agent Status": "",
+        "PSD / EMD Status": "Authorised Electronic Money Institution",
+        "Status": "Registered",
+        "Business Type": "EMD",
+        "Organisation Name": "REMITLY U.K., LTD",
+        "FRN": "1047222"
+      }
+    ]
+  }
+}

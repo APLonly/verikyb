@@ -2,7 +2,7 @@
   "url": "https://api.company-information.service.gov.uk/search/companies?q=PayPal+UK+Ltd&items_per_page=20",
   "status": 200,
   "content_type": "application/json",
-  "recorded_at": "2026-11-10T06:45:51.886745Z",
+  "recorded_at": "2026-11-25T07:09:36.680032Z",
   "synthetic": false,
   "body": {
     "items": [
@@ -64,10 +64,10 @@
           "address_line_1": "Upper Ground",
           "country": "England",
           "locality": "London",
-          "postal_code": "SE1 9PP",
+          "postal_code": "SE1 9PZ",
           "premises": "76"
         },
-        "address_snippet": "76 Upper Ground, London, England, SE1 9PP",
+        "address_snippet": "76 Upper Ground, London, England, SE1 9PZ",
         "company_number": "05507404",
         "company_status": "active",
         "company_type": "private-limited-guarant-nsc-limited-exemption",

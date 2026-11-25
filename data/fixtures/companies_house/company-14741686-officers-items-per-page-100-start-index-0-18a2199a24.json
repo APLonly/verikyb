@@ -2,7 +2,7 @@
   "url": "https://api.company-information.service.gov.uk/company/14741686/officers?items_per_page=100&start_index=0",
   "status": 200,
   "content_type": "application/json",
-  "recorded_at": "2026-11-10T06:45:52.451402Z",
+  "recorded_at": "2026-11-25T07:09:37.631084Z",
   "synthetic": false,
   "body": {
     "active_count": 5,

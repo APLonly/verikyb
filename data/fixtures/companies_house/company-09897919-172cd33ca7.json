@@ -1,0 +1,66 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/09897919",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:36.380964Z",
+  "synthetic": false,
+  "body": {
+    "accounts": {
+      "accounting_reference_date": {
+        "day": "31",
+        "month": "12"
+      },
+      "last_accounts": {
+        "made_up_to": "2025-12-31",
+        "period_end_on": "2025-12-31",
+        "period_start_on": "2025-01-01",
+        "type": "full"
+      },
+      "next_accounts": {
+        "due_on": "2027-09-30",
+        "overdue": false,
+        "period_end_on": "2026-12-31",
+        "period_start_on": "2026-01-01"
+      },
+      "next_due": "2027-09-30",
+      "next_made_up_to": "2026-12-31",
+      "overdue": false
+    },
+    "can_file": true,
+    "company_name": "MODULR FS LIMITED",
+    "company_number": "09897919",
+    "company_status": "active",
+    "confirmation_statement": {
+      "last_made_up_to": "2025-12-01",
+      "next_due": "2026-12-15",
+      "next_made_up_to": "2026-12-01",
+      "overdue": false
+    },
+    "date_of_creation": "2015-12-02",
+    "etag": "82362c1f6227d2ffdb47f1fcf60fb5b1d5441f3b",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "jurisdiction": "england-wales",
+    "links": {
+      "charges": "/company/09897919/charges",
+      "filing_history": "/company/09897919/filing-history",
+      "officers": "/company/09897919/officers",
+      "persons_with_significant_control": "/company/09897919/persons-with-significant-control",
+      "self": "/company/09897919"
+    },
+    "registered_office_address": {
+      "address_line_1": "The Featherstone Building",
+      "address_line_2": "66 City Road",
+      "country": "United Kingdom",
+      "locality": "London",
+      "postal_code": "EC1Y 2AL"
+    },
+    "registered_office_is_in_dispute": false,
+    "sic_codes": [
+      "66190"
+    ],
+    "type": "ltd",
+    "undeliverable_registered_office_address": false
+  }
+}

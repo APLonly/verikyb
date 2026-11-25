@@ -1,0 +1,47 @@
+{
+  "url": "https://register.fca.org.uk/services/V0.1/Firm/754568/Address",
+  "status": 200,
+  "content_type": "application/json;charset=UTF-8",
+  "recorded_at": "2026-11-25T07:10:27.844282Z",
+  "synthetic": false,
+  "body": {
+    "Status": "FSR-API-02-02-00",
+    "ResultInfo": {
+      "page": "1",
+      "per_page": "2",
+      "total_count": "2"
+    },
+    "Message": "Ok. Firm Address Found",
+    "Data": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/754568/Address?Type=PPOB",
+        "Website Address": "http://www.clear.bank/",
+        "Phone Number": "+442031112370",
+        "Country": "UNITED KINGDOM",
+        "Postcode": "EC2A 2EW",
+        "County": "",
+        "Town": "London",
+        "Address Line 4": "",
+        "Address LIne 3": "20 Primrose Street",
+        "Address Line 2": "The Broadgate Tower",
+        "Address Line 1": "Level 27",
+        "Address Type": "Principal Place of Business"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/754568/Address?Type=Complaint",
+        "Website Address": "",
+        "Phone Number": "+442031112370",
+        "Country": "UNITED KINGDOM",
+        "Postcode": "EC2A 2EW",
+        "County": "",
+        "Town": "London",
+        "Address Line 4": "",
+        "Address LIne 3": "20 Primrose Street",
+        "Address Line 2": "The Broadgate Tower",
+        "Address Line 1": "Level 27",
+        "Individual": "Phillip Rivers",
+        "Address Type": "Complaints Contact"
+      }
+    ]
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "url": "https://register.fca.org.uk/services/V0.1/Firm/730166/Permissions",
+  "status": 200,
+  "content_type": "application/json;charset=UTF-8",
+  "recorded_at": "2026-11-25T07:09:57.608705Z",
+  "synthetic": false,
+  "body": {
+    "Status": "FSR-API-02-03-00",
+    "ResultInfo": {
+      "page": "1",
+      "per_page": "20",
+      "total_count": "10"
+    },
+    "Message": "Ok. Firm permission found",
+    "Data": {
+      "Agreeing to carry on a regulated activity": [
+        {
+          "Limitation": [
+            "The firm can only agree to carry on the regulated activities specified in this Notice."
+          ]
+        }
+      ],
+      "Dealing in investments as principal": [
+        {
+          "Customer Type": [
+            "Eligible Counterparty",
+            "Professional"
+          ]
+        },
+        {
+          "Investment Type": [
+            "Government and public security",
+            "Debenture",
+            "Rights to or interests in investments (Security)",
+            "Future (excluding a commodity future and a rolling spot forex contract)",
+            "Rolling spot forex contract",
+            "Contract for Differences (excluding a spread bet and, a rolling spot forex contract and a binary bet)",
+            "Rights to or interests in investments (Contractually Based Investments)"
+          ]
+        },
+        {
+          "Limitation": [
+            "Investment activity in \"rights to or interests in investments (contractually based)\" is limited to investment types granted for this activity."
+          ]
+        }
+      ],
+      "Exercising/having right to exercise lender's rights and duties under a regulated credit agreement (excluding high-cost short-term credit, bill of sale agreement, and home collected credit agreement)": [
+        {
+          "Limitation Not Found": [
+            "Valid limitation not present"
+          ]
+        }
+      ],
+      "Entering into regulated credit agreement as Lender (Excluding high-cost short-term credit, bill of sale agreement, and home collected credit agreement)": [
+        {
+          "Limitation Not Found": [
+            "Valid limitation not present"
+          ]
+        }
+      ],
+      "Credit Broking": [
+        {
+          "Limitation Not Found": [
+            "Valid limitation not present"
+          ]
+        }
+      ],
+      "Making arrangements with a view to regulated mortgage contracts": [
+        {
+          "Customer Type": [
+            "Customer"
+          ]
+        },
+        {
+          "Investment Type": [
+            "Regulated mortgage contract"
+          ]
+        }
+      ],
+      "Arranging (bringing about) regulated mortgage contracts": [
+        {
+          "Customer Type": [
+            "Customer"
+          ]
+        },
+        {
+          "Investment Type": [
+            "Regulated mortgage contract"
+          ]
+        }
+      ],
+      "Making arrangements with a view to transactions in investments": [
+        {
+          "Customer Type": [
+            "Retail (Investment)",
+            "Retail (Non-Investment Insurance)",
+            "Commercial"
+          ]
+        },
+        {
+          "Investment Type": [
+            "Structured Deposits",
+            "Personal pension scheme",
+            "Non-investment insurance contracts",
+            "Rights to or interests in investments",
+            "Rights to or interests in investments (Contractually Based Investments)",
+            "Unit",
+            "Funeral plan contract",
+            "Rights to or interests in investments (Security)",
+            "Stakeholder pension scheme",
+            "Certificates representing certain security",
+            "Government and public security",
+            "Debenture",
+            "Share",
+            "Life Policy"
+          ]
+        },
+        {
+          "Limitation": [
+            "Investment activity in \"rights to or interests in investments (security)\" and \"rights to or interests in investments (contractually based investment)\" is limited to the investment types granted for this activity."
+          ]
+        }
+      ],
+      "Arranging (bringing about) deals in investments": [
+        {
+          "Customer Type": [
+            "Retail (Investment)",
+            "Commercial",
+            "Retail (Non-Investment Insurance)"
+          ]
+        },
+        {
+          "Investment Type": [
+            "Structured Deposits",
+            "Non-investment insurance contracts",
+            "Rights to or interests in investments",
+            "Rights to or interests in investments (Contractually Based Investments)",
+            "Unit",
+            "Funeral plan contract",
+            "Rights to or interests in investments (Security)",
+            "Stakeholder pension scheme",
+            "Certificates representing certain security",
+            "Government and public security",
+            "Debenture",
+            "Share",
+            "Life Policy",
+            "Personal pension scheme"
+          ]
+        },
+        {
+          "Limitation": [
+            "Investment activity in \"rights to or interests in investments (security)\" and \"rights to or interests in investments (contractually based investment)\" is limited to the investment types granted for this activity."
+          ]
+        }
+      ],
+      "Accepting Deposits": [
+        {
+          "Customer Type": [
+            "Retail (Investment)",
+            "Professional",
+            "Eligible Counterparty"
+          ]
+        },
+        {
+          "Investment Type": [
+            "Deposit"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "url": "https://document-api.company-information.service.gov.uk/document/JHxeOxWlcJ0-Xyju49okenym8VWCtMiMKa6k4IJDYmY",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:09:46.611410Z",
+  "synthetic": false,
+  "body": {
+    "company_number": "09896841",
+    "barcode": "ADA4HEG3",
+    "significant_date": "2023-12-31T00:00:00Z",
+    "significant_date_type": "made-up-date",
+    "category": "accounts",
+    "pages": 32,
+    "filename": "",
+    "created_at": "2024-09-03T05:58:37.302921517Z",
+    "etag": "",
+    "links": {
+      "self": "https://document-api.company-information.service.gov.uk/document/JHxeOxWlcJ0-Xyju49okenym8VWCtMiMKa6k4IJDYmY",
+      "document": "https://document-api.company-information.service.gov.uk/document/JHxeOxWlcJ0-Xyju49okenym8VWCtMiMKa6k4IJDYmY/content"
+    },
+    "resources": {
+      "application/pdf": {
+        "content_length": 1253312
+      }
+    }
+  }
+}

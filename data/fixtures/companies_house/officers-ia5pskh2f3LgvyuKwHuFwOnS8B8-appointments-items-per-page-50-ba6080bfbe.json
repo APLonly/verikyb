@@ -1,0 +1,311 @@
+{
+  "url": "https://api.company-information.service.gov.uk/officers/ia5pskh2f3LgvyuKwHuFwOnS8B8/appointments?items_per_page=50",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:07.954131Z",
+  "synthetic": false,
+  "body": {
+    "active_count": 3,
+    "date_of_birth": {
+      "month": 12,
+      "year": 1976
+    },
+    "etag": "2e865502ae4807068cadfa15b2ae6c24fc5a5b7b",
+    "inactive_count": 0,
+    "is_corporate_officer": false,
+    "items": [
+      {
+        "address": {
+          "address_line_1": "69-77 Paul Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC2A 4NW",
+          "premises": "Telephone House"
+        },
+        "appointed_on": "2026-03-17",
+        "appointed_to": {
+          "company_name": "LENDABLE OPERATIONS LTD",
+          "company_number": "09011579",
+          "company_status": "active"
+        },
+        "name": "Matthew John BRIERS",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/09011579"
+        },
+        "name_elements": {
+          "forename": "Matthew",
+          "title": "Mr",
+          "other_forenames": "John",
+          "surname": "BRIERS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-03-26"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "600 Pavilion Drive",
+          "country": "United Kingdom",
+          "locality": "Northampton",
+          "postal_code": "NN4 7SL",
+          "premises": "2 Pavilion Court"
+        },
+        "appointed_on": "2025-01-07",
+        "appointed_to": {
+          "company_name": "DRIVE 55 LTD",
+          "company_number": "16167844",
+          "company_status": "active"
+        },
+        "name": "Matthew John BRIERS",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/16167844"
+        },
+        "name_elements": {
+          "forename": "Matthew",
+          "title": "Mr",
+          "other_forenames": "John",
+          "surname": "BRIERS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-02-03"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "Worship Square",
+          "address_line_2": "65 Clifton Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC2A 4JE",
+          "premises": "1st Floor"
+        },
+        "appointed_on": "2024-11-28",
+        "appointed_to": {
+          "company_name": "WISE PAYMENTS LIMITED",
+          "company_number": "07209813",
+          "company_status": "active"
+        },
+        "name": "Matthew John BRIERS",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/07209813"
+        },
+        "name_elements": {
+          "forename": "Matthew",
+          "title": "Mr",
+          "other_forenames": "John",
+          "surname": "BRIERS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-04-02"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "Tea Building",
+          "address_line_2": "56 Shoreditch High Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6JJ",
+          "premises": "6th Floor"
+        },
+        "appointed_on": "2021-06-18",
+        "appointed_to": {
+          "company_name": "WISE LIMITED",
+          "company_number": "13211214",
+          "company_status": "active"
+        },
+        "name": "Matthew John BRIERS",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/13211214"
+        },
+        "name_elements": {
+          "forename": "Matthew",
+          "title": "Mr",
+          "other_forenames": "John",
+          "surname": "BRIERS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2024-03-25"
+      },
+      {
+        "address": {
+          "address_line_1": "56 Shoreditch High Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "E1 6JJ",
+          "premises": "6th Floor, Tea Building"
+        },
+        "appointed_on": "2019-03-26",
+        "appointed_to": {
+          "company_name": "WISE ASSETS UK LTD",
+          "company_number": "11905382",
+          "company_status": "active"
+        },
+        "name": "Matthew John BRIERS",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/11905382"
+        },
+        "name_elements": {
+          "forename": "Matthew",
+          "title": "Mr",
+          "other_forenames": "John",
+          "surname": "BRIERS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2024-01-19"
+      },
+      {
+        "address": {
+          "address_line_1": "Tea Building",
+          "address_line_2": "56 Shoreditch High Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6JJ",
+          "premises": "6th Floor"
+        },
+        "appointed_on": "2021-06-21",
+        "appointed_to": {
+          "company_name": "WISE INVESTMENTS HOLDINGS LTD",
+          "company_number": "13222470",
+          "company_status": "active"
+        },
+        "name": "Matthew John BRIERS",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/13222470"
+        },
+        "name_elements": {
+          "forename": "Matthew",
+          "title": "Mr",
+          "other_forenames": "John",
+          "surname": "BRIERS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2024-01-07"
+      },
+      {
+        "address": {
+          "address_line_1": "Tea Building",
+          "address_line_2": "56 Shoreditch High Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6JJ",
+          "premises": "6th Floor"
+        },
+        "appointed_on": "2021-06-21",
+        "appointed_to": {
+          "company_name": "WISE FINANCIAL HOLDINGS LTD",
+          "company_number": "13214905",
+          "company_status": "active"
+        },
+        "name": "Matthew John BRIERS",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/13214905"
+        },
+        "name_elements": {
+          "forename": "Matthew",
+          "title": "Mr",
+          "other_forenames": "John",
+          "surname": "BRIERS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2024-01-07"
+      },
+      {
+        "address": {
+          "address_line_1": "56 Shoreditch High Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "E1 6JJ",
+          "premises": "The Tea Building"
+        },
+        "appointed_on": "2021-05-07",
+        "appointed_to": {
+          "company_name": "WISE ASSETS NOMINEES LTD",
+          "company_number": "13381345",
+          "company_status": "active"
+        },
+        "name": "Matthew John BRIERS",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/13381345"
+        },
+        "name_elements": {
+          "forename": "Matthew",
+          "title": "Mr",
+          "other_forenames": "John",
+          "surname": "BRIERS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2024-01-07"
+      },
+      {
+        "address": {
+          "address_line_1": "56 Shoreditch High Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "E1 6JJ",
+          "premises": "6th Floor, Tea Building"
+        },
+        "appointed_on": "2021-10-07",
+        "appointed_to": {
+          "company_name": "WISE PAYMENTS LIMITED",
+          "company_number": "07209813",
+          "company_status": "active"
+        },
+        "name": "Matthew John BRIERS",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/07209813"
+        },
+        "name_elements": {
+          "forename": "Matthew",
+          "title": "Mr",
+          "other_forenames": "John",
+          "surname": "BRIERS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2023-12-15"
+      }
+    ],
+    "items_per_page": 50,
+    "kind": "personal-appointment",
+    "links": {
+      "self": "/officers/ia5pskh2f3LgvyuKwHuFwOnS8B8/appointments"
+    },
+    "name": "Matthew John BRIERS",
+    "resigned_count": 6,
+    "start_index": 0,
+    "total_results": 9
+  }
+}

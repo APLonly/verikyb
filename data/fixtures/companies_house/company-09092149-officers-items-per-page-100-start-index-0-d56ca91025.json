@@ -1,0 +1,900 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/09092149/officers?items_per_page=100&start_index=0",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:09:51.683052Z",
+  "synthetic": false,
+  "body": {
+    "active_count": 8,
+    "etag": "2f0cf70b8b217c8b93eb4ff157e180f226d2b297",
+    "items": [
+      {
+        "etag": "2f0cf70b8b217c8b93eb4ff157e180f226d2b297",
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2024-05-24",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "self": "/company/09092149/appointments/Q_qF6O8QnmyakFuP81k6R8EVDhU",
+          "officer": {
+            "appointments": "/officers/flqesY9jXA5w07iWLi4M3L6hzYY/appointments"
+          }
+        },
+        "name": "RIDLEY, Veronica",
+        "officer_role": "secretary",
+        "person_number": "323523940001"
+      },
+      {
+        "etag": "536671f509a14a0fbaed30d2afb35a411228085f",
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2025-10-06",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 2,
+          "year": 1968
+        },
+        "links": {
+          "self": "/company/09092149/appointments/ec0IGA9rpzSrA68riOVPzk011TQ",
+          "officer": {
+            "appointments": "/officers/JBbkdfMsTkuvNnCBJYN9gGrvQSk/appointments"
+          }
+        },
+        "name": "BELL, Colin William",
+        "nationality": "British",
+        "officer_role": "director",
+        "person_number": "280088790001",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-03-02"
+        }
+      },
+      {
+        "etag": "e3c8a6454718797e1c2f722caacb27c9cdd11fa5",
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2024-06-24",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United Kingdom",
+        "date_of_birth": {
+          "month": 11,
+          "year": 1978
+        },
+        "links": {
+          "self": "/company/09092149/appointments/jKdyT08pT_l0RZZD26J84s7HkzM",
+          "officer": {
+            "appointments": "/officers/SVJMuYouG6kwYuyO0uA4gJp5chQ/appointments"
+          }
+        },
+        "name": "BHATIA, Raman",
+        "nationality": "British",
+        "officer_role": "director",
+        "person_number": "324542190001",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-03-02"
+        }
+      },
+      {
+        "etag": "c4f9acdf97d2655328a162538535d171a9d2d074",
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2024-03-01",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United Kingdom",
+        "date_of_birth": {
+          "month": 10,
+          "year": 1971
+        },
+        "links": {
+          "self": "/company/09092149/appointments/fQCbmBxRKrfgF6o7f8e504JgB1U",
+          "officer": {
+            "appointments": "/officers/j3V_cdjv-kUF-Gz3n3IsLV0skF8/appointments"
+          }
+        },
+        "name": "CHAKRAVERTY, Julie",
+        "nationality": "British",
+        "officer_role": "director",
+        "person_number": "320238360001",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-03-02"
+        }
+      },
+      {
+        "etag": "afbe8995683e67e1f2df8072a620bf731396c29c",
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2022-07-13",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 1,
+          "year": 1989
+        },
+        "links": {
+          "self": "/company/09092149/appointments/z_f0iXNoIdUqfEZ1YMNHzwE5OFs",
+          "officer": {
+            "appointments": "/officers/UkLMaCCZ-Mj0xRgZGtJHo0ZPjpw/appointments"
+          }
+        },
+        "name": "FERGUSON, Declan",
+        "nationality": "British",
+        "officer_role": "director",
+        "person_number": "297881360001",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-03-02"
+        }
+      },
+      {
+        "etag": "0e14df507dcee8ef63abb1340edc87b30586b5cf",
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2026-06-18",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 8,
+          "year": 1978
+        },
+        "links": {
+          "self": "/company/09092149/appointments/2mJw3tp8CADiqIY2FtbmyZAXuhw",
+          "officer": {
+            "appointments": "/officers/No7vUEex__dD3L87LC5mTyxyixk/appointments"
+          }
+        },
+        "name": "MOUNTAIN, John Edmund",
+        "nationality": "British",
+        "officer_role": "director",
+        "person_number": "340873320001",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-06-26"
+        }
+      },
+      {
+        "etag": "2b398f6a3a79872a34f97a8594ab599051d0f566",
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2026-07-01",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United Kingdom",
+        "date_of_birth": {
+          "month": 2,
+          "year": 1970
+        },
+        "links": {
+          "self": "/company/09092149/appointments/atEHaoiVWxnFMwwLYLoKPR5_LYI",
+          "officer": {
+            "appointments": "/officers/KVIpfpj1dpH_QAYTxN2Fduz03BM/appointments"
+          }
+        },
+        "name": "OLLEY, Daniel Toby",
+        "nationality": "British",
+        "officer_role": "director",
+        "person_number": "350441890001",
+        "identity_verification_details": {
+          "anti_money_laundering_supervisory_bodies": [
+            "HMRC"
+          ],
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-07-14",
+          "authorised_corporate_service_provider_name": "TURNER LITTLE LIMITED ACSP",
+          "identity_verified_on": "2026-03-23",
+          "preferred_name": "Dan Olley"
+        }
+      },
+      {
+        "etag": "fde491cf8df0972e0fe66712f360ddd03fa5da0a",
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2024-10-01",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United Kingdom",
+        "date_of_birth": {
+          "month": 8,
+          "year": 1965
+        },
+        "links": {
+          "self": "/company/09092149/appointments/4SheTHICrMQ-3QmK50DsRyb0b7g",
+          "officer": {
+            "appointments": "/officers/dcMepUPd16gmLh6tI1-wtOP4lsA/appointments"
+          }
+        },
+        "name": "POPE, Darren Scott",
+        "nationality": "British",
+        "officer_role": "director",
+        "person_number": "133746080002",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-03-02"
+        }
+      },
+      {
+        "etag": "2f0cf70b8b217c8b93eb4ff157e180f226d2b297",
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2015-11-18",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "self": "/company/09092149/appointments/IvFvI3fCnHI_05-Gsmp2R-m_JRs",
+          "officer": {
+            "appointments": "/officers/z20J2hVdGB2vd-pwR4AF95PsT9Y/appointments"
+          }
+        },
+        "name": "NEWMAN, Matthew",
+        "officer_role": "secretary",
+        "resigned_on": "2024-05-24",
+        "person_number": "203608980001"
+      },
+      {
+        "etag": "2f0cf70b8b217c8b93eb4ff157e180f226d2b297",
+        "address": {
+          "address_line_1": "High Street",
+          "country": "United Kingdom",
+          "locality": "Tonbridge",
+          "postal_code": "TN9 1BE",
+          "premises": "190",
+          "region": "Kent"
+        },
+        "appointed_on": "2015-06-01",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "self": "/company/09092149/appointments/cPUoQT2B54qwlg6GwHCeBogM6oc",
+          "officer": {
+            "appointments": "/officers/ESSMexmKj5wg8FdMkJEpfu5SKys/appointments"
+          }
+        },
+        "name": "LORRAINE YOUNG COMPANY SECRETARIES LIMITED",
+        "officer_role": "corporate-secretary",
+        "resigned_on": "2015-11-18",
+        "identification": {
+          "identification_type": "eea",
+          "place_registered": "UNITED KINGDOM",
+          "registration_number": "7873246"
+        },
+        "person_number": "165261700001"
+      },
+      {
+        "etag": "2f0cf70b8b217c8b93eb4ff157e180f226d2b297",
+        "address": {
+          "address_line_1": "Dysart Street",
+          "locality": "London",
+          "postal_code": "EC2A 2BX",
+          "premises": "1"
+        },
+        "appointed_on": "2014-06-18",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "self": "/company/09092149/appointments/DCNTvpfh7aLvFS6cdY1pWc6eGvI",
+          "officer": {
+            "appointments": "/officers/ZVQHSwwp08QDUIepTK9fx-BZtj0/appointments"
+          }
+        },
+        "name": "SARSAR LIMITED",
+        "officer_role": "corporate-secretary",
+        "resigned_on": "2015-06-01",
+        "identification": {
+          "identification_type": "eea",
+          "place_registered": "ENGLAND AND WALES",
+          "registration_number": "07228937"
+        },
+        "person_number": "188659280001"
+      },
+      {
+        "etag": "2f0cf70b8b217c8b93eb4ff157e180f226d2b297",
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2014-06-18",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 1,
+          "year": 1960
+        },
+        "links": {
+          "self": "/company/09092149/appointments/JSrfeTzbNoQjm33lrbGQnYSOyew",
+          "officer": {
+            "appointments": "/officers/hE0wcYUNlHgf-VJD8QRt4JI6MuE/appointments"
+          }
+        },
+        "name": "BODEN, Anne Elizabeth",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2024-06-30",
+        "person_number": "188659290003"
+      },
+      {
+        "etag": "377067624fedd35ce9fc9fafd79b4567c1cbde02",
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2018-06-21",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "Andorra",
+        "date_of_birth": {
+          "month": 5,
+          "year": 1963
+        },
+        "links": {
+          "self": "/company/09092149/appointments/ojs6eO_f9iiYocqwOnTPzoaw7TQ",
+          "officer": {
+            "appointments": "/officers/uELbVTa1eXkM3IIWIP5Suq-YP-A/appointments"
+          }
+        },
+        "name": "CAMPOS, Lazaro",
+        "nationality": "Spanish",
+        "officer_role": "director",
+        "resigned_on": "2026-06-18",
+        "person_number": "248072450002",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-03-02"
+        }
+      },
+      {
+        "etag": "2f0cf70b8b217c8b93eb4ff157e180f226d2b297",
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2020-10-31",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 8,
+          "year": 1973
+        },
+        "links": {
+          "self": "/company/09092149/appointments/eBMjfgAX2nlFpCz1IQfGtQiJKYI",
+          "officer": {
+            "appointments": "/officers/LVYnXlt-fUHJsGhA1qR3rZgtlnc/appointments"
+          }
+        },
+        "name": "CLARKE, Carolyn",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2024-01-31",
+        "person_number": "277527570001"
+      },
+      {
+        "etag": "92ebc5a39d9bc0458dfd74cee445270f0c6c5e0a",
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2021-05-26",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 2,
+          "year": 1967
+        },
+        "links": {
+          "self": "/company/09092149/appointments/5COU4t2uIGteXKcDlqAgZrTap8g",
+          "officer": {
+            "appointments": "/officers/1y_nYdRzJZPSczm0n3HQ7iLc_D4/appointments"
+          }
+        },
+        "name": "CLARKE, Tracy Jayne",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2026-06-30",
+        "person_number": "298167570001",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-03-02"
+        }
+      },
+      {
+        "etag": "2f0cf70b8b217c8b93eb4ff157e180f226d2b297",
+        "address": {
+          "address_line_1": "2 Finsbury Avenue",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC2M 2PP",
+          "premises": "3rd Floor"
+        },
+        "appointed_on": "2015-09-18",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 7,
+          "year": 1964
+        },
+        "links": {
+          "self": "/company/09092149/appointments/4f3ilPibhvdg1w2Dkv_9HESStsc",
+          "officer": {
+            "appointments": "/officers/7sZ6eX8FhYXjW5mlJjB8kAScrZw/appointments"
+          }
+        },
+        "name": "COLSELL, Steven James",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2021-12-31",
+        "person_number": "101387770001"
+      },
+      {
+        "etag": "2f0cf70b8b217c8b93eb4ff157e180f226d2b297",
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2016-08-17",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 2,
+          "year": 1958
+        },
+        "links": {
+          "self": "/company/09092149/appointments/UcPJnub00jm0QifNTIff8y-kysM",
+          "officer": {
+            "appointments": "/officers/ZMqScZbDFHBbqzB66i34A67ohSU/appointments"
+          }
+        },
+        "name": "ELLINGHAM, Tony",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2022-07-13",
+        "person_number": "83368710002"
+      },
+      {
+        "etag": "bfdfbbda8b6f9fa0fa0e3d87b35abc4913e97d16",
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2022-06-01",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 10,
+          "year": 1973
+        },
+        "links": {
+          "self": "/company/09092149/appointments/pSAylEPU04R0H7Kp6sL8Bqfc_uc",
+          "officer": {
+            "appointments": "/officers/xOtEYqeMmwIoLGb58UPINRA4uuw/appointments"
+          }
+        },
+        "name": "GALARIA, Faisal",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2026-06-30",
+        "person_number": "249515510001",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-03-02"
+        }
+      },
+      {
+        "etag": "2f0cf70b8b217c8b93eb4ff157e180f226d2b297",
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2024-08-12",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United Kingdom",
+        "date_of_birth": {
+          "month": 8,
+          "year": 1970
+        },
+        "links": {
+          "self": "/company/09092149/appointments/m5vI2cn6XL3bll7_OdRIuHh8o0U",
+          "officer": {
+            "appointments": "/officers/i0Wz59YBdRlikhgT1UE9r5BOX98/appointments"
+          }
+        },
+        "name": "IMAM, Claire Louise",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2024-10-17",
+        "former_names": [
+          {
+            "forenames": "CLAIRE LOUISE",
+            "surname": "THOMPSON"
+          }
+        ],
+        "person_number": "326143930001"
+      },
+      {
+        "etag": "316651fbfffc0d06f366713f561709fca37a909f",
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2021-10-01",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United Kingdom",
+        "date_of_birth": {
+          "month": 12,
+          "year": 1963
+        },
+        "links": {
+          "self": "/company/09092149/appointments/keZb8HOIbwpeMcsGD2WLSDjwoWc",
+          "officer": {
+            "appointments": "/officers/9_-kkECGtBLrHeNJmoIf9L5hzVA/appointments"
+          }
+        },
+        "name": "JENKINS, Ian Simon",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2025-09-30",
+        "person_number": "287874750001"
+      },
+      {
+        "etag": "bdf3815bc3fdb02370eea03f9cb2fe18c4cffba0",
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2019-06-26",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "Scotland",
+        "date_of_birth": {
+          "month": 9,
+          "year": 1967
+        },
+        "links": {
+          "self": "/company/09092149/appointments/BxuK8zh5dFvpykaa6VTzMbzgdaA",
+          "officer": {
+            "appointments": "/officers/0fXf78jgH19EMKy-YqQwZ5Q5iHs/appointments"
+          }
+        },
+        "name": "MARTIN, Marian Macdonald",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2025-09-30",
+        "person_number": "261652300001"
+      },
+      {
+        "etag": "2f0cf70b8b217c8b93eb4ff157e180f226d2b297",
+        "address": {
+          "address_line_1": "Nash Building",
+          "address_line_2": "Bayview Drive East",
+          "country": "Bahamas",
+          "locality": "Paradise Island",
+          "postal_code": "SS19098",
+          "premises": "Gan Eden",
+          "region": "Nassau"
+        },
+        "appointed_on": "2015-12-22",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "New Zealand",
+        "date_of_birth": {
+          "month": 4,
+          "year": 1976
+        },
+        "links": {
+          "self": "/company/09092149/appointments/J84pRzywck8bIu8ggnyHhN8GurA",
+          "officer": {
+            "appointments": "/officers/fhKX8wfBw_cJHrTBoMoyGajfFrI/appointments"
+          }
+        },
+        "name": "MAWDSLEY, Craig John",
+        "nationality": "New Zealander",
+        "officer_role": "director",
+        "resigned_on": "2018-06-21",
+        "person_number": "204180160001"
+      },
+      {
+        "etag": "2f0cf70b8b217c8b93eb4ff157e180f226d2b297",
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2023-06-20",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United Kingdom",
+        "date_of_birth": {
+          "month": 8,
+          "year": 1978
+        },
+        "links": {
+          "self": "/company/09092149/appointments/ybuM4qnHxQXcK8UdbYwmXrT5y5c",
+          "officer": {
+            "appointments": "/officers/SiTTGVKxfMfd7BebAeiwNyE1Ego/appointments"
+          }
+        },
+        "name": "MOUNTAIN, John Edmund",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2024-06-24",
+        "person_number": "310390630001"
+      },
+      {
+        "etag": "2f0cf70b8b217c8b93eb4ff157e180f226d2b297",
+        "address": {
+          "address_line_1": "2 Finsbury Avenue",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC2M 2PP",
+          "premises": "3rd Floor"
+        },
+        "appointed_on": "2015-11-10",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 11,
+          "year": 1957
+        },
+        "links": {
+          "self": "/company/09092149/appointments/wCzHGCyQUGZSpav9mYG31ht1TZ0",
+          "officer": {
+            "appointments": "/officers/g3IeCkmgW5lcJkDXWabauAAU_ag/appointments"
+          }
+        },
+        "name": "RAFFE, Victoria Genevieve",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2021-12-06",
+        "person_number": "153002820001"
+      },
+      {
+        "etag": "3b723a190bc12cff7dd598f6242a20ce3aa9e779",
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2021-06-30",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United Kingdom",
+        "date_of_birth": {
+          "month": 10,
+          "year": 1959
+        },
+        "links": {
+          "self": "/company/09092149/appointments/bncInUZ5UwnmCbFsNvEdMFrNuqw",
+          "officer": {
+            "appointments": "/officers/hzhiCX1G73_zwHkXwtW_EXi_YTs/appointments"
+          }
+        },
+        "name": "SPROUL, David",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2026-07-01",
+        "person_number": "285327050002",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-03-02"
+        }
+      },
+      {
+        "etag": "2f0cf70b8b217c8b93eb4ff157e180f226d2b297",
+        "address": {
+          "address_line_1": "2 Finsbury Avenue",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC2M 2PP",
+          "premises": "3rd Floor"
+        },
+        "appointed_on": "2015-11-12",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 12,
+          "year": 1941
+        },
+        "links": {
+          "self": "/company/09092149/appointments/wj70heIZPR-sOW7GFkBwtEnkSSw",
+          "officer": {
+            "appointments": "/officers/NKElOaB9PAhSbDbPohXRNWGRw68/appointments"
+          }
+        },
+        "name": "STOCKEN, Oliver Henry James",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2021-12-31",
+        "person_number": "8372490001"
+      },
+      {
+        "etag": "fc81a32f13ec70f2e66caafe09dbb3649befcbaa",
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2015-12-22",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 5,
+          "year": 1976
+        },
+        "links": {
+          "self": "/company/09092149/appointments/XcOzpZ0IcVeuOPPO4OkcrJ_50ws",
+          "officer": {
+            "appointments": "/officers/6VJ4bgnvttcXqyuFOro5LUgei6s/appointments"
+          }
+        },
+        "name": "TRAILL, Marcus John",
+        "nationality": "New Zealander",
+        "officer_role": "director",
+        "resigned_on": "2026-05-31",
+        "person_number": "204182330002",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-03-02"
+        }
+      },
+      {
+        "etag": "c6af1ec4ba920e3f42c9306a448f13c5d203f233",
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2025-12-01",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 3,
+          "year": 1977
+        },
+        "links": {
+          "self": "/company/09092149/appointments/TjkbqHf5dJ-Ll3tcZNVHAlo0mJA",
+          "officer": {
+            "appointments": "/officers/P12JCONMw8GNMnvhyEOgP0HU914/appointments"
+          }
+        },
+        "name": "WATTS, Richard James",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2026-05-31",
+        "person_number": "316646180001",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2025-12-05"
+        }
+      },
+      {
+        "etag": "2f0cf70b8b217c8b93eb4ff157e180f226d2b297",
+        "address": {
+          "address_line_1": "2 Finsbury Avenue",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC2M 2PP",
+          "premises": "3rd Floor"
+        },
+        "appointed_on": "2015-09-18",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United Kingdom",
+        "date_of_birth": {
+          "month": 4,
+          "year": 1962
+        },
+        "links": {
+          "self": "/company/09092149/appointments/CODq7_zRk_aZUYNz_PFUVdir0Ik",
+          "officer": {
+            "appointments": "/officers/Sy98tlXXXirNL64LNcPPbGq_ElQ/appointments"
+          }
+        },
+        "name": "WINLOW, Mark",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2021-10-01",
+        "person_number": "201449190001"
+      }
+    ],
+    "items_per_page": 100,
+    "kind": "officer-list",
+    "links": {
+      "self": "/company/09092149/officers"
+    },
+    "resigned_count": 21,
+    "inactive_count": 0,
+    "start_index": 0,
+    "total_results": 29
+  }
+}

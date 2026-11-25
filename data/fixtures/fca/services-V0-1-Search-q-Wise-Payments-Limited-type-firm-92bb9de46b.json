@@ -1,0 +1,32 @@
+{
+  "url": "https://register.fca.org.uk/services/V0.1/Search?q=Wise+Payments+Limited&type=firm",
+  "status": 200,
+  "content_type": "application/json;charset=UTF-8",
+  "recorded_at": "2026-11-25T07:10:10.763479Z",
+  "synthetic": false,
+  "body": {
+    "Status": "FSR-API-04-01-00",
+    "ResultInfo": {
+      "page": "1",
+      "per_page": "20",
+      "total_count": "2"
+    },
+    "Message": "Ok. Search successful",
+    "Data": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/975773",
+        "Status": "Appointed representative - introducer",
+        "Reference Number": "975773",
+        "Type of business or Individual": "Firm",
+        "Name": "Wise Payments Limited (Postcode: E1 6JJ)"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/900507",
+        "Status": "Registered",
+        "Reference Number": "900507",
+        "Type of business or Individual": "Firm",
+        "Name": "Wise Payments Limited (Postcode: EC2A 4JE)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+# Policy documents for the policy RAG. `make data` downloads those with a `url`; FATF and RBI block scripted downloads, so for those it prints where to save a copy made with a browser.
+# Downloaded copies stay out of git (data/raw): the publishers own their copyright.
+
+documents:
+  - id: fatf-bo-legal-persons-2023
+    title: FATF Guidance on Beneficial Ownership of Legal Persons (March 2023)
+    jurisdiction: international
+    path: data/raw/policies/fatf_bo_legal_persons_2023.pdf
+    page: https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Guidance-Beneficial-Ownership-Legal-Persons.html
+
+  - id: rbi-kyc-master-direction
+    title: RBI Master Direction - Know Your Customer (KYC) Direction, 2016 (updated 14 August 2025)
+    jurisdiction: IN
+    path: data/raw/policies/rbi_kyc_master_direction.pdf
+    page: https://www.rbi.org.in/Scripts/BS_ViewMasterDirections.aspx?id=11566
+    url: https://rbidocs.rbi.org.in/rdocs/notification/PDFs/MD18KYCF6E92C82E1E1419D87323E3869BC9F13.PDF
+
+  - id: verikyb-internal-risk-policy
+    title: VeriKYB business customer risk assessment policy (model policy)
+    jurisdiction: GB, IN
+    path: data/policies/internal_risk_policy.md

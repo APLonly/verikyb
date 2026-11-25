@@ -1,0 +1,51 @@
+{
+  "url": "https://register.fca.org.uk/services/V0.1/Firm/730166",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:09:56.690194Z",
+  "synthetic": false,
+  "body": {
+    "Status": "FSR-API-02-01-00",
+    "ResultInfo": {
+      "page": "1",
+      "per_page": "1",
+      "total_count": "1"
+    },
+    "Message": "Ok. Firm Found",
+    "Data": [
+      {
+        "Name": "https://register.fca.org.uk/services/V0.1/Firm/730166/Names",
+        "Individuals": "https://register.fca.org.uk/services/V0.1/Firm/730166/Individuals",
+        "Requirements": "https://register.fca.org.uk/services/V0.1/Firm/730166/Requirements",
+        "Permission": "https://register.fca.org.uk/services/V0.1/Firm/730166/Permissions",
+        "Passport": "https://register.fca.org.uk/services/V0.1/Firm/730166/Passports",
+        "Regulators": "https://register.fca.org.uk/services/V0.1/Firm/730166/Regulators",
+        "Appointed Representative": "https://register.fca.org.uk/services/V0.1/Firm/730166/AR",
+        "Address": "https://register.fca.org.uk/services/V0.1/Firm/730166/Address",
+        "Waivers": "https://register.fca.org.uk/services/V0.1/Firm/730166/Waivers",
+        "Exclusions": "https://register.fca.org.uk/services/V0.1/Firm/730166/Exclusions",
+        "DisciplinaryHistory": "https://register.fca.org.uk/services/V0.1/Firm/730166/DisciplinaryHistory",
+        "System Timestamp": "25/11/2026 07:09",
+        "Exceptional Info Details": [],
+        "Status Effective Date": "12/07/2016",
+        "E-Money Agent Status": "",
+        "PSD / EMD Effective Date": "",
+        "Client Money Permission": "Control but not hold client money",
+        "Sub Status Effective from": "",
+        "Sub-Status": "",
+        "Mutual Society Number": "",
+        "Companies House Number": "09092149",
+        "MLRs Status Effective Date": "",
+        "MLRs Status": "",
+        "E-Money Agent Status Effective Date": "",
+        "PSD Agent Status Effective Date": "",
+        "PSD Agent Status": "",
+        "PSD / EMD Status": "",
+        "Status": "Authorised",
+        "Business Type": "Regulated",
+        "Organisation Name": "Starling Bank Limited",
+        "FRN": "730166"
+      }
+    ]
+  }
+}

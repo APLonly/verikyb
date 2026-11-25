@@ -1,0 +1,50 @@
+{
+  "url": "https://api.company-information.service.gov.uk/officers/jOwjhpKEDrC-6PU0mAi8pRK4bNs/appointments?items_per_page=50",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:16.848191Z",
+  "synthetic": false,
+  "body": {
+    "active_count": 1,
+    "etag": "f04061363850cea99ebc005697d906ec38951242",
+    "inactive_count": 0,
+    "is_corporate_officer": false,
+    "items": [
+      {
+        "address": {
+          "address_line_1": "20 Primrose Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC2A 2EW",
+          "premises": "Level 27, The Broadgate Tower"
+        },
+        "appointed_on": "2024-12-18",
+        "appointed_to": {
+          "company_name": "CLEARBANK LIMITED",
+          "company_number": "09736376",
+          "company_status": "active"
+        },
+        "name": "Sian WOODS",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/09736376"
+        },
+        "name_elements": {
+          "forename": "Sian",
+          "title": "Ms",
+          "surname": "WOODS"
+        },
+        "officer_role": "secretary"
+      }
+    ],
+    "items_per_page": 50,
+    "kind": "personal-appointment",
+    "links": {
+      "self": "/officers/jOwjhpKEDrC-6PU0mAi8pRK4bNs/appointments"
+    },
+    "name": "Sian WOODS",
+    "resigned_count": 0,
+    "start_index": 0,
+    "total_results": 1
+  }
+}
