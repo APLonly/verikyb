@@ -1,0 +1,27 @@
+{
+  "url": "https://register.fca.org.uk/services/V0.1/Firm/1047222/Names",
+  "status": 200,
+  "content_type": "application/json;charset=UTF-8",
+  "recorded_at": "2026-11-25T07:09:48.239938Z",
+  "synthetic": false,
+  "body": {
+    "Status": "FSR-API-02-04-00",
+    "ResultInfo": {
+      "page": "1",
+      "per_page": "10",
+      "total_count": "1"
+    },
+    "Message": "Ok. Found Trading Names or Brand Names",
+    "Data": [
+      {
+        "Current Names": [
+          {
+            "Effective From": "28/11/2025",
+            "Status": "Registered",
+            "Name": "REMITLY U.K., LTD"
+          }
+        ]
+      }
+    ]
+  }
+}

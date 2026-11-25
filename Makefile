@@ -45,9 +45,9 @@ web: ## Run the UI on http://127.0.0.1:5000, reloading on code changes
 run: ## Run the API and the UI together; Ctrl+C stops both
 	$(MAKE) -j2 api web
 
-record: ## Record the demo firms from the live APIs into data/fixtures (needs the API keys)
-	uv run $(ENV_FILE) python data/scripts/record.py
-
-data: ## Build the synthetic world, then download the sanctions and PEP lists (network)
+data: ## Build the synthetic world, then download the lists and policies (network)
 	uv run python data/synthetic/generate.py
 	uv run python data/scripts/download.py
+
+record: ## Record the real demo firms into data/fixtures (keys from .env; GLEIF needs none)
+	uv run $(ENV_FILE) python data/scripts/record.py

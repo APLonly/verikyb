@@ -1,0 +1,253 @@
+{
+  "url": "https://register.fca.org.uk/services/V0.1/Firm/900573/AR",
+  "status": 200,
+  "content_type": "application/json;charset=UTF-8",
+  "recorded_at": "2026-11-25T07:10:51.979488Z",
+  "synthetic": false,
+  "body": {
+    "Status": "FSR-API-05-04-00",
+    "ResultInfo": {
+      "Next": "https://register.fca.org.uk/services/V0.1/Firm/900573/AR?pgnp=2",
+      "page": "1",
+      "per_page": "10",
+      "total_count": "83"
+    },
+    "Message": "Ok. Appointed Representative Found",
+    "Data": {
+      "PreviousAppointedRepresentatives": [
+        {
+          "URL": "https://register.fca.org.uk/services/V0.1/Firm/902840",
+          "Termination Date": "03/07/2026",
+          "Principal FRN": "900573",
+          "Principal Firm Name": "Modulr FS Limited",
+          "Effective Date": "31/07/2020",
+          "EEA Tied Agent": "false",
+          "Tied Agent": "false",
+          "[NotinUse] Insurance Distribution": "false",
+          "FRN": "902840",
+          "Name": "MTL Financial LTD"
+        },
+        {
+          "URL": "https://register.fca.org.uk/services/V0.1/Firm/902960",
+          "Termination Date": "05/12/2025",
+          "Principal FRN": "900573",
+          "Principal Firm Name": "Modulr FS Limited",
+          "Effective Date": "26/11/2020",
+          "EEA Tied Agent": "false",
+          "Tied Agent": "false",
+          "[NotinUse] Insurance Distribution": "false",
+          "FRN": "902960",
+          "Name": "BEAVER RESEARCH LTD"
+        },
+        {
+          "URL": "https://register.fca.org.uk/services/V0.1/Firm/902968",
+          "Termination Date": "10/10/2025",
+          "Principal FRN": "900573",
+          "Principal Firm Name": "Modulr FS Limited",
+          "Effective Date": "17/12/2020",
+          "EEA Tied Agent": "false",
+          "Tied Agent": "false",
+          "[NotinUse] Insurance Distribution": "false",
+          "FRN": "902968",
+          "Name": "Unmortgage Arrangers Limited"
+        },
+        {
+          "URL": "https://register.fca.org.uk/services/V0.1/Firm/902855",
+          "Termination Date": "10/10/2025",
+          "Principal FRN": "900573",
+          "Principal Firm Name": "Modulr FS Limited",
+          "Effective Date": "29/07/2020",
+          "EEA Tied Agent": "false",
+          "Tied Agent": "false",
+          "[NotinUse] Insurance Distribution": "false",
+          "FRN": "902855",
+          "Name": "ZUMO FINANCIAL SERVICES LIMITED"
+        },
+        {
+          "URL": "https://register.fca.org.uk/services/V0.1/Firm/807377",
+          "Termination Date": "06/08/2025",
+          "Principal FRN": "900573",
+          "Principal Firm Name": "Modulr FS Limited",
+          "Effective Date": "09/06/2021",
+          "EEA Tied Agent": "false",
+          "Tied Agent": "false",
+          "[NotinUse] Insurance Distribution": "false",
+          "FRN": "807377",
+          "Name": "BCB Payments Limited"
+        },
+        {
+          "URL": "https://register.fca.org.uk/services/V0.1/Firm/902988",
+          "Termination Date": "12/05/2025",
+          "Principal FRN": "900573",
+          "Principal Firm Name": "Modulr FS Limited",
+          "Effective Date": "04/03/2021",
+          "EEA Tied Agent": "false",
+          "Tied Agent": "false",
+          "[NotinUse] Insurance Distribution": "false",
+          "FRN": "902988",
+          "Name": "Automata Pay Ltd"
+        },
+        {
+          "URL": "https://register.fca.org.uk/services/V0.1/Firm/850257",
+          "Termination Date": "12/05/2025",
+          "Principal FRN": "900573",
+          "Principal Firm Name": "Modulr FS Limited",
+          "Effective Date": "10/03/2021",
+          "EEA Tied Agent": "false",
+          "Tied Agent": "false",
+          "[NotinUse] Insurance Distribution": "false",
+          "FRN": "850257",
+          "Name": "Vyne Technologies Limited"
+        },
+        {
+          "URL": "https://register.fca.org.uk/services/V0.1/Firm/903003",
+          "Termination Date": "28/01/2025",
+          "Principal FRN": "900573",
+          "Principal Firm Name": "Modulr FS Limited",
+          "Effective Date": "18/05/2021",
+          "EEA Tied Agent": "false",
+          "Tied Agent": "false",
+          "[NotinUse] Insurance Distribution": "false",
+          "FRN": "903003",
+          "Name": "Sigma Treasury Management Limited"
+        },
+        {
+          "URL": "https://register.fca.org.uk/services/V0.1/Firm/902986",
+          "Termination Date": "11/10/2024",
+          "Principal FRN": "900573",
+          "Principal Firm Name": "Modulr FS Limited",
+          "Effective Date": "04/03/2021",
+          "EEA Tied Agent": "false",
+          "Tied Agent": "false",
+          "[NotinUse] Insurance Distribution": "false",
+          "FRN": "902986",
+          "Name": "Coinmode Limited"
+        },
+        {
+          "URL": "https://register.fca.org.uk/services/V0.1/Firm/902826",
+          "Termination Date": "11/10/2024",
+          "Principal FRN": "900573",
+          "Principal Firm Name": "Modulr FS Limited",
+          "Effective Date": "12/06/2020",
+          "EEA Tied Agent": "false",
+          "Tied Agent": "false",
+          "[NotinUse] Insurance Distribution": "false",
+          "FRN": "902826",
+          "Name": "Lerex Technology Limited"
+        }
+      ],
+      "CurrentAppointedRepresentatives": [
+        {
+          "URL": "https://register.fca.org.uk/services/V0.1/Firm/850923",
+          "Principal FRN": "900573",
+          "Principal Firm Name": "Modulr FS Limited",
+          "Effective Date": "28/07/2021",
+          "EEA Tied Agent": "false",
+          "Tied Agent": "false",
+          "[NotinUse] Insurance Distribution": "false",
+          "FRN": "850923",
+          "Name": "AGENTOS PROPTECH GROUP LTD"
+        },
+        {
+          "URL": "https://register.fca.org.uk/services/V0.1/Firm/902841",
+          "Principal FRN": "900573",
+          "Principal Firm Name": "Modulr FS Limited",
+          "Effective Date": "05/08/2020",
+          "EEA Tied Agent": "false",
+          "Tied Agent": "false",
+          "[NotinUse] Insurance Distribution": "false",
+          "FRN": "902841",
+          "Name": "Amplifi Capital (U.K.) Limited"
+        },
+        {
+          "URL": "https://register.fca.org.uk/services/V0.1/Firm/902759",
+          "Principal FRN": "900573",
+          "Principal Firm Name": "Modulr FS Limited",
+          "Effective Date": "15/11/2019",
+          "EEA Tied Agent": "false",
+          "Tied Agent": "false",
+          "[NotinUse] Insurance Distribution": "false",
+          "FRN": "902759",
+          "Name": "Goji Financial Services Limited"
+        },
+        {
+          "URL": "https://register.fca.org.uk/services/V0.1/Firm/902809",
+          "Principal FRN": "900573",
+          "Principal Firm Name": "Modulr FS Limited",
+          "Effective Date": "08/04/2020",
+          "EEA Tied Agent": "false",
+          "Tied Agent": "false",
+          "[NotinUse] Insurance Distribution": "false",
+          "FRN": "902809",
+          "Name": "Hanley Payments Ltd"
+        },
+        {
+          "URL": "https://register.fca.org.uk/services/V0.1/Firm/902851",
+          "Principal FRN": "900573",
+          "Principal Firm Name": "Modulr FS Limited",
+          "Effective Date": "04/08/2020",
+          "EEA Tied Agent": "false",
+          "Tied Agent": "false",
+          "[NotinUse] Insurance Distribution": "false",
+          "FRN": "902851",
+          "Name": "Harri Payroll UK Limited"
+        },
+        {
+          "URL": "https://register.fca.org.uk/services/V0.1/Firm/902842",
+          "Principal FRN": "900573",
+          "Principal Firm Name": "Modulr FS Limited",
+          "Effective Date": "06/08/2020",
+          "EEA Tied Agent": "false",
+          "Tied Agent": "false",
+          "[NotinUse] Insurance Distribution": "false",
+          "FRN": "902842",
+          "Name": "Hyperlayer Limited"
+        },
+        {
+          "URL": "https://register.fca.org.uk/services/V0.1/Firm/925292",
+          "Principal FRN": "900573",
+          "Principal Firm Name": "Modulr FS Limited",
+          "Effective Date": "08/07/2021",
+          "EEA Tied Agent": "false",
+          "Tied Agent": "false",
+          "[NotinUse] Insurance Distribution": "false",
+          "FRN": "925292",
+          "Name": "JUICE VENTURES LTD"
+        },
+        {
+          "URL": "https://register.fca.org.uk/services/V0.1/Firm/910313",
+          "Principal FRN": "900573",
+          "Principal Firm Name": "Modulr FS Limited",
+          "Effective Date": "13/07/2020",
+          "EEA Tied Agent": "false",
+          "Tied Agent": "false",
+          "[NotinUse] Insurance Distribution": "false",
+          "FRN": "910313",
+          "Name": "LEVEL FINANCIAL TECHNOLOGY LIMITED"
+        },
+        {
+          "URL": "https://register.fca.org.uk/services/V0.1/Firm/902157",
+          "Principal FRN": "900573",
+          "Principal Firm Name": "Modulr FS Limited",
+          "Effective Date": "06/06/2019",
+          "EEA Tied Agent": "false",
+          "Tied Agent": "false",
+          "[NotinUse] Insurance Distribution": "false",
+          "FRN": "902157",
+          "Name": "Liberis Limited"
+        },
+        {
+          "URL": "https://register.fca.org.uk/services/V0.1/Firm/900699",
+          "Principal FRN": "900573",
+          "Principal Firm Name": "Modulr FS Limited",
+          "Effective Date": "02/11/2016",
+          "EEA Tied Agent": "false",
+          "Tied Agent": "false",
+          "[NotinUse] Insurance Distribution": "false",
+          "FRN": "900699",
+          "Name": "Modulr Finance Ltd"
+        }
+      ]
+    }
+  }
+}

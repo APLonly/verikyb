@@ -1,0 +1,15 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/14741686/charges",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:09:37.267873Z",
+  "synthetic": false,
+  "body": {
+    "etag": "d7ff4c9c2d0a40f642d29f6e5fccb029f32ddd77",
+    "items": [],
+    "part_satisfied_count": 0,
+    "satisfied_count": 0,
+    "total_count": 0,
+    "unfiltered_count": 0
+  }
+}

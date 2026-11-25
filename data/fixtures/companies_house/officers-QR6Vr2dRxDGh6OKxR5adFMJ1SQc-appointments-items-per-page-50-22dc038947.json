@@ -1,0 +1,122 @@
+{
+  "url": "https://api.company-information.service.gov.uk/officers/QR6Vr2dRxDGh6OKxR5adFMJ1SQc/appointments?items_per_page=50",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:09:38.437895Z",
+  "synthetic": false,
+  "body": {
+    "active_count": 2,
+    "date_of_birth": {
+      "month": 1,
+      "year": 1972
+    },
+    "etag": "1c6c026c83213a9f25bd7a5d7d7465f6dbfee5b3",
+    "inactive_count": 0,
+    "is_corporate_officer": false,
+    "items": [
+      {
+        "address": {
+          "address_line_1": "Mulberry Drive",
+          "address_line_2": "Cardiff Gate Business Park, Pontprennau",
+          "country": "Wales",
+          "locality": "Cardiff",
+          "postal_code": "CF23 8AB",
+          "premises": "Ty Derw, Lime Tree Court"
+        },
+        "appointed_on": "2024-10-14",
+        "appointed_to": {
+          "company_name": "MEDIDATA EXCHANGE LIMITED",
+          "company_number": "09481183",
+          "company_status": "active"
+        },
+        "name": "Benjamin Nicholas DAVEY",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/09481183"
+        },
+        "name_elements": {
+          "forename": "Benjamin",
+          "title": "Mr",
+          "other_forenames": "Nicholas",
+          "surname": "DAVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-07-20"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "Upper Ground,",
+          "locality": "London",
+          "postal_code": "SE1 9PZ",
+          "premises": "76"
+        },
+        "appointed_on": "2024-07-08",
+        "appointed_to": {
+          "company_name": "PAYPAL UK LTD",
+          "company_number": "14741686",
+          "company_status": "active"
+        },
+        "name": "Benjamin Nicholas DAVEY",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/14741686"
+        },
+        "name_elements": {
+          "forename": "Benjamin",
+          "title": "Mr",
+          "other_forenames": "Nicholas",
+          "surname": "DAVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-03-24"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "New Court St Swithin's Lane",
+          "address_line_2": "London",
+          "postal_code": "EC4P 4DU"
+        },
+        "appointed_on": "2005-07-01",
+        "appointed_to": {
+          "company_name": "N M ROTHSCHILD CORPORATE FINANCE LIMITED",
+          "company_number": "03257019",
+          "company_status": "dissolved"
+        },
+        "name": "Benjamin Nicholas DAVEY",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/03257019"
+        },
+        "name_elements": {
+          "forename": "Benjamin",
+          "title": "Mr",
+          "other_forenames": "Nicholas",
+          "surname": "DAVEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2010-04-20"
+      }
+    ],
+    "items_per_page": 50,
+    "kind": "personal-appointment",
+    "links": {
+      "self": "/officers/QR6Vr2dRxDGh6OKxR5adFMJ1SQc/appointments"
+    },
+    "name": "Benjamin Nicholas DAVEY",
+    "resigned_count": 1,
+    "start_index": 0,
+    "total_results": 3
+  }
+}

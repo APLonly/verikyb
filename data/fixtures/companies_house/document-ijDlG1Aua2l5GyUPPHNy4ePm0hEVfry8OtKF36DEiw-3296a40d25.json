@@ -1,0 +1,27 @@
+{
+  "url": "https://document-api.company-information.service.gov.uk/document/_ijDlG1Aua2l5GyUPPHNy4ePm0hEVfry8OtKF36DEiw",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:09.514589Z",
+  "synthetic": false,
+  "body": {
+    "company_number": "07209813",
+    "barcode": "ADDFTKA8",
+    "significant_date": "2024-03-31T00:00:00Z",
+    "significant_date_type": "made-up-date",
+    "category": "accounts",
+    "pages": 57,
+    "filename": "",
+    "created_at": "2024-10-18T11:50:07.620095318Z",
+    "etag": "",
+    "links": {
+      "self": "https://document-api.company-information.service.gov.uk/document/_ijDlG1Aua2l5GyUPPHNy4ePm0hEVfry8OtKF36DEiw",
+      "document": "https://document-api.company-information.service.gov.uk/document/_ijDlG1Aua2l5GyUPPHNy4ePm0hEVfry8OtKF36DEiw/content"
+    },
+    "resources": {
+      "application/pdf": {
+        "content_length": 2461037
+      }
+    }
+  }
+}

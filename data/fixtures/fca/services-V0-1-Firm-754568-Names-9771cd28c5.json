@@ -1,0 +1,48 @@
+{
+  "url": "https://register.fca.org.uk/services/V0.1/Firm/754568/Names",
+  "status": 200,
+  "content_type": "application/json;charset=UTF-8",
+  "recorded_at": "2026-11-25T07:10:26.596421Z",
+  "synthetic": false,
+  "body": {
+    "Status": "FSR-API-02-04-00",
+    "ResultInfo": {
+      "page": "1",
+      "per_page": "10",
+      "total_count": "4"
+    },
+    "Message": "Ok. Found Trading Names or Brand Names",
+    "Data": [
+      {
+        "Current Names": [
+          {
+            "Effective From": "09/11/2018",
+            "Status": "Trading",
+            "Name": "Business.bank"
+          },
+          {
+            "Effective From": "21/12/2016",
+            "Status": "Registered",
+            "Name": "ClearBank Limited"
+          }
+        ]
+      },
+      {
+        "Previous Names": [
+          {
+            "Effective To": "16/12/2016",
+            "Effective From": "29/07/2016",
+            "Status": "Trading",
+            "Name": "Clear.Bank"
+          },
+          {
+            "Effective To": "21/12/2016",
+            "Effective From": "15/12/2016",
+            "Status": "Registered",
+            "Name": "CB Infrastructure Limited"
+          }
+        ]
+      }
+    ]
+  }
+}

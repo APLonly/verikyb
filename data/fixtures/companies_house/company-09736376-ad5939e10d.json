@@ -1,0 +1,74 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/09736376",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:12.680746Z",
+  "synthetic": false,
+  "body": {
+    "accounts": {
+      "accounting_reference_date": {
+        "day": "31",
+        "month": "12"
+      },
+      "last_accounts": {
+        "made_up_to": "2025-12-31",
+        "period_end_on": "2025-12-31",
+        "period_start_on": "2025-01-01",
+        "type": "full"
+      },
+      "next_accounts": {
+        "due_on": "2027-09-30",
+        "overdue": false,
+        "period_end_on": "2026-12-31",
+        "period_start_on": "2026-01-01"
+      },
+      "next_due": "2027-09-30",
+      "next_made_up_to": "2026-12-31",
+      "overdue": false
+    },
+    "can_file": true,
+    "company_name": "CLEARBANK LIMITED",
+    "company_number": "09736376",
+    "company_status": "active",
+    "confirmation_statement": {
+      "last_made_up_to": "2026-08-25",
+      "next_due": "2027-09-08",
+      "next_made_up_to": "2027-08-25",
+      "overdue": false
+    },
+    "date_of_creation": "2015-08-17",
+    "etag": "f8a9452479882ae30be5fe8845dd24a3ba2896b7",
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "jurisdiction": "england-wales",
+    "links": {
+      "charges": "/company/09736376/charges",
+      "filing_history": "/company/09736376/filing-history",
+      "officers": "/company/09736376/officers",
+      "persons_with_significant_control": "/company/09736376/persons-with-significant-control",
+      "persons_with_significant_control_statements": "/company/09736376/persons-with-significant-control-statements",
+      "self": "/company/09736376"
+    },
+    "previous_company_names": [
+      {
+        "ceased_on": "2016-12-19",
+        "effective_from": "2015-08-17",
+        "name": "CB INFRASTRUCTURE LIMITED"
+      }
+    ],
+    "registered_office_address": {
+      "address_line_1": "Level 27, The Broadgate Tower",
+      "address_line_2": "20 Primrose Street",
+      "country": "England",
+      "locality": "London",
+      "postal_code": "EC2A 2EW"
+    },
+    "registered_office_is_in_dispute": false,
+    "sic_codes": [
+      "64191"
+    ],
+    "type": "ltd",
+    "undeliverable_registered_office_address": false
+  }
+}

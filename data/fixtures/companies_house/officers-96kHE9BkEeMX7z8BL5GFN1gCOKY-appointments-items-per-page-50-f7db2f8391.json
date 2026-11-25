@@ -1,0 +1,155 @@
+{
+  "url": "https://api.company-information.service.gov.uk/officers/96kHE9BkEeMX7z8BL5GFN1gCOKY/appointments?items_per_page=50",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:18.124561Z",
+  "synthetic": false,
+  "body": {
+    "active_count": 2,
+    "date_of_birth": {
+      "month": 6,
+      "year": 1983
+    },
+    "etag": "f67e4a8269d6e5cf8f1543e27b156761dfe70c75",
+    "inactive_count": 1,
+    "is_corporate_officer": false,
+    "items": [
+      {
+        "address": {
+          "address_line_1": "Bellegrove Road",
+          "country": "England",
+          "locality": "Welling",
+          "postal_code": "DA16 3QR",
+          "premises": "132"
+        },
+        "appointed_on": "2026-05-01",
+        "appointed_to": {
+          "company_name": "VIA NOVA STRATEGIC ADVISORY LTD",
+          "company_number": "17195488",
+          "company_status": "active"
+        },
+        "name": "Samantha Jayne EMERY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/17195488"
+        },
+        "name_elements": {
+          "forename": "Samantha",
+          "title": "Ms",
+          "other_forenames": "Jayne",
+          "surname": "EMERY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-05-01"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "20 Primrose Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC2A 2EW",
+          "premises": "Level 27, The Broadgate Tower"
+        },
+        "appointed_on": "2026-04-09",
+        "appointed_to": {
+          "company_name": "CLEARBANK LIMITED",
+          "company_number": "09736376",
+          "company_status": "active"
+        },
+        "name": "Samantha Jayne EMERY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/09736376"
+        },
+        "name_elements": {
+          "forename": "Samantha",
+          "title": "Ms",
+          "other_forenames": "Jayne",
+          "surname": "EMERY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-04-14"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "Ely Place",
+          "address_line_2": "3rd Floor",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC1N 6TD",
+          "premises": "28"
+        },
+        "appointed_on": "2017-10-16",
+        "appointed_to": {
+          "company_name": "ADVINTAGEOUS LIMITED",
+          "company_number": "11014592",
+          "company_status": "dissolved"
+        },
+        "name": "Samantha Jayne EMERY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/11014592"
+        },
+        "name_elements": {
+          "forename": "Samantha",
+          "title": "Ms",
+          "other_forenames": "Jayne",
+          "surname": "EMERY"
+        },
+        "nationality": "British",
+        "officer_role": "director"
+      },
+      {
+        "address": {
+          "address_line_1": "9th Floor",
+          "address_line_2": "33 Old Broad Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC2N 1HZ",
+          "premises": "Lloyds Banking Group"
+        },
+        "appointed_on": "2021-11-30",
+        "appointed_to": {
+          "company_name": "S.W.I.F.T. (U.K.) LIMITED",
+          "company_number": "01249842",
+          "company_status": "active"
+        },
+        "name": "Samantha Jayne EMERY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/01249842"
+        },
+        "name_elements": {
+          "forename": "Samantha",
+          "title": "Ms",
+          "other_forenames": "Jayne",
+          "surname": "EMERY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2025-07-01"
+      }
+    ],
+    "items_per_page": 50,
+    "kind": "personal-appointment",
+    "links": {
+      "self": "/officers/96kHE9BkEeMX7z8BL5GFN1gCOKY/appointments"
+    },
+    "name": "Samantha Jayne EMERY",
+    "resigned_count": 1,
+    "start_index": 0,
+    "total_results": 4
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "url": "https://register.fca.org.uk/services/V0.1/Search?q=Modulr+FS+Limited&type=firm",
+  "status": 200,
+  "content_type": "application/json;charset=UTF-8",
+  "recorded_at": "2026-11-25T07:10:46.751953Z",
+  "synthetic": false,
+  "body": {
+    "Status": "FSR-API-04-01-00",
+    "ResultInfo": {
+      "page": "1",
+      "per_page": "20",
+      "total_count": "1"
+    },
+    "Message": "Ok. Search successful",
+    "Data": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/900573",
+        "Status": "Registered",
+        "Reference Number": "900573",
+        "Type of business or Individual": "Firm",
+        "Name": "Modulr FS Limited (Postcode: EC1Y 2AL)"
+      }
+    ]
+  }
+}

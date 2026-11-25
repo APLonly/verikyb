@@ -1,0 +1,27 @@
+{
+  "url": "https://document-api.company-information.service.gov.uk/document/rziNWbI9RNe5u-yom_UpBeSnyI3_qGpgl1Sm1aP-bIM",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:45.388685Z",
+  "synthetic": false,
+  "body": {
+    "company_number": "09897919",
+    "barcode": "AFBN19Z5",
+    "significant_date": "2025-12-31T00:00:00Z",
+    "significant_date_type": "made-up-date",
+    "category": "accounts",
+    "pages": 29,
+    "filename": "",
+    "created_at": "2026-10-06T23:20:59.929130217Z",
+    "etag": "",
+    "links": {
+      "self": "https://document-api.company-information.service.gov.uk/document/rziNWbI9RNe5u-yom_UpBeSnyI3_qGpgl1Sm1aP-bIM",
+      "document": "https://document-api.company-information.service.gov.uk/document/rziNWbI9RNe5u-yom_UpBeSnyI3_qGpgl1Sm1aP-bIM/content"
+    },
+    "resources": {
+      "application/pdf": {
+        "content_length": 1162476
+      }
+    }
+  }
+}

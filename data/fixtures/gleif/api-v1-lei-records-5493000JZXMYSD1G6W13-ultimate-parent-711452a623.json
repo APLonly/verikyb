@@ -1,0 +1,157 @@
+{
+  "url": "https://api.gleif.org/api/v1/lei-records/5493000JZXMYSD1G6W13/ultimate-parent",
+  "status": 200,
+  "content_type": "application/vnd.api+json",
+  "recorded_at": "2026-11-25T07:09:34.211418Z",
+  "synthetic": false,
+  "body": {
+    "meta": {
+      "goldenCopy": {
+        "publishDate": "2026-11-25T00:00:00Z"
+      }
+    },
+    "data": {
+      "type": "lei-records",
+      "id": "5493005X2GO78EFZ3E94",
+      "attributes": {
+        "lei": "5493005X2GO78EFZ3E94",
+        "entity": {
+          "legalName": {
+            "name": "PAYPAL HOLDINGS, INC.",
+            "language": "en"
+          },
+          "otherNames": [],
+          "transliteratedOtherNames": [],
+          "legalAddress": {
+            "language": "en",
+            "addressLines": [
+              "C/O THE CORPORATION TRUST COMPANY",
+              "CORPORATION TRUST CENTER",
+              "1209 ORANGE ST"
+            ],
+            "addressNumber": null,
+            "addressNumberWithinBuilding": null,
+            "mailRouting": null,
+            "city": "WILMINGTON",
+            "region": "US-DE",
+            "country": "US",
+            "postalCode": "19801"
+          },
+          "headquartersAddress": {
+            "language": "en",
+            "addressLines": [
+              "CORPORATION TRUST CENTER",
+              "1209 ORANGE ST"
+            ],
+            "addressNumber": null,
+            "addressNumberWithinBuilding": null,
+            "mailRouting": null,
+            "city": "WILMINGTON",
+            "region": "US-DE",
+            "country": "US",
+            "postalCode": "19801"
+          },
+          "registeredAt": {
+            "id": "RA000602",
+            "other": null
+          },
+          "registeredAs": "5684361",
+          "jurisdiction": "US-DE",
+          "category": "GENERAL",
+          "legalForm": {
+            "id": "XTIQ",
+            "other": null
+          },
+          "associatedEntity": {
+            "lei": null,
+            "name": null
+          },
+          "status": "ACTIVE",
+          "expiration": {
+            "date": null,
+            "reason": null
+          },
+          "successorEntity": {
+            "lei": null,
+            "name": null
+          },
+          "successorEntities": [],
+          "creationDate": "2015-01-30T00:00:00Z",
+          "subCategory": null,
+          "otherAddresses": [],
+          "eventGroups": []
+        },
+        "registration": {
+          "initialRegistrationDate": "2015-04-28T01:47:00Z",
+          "lastUpdateDate": "2026-03-18T10:13:56Z",
+          "status": "ISSUED",
+          "nextRenewalDate": "2027-04-12T16:53:20Z",
+          "managingLou": "5493001KJTIIGC8Y1R12",
+          "corroborationLevel": "FULLY_CORROBORATED",
+          "validatedAt": {
+            "id": "RA000602",
+            "other": null
+          },
+          "validatedAs": "5684361",
+          "otherValidationAuthorities": []
+        },
+        "bic": null,
+        "mic": null,
+        "ocid": "us_de/5684361",
+        "qcc": null,
+        "gem": null,
+        "spglobal": [
+          "112732"
+        ],
+        "conformityFlag": "CONFORMING"
+      },
+      "relationships": {
+        "managing-lou": {
+          "links": {
+            "related": "https://api.gleif.org/api/v1/lei-records/5493005X2GO78EFZ3E94/managing-lou"
+          }
+        },
+        "lei-issuer": {
+          "links": {
+            "related": "https://api.gleif.org/api/v1/lei-records/5493005X2GO78EFZ3E94/lei-issuer"
+          }
+        },
+        "field-modifications": {
+          "links": {
+            "related": "https://api.gleif.org/api/v1/lei-records/5493005X2GO78EFZ3E94/field-modifications"
+          }
+        },
+        "direct-parent": {
+          "links": {
+            "reporting-exception": "https://api.gleif.org/api/v1/lei-records/5493005X2GO78EFZ3E94/direct-parent-reporting-exception"
+          }
+        },
+        "ultimate-parent": {
+          "links": {
+            "reporting-exception": "https://api.gleif.org/api/v1/lei-records/5493005X2GO78EFZ3E94/ultimate-parent-reporting-exception"
+          }
+        },
+        "direct-children": {
+          "links": {
+            "relationship-records": "https://api.gleif.org/api/v1/lei-records/5493005X2GO78EFZ3E94/direct-child-relationships",
+            "related": "https://api.gleif.org/api/v1/lei-records/5493005X2GO78EFZ3E94/direct-children"
+          }
+        },
+        "ultimate-children": {
+          "links": {
+            "relationship-records": "https://api.gleif.org/api/v1/lei-records/5493005X2GO78EFZ3E94/ultimate-child-relationships",
+            "related": "https://api.gleif.org/api/v1/lei-records/5493005X2GO78EFZ3E94/ultimate-children"
+          }
+        },
+        "isins": {
+          "links": {
+            "related": "https://api.gleif.org/api/v1/lei-records/5493005X2GO78EFZ3E94/isins"
+          }
+        }
+      },
+      "links": {
+        "self": "https://api.gleif.org/api/v1/lei-records/5493005X2GO78EFZ3E94"
+      }
+    }
+  }
+}

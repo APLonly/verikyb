@@ -1,0 +1,597 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/07209813/officers?items_per_page=100&start_index=0",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:07.291847Z",
+  "synthetic": false,
+  "body": {
+    "active_count": 5,
+    "etag": "52e989e7ca875f76a4f8ab0e51422b57cc120ce2",
+    "items": [
+      {
+        "etag": "52e989e7ca875f76a4f8ab0e51422b57cc120ce2",
+        "address": {
+          "address_line_1": "Worship Square",
+          "address_line_2": "65 Clifton Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC2A 4JE",
+          "premises": "1st Floor"
+        },
+        "appointed_on": "2026-10-23",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "self": "/company/07209813/appointments/NFUuV7eluW3mY0DjhzGZf7cdCXU",
+          "officer": {
+            "appointments": "/officers/T1ndKOSF2yI098eFo4IeVKRfAM4/appointments"
+          }
+        },
+        "name": "PAI, Nameeta",
+        "officer_role": "secretary",
+        "person_number": "354311710001"
+      },
+      {
+        "etag": "116fa97d8275173c45e7a84dd577acf76d7378f3",
+        "address": {
+          "address_line_1": "Worship Square",
+          "address_line_2": "65 Clifton Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC2A 4JE",
+          "premises": "1st Floor"
+        },
+        "appointed_on": "2024-09-06",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 4,
+          "year": 1990
+        },
+        "links": {
+          "self": "/company/07209813/appointments/39QciS-KoSd9sXeVzc1OC0KbUb4",
+          "officer": {
+            "appointments": "/officers/pORKrM8RkFSuoao-_gf8J0xlJ1s/appointments"
+          }
+        },
+        "name": "BASU, Rohan",
+        "nationality": "British",
+        "officer_role": "director",
+        "person_number": "327270510001",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-04-02"
+        }
+      },
+      {
+        "etag": "34a6e7a079bcfdd957e3c3747daa8133283b506c",
+        "address": {
+          "address_line_1": "Worship Square",
+          "address_line_2": "65 Clifton Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC2A 4JE",
+          "premises": "1st Floor"
+        },
+        "appointed_on": "2024-11-28",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 12,
+          "year": 1976
+        },
+        "links": {
+          "self": "/company/07209813/appointments/tfCH9I6sqNV4hI53lo7qysRfK1A",
+          "officer": {
+            "appointments": "/officers/ia5pskh2f3LgvyuKwHuFwOnS8B8/appointments"
+          }
+        },
+        "name": "BRIERS, Matthew John",
+        "nationality": "British",
+        "officer_role": "director",
+        "person_number": "256772520001",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-04-02"
+        }
+      },
+      {
+        "etag": "3e0f8f1819e6ed6ee54846b4e70867bf60690b6e",
+        "address": {
+          "address_line_1": "Worship Square",
+          "address_line_2": "65 Clifton Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC2A 4JE",
+          "premises": "1st Floor"
+        },
+        "appointed_on": "2026-09-25",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 10,
+          "year": 1984
+        },
+        "links": {
+          "self": "/company/07209813/appointments/59v1sLTEDff8WPnKAz8Wt8IRxL8",
+          "officer": {
+            "appointments": "/officers/1_AF20bNaeri7SHCC84N7wfYgA8/appointments"
+          }
+        },
+        "name": "HAMILTON-LOVE, Jacintha",
+        "nationality": "British",
+        "officer_role": "director",
+        "person_number": "352828240001",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-09-28"
+        }
+      },
+      {
+        "etag": "10a89b3b6c10a53d8215e2dc5a38fe7eb314ae1e",
+        "address": {
+          "address_line_1": "Worship Square",
+          "address_line_2": "65 Clifton Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC2A 4JE",
+          "premises": "1st Floor"
+        },
+        "appointed_on": "2023-06-16",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "Estonia",
+        "date_of_birth": {
+          "month": 12,
+          "year": 1989
+        },
+        "links": {
+          "self": "/company/07209813/appointments/ENSwAy9qn4i3zA_kYy9j1VS9DJ8",
+          "officer": {
+            "appointments": "/officers/GyFEV-OOfaPhmYbFxDZDXwOuzr8/appointments"
+          }
+        },
+        "name": "TRUNIN, Lars",
+        "nationality": "Estonian",
+        "officer_role": "director",
+        "person_number": "310379130001",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-04-02"
+        }
+      },
+      {
+        "etag": "dbafee2b59ea8bfb9ed7cd9bf9a81eff142bc49f",
+        "address": {
+          "address_line_1": "Worship Square",
+          "address_line_2": "65 Clifton Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC2A 4JE",
+          "premises": "1st Floor"
+        },
+        "appointed_on": "2024-06-28",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "self": "/company/07209813/appointments/hopDNcvmVKitv_RdhJNXmbFg4Bs",
+          "officer": {
+            "appointments": "/officers/YIaBwQOMMVwcIyaJY-oCI29MY-s/appointments"
+          }
+        },
+        "name": "FAHEY, Jane",
+        "officer_role": "secretary",
+        "resigned_on": "2026-10-23",
+        "person_number": "324763350001"
+      },
+      {
+        "etag": "a750e7f8b356874eab8495fa1536e73454b6b2af",
+        "address": {
+          "address_line_1": "56 Shoreditch High Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "E1 6JJ",
+          "premises": "6th Floor, Tea Building"
+        },
+        "appointed_on": "2019-10-16",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "self": "/company/07209813/appointments/kz49LUrMNSViNC07RoalxhVCMG4",
+          "officer": {
+            "appointments": "/officers/8UhUqcMfrQ8hpd47yg1w_HJ8xgM/appointments"
+          }
+        },
+        "name": "FAHEY, Jane",
+        "officer_role": "secretary",
+        "resigned_on": "2020-10-12",
+        "person_number": "263711710001"
+      },
+      {
+        "etag": "a750e7f8b356874eab8495fa1536e73454b6b2af",
+        "address": {
+          "address_line_1": "56 Shoreditch High Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "E1 6JJ",
+          "premises": "6th Floor, Tea Building"
+        },
+        "appointed_on": "2020-10-15",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "self": "/company/07209813/appointments/eWahMk9_hTgFR2DsfTWqAPjMsrU",
+          "officer": {
+            "appointments": "/officers/adzXt73wg-DnAFnXOZ-T1dDjdjA/appointments"
+          }
+        },
+        "name": "NASH, Dean",
+        "officer_role": "secretary",
+        "resigned_on": "2021-12-02",
+        "person_number": "275522900001"
+      },
+      {
+        "etag": "a750e7f8b356874eab8495fa1536e73454b6b2af",
+        "address": {
+          "address_line_1": "56 Shoreditch High Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "E1 6JJ",
+          "premises": "6th Floor, Tea Building"
+        },
+        "appointed_on": "2021-12-02",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "self": "/company/07209813/appointments/8iYmDVU0iZjkoHh9SoaLTmoZX6M",
+          "officer": {
+            "appointments": "/officers/5ieuNmlihgx6Ng9klaCS5TdCTlY/appointments"
+          }
+        },
+        "name": "OLLITE, Syeeda",
+        "officer_role": "secretary",
+        "resigned_on": "2024-06-28",
+        "person_number": "290263930001"
+      },
+      {
+        "etag": "a750e7f8b356874eab8495fa1536e73454b6b2af",
+        "address": {
+          "address_line_1": "56 Shoreditch High Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "E1 6JJ",
+          "premises": "6th Floor, Tea Building"
+        },
+        "appointed_on": "2018-10-10",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "self": "/company/07209813/appointments/Sm9UfneT8PX4i1Uk0zif0ot-Tmk",
+          "officer": {
+            "appointments": "/officers/gCg0BPdWsOS006BtVLFUHm32vqY/appointments"
+          }
+        },
+        "name": "SWALLOW, Jenifer Elizabeth",
+        "officer_role": "secretary",
+        "resigned_on": "2019-06-12",
+        "person_number": "252295440001"
+      },
+      {
+        "etag": "a750e7f8b356874eab8495fa1536e73454b6b2af",
+        "address": {
+          "address_line_1": "56 Shoreditch High Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "E1 6JJ",
+          "premises": "6th Floor, Tea Building"
+        },
+        "appointed_on": "2018-03-26",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "self": "/company/07209813/appointments/QwgpihApo3aWy4EigfLt8qi6oeI",
+          "officer": {
+            "appointments": "/officers/FNTUMeW3ftHeiFHf4nBI2QPhP40/appointments"
+          }
+        },
+        "name": "WEAVER, Paul",
+        "officer_role": "secretary",
+        "resigned_on": "2018-09-19",
+        "person_number": "244957330001"
+      },
+      {
+        "etag": "a750e7f8b356874eab8495fa1536e73454b6b2af",
+        "address": {
+          "address_line_1": "56 Shoreditch High Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "E1 6JJ",
+          "premises": "6th Floor, Tea Building"
+        },
+        "appointed_on": "2021-10-07",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 12,
+          "year": 1976
+        },
+        "links": {
+          "self": "/company/07209813/appointments/JojBbR7mcfCRdOFfKzONOstSiVA",
+          "officer": {
+            "appointments": "/officers/ia5pskh2f3LgvyuKwHuFwOnS8B8/appointments"
+          }
+        },
+        "name": "BRIERS, Matthew John",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2023-12-15",
+        "person_number": "256772520001"
+      },
+      {
+        "etag": "a750e7f8b356874eab8495fa1536e73454b6b2af",
+        "address": {
+          "address_line_1": "56 Shoreditch High Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "E1 6JJ",
+          "premises": "6th Floor, Tea Building"
+        },
+        "appointed_on": "2012-01-27",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United States",
+        "date_of_birth": {
+          "month": 12,
+          "year": 1965
+        },
+        "links": {
+          "self": "/company/07209813/appointments/zC4lcH0pRqMFHAQXz7yqmaFt_S0",
+          "officer": {
+            "appointments": "/officers/8b_SIlyaXJ31AW31iFAMkq8OY4E/appointments"
+          }
+        },
+        "name": "EHRENBERG, Roger",
+        "nationality": "American",
+        "officer_role": "director",
+        "resigned_on": "2021-06-16",
+        "person_number": "166792880002"
+      },
+      {
+        "etag": "a750e7f8b356874eab8495fa1536e73454b6b2af",
+        "address": {
+          "address_line_1": "56 Shoreditch High Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "E1 6JJ",
+          "premises": "6th Floor, Tea Building"
+        },
+        "appointed_on": "2011-11-08",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United Kingdom",
+        "date_of_birth": {
+          "month": 6,
+          "year": 1981
+        },
+        "links": {
+          "self": "/company/07209813/appointments/uJ7sphzdux9mXmewFm2xt_WyWYI",
+          "officer": {
+            "appointments": "/officers/tVj6qugvlKqEC4X-JvR_9Z2CylY/appointments"
+          }
+        },
+        "name": "HINRIKUS, Taavet",
+        "nationality": "Estonian",
+        "officer_role": "director",
+        "resigned_on": "2021-06-18",
+        "person_number": "165205800003"
+      },
+      {
+        "etag": "a750e7f8b356874eab8495fa1536e73454b6b2af",
+        "address": {
+          "address_line_1": "186-188 City Road",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC1V 2NT",
+          "premises": "2nd Floor"
+        },
+        "appointed_on": "2014-12-23",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "Usa",
+        "date_of_birth": {
+          "month": 6,
+          "year": 1966
+        },
+        "links": {
+          "self": "/company/07209813/appointments/yaV17jQmmmruhuwjYqzyJMMK1Xg",
+          "officer": {
+            "appointments": "/officers/b8jb4mfmLhMYlBPnY5QRr-i2HHE/appointments"
+          }
+        },
+        "name": "HOROWITZ, Benjamin Abraham",
+        "nationality": "American",
+        "officer_role": "director",
+        "resigned_on": "2018-01-11",
+        "person_number": "195194370002"
+      },
+      {
+        "etag": "ca44cf86685e568cbe2969b98bbadd2f77a87e2e",
+        "address": {
+          "address_line_1": "Worship Square",
+          "address_line_2": "65 Clifton Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC2A 4JE",
+          "premises": "1st Floor"
+        },
+        "appointed_on": "2010-03-31",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United Kingdom",
+        "date_of_birth": {
+          "month": 8,
+          "year": 1980
+        },
+        "links": {
+          "self": "/company/07209813/appointments/1A3PZ2eNHvrAh5nXDacGonKkmCk",
+          "officer": {
+            "appointments": "/officers/DGPx-epA0sWo0Kyd28SUaZ6CIug/appointments"
+          }
+        },
+        "name": "KAARMANN, Kristo",
+        "nationality": "Estonian",
+        "officer_role": "director",
+        "resigned_on": "2026-06-04",
+        "person_number": "150182000004",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-04-02"
+        }
+      },
+      {
+        "etag": "738b7da873de47843613de9399882ba99cd0b4d9",
+        "address": {
+          "address_line_1": "Worship Square",
+          "address_line_2": "65 Clifton Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC2A 4JE",
+          "premises": "1st Floor"
+        },
+        "appointed_on": "2023-06-15",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United States",
+        "date_of_birth": {
+          "month": 11,
+          "year": 1980
+        },
+        "links": {
+          "self": "/company/07209813/appointments/71qeP-rVHSHvaKj9XkEJ6HMLg9g",
+          "officer": {
+            "appointments": "/officers/NBQIkLBJ2UrKzLFnc42gsPhsZCI/appointments"
+          }
+        },
+        "name": "KEAN, Sharon Anne",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2025-05-02",
+        "person_number": "310556770002"
+      },
+      {
+        "etag": "20339725ee412724e280e9ba04a3a2c33542577b",
+        "address": {
+          "address_line_1": "56 Shoreditch High Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "E1 6JJ",
+          "premises": "6th Floor, Tea Building"
+        },
+        "appointed_on": "2021-09-19",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 9,
+          "year": 1980
+        },
+        "links": {
+          "self": "/company/07209813/appointments/lD1eVhevQO4HEMDah001K4iRZeI",
+          "officer": {
+            "appointments": "/officers/U1mxYVs7YdBekpqSQNvXNvw5doA/appointments"
+          }
+        },
+        "name": "NASH, Dean Graham, Mr.",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2021-12-02",
+        "person_number": "284519150002"
+      },
+      {
+        "etag": "a750e7f8b356874eab8495fa1536e73454b6b2af",
+        "address": {
+          "address_line_1": "56 Shoreditch High Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "E1 6JJ",
+          "premises": "6th Floor, Tea Building"
+        },
+        "appointed_on": "2018-01-11",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United States",
+        "date_of_birth": {
+          "month": 6,
+          "year": 1981
+        },
+        "links": {
+          "self": "/company/07209813/appointments/_1DisgP0-gueAJQXz_TdIEET57U",
+          "officer": {
+            "appointments": "/officers/xEfmVWt_rRX0Ltv6b15EbmuKWGo/appointments"
+          }
+        },
+        "name": "RAMPELL, Alastair Michael",
+        "nationality": "American",
+        "officer_role": "director",
+        "resigned_on": "2021-06-18",
+        "former_names": [
+          {
+            "forenames": "(KNOWN AS ALEX MICHAEL",
+            "surname": "RAMPELL)"
+          }
+        ],
+        "person_number": "284596070001"
+      },
+      {
+        "etag": "a750e7f8b356874eab8495fa1536e73454b6b2af",
+        "address": {
+          "address_line_1": "56 Shoreditch High Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "E1 6JJ",
+          "premises": "6th Floor, Tea Building"
+        },
+        "appointed_on": "2019-07-17",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "Netherlands",
+        "date_of_birth": {
+          "month": 5,
+          "year": 1973
+        },
+        "links": {
+          "self": "/company/07209813/appointments/3fPGNX3ffuRvC2-oxF2BXVLpKqU",
+          "officer": {
+            "appointments": "/officers/1bXMnzSxooyOCsj6RopcaYO-Qts/appointments"
+          }
+        },
+        "name": "UYTDEHAAGE, Ingo Jeroen",
+        "nationality": "Dutch",
+        "officer_role": "director",
+        "resigned_on": "2021-12-02",
+        "person_number": "170124400002"
+      },
+      {
+        "etag": "a750e7f8b356874eab8495fa1536e73454b6b2af",
+        "address": {
+          "address_line_1": "56 Shoreditch High Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "E1 6JJ",
+          "premises": "6th Floor, Tea Building"
+        },
+        "appointed_on": "2019-07-17",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United States",
+        "date_of_birth": {
+          "month": 6,
+          "year": 1971
+        },
+        "links": {
+          "self": "/company/07209813/appointments/Z3E_29ZjyhlNQWBvoUUCgxfN3WM",
+          "officer": {
+            "appointments": "/officers/yEUbIik3Ggq1w4Q3xVwghBU2Px4/appointments"
+          }
+        },
+        "name": "WELLS, David Bolling",
+        "nationality": "American",
+        "officer_role": "director",
+        "resigned_on": "2021-06-18",
+        "person_number": "284595860001"
+      }
+    ],
+    "items_per_page": 100,
+    "kind": "officer-list",
+    "links": {
+      "self": "/company/07209813/officers"
+    },
+    "resigned_count": 16,
+    "inactive_count": 0,
+    "start_index": 0,
+    "total_results": 21
+  }
+}

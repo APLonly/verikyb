@@ -1,0 +1,283 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/09736376/charges",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:14.218826Z",
+  "synthetic": false,
+  "body": {
+    "etag": "27603e9b834603b0d0d0a80c8f0a411f61952669",
+    "items": [
+      {
+        "charge_code": "097363760007",
+        "charge_number": 7,
+        "classification": {
+          "description": "A registered charge",
+          "type": "charge-description"
+        },
+        "created_on": "2019-12-30",
+        "delivered_on": "2020-01-06",
+        "etag": "fafdc3d18e0caa475a361939300376c20e4fd19f",
+        "links": {
+          "self": "/company/09736376/charges/xv1hIP7f2HRzo2jArlRrCb5o_BU"
+        },
+        "particulars": {
+          "contains_fixed_charge": true,
+          "contains_negative_pledge": true
+        },
+        "persons_entitled": [
+          {
+            "name": "The Governor and Company of the Bank of England as Security Trustee"
+          }
+        ],
+        "status": "outstanding",
+        "transactions": [
+          {
+            "delivered_on": "2020-01-06",
+            "filing_type": "create-charge-with-deed",
+            "links": {
+              "filing": "/company/09736376/filing-history/MzI1MzgzNzc4MGFkaXF6a2N4"
+            }
+          }
+        ]
+      },
+      {
+        "charge_code": "097363760006",
+        "charge_number": 6,
+        "classification": {
+          "description": "A registered charge",
+          "type": "charge-description"
+        },
+        "created_on": "2019-06-03",
+        "delivered_on": "2019-06-19",
+        "etag": "633bbe391ebfaa24b95daf14268262ef44b6be2c",
+        "links": {
+          "self": "/company/09736376/charges/_XPA6n7Y-hgcQnz_OD7FdliuBJY"
+        },
+        "particulars": {
+          "contains_fixed_charge": true,
+          "contains_negative_pledge": true
+        },
+        "persons_entitled": [
+          {
+            "name": "The Governor and Company of the Bank of England as Security Trustee for the Security Beneficiaries"
+          }
+        ],
+        "status": "outstanding",
+        "transactions": [
+          {
+            "delivered_on": "2019-06-19",
+            "filing_type": "create-charge-with-deed",
+            "links": {
+              "filing": "/company/09736376/filing-history/MzIzNzc0MDAxM2FkaXF6a2N4"
+            }
+          }
+        ]
+      },
+      {
+        "charge_code": "097363760005",
+        "charge_number": 5,
+        "classification": {
+          "description": "A registered charge",
+          "type": "charge-description"
+        },
+        "created_on": "2019-03-01",
+        "delivered_on": "2019-03-14",
+        "etag": "f3ddf963fc0a54a8e6f2fd33cd1b15bb43ce0d0c",
+        "links": {
+          "self": "/company/09736376/charges/Z4vcpzSg_1w2F_V0a5UUZ4T05-c"
+        },
+        "particulars": {
+          "contains_fixed_charge": true,
+          "contains_negative_pledge": true
+        },
+        "persons_entitled": [
+          {
+            "name": "The Governor and Company of the Bank of England as Security Trustee"
+          }
+        ],
+        "satisfied_on": "2020-07-16",
+        "status": "fully-satisfied",
+        "transactions": [
+          {
+            "delivered_on": "2019-03-14",
+            "filing_type": "create-charge-with-deed",
+            "links": {
+              "filing": "/company/09736376/filing-history/MzIyOTM2NzUxM2FkaXF6a2N4"
+            }
+          },
+          {
+            "delivered_on": "2020-07-16",
+            "filing_type": "charge-satisfaction",
+            "links": {
+              "filing": "/company/09736376/filing-history/MzI3MzI3MzIzOWFkaXF6a2N4"
+            }
+          }
+        ]
+      },
+      {
+        "charge_code": "097363760004",
+        "charge_number": 4,
+        "classification": {
+          "description": "A registered charge",
+          "type": "charge-description"
+        },
+        "created_on": "2019-03-01",
+        "delivered_on": "2019-03-13",
+        "etag": "7c8d89ddf205d3ed0b54a56f4b241515125550bf",
+        "links": {
+          "self": "/company/09736376/charges/xpcVuPH2WeeDfRtqnMTvjw1RLWA"
+        },
+        "particulars": {
+          "contains_fixed_charge": true,
+          "contains_negative_pledge": true
+        },
+        "persons_entitled": [
+          {
+            "name": "The Governor and Company of the Bank of England as Security Trustee"
+          }
+        ],
+        "status": "outstanding",
+        "transactions": [
+          {
+            "delivered_on": "2019-03-13",
+            "filing_type": "create-charge-with-deed",
+            "links": {
+              "filing": "/company/09736376/filing-history/MzIyOTI2MTczN2FkaXF6a2N4"
+            }
+          }
+        ]
+      },
+      {
+        "charge_code": "097363760003",
+        "charge_number": 3,
+        "classification": {
+          "description": "A registered charge",
+          "type": "charge-description"
+        },
+        "created_on": "2019-02-01",
+        "delivered_on": "2019-02-19",
+        "etag": "fdf5eb3859a7453246a698772ca386bfcfd2c8db",
+        "links": {
+          "self": "/company/09736376/charges/uADn9IKGjNfrLGYb_IJrj1E3e-4"
+        },
+        "particulars": {
+          "contains_fixed_charge": true,
+          "contains_negative_pledge": true
+        },
+        "persons_entitled": [
+          {
+            "name": "The Governor and Company of the Bank of England as Security Trustee"
+          }
+        ],
+        "satisfied_on": "2019-06-12",
+        "status": "fully-satisfied",
+        "transactions": [
+          {
+            "delivered_on": "2019-02-19",
+            "filing_type": "create-charge-with-deed",
+            "links": {
+              "filing": "/company/09736376/filing-history/MzIyNzMyNTQ4NmFkaXF6a2N4"
+            }
+          },
+          {
+            "delivered_on": "2019-06-12",
+            "filing_type": "charge-satisfaction",
+            "links": {
+              "filing": "/company/09736376/filing-history/MzIzNjY5MzA4M2FkaXF6a2N4"
+            }
+          }
+        ]
+      },
+      {
+        "charge_code": "097363760002",
+        "charge_number": 2,
+        "classification": {
+          "description": "A registered charge",
+          "type": "charge-description"
+        },
+        "created_on": "2017-05-12",
+        "delivered_on": "2017-05-24",
+        "etag": "9b178071e1ae86ce6b1d1d5d36a9b8d844657fb9",
+        "links": {
+          "self": "/company/09736376/charges/ofUGJzXhP9LAPL86jk1xbwE4cwg"
+        },
+        "particulars": {
+          "contains_fixed_charge": true,
+          "contains_negative_pledge": true,
+          "description": "N/A.",
+          "type": "brief-description"
+        },
+        "persons_entitled": [
+          {
+            "name": "The Governor and Company of the Bank of England"
+          }
+        ],
+        "satisfied_on": "2019-06-11",
+        "status": "fully-satisfied",
+        "transactions": [
+          {
+            "delivered_on": "2017-05-24",
+            "filing_type": "create-charge-with-deed",
+            "links": {
+              "filing": "/company/09736376/filing-history/MzE3NjU1MDg2N2FkaXF6a2N4"
+            }
+          },
+          {
+            "delivered_on": "2019-06-11",
+            "filing_type": "charge-satisfaction",
+            "links": {
+              "filing": "/company/09736376/filing-history/MzIzNjYyMDA3OWFkaXF6a2N4"
+            }
+          }
+        ]
+      },
+      {
+        "charge_code": "097363760001",
+        "charge_number": 1,
+        "classification": {
+          "description": "A registered charge",
+          "type": "charge-description"
+        },
+        "created_on": "2017-02-13",
+        "delivered_on": "2017-02-16",
+        "etag": "6a09819dea1806cdf0b48088c64d7acb38502570",
+        "links": {
+          "self": "/company/09736376/charges/hc0sGmly-aO3SgoP8qr2QQAqOP4"
+        },
+        "particulars": {
+          "contains_fixed_charge": true,
+          "contains_negative_pledge": true,
+          "description": "N/A.",
+          "type": "brief-description"
+        },
+        "persons_entitled": [
+          {
+            "name": "The Governor and Company of the Bank of England (Security Trustee for the Security Beneficiaries)"
+          }
+        ],
+        "satisfied_on": "2019-03-06",
+        "status": "fully-satisfied",
+        "transactions": [
+          {
+            "delivered_on": "2017-02-16",
+            "filing_type": "create-charge-with-deed",
+            "links": {
+              "filing": "/company/09736376/filing-history/MzE2OTEwMDEzMGFkaXF6a2N4"
+            }
+          },
+          {
+            "delivered_on": "2019-03-06",
+            "filing_type": "charge-satisfaction",
+            "links": {
+              "filing": "/company/09736376/filing-history/MzIyODcwOTE2NmFkaXF6a2N4"
+            }
+          }
+        ]
+      }
+    ],
+    "part_satisfied_count": 0,
+    "satisfied_count": 4,
+    "total_count": 7,
+    "unfiltered_count": 7
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "url": "https://register.fca.org.uk/services/V0.1/Firm/754568",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:24.779500Z",
+  "synthetic": false,
+  "body": {
+    "Status": "FSR-API-02-01-00",
+    "ResultInfo": {
+      "page": "1",
+      "per_page": "1",
+      "total_count": "1"
+    },
+    "Message": "Ok. Firm Found",
+    "Data": [
+      {
+        "Name": "https://register.fca.org.uk/services/V0.1/Firm/754568/Names",
+        "Individuals": "https://register.fca.org.uk/services/V0.1/Firm/754568/Individuals",
+        "Requirements": "https://register.fca.org.uk/services/V0.1/Firm/754568/Requirements",
+        "Permission": "https://register.fca.org.uk/services/V0.1/Firm/754568/Permissions",
+        "Passport": "https://register.fca.org.uk/services/V0.1/Firm/754568/Passports",
+        "Regulators": "https://register.fca.org.uk/services/V0.1/Firm/754568/Regulators",
+        "Appointed Representative": "https://register.fca.org.uk/services/V0.1/Firm/754568/AR",
+        "Address": "https://register.fca.org.uk/services/V0.1/Firm/754568/Address",
+        "Waivers": "https://register.fca.org.uk/services/V0.1/Firm/754568/Waivers",
+        "Exclusions": "https://register.fca.org.uk/services/V0.1/Firm/754568/Exclusions",
+        "DisciplinaryHistory": "https://register.fca.org.uk/services/V0.1/Firm/754568/DisciplinaryHistory",
+        "System Timestamp": "25/11/2026 07:10",
+        "Exceptional Info Details": [],
+        "Status Effective Date": "15/12/2016",
+        "E-Money Agent Status": "",
+        "PSD / EMD Effective Date": "",
+        "Client Money Permission": "Control but not hold client money",
+        "Sub Status Effective from": "",
+        "Sub-Status": "",
+        "Mutual Society Number": "",
+        "Companies House Number": "09736376",
+        "MLRs Status Effective Date": "",
+        "MLRs Status": "",
+        "E-Money Agent Status Effective Date": "",
+        "PSD Agent Status Effective Date": "",
+        "PSD Agent Status": "",
+        "PSD / EMD Status": "",
+        "Status": "Authorised",
+        "Business Type": "Regulated",
+        "Organisation Name": "ClearBank Limited",
+        "FRN": "754568"
+      }
+    ]
+  }
+}

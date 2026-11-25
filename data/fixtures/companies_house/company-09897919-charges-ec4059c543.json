@@ -1,0 +1,127 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/09897919/charges",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:36.763376Z",
+  "synthetic": false,
+  "body": {
+    "etag": "be4237be5d773ddfd8cc5f7bb5a5cef78c19b45d",
+    "items": [
+      {
+        "charge_code": "098979190003",
+        "charge_number": 3,
+        "classification": {
+          "description": "A registered charge",
+          "type": "charge-description"
+        },
+        "created_on": "2026-03-31",
+        "delivered_on": "2026-04-07",
+        "etag": "52c5ad01f112954a6248e9b4ef997331c8b569e0",
+        "links": {
+          "self": "/company/09897919/charges/Fovh3flrBoqXYmVY9tlBaXyiVkk"
+        },
+        "particulars": {
+          "contains_fixed_charge": true,
+          "contains_floating_charge": true,
+          "contains_negative_pledge": true,
+          "description": "The company charges by way of first legal mortgage the property (as defined in the instrument), although no further detail is specified in the instrument. For further information, please see clause 3.2 and schedule 1 of the instrument. The company also charges by way of first fixed charge the intellectual property (as defined in the instrument), although no further detail is specified in the instrument. For further information, please see clause 3.9 and schedule 2 of the instrument.",
+          "floating_charge_covers_all": true,
+          "type": "brief-description"
+        },
+        "persons_entitled": [
+          {
+            "name": "Hsbc Innovation Bank Limited"
+          }
+        ],
+        "status": "outstanding",
+        "transactions": [
+          {
+            "delivered_on": "2026-04-07",
+            "filing_type": "create-charge-with-deed",
+            "links": {
+              "filing": "/company/09897919/filing-history/MzUxNDc1Mjg4MWFkaXF6a2N4"
+            }
+          }
+        ]
+      },
+      {
+        "charge_code": "098979190002",
+        "charge_number": 2,
+        "classification": {
+          "description": "A registered charge",
+          "type": "charge-description"
+        },
+        "created_on": "2024-05-31",
+        "delivered_on": "2024-06-07",
+        "etag": "5e7b812f329a62dd2a8ced2742c292e684348c89",
+        "links": {
+          "self": "/company/09897919/charges/rD89r0xnC2COE3yGhZvMBdCzUlc"
+        },
+        "particulars": {
+          "contains_fixed_charge": true,
+          "contains_floating_charge": true,
+          "contains_negative_pledge": true,
+          "description": "The company charges by way of first legal mortgage the property (as defined in the instrument), although no further detail is specified in the instrument. For further information, please see clause 3.2 and schedule 1 of the instrument. The company also charges by way of first fixed charge the charged intellectual property (as defined in the instrument), although no further detail is specified in the instrument. For further information, please see clause 3.9 and schedule 2 of the instrument.",
+          "floating_charge_covers_all": true,
+          "type": "brief-description"
+        },
+        "persons_entitled": [
+          {
+            "name": "Hsbc Innovation Bank Limited"
+          }
+        ],
+        "status": "outstanding",
+        "transactions": [
+          {
+            "delivered_on": "2024-06-07",
+            "filing_type": "create-charge-with-deed",
+            "links": {
+              "filing": "/company/09897919/filing-history/MzQyNDYwODQxNWFkaXF6a2N4"
+            }
+          }
+        ]
+      },
+      {
+        "charge_code": "098979190001",
+        "charge_number": 1,
+        "classification": {
+          "description": "A registered charge",
+          "type": "charge-description"
+        },
+        "created_on": "2021-12-15",
+        "delivered_on": "2021-12-22",
+        "etag": "d399b1733aead567d959d313500cd73a1d758a59",
+        "links": {
+          "self": "/company/09897919/charges/uhEBWpWRqvdoEuChfYpXn08a6qA"
+        },
+        "particulars": {
+          "contains_fixed_charge": true,
+          "contains_floating_charge": true,
+          "contains_negative_pledge": true,
+          "description": "The company charges by way of first legal mortgage the property (as defined in the instrument), although no further detail is specified in the instrument. For further information, please see clause 3.2 and schedule 1 of the instrument. The company also charges by way of first fixed charge the intellectual property (as defined in the instrument), although no further detail is specified in the instrument. For further information, please see clause 3.9 and schedule 2 of the instrument.",
+          "floating_charge_covers_all": true,
+          "type": "brief-description"
+        },
+        "persons_entitled": [
+          {
+            "name": "Silicon Valley Bank"
+          }
+        ],
+        "status": "outstanding",
+        "transactions": [
+          {
+            "delivered_on": "2021-12-22",
+            "filing_type": "create-charge-with-deed",
+            "links": {
+              "filing": "/company/09897919/filing-history/MzMyNDQ0ODk2NmFkaXF6a2N4"
+            }
+          }
+        ]
+      }
+    ],
+    "part_satisfied_count": 0,
+    "satisfied_count": 0,
+    "total_count": 3,
+    "unfiltered_count": 3
+  }
+}

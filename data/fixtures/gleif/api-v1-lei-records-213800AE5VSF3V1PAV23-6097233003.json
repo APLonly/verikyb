@@ -1,0 +1,191 @@
+{
+  "url": "https://api.gleif.org/api/v1/lei-records/213800AE5VSF3V1PAV23",
+  "status": 200,
+  "content_type": "application/vnd.api+json",
+  "recorded_at": "2026-11-25T07:09:49.558308Z",
+  "synthetic": false,
+  "body": {
+    "meta": {
+      "goldenCopy": {
+        "publishDate": "2026-11-25T00:00:00Z"
+      }
+    },
+    "data": {
+      "type": "lei-records",
+      "id": "213800AE5VSF3V1PAV23",
+      "attributes": {
+        "lei": "213800AE5VSF3V1PAV23",
+        "entity": {
+          "legalName": {
+            "name": "STARLING BANK LIMITED",
+            "language": "en"
+          },
+          "otherNames": [
+            {
+              "name": "STARLING FS LIMITED",
+              "language": "en",
+              "type": "PREVIOUS_LEGAL_NAME"
+            },
+            {
+              "name": "POSSIBLE FS LIMITED",
+              "language": "en",
+              "type": "PREVIOUS_LEGAL_NAME"
+            }
+          ],
+          "transliteratedOtherNames": [],
+          "legalAddress": {
+            "language": "en",
+            "addressLines": [
+              "5TH FLOOR LONDON FRUIT AND WOOL EXCHANGE",
+              "1 DUVAL SQUARE"
+            ],
+            "addressNumber": null,
+            "addressNumberWithinBuilding": null,
+            "mailRouting": null,
+            "city": "LONDON",
+            "region": "GB-LND",
+            "country": "GB",
+            "postalCode": "E1 6PW"
+          },
+          "headquartersAddress": {
+            "language": "en",
+            "addressLines": [
+              "5TH FLOOR LONDON FRUIT AND WOOL EXCHANGE",
+              "1 DUVAL SQUARE"
+            ],
+            "addressNumber": null,
+            "addressNumberWithinBuilding": null,
+            "mailRouting": null,
+            "city": "LONDON",
+            "region": "GB-LND",
+            "country": "GB",
+            "postalCode": "E1 6PW"
+          },
+          "registeredAt": {
+            "id": "RA000585",
+            "other": null
+          },
+          "registeredAs": "09092149",
+          "jurisdiction": "GB",
+          "category": "GENERAL",
+          "legalForm": {
+            "id": "H0PO",
+            "other": null
+          },
+          "associatedEntity": {
+            "lei": null,
+            "name": null
+          },
+          "status": "ACTIVE",
+          "expiration": {
+            "date": null,
+            "reason": null
+          },
+          "successorEntity": {
+            "lei": null,
+            "name": null
+          },
+          "successorEntities": [],
+          "creationDate": "2014-06-18T00:00:00Z",
+          "subCategory": null,
+          "otherAddresses": [],
+          "eventGroups": [
+            {
+              "groupType": "STANDALONE",
+              "events": [
+                {
+                  "validationDocuments": "ACCOUNTS_FILING",
+                  "effectiveDate": "2022-07-11T00:00:00Z",
+                  "recordedDate": "2022-07-27T10:06:43Z",
+                  "type": "CHANGE_LEGAL_ADDRESS",
+                  "status": "COMPLETED"
+                }
+              ]
+            },
+            {
+              "groupType": "STANDALONE",
+              "events": [
+                {
+                  "validationDocuments": "ACCOUNTS_FILING",
+                  "effectiveDate": "2022-07-11T00:00:00Z",
+                  "recordedDate": "2022-07-27T10:05:03Z",
+                  "type": "CHANGE_HQ_ADDRESS",
+                  "status": "COMPLETED"
+                }
+              ]
+            }
+          ]
+        },
+        "registration": {
+          "initialRegistrationDate": "2017-06-28T00:00:00Z",
+          "lastUpdateDate": "2026-10-26T17:28:30Z",
+          "status": "ISSUED",
+          "nextRenewalDate": "2027-06-28T00:00:00Z",
+          "managingLou": "213800WAVVOPS85N2205",
+          "corroborationLevel": "FULLY_CORROBORATED",
+          "validatedAt": {
+            "id": "RA000585",
+            "other": null
+          },
+          "validatedAs": "09092149",
+          "otherValidationAuthorities": []
+        },
+        "bic": [
+          "SRLGGB2LSPS",
+          "SRLGGB2LXXX",
+          "SRLGGB3LXXX"
+        ],
+        "mic": null,
+        "ocid": "gb/09092149",
+        "qcc": "QGBNU0QPVE",
+        "gem": null,
+        "spglobal": [
+          "322482665"
+        ],
+        "conformityFlag": "CONFORMING"
+      },
+      "relationships": {
+        "managing-lou": {
+          "links": {
+            "related": "https://api.gleif.org/api/v1/lei-records/213800AE5VSF3V1PAV23/managing-lou"
+          }
+        },
+        "lei-issuer": {
+          "links": {
+            "related": "https://api.gleif.org/api/v1/lei-records/213800AE5VSF3V1PAV23/lei-issuer"
+          }
+        },
+        "field-modifications": {
+          "links": {
+            "related": "https://api.gleif.org/api/v1/lei-records/213800AE5VSF3V1PAV23/field-modifications"
+          }
+        },
+        "direct-parent": {
+          "links": {
+            "reporting-exception": "https://api.gleif.org/api/v1/lei-records/213800AE5VSF3V1PAV23/direct-parent-reporting-exception"
+          }
+        },
+        "ultimate-parent": {
+          "links": {
+            "reporting-exception": "https://api.gleif.org/api/v1/lei-records/213800AE5VSF3V1PAV23/ultimate-parent-reporting-exception"
+          }
+        },
+        "direct-children": {
+          "links": {
+            "relationship-records": "https://api.gleif.org/api/v1/lei-records/213800AE5VSF3V1PAV23/direct-child-relationships",
+            "related": "https://api.gleif.org/api/v1/lei-records/213800AE5VSF3V1PAV23/direct-children"
+          }
+        },
+        "ultimate-children": {
+          "links": {
+            "relationship-records": "https://api.gleif.org/api/v1/lei-records/213800AE5VSF3V1PAV23/ultimate-child-relationships",
+            "related": "https://api.gleif.org/api/v1/lei-records/213800AE5VSF3V1PAV23/ultimate-children"
+          }
+        }
+      },
+      "links": {
+        "self": "https://api.gleif.org/api/v1/lei-records/213800AE5VSF3V1PAV23"
+      }
+    }
+  }
+}

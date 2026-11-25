@@ -1,0 +1,60 @@
+{
+  "url": "https://api.company-information.service.gov.uk/officers/1_AF20bNaeri7SHCC84N7wfYgA8/appointments?items_per_page=50",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:08.173515Z",
+  "synthetic": false,
+  "body": {
+    "active_count": 1,
+    "date_of_birth": {
+      "month": 10,
+      "year": 1984
+    },
+    "etag": "3e0f8f1819e6ed6ee54846b4e70867bf60690b6e",
+    "inactive_count": 0,
+    "is_corporate_officer": false,
+    "items": [
+      {
+        "address": {
+          "address_line_1": "Worship Square",
+          "address_line_2": "65 Clifton Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC2A 4JE",
+          "premises": "1st Floor"
+        },
+        "appointed_on": "2026-09-25",
+        "appointed_to": {
+          "company_name": "WISE PAYMENTS LIMITED",
+          "company_number": "07209813",
+          "company_status": "active"
+        },
+        "name": "Jacintha HAMILTON-LOVE",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/07209813"
+        },
+        "name_elements": {
+          "forename": "Jacintha",
+          "surname": "HAMILTON-LOVE"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-09-28"
+        }
+      }
+    ],
+    "items_per_page": 50,
+    "kind": "personal-appointment",
+    "links": {
+      "self": "/officers/1_AF20bNaeri7SHCC84N7wfYgA8/appointments"
+    },
+    "name": "Jacintha HAMILTON-LOVE",
+    "resigned_count": 0,
+    "start_index": 0,
+    "total_results": 1
+  }
+}

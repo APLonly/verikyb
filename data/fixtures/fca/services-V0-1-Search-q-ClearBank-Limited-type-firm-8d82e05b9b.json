@@ -1,0 +1,25 @@
+{
+  "url": "https://register.fca.org.uk/services/V0.1/Search?q=ClearBank+Limited&type=firm",
+  "status": 200,
+  "content_type": "application/json;charset=UTF-8",
+  "recorded_at": "2026-11-25T07:10:23.736480Z",
+  "synthetic": false,
+  "body": {
+    "Status": "FSR-API-04-01-00",
+    "ResultInfo": {
+      "page": "1",
+      "per_page": "20",
+      "total_count": "1"
+    },
+    "Message": "Ok. Search successful",
+    "Data": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/754568",
+        "Status": "Authorised",
+        "Reference Number": "754568",
+        "Type of business or Individual": "Firm",
+        "Name": "ClearBank Limited (Postcode: EC2A 2EW)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "url": "https://register.fca.org.uk/services/V0.1/Firm/730166/Regulators",
+  "status": 200,
+  "content_type": "application/json;charset=UTF-8",
+  "recorded_at": "2026-11-25T07:10:01.531194Z",
+  "synthetic": false,
+  "body": {
+    "Status": "FSR-API-02-09-00",
+    "ResultInfo": {
+      "page": "1",
+      "per_page": "10",
+      "total_count": "2"
+    },
+    "Message": "Ok. Firm Regulator found",
+    "Data": [
+      {
+        "Termination Date": "",
+        "Effective Date": "12/07/2016",
+        "Regulator Name": "Financial Conduct Authority"
+      },
+      {
+        "Termination Date": "",
+        "Effective Date": "12/07/2016",
+        "Regulator Name": "Prudential Regulation Authority"
+      }
+    ]
+  }
+}

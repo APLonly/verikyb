@@ -1,0 +1,235 @@
+{
+  "url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=07209813",
+  "status": 200,
+  "content_type": "application/vnd.api+json",
+  "recorded_at": "2026-11-25T07:10:04.499385Z",
+  "synthetic": false,
+  "body": {
+    "meta": {
+      "goldenCopy": {
+        "publishDate": "2026-11-25T00:00:00Z"
+      },
+      "pagination": {
+        "currentPage": 1,
+        "perPage": 15,
+        "from": 1,
+        "to": 1,
+        "total": 1,
+        "lastPage": 1
+      }
+    },
+    "links": {
+      "first": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=07209813&page%5Bnumber%5D=1&page%5Bsize%5D=15",
+      "last": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=07209813&page%5Bnumber%5D=1&page%5Bsize%5D=15"
+    },
+    "data": [
+      {
+        "type": "lei-records",
+        "id": "213800U4GNTXRFYZKG18",
+        "attributes": {
+          "lei": "213800U4GNTXRFYZKG18",
+          "entity": {
+            "legalName": {
+              "name": "WISE PAYMENTS LIMITED",
+              "language": "en"
+            },
+            "otherNames": [
+              {
+                "name": "TRANSFERWISE LTD",
+                "language": "en",
+                "type": "PREVIOUS_LEGAL_NAME"
+              },
+              {
+                "name": "WISE",
+                "language": "en",
+                "type": "TRADING_OR_OPERATING_NAME"
+              },
+              {
+                "name": "EXCHANGE SOLUTIONS LTD",
+                "language": "en",
+                "type": "PREVIOUS_LEGAL_NAME"
+              }
+            ],
+            "transliteratedOtherNames": [],
+            "legalAddress": {
+              "language": "en",
+              "addressLines": [
+                "1St Floor",
+                "Worship Square",
+                "65 Clifton Street"
+              ],
+              "addressNumber": null,
+              "addressNumberWithinBuilding": null,
+              "mailRouting": null,
+              "city": "London",
+              "region": "GB-LND",
+              "country": "GB",
+              "postalCode": "EC2A 4JE"
+            },
+            "headquartersAddress": {
+              "language": "en",
+              "addressLines": [
+                "1St Floor",
+                "Worship Square",
+                "65 Clifton Street"
+              ],
+              "addressNumber": null,
+              "addressNumberWithinBuilding": null,
+              "mailRouting": null,
+              "city": "London",
+              "region": "GB-LND",
+              "country": "GB",
+              "postalCode": "EC2A 4JE"
+            },
+            "registeredAt": {
+              "id": "RA000585",
+              "other": null
+            },
+            "registeredAs": "07209813",
+            "jurisdiction": "GB",
+            "category": "GENERAL",
+            "legalForm": {
+              "id": "H0PO",
+              "other": null
+            },
+            "associatedEntity": {
+              "lei": null,
+              "name": null
+            },
+            "status": "ACTIVE",
+            "expiration": {
+              "date": null,
+              "reason": null
+            },
+            "successorEntity": {
+              "lei": null,
+              "name": null
+            },
+            "successorEntities": [],
+            "creationDate": "2010-03-31T00:00:00Z",
+            "subCategory": null,
+            "otherAddresses": [],
+            "eventGroups": [
+              {
+                "groupType": "STANDALONE",
+                "events": [
+                  {
+                    "validationDocuments": "OTHER_OFFICIAL_DOCUMENTS",
+                    "effectiveDate": "2025-03-02T00:00:00Z",
+                    "recordedDate": "2025-08-08T06:28:03Z",
+                    "type": "CHANGE_LEGAL_ADDRESS",
+                    "status": "COMPLETED"
+                  }
+                ]
+              },
+              {
+                "groupType": "STANDALONE",
+                "events": [
+                  {
+                    "validationDocuments": "OTHER_OFFICIAL_DOCUMENTS",
+                    "effectiveDate": "2025-03-02T00:00:00Z",
+                    "recordedDate": "2025-08-08T06:28:03Z",
+                    "type": "CHANGE_HQ_ADDRESS",
+                    "status": "COMPLETED"
+                  }
+                ]
+              },
+              {
+                "groupType": "STANDALONE",
+                "events": [
+                  {
+                    "validationDocuments": "SUPPORTING_DOCUMENTS",
+                    "effectiveDate": "2021-01-25T00:00:00Z",
+                    "recordedDate": "2025-08-08T06:28:03Z",
+                    "type": "CHANGE_LEGAL_NAME",
+                    "status": "COMPLETED"
+                  }
+                ]
+              },
+              {
+                "groupType": "STANDALONE",
+                "events": [
+                  {
+                    "validationDocuments": "SUPPORTING_DOCUMENTS",
+                    "effectiveDate": "2010-03-31T00:00:00Z",
+                    "recordedDate": "2025-08-08T06:28:03Z",
+                    "type": "CHANGE_LEGAL_NAME",
+                    "status": "COMPLETED"
+                  }
+                ]
+              }
+            ]
+          },
+          "registration": {
+            "initialRegistrationDate": "2015-05-05T00:00:00Z",
+            "lastUpdateDate": "2026-11-09T19:41:12Z",
+            "status": "ISSUED",
+            "nextRenewalDate": "2027-09-04T19:22:01Z",
+            "managingLou": "5493001KJTIIGC8Y1R12",
+            "corroborationLevel": "FULLY_CORROBORATED",
+            "validatedAt": {
+              "id": "RA000585",
+              "other": null
+            },
+            "validatedAs": "07209813",
+            "otherValidationAuthorities": []
+          },
+          "bic": [
+            "TRWIGB21XXX",
+            "TRWIGB22XXX",
+            "TRWIGB2BXXX",
+            "TRWIGB2LXXX",
+            "TRWIHKK1XXX",
+            "TRWINL21XXX",
+            "TRWINZ21XXX",
+            "TRWISGSGXXX"
+          ],
+          "mic": null,
+          "ocid": "gb/07209813",
+          "qcc": "QGBGGDN0UD",
+          "gem": null,
+          "spglobal": [
+            "718912320"
+          ],
+          "conformityFlag": "CONFORMING"
+        },
+        "relationships": {
+          "managing-lou": {
+            "links": {
+              "related": "https://api.gleif.org/api/v1/lei-records/213800U4GNTXRFYZKG18/managing-lou"
+            }
+          },
+          "lei-issuer": {
+            "links": {
+              "related": "https://api.gleif.org/api/v1/lei-records/213800U4GNTXRFYZKG18/lei-issuer"
+            }
+          },
+          "field-modifications": {
+            "links": {
+              "related": "https://api.gleif.org/api/v1/lei-records/213800U4GNTXRFYZKG18/field-modifications"
+            }
+          },
+          "direct-parent": {
+            "links": {
+              "reporting-exception": "https://api.gleif.org/api/v1/lei-records/213800U4GNTXRFYZKG18/direct-parent-reporting-exception"
+            }
+          },
+          "ultimate-parent": {
+            "links": {
+              "reporting-exception": "https://api.gleif.org/api/v1/lei-records/213800U4GNTXRFYZKG18/ultimate-parent-reporting-exception"
+            }
+          },
+          "ultimate-children": {
+            "links": {
+              "relationship-records": "https://api.gleif.org/api/v1/lei-records/213800U4GNTXRFYZKG18/ultimate-child-relationships",
+              "related": "https://api.gleif.org/api/v1/lei-records/213800U4GNTXRFYZKG18/ultimate-children"
+            }
+          }
+        },
+        "links": {
+          "self": "https://api.gleif.org/api/v1/lei-records/213800U4GNTXRFYZKG18"
+        }
+      }
+    ]
+  }
+}

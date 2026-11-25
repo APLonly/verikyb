@@ -1,0 +1,139 @@
+{
+  "url": "https://register.fca.org.uk/services/V0.1/Firm/754568/Individuals",
+  "status": 200,
+  "content_type": "application/json;charset=UTF-8",
+  "recorded_at": "2026-11-25T07:10:28.807246Z",
+  "synthetic": false,
+  "body": {
+    "Status": "FSR-API-02-05-00",
+    "ResultInfo": {
+      "Next": "https://register.fca.org.uk/services/V0.1/Firm/754568/Individuals?pgnp=2",
+      "page": "1",
+      "per_page": "20",
+      "total_count": "113"
+    },
+    "Message": "Ok. Firm Individuals found",
+    "Data": [
+      {
+        "Status": "Approved by regulator",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/CXD33824",
+        "IRN": "CXD33824",
+        "Name": "Catherine Doran"
+      },
+      {
+        "Status": "Approved by regulator",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/DXS02964",
+        "IRN": "DXS02964",
+        "Name": "David Samper"
+      },
+      {
+        "Status": "Approved by regulator",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/TCW01029",
+        "IRN": "TCW01029",
+        "Name": "Timothy Wade"
+      },
+      {
+        "Status": "Approved by regulator",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PXR01834",
+        "IRN": "PXR01834",
+        "Name": "Phillip John Rivers"
+      },
+      {
+        "Status": "Approved by regulator",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/NXD00383",
+        "IRN": "NXD00383",
+        "Name": "Neil Geoffrey Drennan"
+      },
+      {
+        "Status": "Approved by regulator",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/PAW01197",
+        "IRN": "PAW01197",
+        "Name": "Polly Ann Williams"
+      },
+      {
+        "Status": "Approved by regulator",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXH03108",
+        "IRN": "SXH03108",
+        "Name": "Susanne Saeland Hannestad"
+      },
+      {
+        "Status": "Approved by regulator",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MXF00401",
+        "IRN": "MXF00401",
+        "Name": "Mark Fairless"
+      },
+      {
+        "Status": "Approved by regulator",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXM03257",
+        "IRN": "JXM03257",
+        "Name": "Joseph McCaughran"
+      },
+      {
+        "Status": "Approved by regulator",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXL78335",
+        "IRN": "SXL78335",
+        "Name": "Sean Lynskey"
+      },
+      {
+        "Status": "Approved by regulator",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/KXJ00264",
+        "IRN": "KXJ00264",
+        "Name": "Kenneth Forbes Johnstone"
+      },
+      {
+        "Status": "Approved by regulator",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/EXW01206",
+        "IRN": "EXW01206",
+        "Name": "Emma Wallace"
+      },
+      {
+        "Status": "Approved by regulator",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SXR00254",
+        "IRN": "SXR00254",
+        "Name": "Stuart Munro Ross"
+      },
+      {
+        "Status": "Approved by regulator",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/EXM01791",
+        "IRN": "EXM01791",
+        "Name": "Emile Mandelstam"
+      },
+      {
+        "Status": "Approved by regulator",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/VXR00024",
+        "IRN": "VXR00024",
+        "Name": "Valerie Romanovskaya"
+      },
+      {
+        "Status": "Approved by regulator",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/MGC01125",
+        "IRN": "MGC01125",
+        "Name": "Martin Garrett Cronin"
+      },
+      {
+        "Status": "Approved by regulator;Certified / assessed by firm",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/AFN01022",
+        "IRN": "AFN01022",
+        "Name": "Andrew Frederick John Neden"
+      },
+      {
+        "Status": "Approved by regulator;Certified / assessed by firm",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/SCJ01048",
+        "IRN": "SCJ01048",
+        "Name": "Shonaid Christina Ross Jemmett-Page"
+      },
+      {
+        "Status": "Certified / assessed by firm",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/KXG00433",
+        "IRN": "KXG00433",
+        "Name": "Kevin Stephen Gray"
+      },
+      {
+        "Status": "Certified / assessed by firm",
+        "URL": "https://register.fca.org.uk/services/V0.1/Individuals/JXA00433",
+        "IRN": "JXA00433",
+        "Name": "Joanne Ager"
+      }
+    ]
+  }
+}

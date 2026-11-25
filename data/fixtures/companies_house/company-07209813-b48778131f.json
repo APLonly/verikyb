@@ -1,0 +1,80 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/07209813",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:06.404377Z",
+  "synthetic": false,
+  "body": {
+    "accounts": {
+      "accounting_reference_date": {
+        "day": "31",
+        "month": "03"
+      },
+      "last_accounts": {
+        "made_up_to": "2026-03-31",
+        "period_end_on": "2026-03-31",
+        "period_start_on": "2025-04-01",
+        "type": "full"
+      },
+      "next_accounts": {
+        "due_on": "2027-12-31",
+        "overdue": false,
+        "period_end_on": "2027-03-31",
+        "period_start_on": "2026-04-01"
+      },
+      "next_due": "2027-12-31",
+      "next_made_up_to": "2027-03-31",
+      "overdue": false
+    },
+    "can_file": true,
+    "company_name": "WISE PAYMENTS LIMITED",
+    "company_number": "07209813",
+    "company_status": "active",
+    "confirmation_statement": {
+      "last_made_up_to": "2026-03-31",
+      "next_due": "2027-04-14",
+      "next_made_up_to": "2027-03-31",
+      "overdue": false
+    },
+    "date_of_creation": "2010-03-31",
+    "etag": "83f04b2be8035e72c6e40be1158de8e4db4033e0",
+    "has_been_liquidated": false,
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "jurisdiction": "england-wales",
+    "last_full_members_list_date": "2016-03-31",
+    "links": {
+      "charges": "/company/07209813/charges",
+      "filing_history": "/company/07209813/filing-history",
+      "officers": "/company/07209813/officers",
+      "persons_with_significant_control": "/company/07209813/persons-with-significant-control",
+      "self": "/company/07209813"
+    },
+    "previous_company_names": [
+      {
+        "ceased_on": "2021-06-25",
+        "effective_from": "2012-08-03",
+        "name": "TRANSFERWISE LTD"
+      },
+      {
+        "ceased_on": "2012-08-03",
+        "effective_from": "2010-03-31",
+        "name": "EXCHANGE SOLUTIONS LTD"
+      }
+    ],
+    "registered_office_address": {
+      "address_line_1": "1st Floor Worship Square",
+      "address_line_2": "65 Clifton Street",
+      "country": "England",
+      "locality": "London",
+      "postal_code": "EC2A 4JE"
+    },
+    "registered_office_is_in_dispute": false,
+    "sic_codes": [
+      "64999"
+    ],
+    "type": "ltd",
+    "undeliverable_registered_office_address": false
+  }
+}

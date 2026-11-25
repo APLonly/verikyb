@@ -1,0 +1,1217 @@
+{
+  "url": "https://api.company-information.service.gov.uk/officers/pYntQ3zxCKM6PCesKGXj95X6dA8/appointments?items_per_page=50",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:37.845802Z",
+  "synthetic": false,
+  "body": {
+    "active_count": 16,
+    "date_of_birth": {
+      "month": 3,
+      "year": 1965
+    },
+    "etag": "2251242ecec4db2d431675c9bdbaa524d4785f03",
+    "inactive_count": 4,
+    "is_corporate_officer": false,
+    "items": [
+      {
+        "address": {
+          "address_line_1": "Baker Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "W1U 8EQ",
+          "premises": "25"
+        },
+        "appointed_on": "2025-07-17",
+        "appointed_to": {
+          "company_name": "SPRING INVESTCO LIMITED",
+          "company_number": "15769604",
+          "company_status": "active"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/15769604"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-06-18"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "Baker Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "W1U 8EQ",
+          "premises": "25"
+        },
+        "appointed_on": "2024-11-13",
+        "appointed_to": {
+          "company_name": "ORCA MIDCO LIMITED",
+          "company_number": "14669678",
+          "company_status": "active"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/14669678"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-06-19"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "66 City Road",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC1Y 2AL",
+          "premises": "The Featherstone Building"
+        },
+        "appointed_on": "2024-10-08",
+        "appointed_to": {
+          "company_name": "MODULR FS LIMITED",
+          "company_number": "09897919",
+          "company_status": "active"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/09897919"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2025-12-15"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "48 Grosvenor Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W1K 3HW",
+          "premises": "Investcorp House"
+        },
+        "appointed_on": "2023-03-30",
+        "appointed_to": {
+          "company_name": "INNOVATION HOLDCO LIMITED",
+          "company_number": "11182659",
+          "company_status": "active"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/11182659"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-02-03"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "48 Grosvenor Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W1K 3HW",
+          "premises": "Investcorp House"
+        },
+        "appointed_on": "2023-03-30",
+        "appointed_to": {
+          "company_name": "CLOUDCARE UK HOLDINGS LIMITED",
+          "company_number": "13364805",
+          "company_status": "dissolved"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/13364805"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director"
+      },
+      {
+        "address": {
+          "address_line_1": "48 Grosvenor Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W1K 3HW",
+          "premises": "Investcorp House"
+        },
+        "appointed_on": "2023-03-30",
+        "appointed_to": {
+          "company_name": "MOONLIGHT HOLDINGS (UK) LIMITED",
+          "company_number": "11321123",
+          "company_status": "dissolved"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/11321123"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director"
+      },
+      {
+        "address": {
+          "address_line_1": "25 Baker Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "W1U 8EQ",
+          "premises": "Investcorp"
+        },
+        "appointed_on": "2023-03-30",
+        "appointed_to": {
+          "company_name": "MUSCLES UK HOLDINGS LIMITED",
+          "company_number": "13059108",
+          "company_status": "active"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/13059108"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-09-24"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "25 Baker Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "W1U 8EQ",
+          "premises": "Investcorp"
+        },
+        "appointed_on": "2023-03-30",
+        "appointed_to": {
+          "company_name": "CLOUDCARE TOPCO LIMITED",
+          "company_number": "13368566",
+          "company_status": "active"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/13368566"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-07-14"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "25 Baker Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "W1U 8EQ",
+          "premises": "Investcorp"
+        },
+        "appointed_on": "2023-03-30",
+        "appointed_to": {
+          "company_name": "VIRTUS UK HOLDINGS LIMITED",
+          "company_number": "12148633",
+          "company_status": "active"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/12148633"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-07-15"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "25 Baker Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "W1U 8EQ",
+          "premises": "Investcorp"
+        },
+        "appointed_on": "2023-03-30",
+        "appointed_to": {
+          "company_name": "TRIPLOG HOLDINGS LIMITED",
+          "company_number": "10755001",
+          "company_status": "active"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/10755001"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-06-10"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "25 Baker Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "W1U 8EQ",
+          "premises": "Investcorp"
+        },
+        "appointed_on": "2023-03-30",
+        "appointed_to": {
+          "company_name": "CLINIC HOLDINGS (UK) LIMITED",
+          "company_number": "10902831",
+          "company_status": "active"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/10902831"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-08-12"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "25 Baker Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "W1U 8EQ",
+          "premises": "Investcorp"
+        },
+        "appointed_on": "2023-03-30",
+        "appointed_to": {
+          "company_name": "DAUPHINE HOLDINGS (UK) LIMITED",
+          "company_number": "10758992",
+          "company_status": "active"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/10758992"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-06-10"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "25 Baker Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "W1U 8EQ",
+          "premises": "Investcorp"
+        },
+        "appointed_on": "2023-03-30",
+        "appointed_to": {
+          "company_name": "CORNELIANI HOLDINGS (UK) LIMITED",
+          "company_number": "13303822",
+          "company_status": "active"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/13303822"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-04-02"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "53 Tooley Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "SE1 2QN",
+          "premises": "5th Floor, The Counting House"
+        },
+        "appointed_on": "2022-05-03",
+        "appointed_to": {
+          "company_name": "INVESTIS DIGITAL LIMITED",
+          "company_number": "03930926",
+          "company_status": "active"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/03930926"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-03-26"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "53 Tooley Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "SE1 2QN",
+          "premises": "5th Floor, The Counting House"
+        },
+        "appointed_on": "2022-05-03",
+        "appointed_to": {
+          "company_name": "INVESTIS DIGITAL TOPCO LIMITED",
+          "company_number": "08185143",
+          "company_status": "dissolved"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/08185143"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director"
+      },
+      {
+        "address": {
+          "address_line_1": "Grosvenor Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W1K 3HW",
+          "premises": "48"
+        },
+        "appointed_on": "2021-04-07",
+        "appointed_to": {
+          "company_name": "IBIS TOPCO LIMITED",
+          "company_number": "13270340",
+          "company_status": "active"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/13270340"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-04-07"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "Grosvenor Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W1K 3HW",
+          "premises": "48"
+        },
+        "appointed_on": "2021-04-07",
+        "appointed_to": {
+          "company_name": "IBIS MIDCO LIMITED",
+          "company_number": "13273468",
+          "company_status": "active"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/13273468"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-03-30"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "Livingstone Road",
+          "country": "United Kingdom",
+          "locality": "Hessle",
+          "postal_code": "HU13 0DZ",
+          "premises": "The Riverside Building",
+          "region": "East Yorkshire"
+        },
+        "appointed_on": "2019-04-10",
+        "appointed_to": {
+          "company_name": "WILLIAM JACKSON FOODS LIMITED",
+          "company_number": "11273230",
+          "company_status": "active"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/11273230"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-04-20"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "25 Baker Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "W1U 8EQ",
+          "premises": "Investcorp"
+        },
+        "appointed_on": "2017-02-13",
+        "appointed_to": {
+          "company_name": "SARTI HOLDINGS (UK) LIMITED",
+          "company_number": "10204135",
+          "company_status": "active"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/10204135"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-05-26"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "Via Mario Panizza",
+          "country": "Italy",
+          "locality": "Mantova",
+          "premises": "5",
+          "region": "46100"
+        },
+        "appointed_on": "2016-06-20",
+        "appointed_to": {
+          "company_name": "CORNELIANI SRL",
+          "company_number": "FC027355",
+          "company_status": "converted-closed"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/FC027355"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director"
+      },
+      {
+        "address": {
+          "address_line_1": "The Record Hall",
+          "address_line_2": "16-16a Baldwin's Gardens",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC1N 7RJ",
+          "premises": "401"
+        },
+        "appointed_on": "2025-10-01",
+        "appointed_to": {
+          "company_name": "PROJECT VENUS TOPCO LIMITED",
+          "company_number": "13588236",
+          "company_status": "active"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/13588236"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2026-06-19",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-02-16"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "48 Grosvenor Street",
+          "address_line_2": "Mayfair",
+          "locality": "London",
+          "postal_code": "W1K 3HW"
+        },
+        "appointed_on": "2018-08-01",
+        "appointed_to": {
+          "company_name": "INVESTCORP INTERNATIONAL LIMITED",
+          "company_number": "01639388",
+          "company_status": "active"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/01639388"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2024-04-30"
+      },
+      {
+        "address": {
+          "address_line_1": "Grosvenor Street",
+          "address_line_2": "Mayfair",
+          "locality": "London",
+          "postal_code": "W1K 3HW",
+          "premises": "48",
+          "region": "Greater London"
+        },
+        "appointed_on": "2018-08-01",
+        "appointed_to": {
+          "company_name": "INVESTCORP EUROPE HOLDINGS LIMITED",
+          "company_number": "10939065",
+          "company_status": "active"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/10939065"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2024-04-30"
+      },
+      {
+        "address": {
+          "address_line_1": "48 Grosvenor Street",
+          "address_line_2": "Mayfair",
+          "locality": "London",
+          "postal_code": "W1K 3HW"
+        },
+        "appointed_on": "2018-08-17",
+        "appointed_to": {
+          "company_name": "INVESTCORP SECURITIES LIMITED",
+          "company_number": "02217792",
+          "company_status": "active"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/02217792"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2024-04-30"
+      },
+      {
+        "address": {
+          "address_line_1": "48 Grosvenor Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W1K 3HW",
+          "premises": "Investcorp House"
+        },
+        "appointed_on": "2023-03-30",
+        "appointed_to": {
+          "company_name": "CLOUDCARE TOPCO LIMITED",
+          "company_number": "13368566",
+          "company_status": "active"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/13368566"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2023-03-31"
+      },
+      {
+        "address": {
+          "address_line_1": "Cavendish Square",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "W1G 0PW",
+          "premises": "4th Floor, 33 Cavendish Square"
+        },
+        "appointed_on": "2020-04-20",
+        "appointed_to": {
+          "company_name": "GREENGAGE & CO. LIMITED",
+          "company_number": "11904803",
+          "company_status": "active"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/11904803"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2022-01-31"
+      },
+      {
+        "address": {
+          "address_line_1": "Via Panizza",
+          "country": "Italy",
+          "locality": "Mantova",
+          "premises": "5",
+          "region": "46100"
+        },
+        "appointed_on": "2020-10-01",
+        "appointed_to": {
+          "company_name": "CORNELIANI S.R.L.",
+          "company_number": "FC037561",
+          "company_status": "active"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/FC037561"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2022-01-27"
+      },
+      {
+        "address": {
+          "address_line_1": "48 Grosvenor Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W1K 3HW",
+          "premises": "Investcorp House"
+        },
+        "appointed_on": "2018-08-01",
+        "appointed_to": {
+          "company_name": "INNOVATION HOLDCO LIMITED",
+          "company_number": "11182659",
+          "company_status": "active"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/11182659"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2021-09-01"
+      },
+      {
+        "address": {
+          "address_line_1": "48 Grosvenor Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W1K 3HW",
+          "premises": "Investcorp House"
+        },
+        "appointed_on": "2019-08-09",
+        "appointed_to": {
+          "company_name": "VIRTUS UK HOLDINGS LIMITED",
+          "company_number": "12148633",
+          "company_status": "active"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/12148633"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2021-08-31"
+      },
+      {
+        "address": {
+          "address_line_1": "48 Grosvenor Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W1K 3HW",
+          "premises": "Investcorp House"
+        },
+        "appointed_on": "2020-12-03",
+        "appointed_to": {
+          "company_name": "MUSCLES UK HOLDINGS LIMITED",
+          "company_number": "13059108",
+          "company_status": "active"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/13059108"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2021-08-31"
+      },
+      {
+        "address": {
+          "address_line_1": "48 Grosvenor Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W1K 3HW",
+          "premises": "Investcorp House"
+        },
+        "appointed_on": "2021-04-28",
+        "appointed_to": {
+          "company_name": "CLOUDCARE UK HOLDINGS LIMITED",
+          "company_number": "13364805",
+          "company_status": "dissolved"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/13364805"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2021-08-31"
+      },
+      {
+        "address": {
+          "address_line_1": "48 Grosvenor Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W1K 3HW",
+          "premises": "Investcorp House"
+        },
+        "appointed_on": "2021-04-30",
+        "appointed_to": {
+          "company_name": "CLOUDCARE TOPCO LIMITED",
+          "company_number": "13368566",
+          "company_status": "active"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/13368566"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2021-08-31"
+      },
+      {
+        "address": {
+          "address_line_1": "48 Grosvenor Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W1K 3HW",
+          "premises": "Investcorp House"
+        },
+        "appointed_on": "2018-04-20",
+        "appointed_to": {
+          "company_name": "MOONLIGHT HOLDINGS (UK) LIMITED",
+          "company_number": "11321123",
+          "company_status": "dissolved"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/11321123"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2021-08-31"
+      },
+      {
+        "address": {
+          "address_line_1": "48 Grosvenor Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W1K 3HW",
+          "premises": "Investcorp House"
+        },
+        "appointed_on": "2017-10-13",
+        "appointed_to": {
+          "company_name": "CLINIC HOLDINGS (UK) LIMITED",
+          "company_number": "10902831",
+          "company_status": "active"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/10902831"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2021-08-31"
+      },
+      {
+        "address": {
+          "address_line_1": "48 Grosvenor Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W1K 3HW",
+          "premises": "Investcorp House"
+        },
+        "appointed_on": "2017-05-26",
+        "appointed_to": {
+          "company_name": "DAUPHINE HOLDINGS (UK) LIMITED",
+          "company_number": "10758992",
+          "company_status": "active"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/10758992"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2021-08-31"
+      },
+      {
+        "address": {
+          "address_line_1": "48 Grosvenor Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W1K 3HW",
+          "premises": "Investcorp House"
+        },
+        "appointed_on": "2017-05-26",
+        "appointed_to": {
+          "company_name": "TRIPLOG HOLDINGS LIMITED",
+          "company_number": "10755001",
+          "company_status": "active"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/10755001"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2021-08-31"
+      },
+      {
+        "address": {
+          "address_line_1": "48 Grosvenor Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W1K 3HW",
+          "premises": "Investcorp House"
+        },
+        "appointed_on": "2017-02-13",
+        "appointed_to": {
+          "company_name": "CROPS HOLDINGS (UK) LIMITED",
+          "company_number": "10403781",
+          "company_status": "dissolved"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/10403781"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2021-08-31"
+      },
+      {
+        "address": {
+          "address_line_1": "Overend Road",
+          "locality": "Cradley Heath",
+          "postal_code": "B64 7DW",
+          "premises": "Unit A2 Cradley Business Park",
+          "region": "West Midlands"
+        },
+        "appointed_on": "2017-11-22",
+        "appointed_to": {
+          "company_name": "SAFETY TOPCO LIMITED",
+          "company_number": "11007525",
+          "company_status": "liquidation"
+        },
+        "name": "Andrea Jayne DAVIS",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/11007525"
+        },
+        "name_elements": {
+          "forename": "Andrea",
+          "title": "Ms.",
+          "other_forenames": "Jayne",
+          "surname": "DAVIS"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2021-03-31"
+      }
+    ],
+    "items_per_page": 50,
+    "kind": "personal-appointment",
+    "links": {
+      "self": "/officers/pYntQ3zxCKM6PCesKGXj95X6dA8/appointments"
+    },
+    "name": "Andrea Jayne DAVIS",
+    "resigned_count": 18,
+    "start_index": 0,
+    "total_results": 38
+  }
+}

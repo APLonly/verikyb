@@ -1,0 +1,337 @@
+{
+  "url": "https://api.company-information.service.gov.uk/officers/AL1a69d-Nc8yH39oGN41yIFTpPA/appointments?items_per_page=50",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:18.498360Z",
+  "synthetic": false,
+  "body": {
+    "active_count": 3,
+    "date_of_birth": {
+      "month": 3,
+      "year": 1960
+    },
+    "etag": "3b56711bbcc398adcb4bb8c49392bde50885cf14",
+    "inactive_count": 0,
+    "is_corporate_officer": false,
+    "items": [
+      {
+        "address": {
+          "address_line_1": "Fenchurch Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC3M 4AE",
+          "premises": "80"
+        },
+        "appointed_on": "2021-12-20",
+        "appointed_to": {
+          "company_name": "AVIVA PLC",
+          "company_number": "02468686",
+          "company_status": "active"
+        },
+        "name": "Shonaid Christina Ross JEMMETT-PAGE",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/02468686"
+        },
+        "name_elements": {
+          "forename": "Shonaid",
+          "title": "Mrs",
+          "other_forenames": "Christina Ross",
+          "surname": "JEMMETT-PAGE"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-06-10"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "Ively Road",
+          "country": "England",
+          "locality": "Farnborough",
+          "postal_code": "GU14 0LX",
+          "premises": "Cody Technology Park",
+          "region": "Hampshire"
+        },
+        "appointed_on": "2020-05-19",
+        "appointed_to": {
+          "company_name": "QINETIQ GROUP PLC",
+          "company_number": "04586941",
+          "company_status": "active"
+        },
+        "name": "Shonaid Christina Ross JEMMETT-PAGE",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/04586941"
+        },
+        "name_elements": {
+          "forename": "Shonaid",
+          "title": "Mrs",
+          "other_forenames": "Christina Ross",
+          "surname": "JEMMETT-PAGE"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-10-06"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "20 Primrose Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC2A 2EW",
+          "premises": "Level 27, The Broadgate Tower"
+        },
+        "appointed_on": "2016-07-28",
+        "appointed_to": {
+          "company_name": "CLEARBANK LIMITED",
+          "company_number": "09736376",
+          "company_status": "active"
+        },
+        "name": "Shonaid Christina Ross JEMMETT-PAGE",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/09736376"
+        },
+        "name_elements": {
+          "forename": "Shonaid",
+          "title": "Mrs",
+          "other_forenames": "Christina Ross",
+          "surname": "JEMMETT-PAGE"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-09-20"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "Eastcastle Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W1W 8DH",
+          "premises": "27-28"
+        },
+        "appointed_on": "2012-12-05",
+        "appointed_to": {
+          "company_name": "GREENCOAT UK WIND PLC",
+          "company_number": "08318092",
+          "company_status": "active"
+        },
+        "name": "Shonaid Christina Ross JEMMETT-PAGE",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/08318092"
+        },
+        "name_elements": {
+          "forename": "Shonaid",
+          "title": "Mrs",
+          "other_forenames": "Christina Ross",
+          "surname": "JEMMETT-PAGE"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2023-04-28"
+      },
+      {
+        "address": {
+          "address_line_1": "30 Buckingham Gate",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "SW1E 6NN",
+          "premises": "Cayzer House"
+        },
+        "appointed_on": "2015-07-01",
+        "appointed_to": {
+          "company_name": "CALEDONIA INVESTMENTS PLC",
+          "company_number": "00235481",
+          "company_status": "active"
+        },
+        "name": "Shonaid Christina Ross JEMMETT-PAGE",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/00235481"
+        },
+        "name_elements": {
+          "forename": "Shonaid",
+          "title": "Mrs",
+          "other_forenames": "Christina Ross",
+          "surname": "JEMMETT-PAGE"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2022-05-31"
+      },
+      {
+        "address": {
+          "address_line_1": "122 Leadenhall Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC3V 4AG",
+          "premises": "The Leadenhall Building"
+        },
+        "appointed_on": "2012-09-01",
+        "appointed_to": {
+          "company_name": "OLD COMPANY 20 LIMITED",
+          "company_number": "02854310",
+          "company_status": "dissolved"
+        },
+        "name": "Shonaid Christina Ross JEMMETT-PAGE",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/02854310"
+        },
+        "name_elements": {
+          "forename": "Shonaid",
+          "title": "Mrs",
+          "other_forenames": "Christina Ross",
+          "surname": "JEMMETT-PAGE"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2019-11-29"
+      },
+      {
+        "address": {
+          "address_line_1": "PO BOX 55",
+          "address_line_2": "Ipsley House Ipsley Church Lane",
+          "locality": "Redditch",
+          "postal_code": "B98 0TL",
+          "region": "Worcestershire"
+        },
+        "appointed_on": "2010-06-01",
+        "appointed_to": {
+          "company_name": "GKN LIMITED",
+          "company_number": "04191106",
+          "company_status": "active"
+        },
+        "name": "Shonaid Christina Ross JEMMETT-PAGE",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/04191106"
+        },
+        "name_elements": {
+          "forename": "Shonaid",
+          "title": "Mrs",
+          "other_forenames": "Christina Ross",
+          "surname": "JEMMETT-PAGE"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2018-04-19"
+      },
+      {
+        "address": {
+          "address_line_1": "6 St. Andrew Street",
+          "country": "Great Britain",
+          "locality": "London",
+          "postal_code": "EC4A 3AE",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2012-07-19",
+        "appointed_to": {
+          "company_name": "APR ENERGY LIMITED",
+          "company_number": "07062201",
+          "company_status": "active"
+        },
+        "name": "Shonaid Christina Ross JEMMETT-PAGE",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/07062201"
+        },
+        "name_elements": {
+          "forename": "Shonaid",
+          "title": "Mrs",
+          "other_forenames": "Christina Ross",
+          "surname": "JEMMETT-PAGE"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2016-01-22"
+      },
+      {
+        "address": {
+          "address_line_1": "10 Crown Place",
+          "address_line_2": "London",
+          "postal_code": "EC2A 4FT"
+        },
+        "appointed_on": "2012-08-01",
+        "appointed_to": {
+          "company_name": "CLOSE BROTHERS GROUP PLC",
+          "company_number": "00520241",
+          "company_status": "active"
+        },
+        "name": "Shonaid Christina Ross JEMMETT-PAGE",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/00520241"
+        },
+        "name_elements": {
+          "forename": "Shonaid",
+          "title": "Mrs",
+          "other_forenames": "Christina Ross",
+          "surname": "JEMMETT-PAGE"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2014-07-01"
+      },
+      {
+        "address": {
+          "address_line_1": "Adams Lane",
+          "address_line_2": "Northiam",
+          "locality": "Rye",
+          "postal_code": "TN31 6JR",
+          "premises": "Spanyards Farm",
+          "region": "East Sussex"
+        },
+        "appointed_on": "2008-09-16",
+        "appointed_to": {
+          "company_name": "HAVELOCK EUROPA PLC",
+          "company_number": "00782546",
+          "company_status": "active"
+        },
+        "name": "Shonaid Christina Ross JEMMETT-PAGE",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/00782546"
+        },
+        "name_elements": {
+          "forename": "Shonaid",
+          "title": "Mrs",
+          "other_forenames": "Christina Ross",
+          "surname": "JEMMETT-PAGE"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2010-09-30"
+      }
+    ],
+    "items_per_page": 50,
+    "kind": "personal-appointment",
+    "links": {
+      "self": "/officers/AL1a69d-Nc8yH39oGN41yIFTpPA/appointments"
+    },
+    "name": "Shonaid Christina Ross JEMMETT-PAGE",
+    "resigned_count": 7,
+    "start_index": 0,
+    "total_results": 10
+  }
+}

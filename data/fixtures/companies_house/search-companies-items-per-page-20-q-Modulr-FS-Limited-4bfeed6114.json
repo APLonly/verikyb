@@ -1,0 +1,566 @@
+{
+  "url": "https://api.company-information.service.gov.uk/search/companies?q=Modulr+FS+Limited&items_per_page=20",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:36.199466Z",
+  "synthetic": false,
+  "body": {
+    "items": [
+      {
+        "address": {
+          "address_line_1": "66 City Road",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC1Y 2AL",
+          "premises": "The Featherstone Building"
+        },
+        "address_snippet": "The Featherstone Building, 66 City Road, London, United Kingdom, EC1Y 2AL",
+        "company_number": "09897919",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2015-12-02",
+        "description": "09897919 - Incorporated on 2 December 2015",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/09897919"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "MODULR FS LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "66 City Road",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC1Y 2AL",
+          "premises": "The Featherstone Building"
+        },
+        "address_snippet": "The Featherstone Building, 66 City Road, London, United Kingdom, EC1Y 2AL",
+        "company_number": "10027371",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2016-02-25",
+        "description": "10027371 - Incorporated on 25 February 2016",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/10027371"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "MODULR LTD"
+      },
+      {
+        "address": {
+          "address_line_1": "66 City Road",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC1Y 2AL",
+          "premises": "The Featherstone Building"
+        },
+        "address_snippet": "The Featherstone Building, 66 City Road, London, United Kingdom, EC1Y 2AL",
+        "company_number": "09897957",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2015-12-02",
+        "description": "09897957 - Incorporated on 2 December 2015",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/09897957"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "MODULR FINANCE LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "66 City Road",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC1Y 2AL",
+          "premises": "The Featherstone Building"
+        },
+        "address_snippet": "The Featherstone Building, 66 City Road, London, United Kingdom, EC1Y 2AL",
+        "company_number": "09895588",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2015-12-01",
+        "description": "09895588 - Incorporated on 1 December 2015",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/09895588"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "MODULR HOLDINGS LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "66 City Road",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC1Y 2AL",
+          "premises": "The Featherstone Building"
+        },
+        "address_snippet": "The Featherstone Building, 66 City Road, London, United Kingdom, EC1Y 2AL",
+        "company_number": "09897934",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2015-12-02",
+        "description": "09897934 - Incorporated on 2 December 2015",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/09897934"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "MODULR ICB LIMITED",
+        "title": "MODULR NOMINEE LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "66 City Road",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC1Y 2AL",
+          "premises": "The Featherstone Building"
+        },
+        "address_snippet": "The Featherstone Building, 66 City Road, London, United Kingdom, EC1Y 2AL",
+        "company_number": "09897906",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2015-12-02",
+        "description": "09897906 - Incorporated on 2 December 2015",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/09897906"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "MODULR TECHNOLOGY LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "33 Great George Street",
+          "country": "England",
+          "locality": "Leeds",
+          "postal_code": "LS1 3AJ",
+          "premises": "Suit 54",
+          "region": "West Yorkshire"
+        },
+        "address_snippet": "Suit 54 33 Great George Street, Leeds, West Yorkshire, England, LS1 3AJ",
+        "company_number": "13788545",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2021-12-08",
+        "description": "13788545 - Incorporated on 8 December 2021",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/13788545"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "STRUQTA MODULR LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "Calabria Road",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "N5 1JA",
+          "premises": "32"
+        },
+        "address_snippet": "32 Calabria Road, London, England, N5 1JA",
+        "company_number": "15418249",
+        "company_status": "dissolved",
+        "company_type": "ltd",
+        "date_of_cessation": "2026-02-17",
+        "date_of_creation": "2024-01-16",
+        "description": "15418249 - Dissolved on 17 February 2026",
+        "description_identifier": [
+          "dissolved-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/15418249"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "MODULRE LTD",
+        "title": "HH GLOBAL STRATEGIES LTD"
+      },
+      {
+        "address": {
+          "address_line_1": "St. Thomas Street",
+          "country": "England",
+          "locality": "Winchester",
+          "postal_code": "SO23 9HJ",
+          "premises": "25"
+        },
+        "address_snippet": "25 St. Thomas Street, Winchester, England, SO23 9HJ",
+        "company_number": "12935689",
+        "company_status": "dissolved",
+        "company_type": "ltd",
+        "date_of_cessation": "2023-10-03",
+        "date_of_creation": "2020-10-07",
+        "description": "12935689 - Dissolved on 3 October 2023",
+        "description_identifier": [
+          "dissolved-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/12935689"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "MODULR SPACE LTD"
+      },
+      {
+        "address": {
+          "address_line_1": "Avondale Road",
+          "locality": "Ashford",
+          "postal_code": "TW15 3HS",
+          "premises": "24",
+          "region": "Middlesex"
+        },
+        "address_snippet": "24 Avondale Road, Ashford, Middlesex, TW15 3HS",
+        "company_number": "09048075",
+        "company_status": "dissolved",
+        "company_type": "ltd",
+        "date_of_cessation": "2016-03-01",
+        "date_of_creation": "2014-05-20",
+        "description": "09048075 - Dissolved on 1 March 2016",
+        "description_identifier": [
+          "dissolved-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/09048075"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "MODULR LTD"
+      },
+      {
+        "address": {
+          "address_line_1": "Derwent Close",
+          "address_line_2": "Denton",
+          "country": "England",
+          "locality": "Manchester",
+          "postal_code": "M34 2FW",
+          "premises": "10"
+        },
+        "address_snippet": "10 Derwent Close, Denton, Manchester, England, M34 2FW",
+        "company_number": "13073526",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2020-12-09",
+        "description": "13073526 - Incorporated on 9 December 2020",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/13073526"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "ABODE FSS LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "Mandarin Road",
+          "address_line_2": "Langley",
+          "country": "England",
+          "locality": "Maidstone",
+          "postal_code": "ME17 3UJ",
+          "premises": "6",
+          "region": "Kent"
+        },
+        "address_snippet": "6 Mandarin Road, Langley, Maidstone, Kent, England, ME17 3UJ",
+        "company_number": "13122434",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2021-01-08",
+        "description": "13122434 - Incorporated on 8 January 2021",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/13122434"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "ABSOLUTE FS BUILDING MANAGEMENT LTD"
+      },
+      {
+        "address": {
+          "address_line_1": "Norwich Road",
+          "address_line_2": "Wroxham",
+          "country": "England",
+          "locality": "Norwich",
+          "postal_code": "NR12 8RX",
+          "premises": "91"
+        },
+        "address_snippet": "91 Norwich Road, Wroxham, Norwich, England, NR12 8RX",
+        "company_number": "13629932",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2021-09-18",
+        "description": "13629932 - Incorporated on 18 September 2021",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/13629932"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "A C STEPHENSON FS LTD"
+      },
+      {
+        "address": {
+          "address_line_1": "Woodgrange Drive",
+          "country": "United Kingdom",
+          "locality": "Southend On Sea",
+          "postal_code": "SS1 3EB",
+          "premises": "441",
+          "region": "Essex"
+        },
+        "address_snippet": "441 Woodgrange Drive, Southend On Sea, Essex, United Kingdom, SS1 3EB",
+        "company_number": "11110649",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2017-12-13",
+        "description": "11110649 - Incorporated on 13 December 2017",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/11110649"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "ADIUVO FS LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "Worsley",
+          "country": "United Kingdom",
+          "locality": "Manchester",
+          "postal_code": "M28 2NN",
+          "premises": "C/O Roca Accountants Limited The Lantern Gallery, 3 Worsley Road"
+        },
+        "address_snippet": "C/O Roca Accountants Limited The Lantern Gallery, 3 Worsley Road, Worsley, Manchester, United Kingdom, M28 2NN",
+        "company_number": "17461835",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2026-09-16",
+        "description": "17461835 - Incorporated on 16 September 2026",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/17461835"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "AGS FS LTD"
+      },
+      {
+        "address": {
+          "address_line_1": "Mediacityuk",
+          "country": "United Kingdom",
+          "locality": "Salford",
+          "postal_code": "M50 2AB",
+          "premises": "M.01 Tomorrow, Blue"
+        },
+        "address_snippet": "M.01 Tomorrow, Blue Mediacityuk, Salford, United Kingdom, M50 2AB",
+        "company_number": "16419207",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2025-04-30",
+        "description": "16419207 - Incorporated on 30 April 2025",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/16419207"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "AIN FS LTD"
+      },
+      {
+        "address": {
+          "address_line_1": "Burnbank Road",
+          "country": "Scotland",
+          "locality": "Hamilton",
+          "postal_code": "ML3 9AQ",
+          "premises": "37",
+          "region": "Lanarkshire"
+        },
+        "address_snippet": "37 Burnbank Road, Hamilton, Lanarkshire, Scotland, ML3 9AQ",
+        "company_number": "SC881248",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2026-03-04",
+        "description": "SC881248 - Incorporated on 4 March 2026",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/SC881248"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "AJNALA FS LIMITED"
+      },
+      {
+        "address": {
+          "address_line_1": "Hawthorn Crescent",
+          "address_line_2": "Cosham",
+          "country": "England",
+          "locality": "Portsmouth",
+          "postal_code": "PO6 2TR",
+          "premises": "190"
+        },
+        "address_snippet": "190 Hawthorn Crescent, Cosham, Portsmouth, England, PO6 2TR",
+        "company_number": "16999823",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2026-01-29",
+        "description": "16999823 - Incorporated on 29 January 2026",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/16999823"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "ALAM FS LTD"
+      },
+      {
+        "address": {
+          "address_line_1": "Union Street",
+          "locality": "Aberdeen",
+          "postal_code": "AB10 1TN",
+          "premises": "248"
+        },
+        "address_snippet": "248 Union Street, Aberdeen, AB10 1TN",
+        "company_number": "SC463430",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2013-11-11",
+        "description": "SC463430 - Incorporated on 11 November 2013",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/SC463430"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "ALEX HUTCHEON & COMPANY (FS) LTD"
+      },
+      {
+        "address": {
+          "address_line_1": "Upper Brook Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "W1K 7PZ",
+          "premises": "22"
+        },
+        "address_snippet": "22 Upper Brook Street, London, England, W1K 7PZ",
+        "company_number": "12629086",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2020-05-28",
+        "description": "12629086 - Incorporated on 28 May 2020",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/12629086"
+        },
+        "matches": {
+          "snippet": []
+        },
+        "snippet": "",
+        "title": "ALGBRA FS UK LIMITED"
+      }
+    ],
+    "items_per_page": 20,
+    "kind": "search#companies",
+    "page_number": 1,
+    "start_index": 0,
+    "total_results": 5488
+  }
+}

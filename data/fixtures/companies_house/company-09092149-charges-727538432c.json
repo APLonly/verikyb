@@ -1,0 +1,328 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/09092149/charges",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:09:51.300705Z",
+  "synthetic": false,
+  "body": {
+    "etag": "e7dccf3c6477f9f834fc7fe2c11d9ddba6895854",
+    "items": [
+      {
+        "charge_code": "090921490008",
+        "charge_number": 8,
+        "classification": {
+          "description": "A registered charge",
+          "type": "charge-description"
+        },
+        "created_on": "2025-01-29",
+        "delivered_on": "2025-02-05",
+        "etag": "5c03b800563494195e090d688192146dd0e3f097",
+        "links": {
+          "self": "/company/09092149/charges/KJopw5Bmjwy0DYVUMAAUsSbERR8"
+        },
+        "particulars": {
+          "contains_fixed_charge": true,
+          "contains_negative_pledge": true,
+          "description": "None.",
+          "type": "brief-description"
+        },
+        "persons_entitled": [
+          {
+            "name": "Mastercard International Incorporated"
+          }
+        ],
+        "satisfied_on": "2026-07-09",
+        "status": "fully-satisfied",
+        "transactions": [
+          {
+            "delivered_on": "2025-02-05",
+            "filing_type": "create-charge-with-deed",
+            "links": {
+              "filing": "/company/09092149/filing-history/MzQ1Mzg2NDgwM2FkaXF6a2N4"
+            }
+          },
+          {
+            "delivered_on": "2026-07-09",
+            "filing_type": "charge-satisfaction",
+            "links": {
+              "filing": "/company/09092149/filing-history/MzUzMTQ5NjUzMWFkaXF6a2N4"
+            }
+          }
+        ]
+      },
+      {
+        "charge_code": "090921490007",
+        "charge_number": 7,
+        "classification": {
+          "description": "A registered charge",
+          "type": "charge-description"
+        },
+        "created_on": "2019-11-14",
+        "delivered_on": "2019-11-15",
+        "etag": "d352277a56a75d556bec860abb628b95622bd8a1",
+        "links": {
+          "self": "/company/09092149/charges/ytwlyIYrCNATVvbAnSZa3z_DGi8"
+        },
+        "particulars": {
+          "contains_fixed_charge": true,
+          "contains_negative_pledge": true,
+          "description": "N/A.",
+          "type": "brief-description"
+        },
+        "persons_entitled": [
+          {
+            "name": "The Governor and Company of the Bank of England as Security Trustee"
+          }
+        ],
+        "status": "outstanding",
+        "transactions": [
+          {
+            "delivered_on": "2019-11-15",
+            "filing_type": "create-charge-with-deed",
+            "links": {
+              "filing": "/company/09092149/filing-history/MzI0OTQxNTM0M2FkaXF6a2N4"
+            }
+          }
+        ]
+      },
+      {
+        "charge_code": "090921490006",
+        "charge_number": 6,
+        "classification": {
+          "description": "A registered charge",
+          "type": "charge-description"
+        },
+        "created_on": "2019-06-03",
+        "delivered_on": "2019-06-19",
+        "etag": "d18a070d9eae2791429c9e246d0507f26e3fcff8",
+        "links": {
+          "self": "/company/09092149/charges/UGaL3WB_73DWfIQdNFkacVTF5A0"
+        },
+        "particulars": {
+          "contains_fixed_charge": true,
+          "contains_negative_pledge": true
+        },
+        "persons_entitled": [
+          {
+            "name": "The Governor and Company of the Bank of England as Security Trustee for the Security Beneficiaries"
+          }
+        ],
+        "status": "outstanding",
+        "transactions": [
+          {
+            "delivered_on": "2019-06-19",
+            "filing_type": "create-charge-with-deed",
+            "links": {
+              "filing": "/company/09092149/filing-history/MzIzNzc0Mzg1NGFkaXF6a2N4"
+            }
+          }
+        ]
+      },
+      {
+        "charge_code": "090921490005",
+        "charge_number": 5,
+        "classification": {
+          "description": "A registered charge",
+          "type": "charge-description"
+        },
+        "created_on": "2019-03-01",
+        "delivered_on": "2019-03-15",
+        "etag": "af6ea1cf5af4cc899919b143feba78bfc547d9a2",
+        "links": {
+          "self": "/company/09092149/charges/PbbaT9sQb5P4uoXOX3NJddadK_M"
+        },
+        "particulars": {
+          "contains_fixed_charge": true,
+          "contains_negative_pledge": true
+        },
+        "persons_entitled": [
+          {
+            "name": "The Governor and Company of the Bank of England as Security Trustee"
+          }
+        ],
+        "satisfied_on": "2020-07-16",
+        "status": "fully-satisfied",
+        "transactions": [
+          {
+            "delivered_on": "2019-03-15",
+            "filing_type": "create-charge-with-deed",
+            "links": {
+              "filing": "/company/09092149/filing-history/MzIyOTQ0NzAzM2FkaXF6a2N4"
+            }
+          },
+          {
+            "delivered_on": "2020-07-16",
+            "filing_type": "charge-satisfaction",
+            "links": {
+              "filing": "/company/09092149/filing-history/MzI3MzI3NTc5NWFkaXF6a2N4"
+            }
+          }
+        ]
+      },
+      {
+        "charge_code": "090921490004",
+        "charge_number": 4,
+        "classification": {
+          "description": "A registered charge",
+          "type": "charge-description"
+        },
+        "created_on": "2019-03-01",
+        "delivered_on": "2019-03-13",
+        "etag": "67a45e9ed4a4d33870c9915a013b3bb242b9d5fe",
+        "links": {
+          "self": "/company/09092149/charges/MHDJe2hv2Z6vnT9mj8WOAot8ZYI"
+        },
+        "particulars": {
+          "contains_fixed_charge": true,
+          "contains_negative_pledge": true
+        },
+        "persons_entitled": [
+          {
+            "name": "The Governor and Company of the Bank of England as Security Trustee"
+          }
+        ],
+        "status": "outstanding",
+        "transactions": [
+          {
+            "delivered_on": "2019-03-13",
+            "filing_type": "create-charge-with-deed",
+            "links": {
+              "filing": "/company/09092149/filing-history/MzIyOTI2ODk5NWFkaXF6a2N4"
+            }
+          }
+        ]
+      },
+      {
+        "charge_code": "090921490003",
+        "charge_number": 3,
+        "classification": {
+          "description": "A registered charge",
+          "type": "charge-description"
+        },
+        "created_on": "2019-02-01",
+        "delivered_on": "2019-02-19",
+        "etag": "d41342f6369c92daf73c66ff8e1ab4817a31f0b5",
+        "links": {
+          "self": "/company/09092149/charges/vPqbpXQY-31rIF3euAR-KcY_Q1I"
+        },
+        "particulars": {
+          "contains_fixed_charge": true,
+          "contains_negative_pledge": true
+        },
+        "persons_entitled": [
+          {
+            "name": "The Governor and Company of the Bank of England as Security Trustee"
+          }
+        ],
+        "satisfied_on": "2019-06-12",
+        "status": "fully-satisfied",
+        "transactions": [
+          {
+            "delivered_on": "2019-02-19",
+            "filing_type": "create-charge-with-deed",
+            "links": {
+              "filing": "/company/09092149/filing-history/MzIyNzMzNTMwMWFkaXF6a2N4"
+            }
+          },
+          {
+            "delivered_on": "2019-06-12",
+            "filing_type": "charge-satisfaction",
+            "links": {
+              "filing": "/company/09092149/filing-history/MzIzNjcwMDg1MmFkaXF6a2N4"
+            }
+          }
+        ]
+      },
+      {
+        "charge_code": "090921490002",
+        "charge_number": 2,
+        "classification": {
+          "description": "A registered charge",
+          "type": "charge-description"
+        },
+        "created_on": "2018-02-16",
+        "delivered_on": "2018-03-01",
+        "etag": "7a83e6bebb68620cb9f2df65fad160c66b83da7f",
+        "links": {
+          "self": "/company/09092149/charges/73Rw9UvzoiR6cQj0SOwIVX8Q5xA"
+        },
+        "particulars": {
+          "contains_fixed_charge": true,
+          "contains_negative_pledge": true,
+          "description": "N/A.",
+          "type": "brief-description"
+        },
+        "persons_entitled": [
+          {
+            "name": "The Governor and Company of the Bank of England (As Security Trustee)"
+          }
+        ],
+        "satisfied_on": "2019-06-11",
+        "status": "fully-satisfied",
+        "transactions": [
+          {
+            "delivered_on": "2018-03-01",
+            "filing_type": "create-charge-with-deed",
+            "links": {
+              "filing": "/company/09092149/filing-history/MzE5OTA5MTQ0M2FkaXF6a2N4"
+            }
+          },
+          {
+            "delivered_on": "2019-06-11",
+            "filing_type": "charge-satisfaction",
+            "links": {
+              "filing": "/company/09092149/filing-history/MzIzNjYyMTE0MGFkaXF6a2N4"
+            }
+          }
+        ]
+      },
+      {
+        "charge_code": "090921490001",
+        "charge_number": 1,
+        "classification": {
+          "description": "A registered charge",
+          "type": "charge-description"
+        },
+        "created_on": "2017-01-13",
+        "delivered_on": "2017-01-19",
+        "etag": "469f6b8dad4266bf94628168dba9fe1116af7d45",
+        "links": {
+          "self": "/company/09092149/charges/7cpwgg5FdyuSaXnECrkiWy3kplc"
+        },
+        "particulars": {
+          "contains_fixed_charge": true,
+          "contains_negative_pledge": true,
+          "description": "N/A.",
+          "type": "brief-description"
+        },
+        "persons_entitled": [
+          {
+            "name": "The Governor and Company of the Bank of England (Security Trustee for the Security Beneficiaries)"
+          }
+        ],
+        "satisfied_on": "2019-03-06",
+        "status": "fully-satisfied",
+        "transactions": [
+          {
+            "delivered_on": "2017-01-19",
+            "filing_type": "create-charge-with-deed",
+            "links": {
+              "filing": "/company/09092149/filing-history/MzE2NzAxMzI5OWFkaXF6a2N4"
+            }
+          },
+          {
+            "delivered_on": "2019-03-06",
+            "filing_type": "charge-satisfaction",
+            "links": {
+              "filing": "/company/09092149/filing-history/MzIyODcxNDAyOGFkaXF6a2N4"
+            }
+          }
+        ]
+      }
+    ],
+    "part_satisfied_count": 0,
+    "satisfied_count": 5,
+    "total_count": 8,
+    "unfiltered_count": 8
+  }
+}

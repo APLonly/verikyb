@@ -1,0 +1,27 @@
+{
+  "url": "https://document-api.company-information.service.gov.uk/document/O1WkYXIG_urpvKwggqlsYEiVV0dfmK-tJZeuADlNHEI",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:09:54.201503Z",
+  "synthetic": false,
+  "body": {
+    "company_number": "09092149",
+    "barcode": "AE4IKJ4L",
+    "significant_date": "2025-03-31T00:00:00Z",
+    "significant_date_type": "made-up-date",
+    "category": "accounts",
+    "pages": 226,
+    "filename": "",
+    "created_at": "2025-06-13T00:24:30.228662551Z",
+    "etag": "",
+    "links": {
+      "self": "https://document-api.company-information.service.gov.uk/document/O1WkYXIG_urpvKwggqlsYEiVV0dfmK-tJZeuADlNHEI",
+      "document": "https://document-api.company-information.service.gov.uk/document/O1WkYXIG_urpvKwggqlsYEiVV0dfmK-tJZeuADlNHEI/content"
+    },
+    "resources": {
+      "application/pdf": {
+        "content_length": 8529474
+      }
+    }
+  }
+}

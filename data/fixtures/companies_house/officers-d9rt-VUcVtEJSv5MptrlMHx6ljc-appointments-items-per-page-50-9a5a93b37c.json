@@ -1,0 +1,65 @@
+{
+  "url": "https://api.company-information.service.gov.uk/officers/d9rt_VUcVtEJSv5MptrlMHx6ljc/appointments?items_per_page=50",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:20.168503Z",
+  "synthetic": false,
+  "body": {
+    "active_count": 1,
+    "date_of_birth": {
+      "month": 4,
+      "year": 1983
+    },
+    "etag": "bbf05506ff76c85d47498b48c8e72ce2d5262d68",
+    "inactive_count": 0,
+    "is_corporate_officer": false,
+    "items": [
+      {
+        "address": {
+          "address_line_1": "20 Primrose Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC2A 2EW",
+          "premises": "Level 27, The Broadgate Tower"
+        },
+        "appointed_on": "2024-09-25",
+        "appointed_to": {
+          "company_name": "CLEARBANK LIMITED",
+          "company_number": "09736376",
+          "company_status": "active"
+        },
+        "name": "Emma Louise WALLACE",
+        "country_of_residence": "United Kingdom",
+        "former_names": [
+          {
+            "surname": "EMMA HAGAN"
+          }
+        ],
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/09736376"
+        },
+        "name_elements": {
+          "forename": "Emma",
+          "other_forenames": "Louise",
+          "surname": "WALLACE"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-09-20"
+        }
+      }
+    ],
+    "items_per_page": 50,
+    "kind": "personal-appointment",
+    "links": {
+      "self": "/officers/d9rt_VUcVtEJSv5MptrlMHx6ljc/appointments"
+    },
+    "name": "Emma Louise WALLACE",
+    "resigned_count": 0,
+    "start_index": 0,
+    "total_results": 1
+  }
+}

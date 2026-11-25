@@ -1,0 +1,51 @@
+{
+  "url": "https://api.company-information.service.gov.uk/officers/flqesY9jXA5w07iWLi4M3L6hzYY/appointments?items_per_page=50",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:09:51.889517Z",
+  "synthetic": false,
+  "body": {
+    "active_count": 1,
+    "etag": "2f0cf70b8b217c8b93eb4ff157e180f226d2b297",
+    "inactive_count": 0,
+    "is_corporate_officer": false,
+    "items": [
+      {
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2024-05-24",
+        "appointed_to": {
+          "company_name": "STARLING BANK LIMITED",
+          "company_number": "09092149",
+          "company_status": "active"
+        },
+        "name": "Veronica RIDLEY",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/09092149"
+        },
+        "name_elements": {
+          "forename": "Veronica",
+          "title": "Ms",
+          "surname": "RIDLEY"
+        },
+        "officer_role": "secretary"
+      }
+    ],
+    "items_per_page": 50,
+    "kind": "personal-appointment",
+    "links": {
+      "self": "/officers/flqesY9jXA5w07iWLi4M3L6hzYY/appointments"
+    },
+    "name": "Veronica RIDLEY",
+    "resigned_count": 0,
+    "start_index": 0,
+    "total_results": 1
+  }
+}

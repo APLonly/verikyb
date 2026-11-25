@@ -1,0 +1,407 @@
+{
+  "url": "https://api.company-information.service.gov.uk/officers/_wKhUsk7QXW1hHioXCN0unwzzVI/appointments?items_per_page=50",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:40.773082Z",
+  "synthetic": false,
+  "body": {
+    "active_count": 7,
+    "date_of_birth": {
+      "month": 12,
+      "year": 1971
+    },
+    "etag": "63f75ae21a63a9660905aaed2fdefa9c683e1c31",
+    "inactive_count": 1,
+    "is_corporate_officer": false,
+    "items": [
+      {
+        "address": {
+          "address_line_1": "Wood Lane",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "W12 7RZ",
+          "premises": "Scale Space, 58"
+        },
+        "appointed_on": "2024-11-15",
+        "appointed_to": {
+          "company_name": "PAYAABLE LTD",
+          "company_number": "12921042",
+          "company_status": "active"
+        },
+        "name": "Myles Christian STEPHENSON",
+        "country_of_residence": "Scotland",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/12921042"
+        },
+        "name_elements": {
+          "forename": "Myles",
+          "title": "Mr",
+          "other_forenames": "Christian",
+          "surname": "STEPHENSON"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-10-15"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "66 City Road",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC1Y 2AL",
+          "premises": "The Featherstone Building"
+        },
+        "appointed_on": "2016-02-25",
+        "appointed_to": {
+          "company_name": "MODULR LTD",
+          "company_number": "10027371",
+          "company_status": "active"
+        },
+        "name": "Myles Christian STEPHENSON",
+        "country_of_residence": "Scotland",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/10027371"
+        },
+        "name_elements": {
+          "forename": "Myles",
+          "title": "Mr",
+          "other_forenames": "Christian",
+          "surname": "STEPHENSON"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2025-12-15"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "66 City Road",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC1Y 2AL",
+          "premises": "The Featherstone Building"
+        },
+        "appointed_on": "2016-02-02",
+        "appointed_to": {
+          "company_name": "MODULR FINANCE LIMITED",
+          "company_number": "09897957",
+          "company_status": "active"
+        },
+        "name": "Myles Christian STEPHENSON",
+        "country_of_residence": "Scotland",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/09897957"
+        },
+        "name_elements": {
+          "forename": "Myles",
+          "title": "Mr",
+          "other_forenames": "Christian",
+          "surname": "STEPHENSON"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2025-12-15"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "66 City Road",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC1Y 2AL",
+          "premises": "The Featherstone Building"
+        },
+        "appointed_on": "2016-02-02",
+        "appointed_to": {
+          "company_name": "MODULR NOMINEE LIMITED",
+          "company_number": "09897934",
+          "company_status": "active"
+        },
+        "name": "Myles Christian STEPHENSON",
+        "country_of_residence": "Scotland",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/09897934"
+        },
+        "name_elements": {
+          "forename": "Myles",
+          "title": "Mr",
+          "other_forenames": "Christian",
+          "surname": "STEPHENSON"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2025-12-15"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "66 City Road",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC1Y 2AL",
+          "premises": "The Featherstone Building"
+        },
+        "appointed_on": "2016-02-02",
+        "appointed_to": {
+          "company_name": "MODULR TECHNOLOGY LIMITED",
+          "company_number": "09897906",
+          "company_status": "active"
+        },
+        "name": "Myles Christian STEPHENSON",
+        "country_of_residence": "Scotland",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/09897906"
+        },
+        "name_elements": {
+          "forename": "Myles",
+          "title": "Mr",
+          "other_forenames": "Christian",
+          "surname": "STEPHENSON"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2025-12-15"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "66 City Road",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC1Y 2AL",
+          "premises": "The Featherstone Building"
+        },
+        "appointed_on": "2016-02-02",
+        "appointed_to": {
+          "company_name": "MODULR FS LIMITED",
+          "company_number": "09897919",
+          "company_status": "active"
+        },
+        "name": "Myles Christian STEPHENSON",
+        "country_of_residence": "Scotland",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/09897919"
+        },
+        "name_elements": {
+          "forename": "Myles",
+          "title": "Mr",
+          "other_forenames": "Christian",
+          "surname": "STEPHENSON"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2025-12-15"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "66 City Road",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC1Y 2AL",
+          "premises": "The Featherstone Building"
+        },
+        "appointed_on": "2016-02-02",
+        "appointed_to": {
+          "company_name": "MODULR HOLDINGS LIMITED",
+          "company_number": "09895588",
+          "company_status": "active"
+        },
+        "name": "Myles Christian STEPHENSON",
+        "country_of_residence": "Scotland",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/09895588"
+        },
+        "name_elements": {
+          "forename": "Myles",
+          "title": "Mr",
+          "other_forenames": "Christian",
+          "surname": "STEPHENSON"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2025-12-01"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "Floor",
+          "address_line_2": "26-28 Hammersmith Grove",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W6 7AW",
+          "premises": "2nd"
+        },
+        "appointed_on": "2010-03-08",
+        "appointed_to": {
+          "company_name": "CPAY FINANCIAL LTD",
+          "company_number": "07181559",
+          "company_status": "dissolved"
+        },
+        "name": "Myles Christian STEPHENSON",
+        "country_of_residence": "Scotland",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/07181559"
+        },
+        "name_elements": {
+          "forename": "Myles",
+          "title": "Mr",
+          "other_forenames": "Christian",
+          "surname": "STEPHENSON"
+        },
+        "nationality": "British",
+        "officer_role": "director"
+      },
+      {
+        "address": {
+          "address_line_1": "21 Holborn Viaduct",
+          "address_line_2": "London",
+          "postal_code": "EC1A 2DY"
+        },
+        "appointed_on": "2014-01-14",
+        "appointed_to": {
+          "company_name": "WRIGHT EXPRESS UK LIMITED",
+          "company_number": "05893496",
+          "company_status": "dissolved"
+        },
+        "name": "Myles Christian STEPHENSON",
+        "country_of_residence": "Scotland",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/05893496"
+        },
+        "name_elements": {
+          "forename": "Myles",
+          "title": "Mr",
+          "other_forenames": "Christian",
+          "surname": "STEPHENSON"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2015-06-09"
+      },
+      {
+        "address": {
+          "address_line_1": "Hammersmith Road",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W14 8UD",
+          "premises": "66"
+        },
+        "appointed_on": "2008-08-26",
+        "appointed_to": {
+          "company_name": "WEX EUROPE LIMITED",
+          "company_number": "05927983",
+          "company_status": "active"
+        },
+        "name": "Myles Christian STEPHENSON",
+        "country_of_residence": "Scotland",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/05927983"
+        },
+        "name_elements": {
+          "forename": "Myles",
+          "title": "Mr",
+          "other_forenames": "Christian",
+          "surname": "STEPHENSON"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2015-06-09"
+      },
+      {
+        "address": {
+          "address_line_1": "Hammersmith Road",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W14 8UD",
+          "premises": "66"
+        },
+        "appointed_on": "2008-08-26",
+        "appointed_to": {
+          "company_name": "WEX EUROPE SOLUTIONS LIMITED",
+          "company_number": "06642838",
+          "company_status": "dissolved"
+        },
+        "name": "Myles Christian STEPHENSON",
+        "country_of_residence": "Scotland",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/06642838"
+        },
+        "name_elements": {
+          "forename": "Myles",
+          "title": "Mr",
+          "other_forenames": "Christian",
+          "surname": "STEPHENSON"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2015-06-09"
+      },
+      {
+        "address": {
+          "address_line_1": "Herald Drive",
+          "country": "United Kingdom",
+          "locality": "Crewe",
+          "postal_code": "CW1 6EG",
+          "premises": "Eurocard Centre Herald Park"
+        },
+        "appointed_on": "2013-12-20",
+        "appointed_to": {
+          "company_name": "WEX EUROPE SERVICES LIMITED",
+          "company_number": "08284241",
+          "company_status": "active"
+        },
+        "name": "Myles Christian STEPHENSON",
+        "country_of_residence": "Scotland",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/08284241"
+        },
+        "name_elements": {
+          "forename": "Myles",
+          "title": "Mr",
+          "other_forenames": "Christian",
+          "surname": "STEPHENSON"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2015-05-04"
+      }
+    ],
+    "items_per_page": 50,
+    "kind": "personal-appointment",
+    "links": {
+      "self": "/officers/_wKhUsk7QXW1hHioXCN0unwzzVI/appointments"
+    },
+    "name": "Myles Christian STEPHENSON",
+    "resigned_count": 4,
+    "start_index": 0,
+    "total_results": 12
+  }
+}

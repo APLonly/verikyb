@@ -1,0 +1,57 @@
+{
+  "url": "https://register.fca.org.uk/services/V0.1/Firm/754568/Permissions",
+  "status": 200,
+  "content_type": "application/json;charset=UTF-8",
+  "recorded_at": "2026-11-25T07:10:25.651981Z",
+  "synthetic": false,
+  "body": {
+    "Status": "FSR-API-02-03-00",
+    "ResultInfo": {
+      "page": "1",
+      "per_page": "20",
+      "total_count": "3"
+    },
+    "Message": "Ok. Firm permission found",
+    "Data": {
+      "Agreeing to carry on a regulated activity": [
+        {
+          "Limitation Not Found": [
+            "Valid limitation not present"
+          ]
+        }
+      ],
+      "Dealing in investments as principal": [
+        {
+          "Customer Type": [
+            "Eligible Counterparty"
+          ]
+        },
+        {
+          "Investment Type": [
+            "Rolling spot forex contract"
+          ]
+        },
+        {
+          "Limitation": [
+            "Investment activity in \"rights to or interests in investments (security)\" and \"rights to or interests in investments (contractually based investment)\" is limited to the investment types granted for this activity.",
+            "The firm, in carrying out this regulated activity, is limited to entering into transactions in a manner which, if the firm was an unauthorised person, would come within article 16 of the RAO."
+          ]
+        }
+      ],
+      "Accepting Deposits": [
+        {
+          "Customer Type": [
+            "Retail (Investment)",
+            "Professional",
+            "Eligible Counterparty"
+          ]
+        },
+        {
+          "Investment Type": [
+            "Deposit"
+          ]
+        }
+      ]
+    }
+  }
+}

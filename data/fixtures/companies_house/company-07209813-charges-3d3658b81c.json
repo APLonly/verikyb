@@ -1,0 +1,653 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/07209813/charges",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:06.814988Z",
+  "synthetic": false,
+  "body": {
+    "etag": "432debd60464d93e86617249758fc904b91c00b0",
+    "items": [
+      {
+        "charge_code": "072098130015",
+        "charge_number": 15,
+        "classification": {
+          "description": "A registered charge",
+          "type": "charge-description"
+        },
+        "created_on": "2022-08-12",
+        "delivered_on": "2022-08-18",
+        "etag": "3c8f02889615f84ba327d6f259a0afa2a738f143",
+        "links": {
+          "self": "/company/07209813/charges/oOfwBBqPgOgrkS2ztIS__glZD4Y"
+        },
+        "particulars": {
+          "contains_fixed_charge": true,
+          "contains_floating_charge": true,
+          "contains_negative_pledge": true,
+          "description": "The (I) class 9 and 36, 'fast flag logo' trade-mark with application number 00003346402, (ii) class 36, 'fast flag logo' trade-mark with application number 00913714787, (iii) class 9 and 36, 'fast flag logo', with application number 00918021782, (iv) class 9 and 36, 'money without borders' trade-mark with application number 00003346399, the other intellectual property listed in part 4 of schedule 2 of the instrument. For further details please refer to the instrument.",
+          "floating_charge_covers_all": true,
+          "type": "brief-description"
+        },
+        "persons_entitled": [
+          {
+            "name": "Silicon Valley Bank UK Limited as Security Trustee for the Benefit of the Secured Parties (As Defined in the Instrument)"
+          }
+        ],
+        "satisfied_on": "2024-12-20",
+        "status": "fully-satisfied",
+        "transactions": [
+          {
+            "delivered_on": "2022-08-18",
+            "filing_type": "create-charge-with-deed",
+            "links": {
+              "filing": "/company/07209813/filing-history/MzM0OTA4NTUwNWFkaXF6a2N4"
+            }
+          },
+          {
+            "delivered_on": "2024-12-20",
+            "filing_type": "charge-satisfaction",
+            "links": {
+              "filing": "/company/07209813/filing-history/MzQ0ODYwMTk2OGFkaXF6a2N4"
+            }
+          }
+        ]
+      },
+      {
+        "charge_code": "072098130014",
+        "charge_number": 14,
+        "classification": {
+          "description": "A registered charge",
+          "type": "charge-description"
+        },
+        "created_on": "2021-03-30",
+        "delivered_on": "2021-04-12",
+        "etag": "6e296ef2aac128ce2526b344195de4fbab4e3cd5",
+        "links": {
+          "self": "/company/07209813/charges/Htk9pvNTlA8y2PMClxn04z4n4Gw"
+        },
+        "particulars": {
+          "contains_fixed_charge": true,
+          "contains_negative_pledge": true,
+          "description": "N/A.",
+          "type": "brief-description"
+        },
+        "persons_entitled": [
+          {
+            "name": "Silicon Valley Bank as Security Trustee for the Secured Parties (As Defined in the Instrument)"
+          }
+        ],
+        "satisfied_on": "2024-12-20",
+        "status": "fully-satisfied",
+        "transactions": [
+          {
+            "delivered_on": "2021-04-12",
+            "filing_type": "create-charge-with-deed",
+            "links": {
+              "filing": "/company/07209813/filing-history/MzI5NzQ5MzQxNGFkaXF6a2N4"
+            }
+          },
+          {
+            "delivered_on": "2024-12-20",
+            "filing_type": "charge-satisfaction",
+            "links": {
+              "filing": "/company/07209813/filing-history/MzQ0ODYwMjUxN2FkaXF6a2N4"
+            }
+          }
+        ]
+      },
+      {
+        "charge_code": "072098130013",
+        "charge_number": 13,
+        "classification": {
+          "description": "A registered charge",
+          "type": "charge-description"
+        },
+        "created_on": "2021-03-30",
+        "delivered_on": "2021-04-09",
+        "etag": "d16e3d4024a7a248e4c5aa168419f76c29f07e63",
+        "links": {
+          "self": "/company/07209813/charges/wkEdj6ksgBYHhTOyfEskCL2RMqg"
+        },
+        "particulars": {
+          "contains_fixed_charge": true,
+          "contains_negative_pledge": true,
+          "description": "N/A.",
+          "type": "brief-description"
+        },
+        "persons_entitled": [
+          {
+            "name": "Silicon Valley Bank as Agent for the Benefit of the Secured Parties (As Defined in the Instrument)"
+          }
+        ],
+        "satisfied_on": "2024-12-20",
+        "status": "fully-satisfied",
+        "transactions": [
+          {
+            "delivered_on": "2021-04-09",
+            "filing_type": "create-charge-with-deed",
+            "links": {
+              "filing": "/company/07209813/filing-history/MzI5NzM0Nzc4OWFkaXF6a2N4"
+            }
+          },
+          {
+            "delivered_on": "2024-12-20",
+            "filing_type": "charge-satisfaction",
+            "links": {
+              "filing": "/company/07209813/filing-history/MzQ0ODYwMjI2OGFkaXF6a2N4"
+            }
+          }
+        ]
+      },
+      {
+        "charge_code": "072098130012",
+        "charge_number": 12,
+        "classification": {
+          "description": "A registered charge",
+          "type": "charge-description"
+        },
+        "created_on": "2021-03-30",
+        "delivered_on": "2021-04-09",
+        "etag": "f42bfacc90118a93cbaf76dded49de8c70e1cff9",
+        "links": {
+          "self": "/company/07209813/charges/K_z2CQ7De_RvuuCE-Qh-iNw3qOI"
+        },
+        "particulars": {
+          "contains_fixed_charge": true,
+          "contains_floating_charge": true,
+          "contains_negative_pledge": true,
+          "description": "The (I) class 9 and 36, 'fast flag logo' trade-mark with application number 00003346402, (ii) class 36, 'fast flag logo' trade-mark with application number 00913714787, (iii) class 9 and 36, 'fast flag logo', with application number 00918021782, (iv) class 9 and 36, 'money without borders' trade-mark with application number 00003346399, the other intellectual property listed in part 4 of schedule 2 of the instrument. For further details please refer to the instrument.",
+          "type": "brief-description"
+        },
+        "persons_entitled": [
+          {
+            "name": "Silicon Valley Bank as Security Trustee for the Secured Parties (As Defined in the Instrument)"
+          }
+        ],
+        "satisfied_on": "2024-12-20",
+        "status": "fully-satisfied",
+        "transactions": [
+          {
+            "delivered_on": "2021-04-09",
+            "filing_type": "create-charge-with-deed",
+            "links": {
+              "filing": "/company/07209813/filing-history/MzI5NzMyOTEwM2FkaXF6a2N4"
+            }
+          },
+          {
+            "delivered_on": "2024-12-20",
+            "filing_type": "charge-satisfaction",
+            "links": {
+              "filing": "/company/07209813/filing-history/MzQ0ODYwMDkzNmFkaXF6a2N4"
+            }
+          }
+        ]
+      },
+      {
+        "charge_code": "072098130011",
+        "charge_number": 11,
+        "classification": {
+          "description": "A registered charge",
+          "type": "charge-description"
+        },
+        "created_on": "2021-03-30",
+        "delivered_on": "2021-04-08",
+        "etag": "9782318a32174b67a42e0b281529d7cfe0b09e7d",
+        "links": {
+          "self": "/company/07209813/charges/IWFfkapylGwSodtlyKV8ACt1MZE"
+        },
+        "particulars": {
+          "contains_fixed_charge": true,
+          "contains_negative_pledge": true,
+          "description": "N/A.",
+          "type": "brief-description"
+        },
+        "persons_entitled": [
+          {
+            "name": "Silicon Valley Bank as Security Agent for the Benefit of the Secured Parties (As Defined in the Instrument)"
+          }
+        ],
+        "satisfied_on": "2024-12-20",
+        "status": "fully-satisfied",
+        "transactions": [
+          {
+            "delivered_on": "2021-04-08",
+            "filing_type": "create-charge-with-deed",
+            "links": {
+              "filing": "/company/07209813/filing-history/MzI5NzIyMDk3MmFkaXF6a2N4"
+            }
+          },
+          {
+            "delivered_on": "2024-12-20",
+            "filing_type": "charge-satisfaction",
+            "links": {
+              "filing": "/company/07209813/filing-history/MzQ0ODYwMTIzNmFkaXF6a2N4"
+            }
+          }
+        ]
+      },
+      {
+        "charge_code": "072098130010",
+        "charge_number": 10,
+        "classification": {
+          "description": "A registered charge",
+          "type": "charge-description"
+        },
+        "created_on": "2019-09-18",
+        "delivered_on": "2019-09-24",
+        "etag": "699556b950a827a4002e987b676d8897b950d995",
+        "links": {
+          "self": "/company/07209813/charges/WS9MhQFd9xl2OoN7Tq9GSmHYdwE"
+        },
+        "particulars": {
+          "contains_fixed_charge": true,
+          "contains_negative_pledge": true
+        },
+        "persons_entitled": [
+          {
+            "name": "National Westminster Bank PLC"
+          }
+        ],
+        "satisfied_on": "2021-04-06",
+        "status": "fully-satisfied",
+        "transactions": [
+          {
+            "delivered_on": "2019-09-24",
+            "filing_type": "create-charge-with-deed",
+            "links": {
+              "filing": "/company/07209813/filing-history/MzI0NTgzMDk3MmFkaXF6a2N4"
+            }
+          },
+          {
+            "delivered_on": "2021-04-06",
+            "filing_type": "charge-satisfaction",
+            "links": {
+              "filing": "/company/07209813/filing-history/MzI5Njg4OTY1MmFkaXF6a2N4"
+            }
+          }
+        ]
+      },
+      {
+        "charge_code": "072098130009",
+        "charge_number": 9,
+        "classification": {
+          "description": "A registered charge",
+          "type": "charge-description"
+        },
+        "created_on": "2019-09-18",
+        "delivered_on": "2019-09-24",
+        "etag": "98966e8da676dd91208190b762c9a7874476b16d",
+        "links": {
+          "self": "/company/07209813/charges/Y78Lfle_t2qZRNd6JMnQ1-EDt_Y"
+        },
+        "particulars": {
+          "contains_fixed_charge": true,
+          "contains_negative_pledge": true
+        },
+        "persons_entitled": [
+          {
+            "name": "National Westminster Bank PLC"
+          }
+        ],
+        "satisfied_on": "2021-04-06",
+        "status": "fully-satisfied",
+        "transactions": [
+          {
+            "delivered_on": "2019-09-24",
+            "filing_type": "create-charge-with-deed",
+            "links": {
+              "filing": "/company/07209813/filing-history/MzI0NTgzMDcyN2FkaXF6a2N4"
+            }
+          },
+          {
+            "delivered_on": "2021-04-06",
+            "filing_type": "charge-satisfaction",
+            "links": {
+              "filing": "/company/07209813/filing-history/MzI5Njg4OTc2MGFkaXF6a2N4"
+            }
+          }
+        ]
+      },
+      {
+        "charge_code": "072098130008",
+        "charge_number": 8,
+        "classification": {
+          "description": "A registered charge",
+          "type": "charge-description"
+        },
+        "created_on": "2019-09-18",
+        "delivered_on": "2019-09-24",
+        "etag": "c2d1981fac099a595b1f3c196450997be3d5594f",
+        "links": {
+          "self": "/company/07209813/charges/oytljbSOzo9cFbnKJcvUvD66UOE"
+        },
+        "particulars": {
+          "contains_fixed_charge": true,
+          "contains_floating_charge": true,
+          "contains_negative_pledge": true,
+          "floating_charge_covers_all": true
+        },
+        "persons_entitled": [
+          {
+            "name": "National Westminster Bank PLC"
+          }
+        ],
+        "satisfied_on": "2021-04-06",
+        "status": "fully-satisfied",
+        "transactions": [
+          {
+            "delivered_on": "2019-09-24",
+            "filing_type": "create-charge-with-deed",
+            "links": {
+              "filing": "/company/07209813/filing-history/MzI0NTgzMDA3MmFkaXF6a2N4"
+            }
+          },
+          {
+            "delivered_on": "2020-11-18",
+            "filing_type": "charge-part-release",
+            "links": {
+              "filing": "/company/07209813/filing-history/MzI4Mzc0MTU2NmFkaXF6a2N4"
+            }
+          },
+          {
+            "delivered_on": "2021-04-06",
+            "filing_type": "charge-satisfaction",
+            "links": {
+              "filing": "/company/07209813/filing-history/MzI5Njg4OTY2MGFkaXF6a2N4"
+            }
+          }
+        ]
+      },
+      {
+        "charge_code": "072098130007",
+        "charge_number": 7,
+        "classification": {
+          "description": "A registered charge",
+          "type": "charge-description"
+        },
+        "created_on": "2019-03-01",
+        "delivered_on": "2019-03-13",
+        "etag": "f19ed5b59ef79c0e1796b0945c21fecf1e5b3f70",
+        "links": {
+          "self": "/company/07209813/charges/xdZ4uk6zVakVKfYmB7-H8ACWTeY"
+        },
+        "particulars": {
+          "contains_fixed_charge": true,
+          "contains_negative_pledge": true
+        },
+        "persons_entitled": [
+          {
+            "name": "The Governor and Company of the Bank of England as Security Trustee"
+          }
+        ],
+        "status": "outstanding",
+        "transactions": [
+          {
+            "delivered_on": "2019-03-13",
+            "filing_type": "create-charge-with-deed",
+            "links": {
+              "filing": "/company/07209813/filing-history/MzIyOTI2OTcyMWFkaXF6a2N4"
+            }
+          }
+        ]
+      },
+      {
+        "charge_code": "072098130006",
+        "charge_number": 6,
+        "classification": {
+          "description": "A registered charge",
+          "type": "charge-description"
+        },
+        "created_on": "2019-02-01",
+        "delivered_on": "2019-02-19",
+        "etag": "7649ec7e1bc03c49fa99b42160ebbdfa6502951c",
+        "links": {
+          "self": "/company/07209813/charges/WY99mndY2piEZUEjZn4JfHecCYQ"
+        },
+        "particulars": {
+          "contains_fixed_charge": true,
+          "contains_negative_pledge": true
+        },
+        "persons_entitled": [
+          {
+            "name": "The Governor and Company of the Bank of England as Security Trustee"
+          }
+        ],
+        "satisfied_on": "2019-06-12",
+        "status": "fully-satisfied",
+        "transactions": [
+          {
+            "delivered_on": "2019-02-19",
+            "filing_type": "create-charge-with-deed",
+            "links": {
+              "filing": "/company/07209813/filing-history/MzIyNzMzNTU3MWFkaXF6a2N4"
+            }
+          },
+          {
+            "delivered_on": "2019-06-12",
+            "filing_type": "charge-satisfaction",
+            "links": {
+              "filing": "/company/07209813/filing-history/MzIzNjcwMDk1NmFkaXF6a2N4"
+            }
+          }
+        ]
+      },
+      {
+        "charge_code": "072098130005",
+        "charge_number": 5,
+        "classification": {
+          "description": "A registered charge",
+          "type": "charge-description"
+        },
+        "created_on": "2018-08-29",
+        "delivered_on": "2018-09-13",
+        "etag": "95b67c87b9b2a6b69c54d654afd2c7ce03e10f5f",
+        "links": {
+          "self": "/company/07209813/charges/N8o-OYb7bpPQ5nu1zoA4HbIil2w"
+        },
+        "particulars": {
+          "contains_fixed_charge": true,
+          "contains_floating_charge": true,
+          "contains_negative_pledge": true,
+          "floating_charge_covers_all": true
+        },
+        "persons_entitled": [
+          {
+            "name": "National Westminster Bank PLC"
+          }
+        ],
+        "satisfied_on": "2021-04-06",
+        "status": "fully-satisfied",
+        "transactions": [
+          {
+            "delivered_on": "2018-09-13",
+            "filing_type": "create-charge-with-deed",
+            "links": {
+              "filing": "/company/07209813/filing-history/MzIxNTA2Mjk1M2FkaXF6a2N4"
+            }
+          },
+          {
+            "delivered_on": "2020-11-18",
+            "filing_type": "charge-part-release",
+            "links": {
+              "filing": "/company/07209813/filing-history/MzI4Mzc0MTU2MmFkaXF6a2N4"
+            }
+          },
+          {
+            "delivered_on": "2021-04-06",
+            "filing_type": "charge-satisfaction",
+            "links": {
+              "filing": "/company/07209813/filing-history/MzI5Njg4OTc2M2FkaXF6a2N4"
+            }
+          }
+        ]
+      },
+      {
+        "charge_code": "072098130004",
+        "charge_number": 4,
+        "classification": {
+          "description": "A registered charge",
+          "type": "charge-description"
+        },
+        "created_on": "2018-08-29",
+        "delivered_on": "2018-09-13",
+        "etag": "8facae2bc20eea1699095d0be8b335dcb6f58457",
+        "links": {
+          "self": "/company/07209813/charges/aSKVsW3CJ98V08b1sgJlAu7mVGk"
+        },
+        "particulars": {
+          "contains_fixed_charge": true,
+          "contains_negative_pledge": true
+        },
+        "persons_entitled": [
+          {
+            "name": "National Westminster Bank PLC"
+          }
+        ],
+        "satisfied_on": "2021-04-06",
+        "status": "fully-satisfied",
+        "transactions": [
+          {
+            "delivered_on": "2018-09-13",
+            "filing_type": "create-charge-with-deed",
+            "links": {
+              "filing": "/company/07209813/filing-history/MzIxNTA2MjYwOGFkaXF6a2N4"
+            }
+          },
+          {
+            "delivered_on": "2021-04-06",
+            "filing_type": "charge-satisfaction",
+            "links": {
+              "filing": "/company/07209813/filing-history/MzI5Njg4OTc2MWFkaXF6a2N4"
+            }
+          }
+        ]
+      },
+      {
+        "charge_code": "072098130003",
+        "charge_number": 3,
+        "classification": {
+          "description": "A registered charge",
+          "type": "charge-description"
+        },
+        "created_on": "2018-08-29",
+        "delivered_on": "2018-09-13",
+        "etag": "902942541ed51f71cefd1f222029b918de891b77",
+        "links": {
+          "self": "/company/07209813/charges/yDBnHDiDSW5VjanTVUHCdmyJn0w"
+        },
+        "particulars": {
+          "contains_fixed_charge": true,
+          "contains_negative_pledge": true
+        },
+        "persons_entitled": [
+          {
+            "name": "National Westminster Bank PLC"
+          }
+        ],
+        "satisfied_on": "2021-04-06",
+        "status": "fully-satisfied",
+        "transactions": [
+          {
+            "delivered_on": "2018-09-13",
+            "filing_type": "create-charge-with-deed",
+            "links": {
+              "filing": "/company/07209813/filing-history/MzIxNTA2MjIwNmFkaXF6a2N4"
+            }
+          },
+          {
+            "delivered_on": "2021-04-06",
+            "filing_type": "charge-satisfaction",
+            "links": {
+              "filing": "/company/07209813/filing-history/MzI5Njg4OTY0NmFkaXF6a2N4"
+            }
+          }
+        ]
+      },
+      {
+        "charge_code": "072098130002",
+        "charge_number": 2,
+        "classification": {
+          "description": "A registered charge",
+          "type": "charge-description"
+        },
+        "created_on": "2018-04-13",
+        "delivered_on": "2018-04-16",
+        "etag": "32b1ddd0178bdbfb33ce5c5675cb5f2f28528520",
+        "links": {
+          "self": "/company/07209813/charges/jaiUHHh8qhjfg4hbs59IB7kJMhk"
+        },
+        "particulars": {
+          "contains_fixed_charge": true,
+          "contains_negative_pledge": true
+        },
+        "persons_entitled": [
+          {
+            "name": "The Governor and Company of the Bank of England (Security Trustee for the Security Beneficiaries)"
+          }
+        ],
+        "satisfied_on": "2019-03-06",
+        "status": "fully-satisfied",
+        "transactions": [
+          {
+            "delivered_on": "2018-04-16",
+            "filing_type": "create-charge-with-deed",
+            "links": {
+              "filing": "/company/07209813/filing-history/MzIwMjYzMjY1NWFkaXF6a2N4"
+            }
+          },
+          {
+            "delivered_on": "2019-03-06",
+            "filing_type": "charge-satisfaction",
+            "links": {
+              "filing": "/company/07209813/filing-history/MzIyODcxNTMxNWFkaXF6a2N4"
+            }
+          }
+        ]
+      },
+      {
+        "charge_code": "072098130001",
+        "charge_number": 1,
+        "classification": {
+          "description": "A registered charge",
+          "type": "charge-description"
+        },
+        "created_on": "2013-07-06",
+        "delivered_on": "2013-07-11",
+        "etag": "3aa32ed222dd4f163a7d42848c3bdfad975ec849",
+        "links": {
+          "self": "/company/07209813/charges/1m1QStlxrC7uOBhf9zrbbRhuxdo"
+        },
+        "particulars": {
+          "contains_fixed_charge": true
+        },
+        "persons_entitled": [
+          {
+            "name": "Barclays Bank PLC"
+          }
+        ],
+        "satisfied_on": "2016-05-20",
+        "status": "fully-satisfied",
+        "transactions": [
+          {
+            "delivered_on": "2013-07-11",
+            "filing_type": "create-charge-with-deed",
+            "links": {
+              "filing": "/company/07209813/filing-history/MzA4MTM5NjU5MWFkaXF6a2N4"
+            }
+          },
+          {
+            "delivered_on": "2016-05-20",
+            "filing_type": "charge-satisfaction",
+            "links": {
+              "filing": "/company/07209813/filing-history/MzE1MDM0MzAzN2FkaXF6a2N4"
+            }
+          }
+        ]
+      }
+    ],
+    "part_satisfied_count": 0,
+    "satisfied_count": 14,
+    "total_count": 15,
+    "unfiltered_count": 15
+  }
+}

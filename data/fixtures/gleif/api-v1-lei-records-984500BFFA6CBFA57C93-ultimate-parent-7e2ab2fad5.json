@@ -1,0 +1,151 @@
+{
+  "url": "https://api.gleif.org/api/v1/lei-records/984500BFFA6CBFA57C93/ultimate-parent",
+  "status": 200,
+  "content_type": "application/vnd.api+json",
+  "recorded_at": "2026-11-25T07:10:34.323911Z",
+  "synthetic": false,
+  "body": {
+    "meta": {
+      "goldenCopy": {
+        "publishDate": "2026-11-25T00:00:00Z"
+      }
+    },
+    "data": {
+      "type": "lei-records",
+      "id": "9845008M36E56939EA63",
+      "attributes": {
+        "lei": "9845008M36E56939EA63",
+        "entity": {
+          "legalName": {
+            "name": "MODULR HOLDINGS LIMITED",
+            "language": "en"
+          },
+          "otherNames": [],
+          "transliteratedOtherNames": [],
+          "legalAddress": {
+            "language": "en",
+            "addressLines": [
+              "Scale Space",
+              "58 Wood Lane"
+            ],
+            "addressNumber": null,
+            "addressNumberWithinBuilding": null,
+            "mailRouting": null,
+            "city": "London",
+            "region": "GB-LND",
+            "country": "GB",
+            "postalCode": "W12 7RZ"
+          },
+          "headquartersAddress": {
+            "language": "en",
+            "addressLines": [
+              "Scale Space",
+              "58 Wood Lane"
+            ],
+            "addressNumber": null,
+            "addressNumberWithinBuilding": null,
+            "mailRouting": null,
+            "city": "London",
+            "region": "GB-LND",
+            "country": "GB",
+            "postalCode": "W12 7RZ"
+          },
+          "registeredAt": {
+            "id": "RA000585",
+            "other": null
+          },
+          "registeredAs": "09895588",
+          "jurisdiction": "GB",
+          "category": "GENERAL",
+          "legalForm": {
+            "id": "H0PO",
+            "other": null
+          },
+          "associatedEntity": {
+            "lei": null,
+            "name": null
+          },
+          "status": "ACTIVE",
+          "expiration": {
+            "date": null,
+            "reason": null
+          },
+          "successorEntity": {
+            "lei": null,
+            "name": null
+          },
+          "successorEntities": [],
+          "creationDate": "2015-12-01T00:00:00Z",
+          "subCategory": null,
+          "otherAddresses": [],
+          "eventGroups": []
+        },
+        "registration": {
+          "initialRegistrationDate": "2024-03-08T15:47:47Z",
+          "lastUpdateDate": "2026-01-07T16:06:03Z",
+          "status": "ISSUED",
+          "nextRenewalDate": "2027-03-08T15:47:48Z",
+          "managingLou": "529900T8BM49AURSDO55",
+          "corroborationLevel": "FULLY_CORROBORATED",
+          "validatedAt": {
+            "id": "RA000585",
+            "other": null
+          },
+          "validatedAs": "09895588",
+          "otherValidationAuthorities": []
+        },
+        "bic": null,
+        "mic": null,
+        "ocid": "gb/09895588",
+        "qcc": "QGBM56PV64",
+        "gem": null,
+        "spglobal": [
+          "637559435"
+        ],
+        "conformityFlag": "CONFORMING"
+      },
+      "relationships": {
+        "managing-lou": {
+          "links": {
+            "related": "https://api.gleif.org/api/v1/lei-records/9845008M36E56939EA63/managing-lou"
+          }
+        },
+        "lei-issuer": {
+          "links": {
+            "related": "https://api.gleif.org/api/v1/lei-records/9845008M36E56939EA63/lei-issuer"
+          }
+        },
+        "field-modifications": {
+          "links": {
+            "related": "https://api.gleif.org/api/v1/lei-records/9845008M36E56939EA63/field-modifications"
+          }
+        },
+        "direct-parent": {
+          "links": {
+            "reporting-exception": "https://api.gleif.org/api/v1/lei-records/9845008M36E56939EA63/direct-parent-reporting-exception"
+          }
+        },
+        "ultimate-parent": {
+          "links": {
+            "reporting-exception": "https://api.gleif.org/api/v1/lei-records/9845008M36E56939EA63/ultimate-parent-reporting-exception"
+          }
+        },
+        "direct-children": {
+          "links": {
+            "relationship-records": "https://api.gleif.org/api/v1/lei-records/9845008M36E56939EA63/direct-child-relationships",
+            "related": "https://api.gleif.org/api/v1/lei-records/9845008M36E56939EA63/direct-children"
+          }
+        },
+        "ultimate-children": {
+          "links": {
+            "relationship-records": "https://api.gleif.org/api/v1/lei-records/9845008M36E56939EA63/ultimate-child-relationships",
+            "related": "https://api.gleif.org/api/v1/lei-records/9845008M36E56939EA63/ultimate-children"
+          }
+        }
+      },
+      "links": {
+        "self": "https://api.gleif.org/api/v1/lei-records/9845008M36E56939EA63"
+      }
+    }
+  }
+}

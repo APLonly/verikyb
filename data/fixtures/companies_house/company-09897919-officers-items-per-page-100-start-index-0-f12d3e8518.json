@@ -1,0 +1,351 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/09897919/officers?items_per_page=100&start_index=0",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:37.316323Z",
+  "synthetic": false,
+  "body": {
+    "active_count": 5,
+    "etag": "f77f2646e45667505ff2a732542b1c7c6a955101",
+    "items": [
+      {
+        "etag": "f77f2646e45667505ff2a732542b1c7c6a955101",
+        "address": {
+          "address_line_1": "66 City Road",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC1Y 2AL",
+          "premises": "The Featherstone Building"
+        },
+        "appointed_on": "2024-10-08",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United Kingdom",
+        "date_of_birth": {
+          "month": 3,
+          "year": 1965
+        },
+        "links": {
+          "self": "/company/09897919/appointments/dK7IjI6PMfeKZWisqDHhGWWJjeQ",
+          "officer": {
+            "appointments": "/officers/pYntQ3zxCKM6PCesKGXj95X6dA8/appointments"
+          }
+        },
+        "name": "DAVIS, Andrea Jayne, Ms.",
+        "nationality": "British",
+        "officer_role": "director",
+        "person_number": "224826640001",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2025-12-15"
+        }
+      },
+      {
+        "etag": "b2760a0b220a40aafb5846b6f5cef08daa89f071",
+        "address": {
+          "address_line_1": "66 City Road",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC1Y 2AL",
+          "premises": "The Featherstone Building"
+        },
+        "appointed_on": "2017-11-01",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United Kingdom",
+        "date_of_birth": {
+          "month": 11,
+          "year": 1968
+        },
+        "links": {
+          "self": "/company/09897919/appointments/WFo1GKLxESWFwx490pHavuedMoI",
+          "officer": {
+            "appointments": "/officers/BkPkoeZ_AnQFMqF9RRWqHXDxnuc/appointments"
+          }
+        },
+        "name": "DEVEY, Robert Alan",
+        "nationality": "British",
+        "officer_role": "director",
+        "person_number": "146956760008",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2025-12-15"
+        }
+      },
+      {
+        "etag": "8d39e10f94f635349b2c45ad647e3a6debb25a98",
+        "address": {
+          "address_line_1": "66 City Road",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC1Y 2AL",
+          "premises": "The Featherstone Building"
+        },
+        "appointed_on": "2024-06-13",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 12,
+          "year": 1964
+        },
+        "links": {
+          "self": "/company/09897919/appointments/c2DZoGQlbD5MvDQfNiw9Bn3nAFE",
+          "officer": {
+            "appointments": "/officers/Ec0g4zbeXHCsX0ljnOIHU0xdzxo/appointments"
+          }
+        },
+        "name": "ORTIZ, Miguel Eduardo, Dr",
+        "nationality": "British",
+        "officer_role": "director",
+        "person_number": "163432660002",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2025-12-15"
+        }
+      },
+      {
+        "etag": "155533c8e455cc4cd2b7aa71bc3d35bf3a9e206d",
+        "address": {
+          "address_line_1": "66 City Road",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC1Y 2AL",
+          "premises": "The Featherstone Building"
+        },
+        "appointed_on": "2024-08-27",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 3,
+          "year": 1966
+        },
+        "links": {
+          "self": "/company/09897919/appointments/WrFgNNSrPom65h6c4dSWSYdDU_Q",
+          "officer": {
+            "appointments": "/officers/LPwu-hYX7J-Y3nikMQsYM76F2NQ/appointments"
+          }
+        },
+        "name": "RAINBIRD, Caroline Mary Anne",
+        "nationality": "British",
+        "officer_role": "director",
+        "person_number": "178277080001",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2025-12-15"
+        }
+      },
+      {
+        "etag": "1ff7a6bae67a652c864f84716f4dbe5ec80414d2",
+        "address": {
+          "address_line_1": "66 City Road",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC1Y 2AL",
+          "premises": "The Featherstone Building"
+        },
+        "appointed_on": "2016-02-02",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "Scotland",
+        "date_of_birth": {
+          "month": 12,
+          "year": 1971
+        },
+        "links": {
+          "self": "/company/09897919/appointments/rR3-PaQMCXAcIF_xptF3DbD1Z9I",
+          "officer": {
+            "appointments": "/officers/_wKhUsk7QXW1hHioXCN0unwzzVI/appointments"
+          }
+        },
+        "name": "STEPHENSON, Myles Christian",
+        "nationality": "British",
+        "officer_role": "director",
+        "person_number": "125448980001",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2025-12-15"
+        }
+      },
+      {
+        "etag": "2bb82450dbdeab76d95c5704c60b30814ab1239d",
+        "address": {
+          "address_line_1": "27 New Dover Road",
+          "country": "United Kingdom",
+          "locality": "Canterbury",
+          "postal_code": "CT1 3DN",
+          "premises": "Camburgh House",
+          "region": "Kent"
+        },
+        "appointed_on": "2015-12-02",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 9,
+          "year": 1971
+        },
+        "links": {
+          "self": "/company/09897919/appointments/XhIX4LQDW9fhuQDBO1Ic3DeVWWU",
+          "officer": {
+            "appointments": "/officers/E1TrBRNPp57js8WrQdh_il2acL0/appointments"
+          }
+        },
+        "name": "BITHAL, Manoj Kumar",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2016-02-02",
+        "person_number": "73021740002"
+      },
+      {
+        "etag": "df97b850091b2a606aa2afaaec409d847260ca57",
+        "address": {
+          "address_line_1": "58 Wood Lane",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W12 7RZ",
+          "premises": "Scale Space"
+        },
+        "appointed_on": "2019-04-30",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United Kingdom",
+        "date_of_birth": {
+          "month": 11,
+          "year": 1979
+        },
+        "links": {
+          "self": "/company/09897919/appointments/YwjKoit63t9Jte5a5yjobItxxsc",
+          "officer": {
+            "appointments": "/officers/zI0FDBxuuqGN7gS0EDkMZmOmvrY/appointments"
+          }
+        },
+        "name": "BROOKS, Chris",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2022-03-25",
+        "person_number": "261237900001"
+      },
+      {
+        "etag": "df97b850091b2a606aa2afaaec409d847260ca57",
+        "address": {
+          "address_line_1": "58 Wood Lane",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W12 7RZ",
+          "premises": "Scale Space"
+        },
+        "appointed_on": "2019-09-06",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United Kingdom",
+        "date_of_birth": {
+          "month": 9,
+          "year": 1954
+        },
+        "links": {
+          "self": "/company/09897919/appointments/-_1gCJotFHXvfGM7-g17iz6rd8E",
+          "officer": {
+            "appointments": "/officers/WNoedZvsj01YmS9p50SEug4GK-I/appointments"
+          }
+        },
+        "name": "CANTOR-GRABLE, Marcia Ina",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2024-12-31",
+        "person_number": "199637570002"
+      },
+      {
+        "etag": "05ad6ff47200290655d8bc7765cb31d384d8aa3b",
+        "address": {
+          "address_line_1": "66 City Road",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC1Y 2AL",
+          "premises": "The Featherstone Building"
+        },
+        "appointed_on": "2023-09-27",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United Kingdom",
+        "date_of_birth": {
+          "month": 2,
+          "year": 1965
+        },
+        "links": {
+          "self": "/company/09897919/appointments/Ry9sxzFgWr-C_W7lj2cuHbunN78",
+          "officer": {
+            "appointments": "/officers/pfHUY2yfKdBXg607_wTa6aYlrO8/appointments"
+          }
+        },
+        "name": "GRIFFIN, Andrew Wynn",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2026-07-01",
+        "person_number": "164542380003",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2025-12-15"
+        }
+      },
+      {
+        "etag": "df97b850091b2a606aa2afaaec409d847260ca57",
+        "address": {
+          "address_line_1": "27 New Dover Road",
+          "country": "United Kingdom",
+          "locality": "Canterbury",
+          "postal_code": "CT1 3DN",
+          "premises": "Camburgh House",
+          "region": "Kent"
+        },
+        "appointed_on": "2016-02-02",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "England",
+        "date_of_birth": {
+          "month": 5,
+          "year": 1954
+        },
+        "links": {
+          "self": "/company/09897919/appointments/c__766z1LhUwjERQsncL5bFrTOU",
+          "officer": {
+            "appointments": "/officers/4qvO8okjFwG8pKvVIKUohJ12QK4/appointments"
+          }
+        },
+        "name": "HAYES, Kevin Andrew",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2022-03-25",
+        "person_number": "29737760001"
+      },
+      {
+        "etag": "df97b850091b2a606aa2afaaec409d847260ca57",
+        "address": {
+          "address_line_1": "58 Wood Lane",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "W12 7RZ",
+          "premises": "Scale Space"
+        },
+        "appointed_on": "2022-03-25",
+        "is_pre_1992_appointment": false,
+        "country_of_residence": "United Kingdom",
+        "date_of_birth": {
+          "month": 1,
+          "year": 1982
+        },
+        "links": {
+          "self": "/company/09897919/appointments/Jj7DXXhynoRDJJRownH61eW1e1U",
+          "officer": {
+            "appointments": "/officers/G9UhDB3GVFbhtbBZ0Idk6DT5f-I/appointments"
+          }
+        },
+        "name": "KELLY, Emma",
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2023-03-09",
+        "person_number": "296428190001"
+      }
+    ],
+    "items_per_page": 100,
+    "kind": "officer-list",
+    "links": {
+      "self": "/company/09897919/officers"
+    },
+    "resigned_count": 6,
+    "inactive_count": 0,
+    "start_index": 0,
+    "total_results": 11
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "url": "https://register.fca.org.uk/services/V0.1/Firm/730166/Address",
+  "status": 200,
+  "content_type": "application/json;charset=UTF-8",
+  "recorded_at": "2026-11-25T07:09:59.159505Z",
+  "synthetic": false,
+  "body": {
+    "Status": "FSR-API-02-02-00",
+    "ResultInfo": {
+      "page": "1",
+      "per_page": "2",
+      "total_count": "2"
+    },
+    "Message": "Ok. Firm Address Found",
+    "Data": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/730166/Address?Type=PPOB",
+        "Website Address": "",
+        "Phone Number": "+442079304450",
+        "Country": "UNITED KINGDOM",
+        "Postcode": "E1 6PW",
+        "County": "",
+        "Town": "London",
+        "Address Line 4": "",
+        "Address LIne 3": "1 Duval Square",
+        "Address Line 2": "London Fruit & Wool Exchange",
+        "Address Line 1": "Starling Bank",
+        "Address Type": "Principal Place of Business"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/730166/Address?Type=Complaint",
+        "Website Address": "",
+        "Phone Number": "+442079304450",
+        "Country": "UNITED KINGDOM",
+        "Postcode": "E1 6PW",
+        "County": "",
+        "Town": "London",
+        "Address Line 4": "",
+        "Address LIne 3": "1 Duval Square",
+        "Address Line 2": "London Fruit & Wool Exchange",
+        "Address Line 1": "Starling Bank",
+        "Individual": "Joseph Gordon",
+        "Address Type": "Complaints Contact"
+      }
+    ]
+  }
+}

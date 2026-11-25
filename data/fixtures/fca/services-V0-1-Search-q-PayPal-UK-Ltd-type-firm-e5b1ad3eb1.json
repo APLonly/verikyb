@@ -1,0 +1,53 @@
+{
+  "url": "https://register.fca.org.uk/services/V0.1/Search?q=PayPal+UK+Ltd&type=firm",
+  "status": 200,
+  "content_type": "application/json;charset=UTF-8",
+  "recorded_at": "2026-11-25T07:09:40.969473Z",
+  "synthetic": false,
+  "body": {
+    "Status": "FSR-API-04-01-00",
+    "ResultInfo": {
+      "page": "1",
+      "per_page": "20",
+      "total_count": "5"
+    },
+    "Message": "Ok. Search successful",
+    "Data": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/470235",
+        "Status": "No longer authorised",
+        "Reference Number": "470235",
+        "Type of business or Individual": "Firm",
+        "Name": "PayPal (Europe) S.à r.l et Cie, S.C.A. (Postcode: L2449)"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/226056",
+        "Status": "No longer authorised",
+        "Reference Number": "226056",
+        "Type of business or Individual": "Firm",
+        "Name": "Paypal (Europe) Ltd (Postcode: TW9 1EJ)"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1000741",
+        "Status": "Registered",
+        "Reference Number": "1000741",
+        "Type of business or Individual": "Firm",
+        "Name": "Paypal UK Ltd (Postcode: SE1 9PZ)"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/996405",
+        "Status": "Authorised",
+        "Reference Number": "996405",
+        "Type of business or Individual": "Firm",
+        "Name": "PayPal UK Ltd (Postcode: SE1 9PZ)"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/994790",
+        "Status": "Registered",
+        "Reference Number": "994790",
+        "Type of business or Individual": "Firm",
+        "Name": "PayPal UK Ltd (Postcode: SE1 9PZ)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/07209813/persons-with-significant-control?items_per_page=100&start_index=0",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:06.612233Z",
+  "synthetic": false,
+  "body": {
+    "items_per_page": 100,
+    "items": [
+      {
+        "etag": "4f961568c2d6decf87aafe06f6b0b97af88e8c44",
+        "notified_on": "2021-06-22",
+        "ceased_on": "2021-06-22",
+        "name": "Wise Plc",
+        "links": {
+          "self": "/company/07209813/persons-with-significant-control/corporate-entity/oktbgowT1aP-Nhlv1UJcW0xY2Ak",
+          "persons_with_significant_control": {
+            "notifications": "/persons-with-significant-control/sFqSv5fwSqyS5PBlMqcYVvUOAJM/notifications"
+          }
+        },
+        "identification": {
+          "legal_form": "Public Limited Company",
+          "legal_authority": "United Kingdom (England And Wales)",
+          "country_registered": "England And Wales",
+          "place_registered": "Companies House",
+          "registration_number": "13211214"
+        },
+        "ceased": true,
+        "kind": "corporate-entity-person-with-significant-control",
+        "address": {
+          "address_line_1": "Tea Building",
+          "address_line_2": "56 Shoreditch High Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6JJ",
+          "premises": "6th Floor"
+        },
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ]
+      },
+      {
+        "etag": "897538ee0f6da8ced2d7c2af889e8c24ee4937a8",
+        "notified_on": "2021-06-22",
+        "name": "Wise Financial Holdings Ltd",
+        "links": {
+          "self": "/company/07209813/persons-with-significant-control/corporate-entity/U_tWTF0i8LPgU_p1NbkZxOfqtcY",
+          "persons_with_significant_control": {
+            "notifications": "/persons-with-significant-control/bRQu4OxY6bRJgua7sgN5lFgUweM/notifications"
+          }
+        },
+        "identification": {
+          "legal_form": "Limited By Shares",
+          "legal_authority": "United Kingdom (England)",
+          "country_registered": "England",
+          "place_registered": "Companies House",
+          "registration_number": "13214905"
+        },
+        "ceased": false,
+        "kind": "corporate-entity-person-with-significant-control",
+        "address": {
+          "address_line_1": "Worship Square",
+          "address_line_2": "65 Clifton Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC2A 4JE",
+          "premises": "1st Floor"
+        },
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent",
+          "right-to-appoint-and-remove-directors"
+        ]
+      },
+      {
+        "etag": "fd9d0cb1225f1aa08f380352b108ed4a0d57bb2e",
+        "notified_on": "2018-01-11",
+        "ceased_on": "2021-06-22",
+        "country_of_residence": "United States",
+        "date_of_birth": {
+          "month": 6,
+          "year": 1981
+        },
+        "name": "Mr Alastair Michael Rampell",
+        "name_elements": {
+          "title": "Mr",
+          "surname": "Rampell",
+          "forename": "Alastair",
+          "middle_name": "Michael"
+        },
+        "links": {
+          "self": "/company/07209813/persons-with-significant-control/individual/bLK6-oVVtUpFYVMbw3JhixckhUE",
+          "persons_with_significant_control": {
+            "notifications": "/persons-with-significant-control/47k-UNnRZpdbLVXgL0xXYmln9LY/notifications"
+          }
+        },
+        "nationality": "American",
+        "ceased": true,
+        "kind": "individual-person-with-significant-control",
+        "address": {
+          "address_line_1": "56 Shoreditch High Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "E1 6JJ",
+          "premises": "6th Floor, Tea Building"
+        },
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ]
+      },
+      {
+        "etag": "acaba3060a73683ee77c1fc022dc029b13d2a447",
+        "notified_on": "2016-04-06",
+        "ceased_on": "2021-06-22",
+        "country_of_residence": "United States",
+        "date_of_birth": {
+          "month": 12,
+          "year": 1965
+        },
+        "name": "Roger Ehrenberg",
+        "name_elements": {
+          "surname": "Ehrenberg",
+          "forename": "Roger"
+        },
+        "links": {
+          "self": "/company/07209813/persons-with-significant-control/individual/k-uh0wlHFYYTUSUqTrwaOZObd-8",
+          "persons_with_significant_control": {
+            "notifications": "/persons-with-significant-control/HHcIV6jQ4yY2B5bF2F15ctTMzlI/notifications"
+          }
+        },
+        "nationality": "American",
+        "ceased": true,
+        "kind": "individual-person-with-significant-control",
+        "address": {
+          "address_line_1": "56 Shoreditch High Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6JJ",
+          "premises": "6th Floor, Tea Building",
+          "region": "England"
+        },
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ]
+      },
+      {
+        "etag": "94e3646994063eba558bc60c35e46934304ecfc3",
+        "notified_on": "2016-04-06",
+        "ceased_on": "2021-06-22",
+        "country_of_residence": "United Kingdom",
+        "date_of_birth": {
+          "month": 6,
+          "year": 1981
+        },
+        "name": "Taavet Hinrikus",
+        "name_elements": {
+          "surname": "Hinrikus",
+          "forename": "Taavet"
+        },
+        "links": {
+          "self": "/company/07209813/persons-with-significant-control/individual/AuW0k-Uq7Mtt38J1wzO-HTqREio",
+          "persons_with_significant_control": {
+            "notifications": "/persons-with-significant-control/490H64vlwwltWe8mdfoXm3SNKTs/notifications"
+          }
+        },
+        "nationality": "Estonian",
+        "ceased": true,
+        "kind": "individual-person-with-significant-control",
+        "address": {
+          "address_line_1": "56 Shoreditch High Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6JJ",
+          "premises": "6th Floor, Tea Building",
+          "region": "England"
+        },
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ]
+      },
+      {
+        "etag": "691fe9fb224cef8727f2942a14c43457cb97754d",
+        "notified_on": "2016-04-06",
+        "ceased_on": "2021-06-22",
+        "country_of_residence": "United Kingdom",
+        "date_of_birth": {
+          "month": 8,
+          "year": 1980
+        },
+        "name": "Kristo Kaarmann",
+        "name_elements": {
+          "surname": "Kaarmann",
+          "forename": "Kristo"
+        },
+        "links": {
+          "self": "/company/07209813/persons-with-significant-control/individual/TZAz6ov93ebKYAM9ZQbqN7Xx2q8",
+          "persons_with_significant_control": {
+            "notifications": "/persons-with-significant-control/tLIPhR4e5NgbpbMl5VyL-suLn5I/notifications"
+          }
+        },
+        "nationality": "Estonian",
+        "ceased": true,
+        "kind": "individual-person-with-significant-control",
+        "address": {
+          "address_line_1": "56 Shoreditch High Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6JJ",
+          "premises": "6th Floor, Tea Building",
+          "region": "England"
+        },
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ]
+      },
+      {
+        "etag": "619f8138beee3b4c84e8e2799bab568a79ccd337",
+        "notified_on": "2016-04-06",
+        "ceased_on": "2018-01-11",
+        "country_of_residence": "Usa",
+        "date_of_birth": {
+          "month": 6,
+          "year": 1966
+        },
+        "name": "Benjamin Abraham Horowitz",
+        "name_elements": {
+          "surname": "Horowitz",
+          "forename": "Benjamin",
+          "middle_name": "Abraham"
+        },
+        "links": {
+          "self": "/company/07209813/persons-with-significant-control/individual/KJQrOQsQhgMVzmhXGyMGINukzmE",
+          "persons_with_significant_control": {
+            "notifications": "/persons-with-significant-control/pE1EJwHkkcwri_fya_mbUDjEyEA/notifications"
+          }
+        },
+        "nationality": "American",
+        "ceased": true,
+        "kind": "individual-person-with-significant-control",
+        "address": {
+          "address_line_1": "56 Shoreditch High Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "E1 6JJ",
+          "premises": "6th Floor, Tea Building"
+        },
+        "natures_of_control": [
+          "significant-influence-or-control"
+        ]
+      }
+    ],
+    "start_index": 0,
+    "total_results": 7,
+    "active_count": 1,
+    "ceased_count": 6,
+    "links": {
+      "self": "/company/07209813/persons-with-significant-control"
+    }
+  }
+}

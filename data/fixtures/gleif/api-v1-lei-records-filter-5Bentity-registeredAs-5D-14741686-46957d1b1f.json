@@ -1,0 +1,155 @@
+{
+  "url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=14741686",
+  "status": 200,
+  "content_type": "application/vnd.api+json",
+  "recorded_at": "2026-11-25T07:09:33.362053Z",
+  "synthetic": false,
+  "body": {
+    "meta": {
+      "goldenCopy": {
+        "publishDate": "2026-11-25T00:00:00Z"
+      },
+      "pagination": {
+        "currentPage": 1,
+        "perPage": 15,
+        "from": 1,
+        "to": 1,
+        "total": 1,
+        "lastPage": 1
+      }
+    },
+    "links": {
+      "first": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=14741686&page%5Bnumber%5D=1&page%5Bsize%5D=15",
+      "last": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=14741686&page%5Bnumber%5D=1&page%5Bsize%5D=15"
+    },
+    "data": [
+      {
+        "type": "lei-records",
+        "id": "5493000JZXMYSD1G6W13",
+        "attributes": {
+          "lei": "5493000JZXMYSD1G6W13",
+          "entity": {
+            "legalName": {
+              "name": "PAYPAL UK LTD",
+              "language": "en"
+            },
+            "otherNames": [],
+            "transliteratedOtherNames": [],
+            "legalAddress": {
+              "language": "en",
+              "addressLines": [
+                "5 Fleet Place"
+              ],
+              "addressNumber": null,
+              "addressNumberWithinBuilding": null,
+              "mailRouting": null,
+              "city": "London",
+              "region": null,
+              "country": "GB",
+              "postalCode": "EC4M 7RD"
+            },
+            "headquartersAddress": {
+              "language": "en",
+              "addressLines": [
+                "Whittaker House"
+              ],
+              "addressNumber": null,
+              "addressNumberWithinBuilding": null,
+              "mailRouting": null,
+              "city": "Richmond",
+              "region": null,
+              "country": "GB",
+              "postalCode": "TW9 1EH"
+            },
+            "registeredAt": {
+              "id": "RA000585",
+              "other": null
+            },
+            "registeredAs": "14741686",
+            "jurisdiction": "GB",
+            "category": "GENERAL",
+            "legalForm": {
+              "id": "H0PO",
+              "other": null
+            },
+            "associatedEntity": {
+              "lei": null,
+              "name": null
+            },
+            "status": "ACTIVE",
+            "expiration": {
+              "date": null,
+              "reason": null
+            },
+            "successorEntity": {
+              "lei": null,
+              "name": null
+            },
+            "successorEntities": [],
+            "creationDate": "2023-03-20T12:00:00Z",
+            "subCategory": null,
+            "otherAddresses": [],
+            "eventGroups": []
+          },
+          "registration": {
+            "initialRegistrationDate": "2023-06-14T10:12:12Z",
+            "lastUpdateDate": "2026-03-23T09:19:24Z",
+            "status": "ISSUED",
+            "nextRenewalDate": "2027-04-14T10:12:12Z",
+            "managingLou": "5493001KJTIIGC8Y1R12",
+            "corroborationLevel": "FULLY_CORROBORATED",
+            "validatedAt": {
+              "id": "RA000585",
+              "other": null
+            },
+            "validatedAs": "14741686",
+            "otherValidationAuthorities": []
+          },
+          "bic": [
+            "PYPTGB22XXX"
+          ],
+          "mic": null,
+          "ocid": "gb/14741686",
+          "qcc": "QGB1VHW16M",
+          "gem": null,
+          "spglobal": [
+            "1843340724"
+          ],
+          "conformityFlag": "CONFORMING"
+        },
+        "relationships": {
+          "managing-lou": {
+            "links": {
+              "related": "https://api.gleif.org/api/v1/lei-records/5493000JZXMYSD1G6W13/managing-lou"
+            }
+          },
+          "lei-issuer": {
+            "links": {
+              "related": "https://api.gleif.org/api/v1/lei-records/5493000JZXMYSD1G6W13/lei-issuer"
+            }
+          },
+          "field-modifications": {
+            "links": {
+              "related": "https://api.gleif.org/api/v1/lei-records/5493000JZXMYSD1G6W13/field-modifications"
+            }
+          },
+          "direct-parent": {
+            "links": {
+              "relationship-record": "https://api.gleif.org/api/v1/lei-records/5493000JZXMYSD1G6W13/direct-parent-relationship",
+              "lei-record": "https://api.gleif.org/api/v1/lei-records/5493000JZXMYSD1G6W13/direct-parent"
+            }
+          },
+          "ultimate-parent": {
+            "links": {
+              "relationship-record": "https://api.gleif.org/api/v1/lei-records/5493000JZXMYSD1G6W13/ultimate-parent-relationship",
+              "lei-record": "https://api.gleif.org/api/v1/lei-records/5493000JZXMYSD1G6W13/ultimate-parent"
+            }
+          }
+        },
+        "links": {
+          "self": "https://api.gleif.org/api/v1/lei-records/5493000JZXMYSD1G6W13"
+        }
+      }
+    ]
+  }
+}

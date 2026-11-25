@@ -1,0 +1,206 @@
+{
+  "url": "https://api.company-information.service.gov.uk/officers/u5XGb6TKtrfTvcR930DxxEGUjx4/appointments?items_per_page=50",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:17.750579Z",
+  "synthetic": false,
+  "body": {
+    "active_count": 1,
+    "date_of_birth": {
+      "month": 9,
+      "year": 1956
+    },
+    "etag": "3b399b855221cdad077925e86f4846a3668a7cec",
+    "inactive_count": 3,
+    "is_corporate_officer": false,
+    "items": [
+      {
+        "address": {
+          "address_line_1": "20 Primrose Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC2A 2EW",
+          "premises": "Level 27, The Broadgate Tower"
+        },
+        "appointed_on": "2020-02-28",
+        "appointed_to": {
+          "company_name": "CLEARBANK LIMITED",
+          "company_number": "09736376",
+          "company_status": "active"
+        },
+        "name": "Catherine Martina DORAN",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/09736376"
+        },
+        "name_elements": {
+          "forename": "Catherine",
+          "title": "Ms",
+          "other_forenames": "Martina",
+          "surname": "DORAN"
+        },
+        "nationality": "Irish",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-09-20"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "High Road",
+          "country": "United Kingdom",
+          "locality": "Buckhurst Hill",
+          "postal_code": "IG9 5RW",
+          "premises": "64",
+          "region": "Essex"
+        },
+        "appointed_on": "2018-05-10",
+        "appointed_to": {
+          "company_name": "CATHERINE DORAN & ASSOCIATES LTD",
+          "company_number": "11353367",
+          "company_status": "dissolved"
+        },
+        "name": "Catherine Martina DORAN",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/11353367"
+        },
+        "name_elements": {
+          "forename": "Catherine",
+          "title": "Ms",
+          "other_forenames": "Martina",
+          "surname": "DORAN"
+        },
+        "nationality": "Irish",
+        "officer_role": "director"
+      },
+      {
+        "address": {
+          "address_line_1": "64 High Road",
+          "locality": "Buckhurst Hill",
+          "postal_code": "IG9 5RW",
+          "region": "Essex"
+        },
+        "appointed_before": "1991-06-30",
+        "appointed_to": {
+          "company_name": "X.A. SYSTEMS AND SOFTWARE LIMITED",
+          "company_number": "01835537",
+          "company_status": "dissolved"
+        },
+        "name": "Catherine Martina DORAN",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": true,
+        "links": {
+          "company": "/company/01835537"
+        },
+        "name_elements": {
+          "forename": "Catherine",
+          "title": "Ms",
+          "other_forenames": "Martina",
+          "surname": "DORAN"
+        },
+        "nationality": "Irish",
+        "officer_role": "director"
+      },
+      {
+        "address": {
+          "address_line_1": "64 High Road",
+          "locality": "Buckhurst Hill",
+          "postal_code": "IG9 5RW",
+          "region": "Essex"
+        },
+        "appointed_before": "1991-06-30",
+        "appointed_to": {
+          "company_name": "X.A. SYSTEMS AND SOFTWARE LIMITED",
+          "company_number": "01835537",
+          "company_status": "dissolved"
+        },
+        "name": "Catherine Martina DORAN",
+        "is_pre_1992_appointment": true,
+        "links": {
+          "company": "/company/01835537"
+        },
+        "name_elements": {
+          "forename": "Catherine",
+          "title": "Ms",
+          "other_forenames": "Martina",
+          "surname": "DORAN"
+        },
+        "nationality": "Irish",
+        "officer_role": "secretary"
+      },
+      {
+        "address": {
+          "address_line_1": "High Road",
+          "country": "England",
+          "locality": "Buckhurst Hill",
+          "postal_code": "IG9 5RW",
+          "premises": "54",
+          "region": "Essex"
+        },
+        "appointed_on": "2011-03-22",
+        "appointed_to": {
+          "company_name": "THE BRITISH QUALITY FOUNDATION",
+          "company_number": "02770257",
+          "company_status": "active"
+        },
+        "name": "Catherine Martina DORAN",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/02770257"
+        },
+        "name_elements": {
+          "forename": "Catherine",
+          "title": "Ms",
+          "other_forenames": "Martina",
+          "surname": "DORAN"
+        },
+        "nationality": "Irish",
+        "officer_role": "director",
+        "resigned_on": "2016-09-12"
+      },
+      {
+        "address": {
+          "address_line_1": "64 High Road",
+          "locality": "Buckhurst Hill",
+          "postal_code": "IG9 5RW",
+          "region": "Essex"
+        },
+        "appointed_on": "2000-02-01",
+        "appointed_to": {
+          "company_name": "NATWEST PENSION TRUSTEE LIMITED",
+          "company_number": "02726164",
+          "company_status": "active"
+        },
+        "name": "Catherine Martina DORAN",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/02726164"
+        },
+        "name_elements": {
+          "forename": "Catherine",
+          "title": "Ms",
+          "other_forenames": "Martina",
+          "surname": "DORAN"
+        },
+        "nationality": "Irish",
+        "officer_role": "director",
+        "resigned_on": "2000-05-04"
+      }
+    ],
+    "items_per_page": 50,
+    "kind": "personal-appointment",
+    "links": {
+      "self": "/officers/u5XGb6TKtrfTvcR930DxxEGUjx4/appointments"
+    },
+    "name": "Catherine Martina DORAN",
+    "resigned_count": 2,
+    "start_index": 0,
+    "total_results": 6
+  }
+}

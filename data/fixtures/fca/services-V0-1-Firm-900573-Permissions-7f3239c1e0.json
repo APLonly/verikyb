@@ -1,0 +1,88 @@
+{
+  "url": "https://register.fca.org.uk/services/V0.1/Firm/900573/Permissions",
+  "status": 200,
+  "content_type": "application/json;charset=UTF-8",
+  "recorded_at": "2026-11-25T07:10:48.469961Z",
+  "synthetic": false,
+  "body": {
+    "Status": "FSR-API-02-03-00",
+    "ResultInfo": {
+      "page": "1",
+      "per_page": "20",
+      "total_count": "10"
+    },
+    "Message": "Ok. Firm permission found",
+    "Data": {
+      "j) Account information services": [
+        {
+          "Limitation Not Found": [
+            "Valid limitation not present"
+          ]
+        }
+      ],
+      "i) Payment initiation services": [
+        {
+          "Limitation Not Found": [
+            "Valid limitation not present"
+          ]
+        }
+      ],
+      "h) Issuing Electronic Money": [
+        {
+          "Limitation Not Found": [
+            "Valid limitation not present"
+          ]
+        }
+      ],
+      "g) Execution of payment transactions via telecoms, IT system or network operator": [
+        {
+          "Limitation Not Found": [
+            "Valid limitation not present"
+          ]
+        }
+      ],
+      "f) Money remittance": [
+        {
+          "Limitation Not Found": [
+            "Valid limitation not present"
+          ]
+        }
+      ],
+      "e) Issuing payment instruments or acquiring payment transactions": [
+        {
+          "Limitation Not Found": [
+            "Valid limitation not present"
+          ]
+        }
+      ],
+      "d) Execution of payment transactions (covered by a credit line)": [
+        {
+          "Limitation Not Found": [
+            "Valid limitation not present"
+          ]
+        }
+      ],
+      "c) Execution of payment transactions (not covered by a credit line)": [
+        {
+          "Limitation Not Found": [
+            "Valid limitation not present"
+          ]
+        }
+      ],
+      "b) Services enabling cash withdrawals from a payment account": [
+        {
+          "Limitation Not Found": [
+            "Valid limitation not present"
+          ]
+        }
+      ],
+      "a) Services enabling cash placement on a payment account": [
+        {
+          "Limitation Not Found": [
+            "Valid limitation not present"
+          ]
+        }
+      ]
+    }
+  }
+}

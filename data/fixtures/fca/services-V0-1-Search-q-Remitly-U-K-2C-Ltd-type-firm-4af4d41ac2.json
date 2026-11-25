@@ -1,0 +1,32 @@
+{
+  "url": "https://register.fca.org.uk/services/V0.1/Search?q=Remitly+U.K.%2C+Ltd&type=firm",
+  "status": 200,
+  "content_type": "application/json;charset=UTF-8",
+  "recorded_at": "2026-11-25T07:09:48.002485Z",
+  "synthetic": false,
+  "body": {
+    "Status": "FSR-API-04-01-00",
+    "ResultInfo": {
+      "page": "1",
+      "per_page": "20",
+      "total_count": "2"
+    },
+    "Message": "Ok. Search successful",
+    "Data": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1047222",
+        "Status": "Registered",
+        "Reference Number": "1047222",
+        "Type of business or Individual": "Firm",
+        "Name": "REMITLY U.K., LTD (Postcode: W1T 4EZ)"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/728639",
+        "Status": "Cancelled",
+        "Reference Number": "728639",
+        "Type of business or Individual": "Payment services firm",
+        "Name": "REMITLY U.K., LTD (Postcode: W1T 4EZ)"
+      }
+    ]
+  }
+}

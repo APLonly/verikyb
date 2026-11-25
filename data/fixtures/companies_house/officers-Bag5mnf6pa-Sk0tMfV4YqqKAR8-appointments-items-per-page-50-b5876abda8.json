@@ -1,0 +1,60 @@
+{
+  "url": "https://api.company-information.service.gov.uk/officers/Bag5mnf6pa_-Sk0tMfV4YqqKAR8/appointments?items_per_page=50",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:19.955897Z",
+  "synthetic": false,
+  "body": {
+    "active_count": 1,
+    "date_of_birth": {
+      "month": 10,
+      "year": 1980
+    },
+    "etag": "61b1820217395111c45e2f03e0dd9d702f547983",
+    "inactive_count": 0,
+    "is_corporate_officer": false,
+    "items": [
+      {
+        "address": {
+          "address_line_1": "20 Primrose Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC2A 2EW",
+          "premises": "Level 27, The Broadgate Tower"
+        },
+        "appointed_on": "2024-09-25",
+        "appointed_to": {
+          "company_name": "CLEARBANK LIMITED",
+          "company_number": "09736376",
+          "company_status": "active"
+        },
+        "name": "Valerie ROMANOVSKAYA",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/09736376"
+        },
+        "name_elements": {
+          "forename": "Valerie",
+          "title": "Ms",
+          "surname": "ROMANOVSKAYA"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-09-20"
+        }
+      }
+    ],
+    "items_per_page": 50,
+    "kind": "personal-appointment",
+    "links": {
+      "self": "/officers/Bag5mnf6pa_-Sk0tMfV4YqqKAR8/appointments"
+    },
+    "name": "Valerie ROMANOVSKAYA",
+    "resigned_count": 0,
+    "start_index": 0,
+    "total_results": 1
+  }
+}

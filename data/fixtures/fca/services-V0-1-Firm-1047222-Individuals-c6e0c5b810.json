@@ -1,0 +1,13 @@
+{
+  "url": "https://register.fca.org.uk/services/V0.1/Firm/1047222/Individuals",
+  "status": 200,
+  "content_type": "application/json;charset=UTF-8",
+  "recorded_at": "2026-11-25T07:09:48.389822Z",
+  "synthetic": false,
+  "body": {
+    "Status": "FSR-API-02-05-11",
+    "ResultInfo": null,
+    "Message": "Individual not found",
+    "Data": null
+  }
+}

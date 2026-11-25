@@ -1,0 +1,50 @@
+{
+  "url": "https://api.company-information.service.gov.uk/officers/T1ndKOSF2yI098eFo4IeVKRfAM4/appointments?items_per_page=50",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:07.494972Z",
+  "synthetic": false,
+  "body": {
+    "active_count": 1,
+    "etag": "52e989e7ca875f76a4f8ab0e51422b57cc120ce2",
+    "inactive_count": 0,
+    "is_corporate_officer": false,
+    "items": [
+      {
+        "address": {
+          "address_line_1": "Worship Square",
+          "address_line_2": "65 Clifton Street",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC2A 4JE",
+          "premises": "1st Floor"
+        },
+        "appointed_on": "2026-10-23",
+        "appointed_to": {
+          "company_name": "WISE PAYMENTS LIMITED",
+          "company_number": "07209813",
+          "company_status": "active"
+        },
+        "name": "Nameeta PAI",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/07209813"
+        },
+        "name_elements": {
+          "forename": "Nameeta",
+          "surname": "PAI"
+        },
+        "officer_role": "secretary"
+      }
+    ],
+    "items_per_page": 50,
+    "kind": "personal-appointment",
+    "links": {
+      "self": "/officers/T1ndKOSF2yI098eFo4IeVKRfAM4/appointments"
+    },
+    "name": "Nameeta PAI",
+    "resigned_count": 0,
+    "start_index": 0,
+    "total_results": 1
+  }
+}

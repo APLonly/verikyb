@@ -1,0 +1,139 @@
+{
+  "url": "https://api.company-information.service.gov.uk/officers/KVIpfpj1dpH_QAYTxN2Fduz03BM/appointments?items_per_page=50",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:09:53.075604Z",
+  "synthetic": false,
+  "body": {
+    "active_count": 2,
+    "date_of_birth": {
+      "month": 2,
+      "year": 1970
+    },
+    "etag": "29502db5d2fa7a6c4edb9e9a96cb37e5b5e0a425",
+    "inactive_count": 0,
+    "is_corporate_officer": false,
+    "items": [
+      {
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2026-07-01",
+        "appointed_to": {
+          "company_name": "STARLING GROUP HOLDINGS PLC",
+          "company_number": "13871603",
+          "company_status": "active"
+        },
+        "name": "Daniel Toby OLLEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/13871603"
+        },
+        "name_elements": {
+          "forename": "Daniel",
+          "title": "Mr",
+          "other_forenames": "Toby",
+          "surname": "OLLEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "anti_money_laundering_supervisory_bodies": [
+            "HMRC"
+          ],
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-07-14",
+          "authorised_corporate_service_provider_name": "TURNER LITTLE LIMITED ACSP",
+          "identity_verified_on": "2026-03-23",
+          "preferred_name": "Dan Olley"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "London Fruit And Wool Exchange",
+          "address_line_2": "1 Duval Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E1 6PW",
+          "premises": "5th Floor"
+        },
+        "appointed_on": "2026-07-01",
+        "appointed_to": {
+          "company_name": "STARLING BANK LIMITED",
+          "company_number": "09092149",
+          "company_status": "active"
+        },
+        "name": "Daniel Toby OLLEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/09092149"
+        },
+        "name_elements": {
+          "forename": "Daniel",
+          "title": "Mr",
+          "other_forenames": "Toby",
+          "surname": "OLLEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "anti_money_laundering_supervisory_bodies": [
+            "HMRC"
+          ],
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-07-14",
+          "authorised_corporate_service_provider_name": "TURNER LITTLE LIMITED ACSP",
+          "identity_verified_on": "2026-03-23",
+          "preferred_name": "Dan Olley"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "One College Square South",
+          "address_line_2": "Anchor Road",
+          "country": "England",
+          "locality": "Bristol",
+          "postal_code": "BS1 5HL",
+          "premises": "Hargreaves Lansdown"
+        },
+        "appointed_on": "2025-03-24",
+        "appointed_to": {
+          "company_name": "HARGREAVES LANSDOWN GROUP LIMITED",
+          "company_number": "15812199",
+          "company_status": "active"
+        },
+        "name": "Daniel Toby OLLEY",
+        "country_of_residence": "United Kingdom",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/15812199"
+        },
+        "name_elements": {
+          "forename": "Daniel",
+          "title": "Mr",
+          "other_forenames": "Toby",
+          "surname": "OLLEY"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2025-08-01"
+      }
+    ],
+    "items_per_page": 50,
+    "kind": "personal-appointment",
+    "links": {
+      "self": "/officers/KVIpfpj1dpH_QAYTxN2Fduz03BM/appointments"
+    },
+    "name": "Daniel Toby OLLEY",
+    "resigned_count": 1,
+    "start_index": 0,
+    "total_results": 3
+  }
+}

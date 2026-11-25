@@ -63,3 +63,16 @@ def test_every_demo_company_has_its_expected_outcome() -> None:
     assert sorted(c["name"] for c in truth["companies"]) == sorted(customers)
     assert all(c["scenario"] and c["expected"] for c in truth["companies"])
     assert all(document["fields"] for document in truth["documents"])
+
+
+@pytest.mark.anyio
+async def test_a_shared_director_shows_in_the_appointments(registry: CompaniesHouseClient) -> None:
+    """Ardent Freight's director also runs Tarnov Shipping, the sanctioned company."""
+    officers = await registry.officers("99000103")
+    director = next(officer for officer in officers if "VONDREL" in officer.name.upper())
+
+    assert director.officer_id is not None
+    appointments = await registry.officer_appointments(director.officer_id)
+    assert {a.company_number for a in appointments} == {"99000103", "99000203"}
+    assert await registry.outstanding_charges("99000103") == 0
+    assert await registry.insolvency_cases("99000103") == []  # Companies House answers 404

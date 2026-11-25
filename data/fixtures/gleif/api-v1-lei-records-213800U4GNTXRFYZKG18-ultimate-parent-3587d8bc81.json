@@ -1,0 +1,16 @@
+{
+  "url": "https://api.gleif.org/api/v1/lei-records/213800U4GNTXRFYZKG18/ultimate-parent",
+  "status": 404,
+  "content_type": "application/vnd.api+json",
+  "recorded_at": "2026-11-25T07:10:05.459012Z",
+  "synthetic": false,
+  "body": {
+    "errors": [
+      {
+        "status": "404",
+        "title": "Resource not found",
+        "detail": "Related resource not found"
+      }
+    ]
+  }
+}

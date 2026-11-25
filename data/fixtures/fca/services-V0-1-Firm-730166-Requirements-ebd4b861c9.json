@@ -1,0 +1,30 @@
+{
+  "url": "https://register.fca.org.uk/services/V0.1/Firm/730166/Requirements",
+  "status": 200,
+  "content_type": "application/json;charset=UTF-8",
+  "recorded_at": "2026-11-25T07:10:02.433254Z",
+  "synthetic": false,
+  "body": {
+    "Status": "FSR-API-02-06-00",
+    "ResultInfo": {
+      "page": "1",
+      "per_page": "2",
+      "total_count": "2"
+    },
+    "Message": "Ok. Firm Requirements found",
+    "Data": [
+      {
+        "Effective Date": "24/11/2017",
+        "No CBTL business unless registered": "The firm must not carry on any activity that would constitute consumer buy-to-let mortgage business as defined in Part 3 of the Mortgage Credit Directive Order 2015 (SI 910/2015) unless registered as a consumer buy-to-let mortgage firm",
+        "Requirement Reference": "OR-0200953",
+        "Financial Promotions Requirement": "FALSE"
+      },
+      {
+        "Effective Date": "06/11/2023",
+        "Financial Promotions for own firm, ARs and other members of the group": "This firm can approve its own financial promotions as well as those of members of its wider group and, in certain circumstances, those of its appointed representatives.",
+        "Requirement Reference": "OR-0235052",
+        "Financial Promotions Requirement": "TRUE"
+      }
+    ]
+  }
+}

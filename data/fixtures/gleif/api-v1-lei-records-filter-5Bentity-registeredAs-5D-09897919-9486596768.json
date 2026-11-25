@@ -1,0 +1,160 @@
+{
+  "url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=09897919",
+  "status": 200,
+  "content_type": "application/vnd.api+json",
+  "recorded_at": "2026-11-25T07:10:32.837899Z",
+  "synthetic": false,
+  "body": {
+    "meta": {
+      "goldenCopy": {
+        "publishDate": "2026-11-25T00:00:00Z"
+      },
+      "pagination": {
+        "currentPage": 1,
+        "perPage": 15,
+        "from": 1,
+        "to": 1,
+        "total": 1,
+        "lastPage": 1
+      }
+    },
+    "links": {
+      "first": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=09897919&page%5Bnumber%5D=1&page%5Bsize%5D=15",
+      "last": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=09897919&page%5Bnumber%5D=1&page%5Bsize%5D=15"
+    },
+    "data": [
+      {
+        "type": "lei-records",
+        "id": "984500BFFA6CBFA57C93",
+        "attributes": {
+          "lei": "984500BFFA6CBFA57C93",
+          "entity": {
+            "legalName": {
+              "name": "MODULR FS LIMITED",
+              "language": "en"
+            },
+            "otherNames": [],
+            "transliteratedOtherNames": [],
+            "legalAddress": {
+              "language": "en",
+              "addressLines": [
+                "Scale Space",
+                "58 Wood Lane"
+              ],
+              "addressNumber": null,
+              "addressNumberWithinBuilding": null,
+              "mailRouting": null,
+              "city": "London",
+              "region": "GB-LND",
+              "country": "GB",
+              "postalCode": "W12 7RZ"
+            },
+            "headquartersAddress": {
+              "language": "en",
+              "addressLines": [
+                "Scale Space",
+                "58 Wood Lane"
+              ],
+              "addressNumber": null,
+              "addressNumberWithinBuilding": null,
+              "mailRouting": null,
+              "city": "London",
+              "region": "GB-LND",
+              "country": "GB",
+              "postalCode": "W12 7RZ"
+            },
+            "registeredAt": {
+              "id": "RA000585",
+              "other": null
+            },
+            "registeredAs": "09897919",
+            "jurisdiction": "GB",
+            "category": "GENERAL",
+            "legalForm": {
+              "id": "H0PO",
+              "other": null
+            },
+            "associatedEntity": {
+              "lei": null,
+              "name": null
+            },
+            "status": "ACTIVE",
+            "expiration": {
+              "date": null,
+              "reason": null
+            },
+            "successorEntity": {
+              "lei": null,
+              "name": null
+            },
+            "successorEntities": [],
+            "creationDate": "2015-12-02T00:00:00Z",
+            "subCategory": null,
+            "otherAddresses": [],
+            "eventGroups": []
+          },
+          "registration": {
+            "initialRegistrationDate": "2022-04-25T16:34:36Z",
+            "lastUpdateDate": "2026-02-27T15:04:29Z",
+            "status": "ISSUED",
+            "nextRenewalDate": "2027-03-08T14:17:22Z",
+            "managingLou": "529900T8BM49AURSDO55",
+            "corroborationLevel": "FULLY_CORROBORATED",
+            "validatedAt": {
+              "id": "RA000585",
+              "other": null
+            },
+            "validatedAs": "09897919",
+            "otherValidationAuthorities": []
+          },
+          "bic": [
+            "MODRGB21XXX",
+            "MODRGB23XXX",
+            "MODRGB2LXXX",
+            "MODRGB3LXXX"
+          ],
+          "mic": null,
+          "ocid": "gb/09897919",
+          "qcc": "QGB11Y4N6X",
+          "gem": null,
+          "spglobal": [
+            "637562889"
+          ],
+          "conformityFlag": "CONFORMING"
+        },
+        "relationships": {
+          "managing-lou": {
+            "links": {
+              "related": "https://api.gleif.org/api/v1/lei-records/984500BFFA6CBFA57C93/managing-lou"
+            }
+          },
+          "lei-issuer": {
+            "links": {
+              "related": "https://api.gleif.org/api/v1/lei-records/984500BFFA6CBFA57C93/lei-issuer"
+            }
+          },
+          "field-modifications": {
+            "links": {
+              "related": "https://api.gleif.org/api/v1/lei-records/984500BFFA6CBFA57C93/field-modifications"
+            }
+          },
+          "direct-parent": {
+            "links": {
+              "relationship-record": "https://api.gleif.org/api/v1/lei-records/984500BFFA6CBFA57C93/direct-parent-relationship",
+              "lei-record": "https://api.gleif.org/api/v1/lei-records/984500BFFA6CBFA57C93/direct-parent"
+            }
+          },
+          "ultimate-parent": {
+            "links": {
+              "relationship-record": "https://api.gleif.org/api/v1/lei-records/984500BFFA6CBFA57C93/ultimate-parent-relationship",
+              "lei-record": "https://api.gleif.org/api/v1/lei-records/984500BFFA6CBFA57C93/ultimate-parent"
+            }
+          }
+        },
+        "links": {
+          "self": "https://api.gleif.org/api/v1/lei-records/984500BFFA6CBFA57C93"
+        }
+      }
+    ]
+  }
+}

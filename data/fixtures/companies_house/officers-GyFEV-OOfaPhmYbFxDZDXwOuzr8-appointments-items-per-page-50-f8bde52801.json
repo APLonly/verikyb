@@ -1,0 +1,60 @@
+{
+  "url": "https://api.company-information.service.gov.uk/officers/GyFEV-OOfaPhmYbFxDZDXwOuzr8/appointments?items_per_page=50",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:08.396718Z",
+  "synthetic": false,
+  "body": {
+    "active_count": 1,
+    "date_of_birth": {
+      "month": 12,
+      "year": 1989
+    },
+    "etag": "10a89b3b6c10a53d8215e2dc5a38fe7eb314ae1e",
+    "inactive_count": 0,
+    "is_corporate_officer": false,
+    "items": [
+      {
+        "address": {
+          "address_line_1": "Worship Square",
+          "address_line_2": "65 Clifton Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC2A 4JE",
+          "premises": "1st Floor"
+        },
+        "appointed_on": "2023-06-16",
+        "appointed_to": {
+          "company_name": "WISE PAYMENTS LIMITED",
+          "company_number": "07209813",
+          "company_status": "active"
+        },
+        "name": "Lars TRUNIN",
+        "country_of_residence": "Estonia",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/07209813"
+        },
+        "name_elements": {
+          "forename": "Lars",
+          "surname": "TRUNIN"
+        },
+        "nationality": "Estonian",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-04-02"
+        }
+      }
+    ],
+    "items_per_page": 50,
+    "kind": "personal-appointment",
+    "links": {
+      "self": "/officers/GyFEV-OOfaPhmYbFxDZDXwOuzr8/appointments"
+    },
+    "name": "Lars TRUNIN",
+    "resigned_count": 0,
+    "start_index": 0,
+    "total_results": 1
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "url": "https://register.fca.org.uk/services/V0.1/Firm/1047222/Requirements",
+  "status": 200,
+  "content_type": "application/json;charset=UTF-8",
+  "recorded_at": "2026-11-25T07:09:48.613983Z",
+  "synthetic": false,
+  "body": {
+    "Status": "FSR-API-02-06-00",
+    "ResultInfo": {
+      "page": "1",
+      "per_page": "2",
+      "total_count": "2"
+    },
+    "Message": "Ok. Firm Requirements found",
+    "Data": [
+      {
+        "Effective Date": "22/06/2026",
+        "The firm will not appoint any agents or distributors": "The firm will not appoint any agents or distributors",
+        "Requirement Reference": "OR-0278825",
+        "Financial Promotions Requirement": "FALSE"
+      },
+      {
+        "Effective Date": "22/06/2026",
+        "The firm will not commence the provision of third-party payment services unless and until the requisite notifications have been made, allowing the FCA to consider the adequacy of the firm’s AML framework.": "The firm will not commence the provision of third-party payment services unless and until the requisite notifications have been made, allowing the FCA to consider the adequacy of the firm’s AML framework.",
+        "Requirement Reference": "OR-0278826",
+        "Financial Promotions Requirement": "FALSE"
+      }
+    ]
+  }
+}

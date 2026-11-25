@@ -1,0 +1,47 @@
+{
+  "url": "https://register.fca.org.uk/services/V0.1/Firm/1047222/Address",
+  "status": 200,
+  "content_type": "application/json;charset=UTF-8",
+  "recorded_at": "2026-11-25T07:09:48.319152Z",
+  "synthetic": false,
+  "body": {
+    "Status": "FSR-API-02-02-00",
+    "ResultInfo": {
+      "page": "1",
+      "per_page": "2",
+      "total_count": "2"
+    },
+    "Message": "Ok. Firm Address Found",
+    "Data": [
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1047222/Address?Type=PPOB",
+        "Website Address": "www.remitly.com",
+        "Phone Number": "+448081692816",
+        "Country": "UNITED KINGDOM",
+        "Postcode": "W1T 4EZ",
+        "County": "",
+        "Town": "LONDON",
+        "Address Line 4": "",
+        "Address LIne 3": "",
+        "Address Line 2": "",
+        "Address Line 1": "90 WHITFIELD STREET",
+        "Address Type": "Principal Place of Business"
+      },
+      {
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/1047222/Address?Type=Complaint",
+        "Website Address": "www.remitly.com",
+        "Phone Number": "+4408081692816",
+        "Country": "UNITED KINGDOM",
+        "Postcode": "W1T 4EZ",
+        "County": "",
+        "Town": "London",
+        "Address Line 4": "",
+        "Address LIne 3": "",
+        "Address Line 2": "90 Whitfield Street",
+        "Address Line 1": "Remitly U.K., Ltd",
+        "Individual": "",
+        "Address Type": "Complaints Contact"
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "url": "https://document-api.company-information.service.gov.uk/document/cn-ep2wT6ufi_fZipflSYIu3P4LRL0pHdVB_ax1yN1Y",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:22.344471Z",
+  "synthetic": false,
+  "body": {
+    "company_number": "09736376",
+    "barcode": "AE150IA8",
+    "significant_date": "2024-12-31T00:00:00Z",
+    "significant_date_type": "made-up-date",
+    "category": "accounts",
+    "pages": 55,
+    "filename": "",
+    "created_at": "2025-04-25T23:11:26.31148527Z",
+    "etag": "",
+    "links": {
+      "self": "https://document-api.company-information.service.gov.uk/document/cn-ep2wT6ufi_fZipflSYIu3P4LRL0pHdVB_ax1yN1Y",
+      "document": "https://document-api.company-information.service.gov.uk/document/cn-ep2wT6ufi_fZipflSYIu3P4LRL0pHdVB_ax1yN1Y/content"
+    },
+    "resources": {
+      "application/pdf": {
+        "content_length": 3222535
+      }
+    }
+  }
+}

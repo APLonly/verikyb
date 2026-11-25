@@ -1,0 +1,319 @@
+{
+  "url": "https://api.company-information.service.gov.uk/officers/LPwu-hYX7J-Y3nikMQsYM76F2NQ/appointments?items_per_page=50",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:10:40.309072Z",
+  "synthetic": false,
+  "body": {
+    "active_count": 5,
+    "date_of_birth": {
+      "month": 3,
+      "year": 1966
+    },
+    "etag": "5656efe6d47a84c1787ebd0dc71a604b68fdb31c",
+    "inactive_count": 0,
+    "is_corporate_officer": false,
+    "items": [
+      {
+        "address": {
+          "address_line_1": "Great Dover Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "SE1 4YB",
+          "premises": "190"
+        },
+        "appointed_on": "2026-11-19",
+        "appointed_to": {
+          "company_name": "LONDON SPORT",
+          "company_number": "08355406",
+          "company_status": "active"
+        },
+        "name": "Caroline Mary Anne RAINBIRD",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/08355406"
+        },
+        "name_elements": {
+          "forename": "Caroline",
+          "title": "Ms",
+          "other_forenames": "Mary Anne",
+          "surname": "RAINBIRD"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-11-23"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "Macrae Road",
+          "address_line_2": "Eden Office Park",
+          "country": "United Kingdom",
+          "locality": "Ham Green",
+          "postal_code": "BS20 0DD",
+          "premises": "66"
+        },
+        "appointed_on": "2025-11-29",
+        "appointed_to": {
+          "company_name": "PARADIGM NORTON HOLDINGS LIMITED",
+          "company_number": "09081062",
+          "company_status": "active"
+        },
+        "name": "Caroline Mary Anne RAINBIRD",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/09081062"
+        },
+        "name_elements": {
+          "forename": "Caroline",
+          "title": "Ms",
+          "other_forenames": "Mary Anne",
+          "surname": "RAINBIRD"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2025-12-12"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "Macrae Road",
+          "address_line_2": "Eden Office Park",
+          "country": "England",
+          "locality": "Ham Green",
+          "postal_code": "BS20 0DD",
+          "premises": "66"
+        },
+        "appointed_on": "2025-11-29",
+        "appointed_to": {
+          "company_name": "PARADIGM NORTON FINANCIAL PLANNING LIMITED",
+          "company_number": "04220937",
+          "company_status": "active"
+        },
+        "name": "Caroline Mary Anne RAINBIRD",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/04220937"
+        },
+        "name_elements": {
+          "forename": "Caroline",
+          "title": "Ms",
+          "other_forenames": "Mary Anne",
+          "surname": "RAINBIRD"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-02-11"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "66 City Road",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "EC1Y 2AL",
+          "premises": "The Featherstone Building"
+        },
+        "appointed_on": "2024-08-27",
+        "appointed_to": {
+          "company_name": "MODULR FS LIMITED",
+          "company_number": "09897919",
+          "company_status": "active"
+        },
+        "name": "Caroline Mary Anne RAINBIRD",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/09897919"
+        },
+        "name_elements": {
+          "forename": "Caroline",
+          "title": "Ms",
+          "other_forenames": "Mary Anne",
+          "surname": "RAINBIRD"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2025-12-15"
+        }
+      },
+      {
+        "address": {
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC2M 4AA",
+          "premises": "250 Bishopsgate"
+        },
+        "appointed_on": "2024-07-02",
+        "appointed_to": {
+          "company_name": "NATWEST PENSION TRUSTEE LIMITED",
+          "company_number": "02726164",
+          "company_status": "active"
+        },
+        "name": "Caroline Mary Anne RAINBIRD",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/02726164"
+        },
+        "name_elements": {
+          "forename": "Caroline",
+          "title": "Ms",
+          "other_forenames": "Mary Anne",
+          "surname": "RAINBIRD"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-07-01"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "Paradigm House, Macrae Road",
+          "address_line_2": "Ham Green",
+          "locality": "Bristol",
+          "postal_code": "BS20 0DD"
+        },
+        "appointed_on": "2025-11-28",
+        "appointed_to": {
+          "company_name": "PARADIGM FINANCIAL PLANNING LIMITED",
+          "company_number": "05355857",
+          "company_status": "active"
+        },
+        "name": "Caroline Mary Anne RAINBIRD",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/05355857"
+        },
+        "name_elements": {
+          "forename": "Caroline",
+          "title": "Ms",
+          "other_forenames": "Mary Anne",
+          "surname": "RAINBIRD"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2026-01-29",
+        "identity_verification_details": {
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2025-12-11"
+        }
+      },
+      {
+        "address": {
+          "address_line_1": "Financial Service Compensation Scheme",
+          "address_line_2": "15 St. Botolph Street",
+          "country": "England",
+          "locality": "London",
+          "postal_code": "EC3A 7QU",
+          "premises": "Beaufort House"
+        },
+        "appointed_on": "2022-05-10",
+        "appointed_to": {
+          "company_name": "FINANCIAL SERVICES SKILLS COMMISSION LIMITED",
+          "company_number": "12590553",
+          "company_status": "active"
+        },
+        "name": "Caroline Mary Anne RAINBIRD",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/12590553"
+        },
+        "name_elements": {
+          "forename": "Caroline",
+          "title": "Ms",
+          "other_forenames": "Mary Anne",
+          "surname": "RAINBIRD"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2023-07-19"
+      },
+      {
+        "address": {
+          "address_line_1": "15 St Botolph Street",
+          "locality": "London",
+          "postal_code": "EC3A 7QU",
+          "premises": "10th Floor Beaufort House"
+        },
+        "appointed_on": "2019-05-13",
+        "appointed_to": {
+          "company_name": "FINANCIAL SERVICES COMPENSATION SCHEME LIMITED",
+          "company_number": "03943048",
+          "company_status": "active"
+        },
+        "name": "Caroline Mary Anne RAINBIRD",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/03943048"
+        },
+        "name_elements": {
+          "forename": "Caroline",
+          "title": "Ms",
+          "other_forenames": "Mary Anne",
+          "surname": "RAINBIRD"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2023-06-05"
+      },
+      {
+        "address": {
+          "address_line_1": "Visitor Centre, Hm Naval Base",
+          "address_line_2": "Victory Gate",
+          "country": "United Kingdom",
+          "locality": "Portsmouth",
+          "postal_code": "PO1 3LJ",
+          "premises": "Portsmouth Historic Dockyard",
+          "region": "Hampshire"
+        },
+        "appointed_on": "2013-04-02",
+        "appointed_to": {
+          "company_name": "PORTSMOUTH HISTORIC DOCKYARD",
+          "company_number": "02790922",
+          "company_status": "dissolved"
+        },
+        "name": "Caroline Mary Anne RAINBIRD",
+        "country_of_residence": "England",
+        "is_pre_1992_appointment": false,
+        "links": {
+          "company": "/company/02790922"
+        },
+        "name_elements": {
+          "forename": "Caroline",
+          "title": "Ms",
+          "other_forenames": "Mary Anne",
+          "surname": "RAINBIRD"
+        },
+        "nationality": "British",
+        "officer_role": "director",
+        "resigned_on": "2014-03-31"
+      }
+    ],
+    "items_per_page": 50,
+    "kind": "personal-appointment",
+    "links": {
+      "self": "/officers/LPwu-hYX7J-Y3nikMQsYM76F2NQ/appointments"
+    },
+    "name": "Caroline Mary Anne RAINBIRD",
+    "resigned_count": 4,
+    "start_index": 0,
+    "total_results": 9
+  }
+}

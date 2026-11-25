@@ -2,7 +2,7 @@
   "url": "https://api.company-information.service.gov.uk/company/09896841/persons-with-significant-control?items_per_page=100&start_index=0",
   "status": 200,
   "content_type": "application/json",
-  "recorded_at": "2026-11-10T06:45:54.169303Z",
+  "recorded_at": "2026-11-25T07:09:44.224317Z",
   "synthetic": false,
   "body": {
     "items_per_page": 100,

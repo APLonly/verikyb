@@ -1,0 +1,15 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/09896841/charges",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-11-25T07:09:44.408490Z",
+  "synthetic": false,
+  "body": {
+    "etag": "9541a9fe328e647d40ea2a490bd9caabf9d833f9",
+    "items": [],
+    "part_satisfied_count": 0,
+    "satisfied_count": 0,
+    "total_count": 0,
+    "unfiltered_count": 0
+  }
+}
