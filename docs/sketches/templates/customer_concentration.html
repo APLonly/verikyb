@@ -1,0 +1,46 @@
+{% extends "_workspace.html" %}
+{% block tab %}
+  {% set concentration = case.concentration %}
+  <section class="card">
+    <h2>Ownership</h2>
+    <p>Largest holder: {{ concentration.largest_holder.name }}, {{ concentration.largest_holder.min_pct }}–{{ concentration.largest_holder.max_pct }}%.</p>
+    <p>Concentration index (HHI): {{ "{:,}".format(concentration.hhi.min) }} to {{ "{:,}".format(concentration.hhi.max) }}:
+      {% if concentration.hhi.min >= 2500 %}highly concentrated{% elif concentration.hhi.max < 2500 %}below the line{% else %}depends on the exact holdings within the bands{% endif %}.</p>
+    <table>
+      <tr><th>Owner</th><th>Holds</th><th>Source</th></tr>
+      {% for holding in concentration.shareholdings %}
+        <tr><td>{{ holding.owner }}</td><td>{{ holding.min_pct }}–{{ holding.max_pct }}%</td>
+          <td>{% for id in holding.evidence_ids %}<span class="chip">{{ id }}</span>{% endfor %}</td></tr>
+      {% endfor %}
+    </table>
+    <p class="muted"><small>HHI: the sum of the squared shares, from 0 to 10,000; each share is a range, so the index is too.</small></p>
+  </section>
+  <section class="card">
+    <h2>Geography</h2>
+    <table>
+      <tr><th>Country</th><th>Parties</th><th>FATF</th><th>Source</th></tr>
+      {% for place in concentration.geography %}
+        <tr><td>{{ place.country }}</td><td>{{ place.parties | join(", ") }}</td>
+          <td>{{ place.fatf | replace("_", " ") if place.fatf else "—" }}</td>
+          <td>{% for id in place.evidence_ids %}<span class="chip">{{ id }}</span>{% endfor %}</td></tr>
+      {% endfor %}
+    </table>
+  </section>
+  <section class="card">
+    <h2>Sector</h2>
+    <ul>{% for sector in concentration.sectors %}<li>{{ sector.code }}: {{ sector.description }} (division {{ sector.division }})</li>{% endfor %}</ul>
+  </section>
+  <section class="card">
+    <h2>Customer and revenue concentration</h2>
+    <p>Not available: filed accounts do not name the company's customers.</p>
+  </section>
+  <section class="card">
+    <h2>Across the portfolio</h2>
+    <ul>
+      {% for row in concentration.portfolio %}
+        <li>{{ row.dimension }}: {{ row.count }} of {{ row.total }} requests ({{ (100 * row.count / row.total) | round | int }}%):
+          {% for request_id in row.requests %}<a href="customer_concentration.html">{{ request_id }}</a>{{ ", " if not loop.last }}{% endfor %}</li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endblock %}

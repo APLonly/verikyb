@@ -1,0 +1,25 @@
+{% extends "_workspace.html" %}
+{% block tab %}
+  <p class="muted">The questions come from <code>config/questionnaire.yaml</code>; the answers are fake.
+    An analyst can edit an answer, with a reason, while the request waits for review.</p>
+  <table>
+    <tr><th>Question</th><th>Answer</th><th>Source</th><th>Confidence</th><th>Status</th></tr>
+    {% for question in questions %}
+      {% set answer = case.answers.get(question.id) %}
+      <tr>
+        <th scope="row">{{ question.text }}<br><small class="muted">{{ question.section }}</small></th>
+        {% if answer %}
+          <td>{{ answer.value or "—" }}{% for id in answer.evidence_ids %}<span class="chip">{{ id }}</span>{% endfor %}
+            <details><summary>Edit</summary>
+              <label>New value <textarea></textarea></label><label>Reason <input></label>
+              <button type="button">Save</button></details></td>
+          <td>{{ answer.source or "" }}</td>
+          <td>{{ "%.2f" | format(answer.confidence) if answer.confidence is not none else "" }}</td>
+          <td><span class="badge">{{ answer.status | replace("_", " ") }}</span></td>
+        {% else %}
+          <td colspan="4" class="muted">No answer yet{% if question.get("customer_input") %}: the customer provides it{% endif %}.</td>
+        {% endif %}
+      </tr>
+    {% endfor %}
+  </table>
+{% endblock %}

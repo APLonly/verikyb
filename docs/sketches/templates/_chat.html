@@ -1,0 +1,12 @@
+{# The chat beside every tab: one thread per request, workspace and tab. Answers cite evidence. #}
+<section>
+  <h2>Ask about this {{ "request" if workspace == "due_diligence" else "customer" }}</h2>
+  <p class="muted"><small>Answers use only this request's evidence, and cite it.</small></p>
+  {% for message in case.chat.messages %}
+    <p><strong>{{ "You" if message.role == "user" else "VeriKYB" }}</strong>
+      <small class="muted">{{ message.created_at }}</small><br>{{ message.content }}
+      {% for id in message.evidence_ids %}<span class="chip">{{ id }}</span>{% endfor %}</p>
+  {% endfor %}
+  {% for question in case.chat.suggested %}<button type="button">{{ question }}</button> {% endfor %}
+  <form><label>Your question <input maxlength="1000"></label> <button type="button">Ask</button></form>
+</section>

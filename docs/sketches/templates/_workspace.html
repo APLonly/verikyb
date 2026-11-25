@@ -1,0 +1,27 @@
+{% extends "_frame.html" %}
+{# One request: its ID and status in the header on every tab, the tab bar, and a side column:
+   the decision panel (due diligence only) and the chat (every tab). #}
+{% set kyb = case.request %}
+{% block header %}
+  <span id="request-status"><strong>{{ kyb.request_id }}</strong>
+    <span class="badge">{{ kyb.status | replace("_", " ") }}</span>
+    {% if kyb.risk_tier %}<span class="badge">{{ kyb.risk_tier }} risk</span>{% endif %}</span>
+{% endblock %}
+{% block content %}
+  <h1>{{ case.customer.legal_name or kyb.customer_name }}</h1>
+  {% if not case.customer.is_synthetic %}
+    <p class="notice">Real firm: automated signals, not findings.</p>
+  {% endif %}
+  <nav class="tabs">
+    {% for name, label in tabs %}
+      <a href="{{ name }}" {% if name == page %}class="active" aria-current="page"{% endif %}>{{ label }}</a>
+    {% endfor %}
+  </nav>
+  <div class="columns">
+    <div>{% block tab %}{% endblock %}</div>
+    <aside>
+      {% if workspace == "due_diligence" %}{% include "_decision_panel.html" %}{% endif %}
+      {% include "_chat.html" %}
+    </aside>
+  </div>
+{% endblock %}

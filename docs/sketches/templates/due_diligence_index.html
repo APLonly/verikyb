@@ -1,0 +1,29 @@
+{% extends "_frame.html" %}
+{% block content %}
+  <h1>Due diligence requests</h1>
+  {% if current_user.persona == "analyst" %}<p><a href="due_diligence_new.html">New request</a></p>{% endif %}
+  <form role="search">
+    <label>Search <input></label>
+    <label>Status <select><option>any</option><option>draft</option><option>agents running</option>
+      <option>ready for review</option><option>submitted</option></select></label>
+    <label>Risk tier <select><option>any</option><option>low</option><option>medium</option><option>high</option></select></label>
+    <label>Assignee <input></label>
+    <button type="button">Filter</button>
+  </form>
+  <table>
+    <tr><th>Request</th><th>Customer</th><th>Jurisdiction</th><th>Status</th><th>Risk</th><th>Assignee</th><th>Created</th></tr>
+    {% for kyb in requests %}
+      <tr>
+        <td><a href="dd_summary.html">{{ kyb.request_id }}</a></td>
+        <td>{{ kyb.customer_name }}{% if kyb.company_number %} <span class="muted">{{ kyb.company_number }}</span>{% endif %}</td>
+        <td>{{ kyb.jurisdiction }}</td>
+        <td><span class="badge">{{ kyb.status | replace("_", " ") }}</span></td>
+        <td>{{ kyb.risk_tier or "pending" }}</td>
+        <td>{{ kyb.assignee or "unassigned" }}</td>
+        <td>{{ kyb.created_at }}</td>
+      </tr>
+    {% else %}
+      <tr><td colspan="7">No requests match.</td></tr>
+    {% endfor %}
+  </table>
+{% endblock %}

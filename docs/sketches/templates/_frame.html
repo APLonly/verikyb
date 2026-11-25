@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ title }} (sketch) · VeriKYB</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; color: #1d1d1f; line-height: 1.4; }
+    .sketch { background: #fff6d5; border-bottom: 1px solid #e6d58a; padding: .4rem 1rem; font-size: .85rem; }
+    header { display: flex; gap: 1rem; align-items: baseline; padding: .5rem 1rem; border-bottom: 1px solid #ddd; }
+    header .user { margin-left: auto; }
+    main { padding: 0 1rem 2rem; }
+    table { border-collapse: collapse; margin: .5rem 0; }
+    th, td { border: 1px solid #ddd; padding: .25rem .5rem; text-align: left; vertical-align: top; }
+    .badge { border: 1px solid #888; border-radius: .7rem; padding: 0 .45rem; font-size: .8rem; }
+    .chip { background: #e8ecff; border-radius: .3rem; padding: 0 .3rem; font-size: .75rem; margin-left: .2rem; }
+    .muted { color: #6b6b6b; }
+    .notice { border: 1px solid #c9a227; background: #fffbea; padding: .4rem .6rem; }
+    .columns { display: grid; grid-template-columns: 1fr 22rem; gap: 1.5rem; }
+    aside section, .card { border: 1px solid #ddd; padding: .6rem; margin: .5rem 0; }
+    nav.tabs a { margin-right: 1rem; } nav.tabs a.active { font-weight: bold; }
+    dl { display: grid; grid-template-columns: 12rem 1fr; gap: .2rem .8rem; } dt { color: #6b6b6b; }
+  </style>
+</head>
+<body>
+  <p class="sketch">Sketch with fake data. In the app: <code>{{ route }}</code>. The fields it needs:
+    <code>docs/sketches/fields.md</code>. <a href="index.html">All sketches</a></p>
+  <header>
+    <strong>VeriKYB</strong>
+    <a href="due_diligence_index.html">Due diligence</a>
+    <a href="customers_index.html">Customers</a>
+    {% block header %}{% endblock %}
+    <span class="user">{{ current_user.name }} ({{ current_user.persona }}) · <a href="login.html">Switch user</a></span>
+  </header>
+  <main>{% block content %}{% endblock %}</main>
+</body>
+</html>

@@ -229,3 +229,7 @@ data/processed/
 
 # The synthetic documents: `make data` draws them again, the same every time.
 data/synthetic/documents/
+
+# Rendered page sketches: `uv run python docs/sketches/render.py` makes them again.
+docs/sketches/html/
+docs/sketches/fields.md

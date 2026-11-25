@@ -1,0 +1,43 @@
+{% extends "_workspace.html" %}
+{% block tab %}
+  {% set ownership = case.ownership %}
+  <section class="card">
+    <h2>Corporate hierarchy</h2>
+    <div style="border: 1px dashed #999; padding: 2rem; text-align: center" class="muted">
+      Ownership graph (Cytoscape.js in Phase 4): one node per party, one arrow per holding.</div>
+    <p class="muted">Arrows point from owner to owned. Subsidiaries are not shown.</p>
+    <table>
+      <tr><th>Owner</th><th>Holds</th><th>Of</th><th>Source</th></tr>
+      {% for edge in ownership.edges %}
+        <tr><td>{{ ownership.nodes | selectattr("id", "equalto", edge.owner_id) | map(attribute="label") | first }}
+            <span class="muted">({{ edge.owner_kind }})</span></td>
+          <td>{{ edge.min_pct }}–{{ edge.max_pct }}% {{ edge.kind | replace("_", " ") }}</td>
+          <td>{{ ownership.nodes | selectattr("id", "equalto", edge.owned_id) | map(attribute="label") | first }}</td>
+          <td>{% for id in edge.evidence_ids %}<span class="chip">{{ id }}</span>{% endfor %}</td></tr>
+      {% endfor %}
+    </table>
+  </section>
+  <section class="card">
+    <h2>Directors and officers</h2>
+    <table>
+      <tr><th>Name</th><th>Roles</th><th>Appointed</th><th>Born</th><th>Nationality</th><th>Lives in</th><th>Source</th></tr>
+      {% for person in case.persons %}
+        <tr><td>{{ person.full_name }}</td><td>{{ person.roles | join(", ") }}</td><td>{{ person.appointed_on }}</td>
+          <td>{{ "%02d" | format(person.birth_month) }}/{{ person.birth_year }}</td><td>{{ person.nationality }}</td>
+          <td>{{ person.country_of_residence }}</td><td>{% for id in person.evidence_ids %}<span class="chip">{{ id }}</span>{% endfor %}</td></tr>
+      {% endfor %}
+    </table>
+  </section>
+  <section class="card">
+    <h2>Identifiers and address</h2>
+    {% set customer = case.customer %}
+    <dl>
+      <dt>Legal form</dt><dd>{{ customer.legal_form }}</dd>
+      <dt>Incorporated</dt><dd>{{ customer.incorporation_date }}</dd>
+      <dt>Registered address</dt><dd>{{ (customer.registered_address.lines + [customer.registered_address.locality, customer.registered_address.postal_code]) | select | join(", ") }}</dd>
+      <dt>SIC codes</dt><dd>{{ customer.sic_codes | join(", ") }}</dd>
+    </dl>
+    <h3>FCA permissions</h3>
+    <ul>{% for permission in customer.fca_permissions %}<li>{{ permission }}</li>{% endfor %}</ul>
+  </section>
+{% endblock %}
