@@ -13,6 +13,9 @@ pr:
 pool:
   vmImage: ubuntu-24.04
 
+variables:
+  UV_CACHE_DIR: '$(Pipeline.Workspace)/.uv-cache'
+
 steps:
   - checkout: self
     persistCredentials: false
@@ -27,8 +30,18 @@ steps:
   - script: python -m pip install uv==0.12.5
     displayName: Install uv 0.12.5
 
+  - task: Cache@2
+    displayName: Restore uv dependency cache
+    inputs:
+      key: '"uv-v1" | "$(Agent.OS)" | "$(Agent.OSArchitecture)" | "uv-0.12.5" | "python-$(selectPython.pythonLocation)" | uv.lock'
+      path: '$(UV_CACHE_DIR)'
+
   - script: uv sync --locked --python "$(selectPython.pythonLocation)/bin/python"
     displayName: Install locked dependencies
+    env:
+      UV_HTTP_CONNECT_TIMEOUT: '60'
+      UV_HTTP_TIMEOUT: '120'
+      UV_HTTP_RETRIES: '5'
 
   - script: uv run --no-sync ruff check .
     displayName: Check lint
