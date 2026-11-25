@@ -1,0 +1,13 @@
+{% extends "_frame.html" %}
+{% block content %}
+  <h1>Page sketches</h1>
+  <p>One sketch per page in the README's screen map, with fake data. The home page
+    (<code>/</code>, service status) is already built, so it has no sketch.</p>
+  <table>
+    <tr><th>Page</th><th>Address in the app</th></tr>
+    {% for name, (title, route, workspace) in pages.items() %}
+      <tr><td><a href="{{ name }}">{{ title }}{% if workspace %} ({{ workspace | replace("_", " ") }}){% endif %}</a></td>
+        <td><code>{{ route }}</code></td></tr>
+    {% endfor %}
+  </table>
+{% endblock %}

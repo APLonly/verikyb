@@ -1,0 +1,25 @@
+{% extends "_workspace.html" %}
+{% block tab %}
+  {% set report = case.report %}
+  <p><a href="#">Download PDF</a> <span class="muted">version {{ report.version }}, {{ report.generated_at }}
+    {%- if report.is_draft %}, DRAFT until the request is submitted{% endif %}</span></p>
+  <h2>Summary</h2>
+  <p>{{ report.summary }}</p>
+  {% for section in report.sections %}
+    <h2>{{ section.title }}</h2>
+    <ul>
+      {% for claim in section.claims %}
+        <li>{{ claim.text }}
+          {% for id in claim.evidence_ids %}<span class="chip">{{ id }}</span>{% else %}<span class="badge">unsupported</span>{% endfor %}</li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+  <h2>Evidence</h2>
+  <table>
+    <tr><th>ID</th><th>Source</th><th>Where to find it again</th><th>Excerpt</th><th>Retrieved</th></tr>
+    {% for item in case.evidence %}
+      <tr><td>{{ item.evidence_id }}</td><td>{{ item.source }}</td><td><code>{{ item.locator }}</code></td>
+        <td>{{ item.excerpt }}</td><td>{{ item.retrieved_at }}</td></tr>
+    {% endfor %}
+  </table>
+{% endblock %}

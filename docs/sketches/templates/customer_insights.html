@@ -1,0 +1,19 @@
+{% extends "_workspace.html" %}
+{% block tab %}
+  {% for insight in case.insights %}
+    <section class="card">
+      <h2>{{ insight.kind | replace("_", " ") | capitalize }}</h2>
+      <p>{{ insight.text }}{% for id in insight.evidence_ids %}<span class="chip">{{ id }}</span>{% endfor %}</p>
+      {% if insight.figures %}
+        <table>
+          <tr><th>Figure</th><th>Period</th><th>Value</th></tr>
+          {% for figure in insight.figures %}
+            <tr><td>{{ figure.name }}</td><td>{{ figure.period_end }}</td><td>{{ "{:,}".format(figure.value) }}</td></tr>
+          {% endfor %}
+        </table>
+      {% endif %}
+    </section>
+  {% else %}
+    <p>No insights: the reasoning model writes them, and it was not available for this request.</p>
+  {% endfor %}
+{% endblock %}

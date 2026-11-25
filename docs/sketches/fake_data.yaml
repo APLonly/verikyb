@@ -1,0 +1,206 @@
+# Fake data for the page sketches. Everything here is fictional: the companies, people and news come from the synthetic world (data/synthetic/companies.yaml), the users are made up. Keys are named after the model fields they stand for, so fields.md can map each one to its source.
+
+users:  # the demo users on the sign-in page (no model yet: see fields.md)
+  - {id: analyst-1, name: Alex Morgan, persona: analyst}
+  - {id: reviewer-1, name: Sam Patel, persona: reviewer}
+  - {id: reviewer-2, name: Jo Clarke, persona: reviewer}
+  - {id: admin-1, name: Chris Lee, persona: admin}
+
+current_user: {id: reviewer-1, name: Sam Patel, persona: reviewer}
+
+# KYBRequest rows, as the request list and the customer list show them.
+requests:
+  - {request_id: KYB-01, customer_name: Ardent Freight Services Ltd, company_number: "99000103", jurisdiction: GB,
+     status: ready_for_review, risk_tier: high, assignee: analyst-1, created_by: analyst-1, created_at: "2026-11-20 09:12"}
+  - {request_id: KYB-02, customer_name: Larkfield Ventures Ltd, company_number: "99000101", jurisdiction: GB,
+     status: submitted, risk_tier: medium, assignee: analyst-1, created_by: analyst-1, created_at: "2026-11-18 14:40"}
+  - {request_id: KYB-03, customer_name: Calder & Finch Payments Ltd, company_number: "99000105", jurisdiction: GB,
+     status: agents_running, risk_tier: null, assignee: null, created_by: analyst-1, created_at: "2026-11-23 10:05"}
+  - {request_id: KYB-04, customer_name: Saraswati Agro Exports Private Limited, company_number: null, jurisdiction: IN,
+     status: ready_for_review, risk_tier: medium, assignee: analyst-1, created_by: analyst-1, created_at: "2026-11-21 11:30"}
+  - {request_id: KYB-05, customer_name: Brookmere Analytics Ltd, company_number: "99000104", jurisdiction: GB,
+     status: draft, risk_tier: null, assignee: null, created_by: analyst-1, created_at: "2026-11-24 08:55"}
+  - {request_id: KYB-06, customer_name: Hollin Bay Money Ltd, company_number: "99000106", jurisdiction: GB,
+     status: ready_for_review, risk_tier: medium, assignee: analyst-1, created_by: analyst-1, created_at: "2026-11-19 16:20"}
+
+max_upload_mb: 10  # the new-request form's help text
+
+# The due diligence workspace: KYB-01, a director shared with a sanctioned company.
+due_diligence:
+  request: {request_id: KYB-01, customer_name: Ardent Freight Services Ltd, company_number: "99000103", jurisdiction: GB,
+            status: ready_for_review, risk_tier: high, assignee: analyst-1, created_by: analyst-1, created_at: "2026-11-20 09:12"}
+  customer:
+    legal_name: ARDENT FREIGHT SERVICES LTD
+    is_synthetic: true
+    company_number: "99000103"
+    registered_address: {lines: [Unit 7, Dockside Trading Estate], locality: Felixstowe, postal_code: IP11 3SY, country: GB}
+    incorporation_date: "2016-02-29"
+    legal_form: Private limited company
+    fca_status: null
+    field_sources: {legal_name: [EV-1], company_number: [EV-1], registered_address: [EV-1],
+                    incorporation_date: [EV-1], legal_form: [EV-1]}
+  suggested_risk_level: high
+  run: {state: paused, waiting_for: a reviewer's decision}
+  unavailable: ["FCA register: no API key was set, so regulatory status was not checked"]
+  flags:
+    - {flag_id: FLAG-1, rule_id: shared_director_sanctioned, category: screening, severity: high,
+       title: Director Kasimir Vondrel also directs Tarnov Shipping Ltd, a sanctioned company,
+       evidence_ids: [EV-3, EV-4], policy_citations: [POL-3.2], status: open, cleared_reason: null}
+    - {flag_id: FLAG-2, rule_id: adverse_media, category: adverse_media, severity: high,
+       title: Two news reports link the company to shipments for Tarnov Shipping Ltd,
+       evidence_ids: [EV-5, EV-6], policy_citations: [POL-5.1], status: open, cleared_reason: null}
+  screening_hits:
+    - {hit_id: HIT-1, screened_name: Tarnov Shipping Ltd, matched_name: TARNOV SHIPPING LTD, list_name: synthetic,
+       list_entry_id: SYN-0001, kind: sanction, match_score: 1.0, adjudication: true_match,
+       rationale: Same company number on the register and the list entry, evidence_ids: [EV-4]}
+  document_issues: []
+  audit:
+    - {at: "2026-11-20 09:12", user_id: analyst-1, persona: analyst, action: request_created,
+       target: null, old_value: null, new_value: null, reason: null}
+    - {at: "2026-11-20 09:15", user_id: analyst-1, persona: analyst, action: status_changed,
+       target: null, old_value: agents_running, new_value: ready_for_review, reason: null}
+    - {at: "2026-11-20 10:02", user_id: analyst-1, persona: analyst, action: answer_edited,
+       target: source_of_funds, old_value: "", new_value: Freight forwarding fees from UK importers,
+       reason: Confirmed by the customer's finance director on a call}
+  answers:  # QuestionnaireAnswer by question ID; questions without one show "no answer yet"
+    legal_name: {status: auto_filled, value: ARDENT FREIGHT SERVICES LTD, source: companies_house, evidence_ids: [EV-1], confidence: 0.99}
+    company_number: {status: auto_filled, value: "99000103", source: companies_house, evidence_ids: [EV-1], confidence: 0.99}
+    registered_address: {status: auto_filled, value: "Unit 7, Dockside Trading Estate, Felixstowe, IP11 3SY", source: companies_house, evidence_ids: [EV-1], confidence: 0.98}
+    incorporation_date: {status: auto_filled, value: "2016-02-29", source: companies_house, evidence_ids: [EV-1], confidence: 0.99}
+    directors: {status: auto_filled, value: "Kasimir Vondrel; Helen Okafor", source: companies_house, evidence_ids: [EV-2], confidence: 0.97}
+    ubos: {status: auto_filled, value: "Kasimir Vondrel (50-75%); Helen Okafor (25-50%)", source: companies_house, evidence_ids: [EV-2], confidence: 0.95}
+    sanctions_exposure: {status: auto_filled, value: "Yes", source: sanctions, evidence_ids: [EV-3, EV-4], confidence: 0.9}
+    adverse_media: {status: auto_filled, value: "Yes", source: news, evidence_ids: [EV-5, EV-6], confidence: 0.8}
+    source_of_funds: {status: edited_by_analyst, value: Freight forwarding fees from UK importers, source: analyst, evidence_ids: [], confidence: null}
+    expected_volumes: {status: needs_customer_input, value: null, source: null, evidence_ids: [], confidence: null}
+  report:
+    version: 1
+    generated_at: "2026-11-20 09:15"
+    is_draft: true
+    summary: >-
+      Ardent Freight Services Ltd is a UK freight forwarder owned by two individuals. Its majority
+      owner and director also directs Tarnov Shipping Ltd, which is on a sanctions list, and two
+      recent news reports link the company to shipments for Tarnov. The rules suggest a high risk
+      tier.
+    sections:
+      - title: Identity
+        claims:
+          - {text: "Registered in England and Wales as 99000103, incorporated on 29 February 2016.", evidence_ids: [EV-1]}
+      - title: Ownership
+        claims:
+          - {text: "Kasimir Vondrel holds 50-75% and Helen Okafor 25-50%; both are beneficial owners.", evidence_ids: [EV-2]}
+      - title: Screening and media
+        claims:
+          - {text: "Kasimir Vondrel also directs Tarnov Shipping Ltd, a confirmed sanctions match.", evidence_ids: [EV-3, EV-4]}
+          - {text: "Two news reports describe shipments for Tarnov Shipping Ltd.", evidence_ids: [EV-5, EV-6]}
+          - {text: "The company has no other overseas activity.", evidence_ids: []}
+  evidence:  # Evidence, listed under the report
+    - {evidence_id: EV-1, source: companies_house, locator: /company/99000103, excerpt: "ARDENT FREIGHT SERVICES LTD, active, incorporated 2016-02-29", retrieved_at: "2026-11-20 09:13"}
+    - {evidence_id: EV-2, source: companies_house, locator: /company/99000103/persons-with-significant-control, excerpt: "Kasimir Vondrel: ownership-of-shares-50-to-75-percent", retrieved_at: "2026-11-20 09:13"}
+    - {evidence_id: EV-3, source: companies_house, locator: /officers/k-vondrel/appointments, excerpt: "Director of TARNOV SHIPPING LTD (99000203)", retrieved_at: "2026-11-20 09:13"}
+    - {evidence_id: EV-4, source: sanctions, locator: synthetic#SYN-0001, excerpt: "TARNOV SHIPPING LTD, synthetic test list", retrieved_at: "2026-11-20 09:14"}
+    - {evidence_id: EV-5, source: news, locator: "https://www.example.com/news/2026/08/ardent-freight-tarnov-shipments", excerpt: "Freight forwarder questioned over shipments for sanctioned Tarnov Shipping", retrieved_at: "2026-11-20 09:14"}
+    - {evidence_id: EV-6, source: news, locator: "https://news.example.org/2026/09/felixstowe-warehouse-search", excerpt: "Customs officers search Felixstowe warehouse used by Ardent Freight", retrieved_at: "2026-11-20 09:14"}
+  decision_states:  # what the decision panel shows in each state; the sketch shows them all
+    waiting: {for: reviewer_decision, first_reviewer: null}
+    submitted: {outcome: reject, risk_level: high, suggested_risk_level: high, override_reason: null,
+                decided_by: reviewer-2, decided_at: "2026-11-21 15:40", second_reviewer: null}
+    second_review: {first_reviewer: reviewer-2, outcome: approve, risk_level: high}
+    candidates:  # when several registry companies match the name entered
+      - {company_number: "99000103", name: ARDENT FREIGHT SERVICES LTD, status: active, match_score: 1.0}
+      - {company_number: "99000903", name: ARDENT FREIGHT LIMITED, status: dissolved, match_score: 0.86}
+  chat:
+    suggested: ["Why is the risk high?", "Who are the beneficial owners?", "What did the news say?"]
+    messages:
+      - {role: user, content: "Why is the risk high?", evidence_ids: [], created_at: "2026-11-20 10:30"}
+      - {role: assistant, content: "Two high-risk flags: the director is shared with a sanctioned company, and two news reports link Ardent Freight to Tarnov Shipping.", evidence_ids: [EV-3, EV-4, EV-5], created_at: "2026-11-20 10:30"}
+
+# The customer workspace: KYB-06, FCA permissions changed since the last review.
+customers:
+  request: {request_id: KYB-06, customer_name: Hollin Bay Money Ltd, company_number: "99000106", jurisdiction: GB,
+            status: ready_for_review, risk_tier: medium, assignee: analyst-1, created_by: analyst-1, created_at: "2026-11-19 16:20"}
+  customer:
+    legal_name: HOLLIN BAY MONEY LTD
+    is_synthetic: true
+    company_number: "99000106"
+    registry_status: active
+    lei: null
+    frn: "9900006"
+    fca_status: Authorised
+    fca_permissions: [Issuing electronic money, Payment services - money remittance, Payment services - account information services]
+    registered_address: {lines: ["9 St Paul's Square"], locality: Birmingham, postal_code: B3 1QU, country: GB}
+    incorporation_date: "2018-11-27"
+    legal_form: Private limited company
+    sic_codes: ["66190"]
+    last_refreshed: "2026-11-19 16:22"
+    field_sources: {company_number: [EV-11], registered_address: [EV-11], incorporation_date: [EV-11],
+                    frn: [EV-12], fca_status: [EV-12], fca_permissions: [EV-13]}
+  persons:
+    - {person_id: P-1, full_name: Fenella Hollis, roles: [director, psc], nationality: British,
+       country_of_residence: United Kingdom, birth_year: 1969, birth_month: 3, appointed_on: "2018-11-27", evidence_ids: [EV-14]}
+    - {person_id: P-2, full_name: Rajiv Menon, roles: [director], nationality: British,
+       country_of_residence: United Kingdom, birth_year: 1977, birth_month: 10, appointed_on: "2018-11-27", evidence_ids: [EV-14]}
+  ownership:
+    nodes:
+      - {id: C-99000106, label: Hollin Bay Money Ltd, kind: customer}
+      - {id: P-1, label: Fenella Hollis, kind: person}
+    edges:
+      - {owner_id: P-1, owner_kind: person, owned_id: C-99000106, kind: shares, min_pct: 75, max_pct: 100, evidence_ids: [EV-15]}
+  financials:  # FinancialYear, newest first; a figure that was not filed stays null
+    currency: GBP
+    years:
+      - period_end: "2025-03-31"
+        revenue: {value: 4815200, source_element: "uk-core:Turnover", evidence_id: EV-16}
+        operating_profit: {value: 612400, source_element: "uk-core:OperatingProfitLoss", evidence_id: EV-16}
+        net_income: {value: 488900, source_element: "uk-core:ProfitLoss", evidence_id: EV-16}
+        total_assets: {value: 7025400, source_element: "uk-core:FixedAssets + uk-core:CurrentAssets", evidence_id: EV-16}
+        total_liabilities: null
+        equity: {value: 3484700, source_element: "uk-core:Equity", evidence_id: EV-16}
+        cash: {value: 3984100, source_element: "uk-core:CashBankOnHand", evidence_id: EV-16}
+      - period_end: "2024-03-31"
+        revenue: {value: 3902750, source_element: "uk-core:Turnover", evidence_id: EV-16}
+        operating_profit: {value: -118300, source_element: "uk-core:OperatingProfitLoss", evidence_id: EV-16}
+        net_income: {value: -131650, source_element: "uk-core:ProfitLoss", evidence_id: EV-16}
+        total_assets: {value: 5690200, source_element: "uk-core:FixedAssets + uk-core:CurrentAssets", evidence_id: EV-16}
+        total_liabilities: null
+        equity: {value: 2995800, source_element: "uk-core:Equity", evidence_id: EV-16}
+        cash: {value: 2911200, source_element: "uk-core:CashBankOnHand", evidence_id: EV-16}
+      - period_end: "2023-03-31"
+        revenue: {value: 3105600, source_element: "uk-core:Turnover", evidence_id: EV-17}
+        operating_profit: {value: 275900, source_element: "uk-core:OperatingProfitLoss", evidence_id: EV-17}
+        net_income: {value: 219400, source_element: "uk-core:ProfitLoss", evidence_id: EV-17}
+        total_assets: {value: 4679000, source_element: "uk-core:FixedAssets + uk-core:CurrentAssets", evidence_id: EV-17}
+        total_liabilities: null
+        equity: {value: 3127450, source_element: "uk-core:Equity", evidence_id: EV-17}
+        cash: {value: 2470300, source_element: "uk-core:CashBankOnHand", evidence_id: EV-17}
+    ratios:  # computed, not filed; null when an input is missing or a denominator is zero
+      - {period_end: "2025-03-31", current_ratio: 1.73, debt_to_equity: null, operating_margin: 0.127, revenue_growth: 0.234}
+      - {period_end: "2024-03-31", current_ratio: 1.81, debt_to_equity: null, operating_margin: -0.030, revenue_growth: 0.257}
+      - {period_end: "2023-03-31", current_ratio: 2.57, debt_to_equity: null, operating_margin: 0.089, revenue_growth: null}
+  flags:
+    - {flag_id: FLAG-3, rule_id: fca_permissions_changed, category: regulatory, severity: medium,
+       title: "FCA permissions changed since the review of 15 October 2025: account information services added, issuing payment instruments removed",
+       evidence_ids: [EV-13], policy_citations: [POL-7.2], status: open, cleared_reason: null}
+    - {flag_id: FLAG-4, rule_id: operating_loss, category: financial, severity: low,
+       title: Operating loss in the year to 31 March 2024, evidence_ids: [EV-16], policy_citations: [POL-6.3],
+       status: cleared, cleared_reason: Returned to profit in the year to 31 March 2025}
+  insights:
+    - {insight_id: INS-1, kind: revenue_trend, text: "Revenue grew 23% to £4.8m in the year to March 2025, after 26% the year before.",
+       figures: [{name: revenue, period_end: "2025-03-31", value: 4815200}, {name: revenue, period_end: "2024-03-31", value: 3902750}],
+       evidence_ids: [EV-16]}
+    - {insight_id: INS-2, kind: fca_permission_change, text: "One FCA permission was added and one removed since the last review.",
+       figures: [], evidence_ids: [EV-13]}
+  concentration:
+    largest_holder: {name: Fenella Hollis, min_pct: 75, max_pct: 100}
+    hhi: {min: 5625, max: 10000}
+    shareholdings: [{owner: Fenella Hollis, min_pct: 75, max_pct: 100, evidence_ids: [EV-15]}]
+    geography: [{country: GB, parties: [Hollin Bay Money Ltd, Fenella Hollis, Rajiv Menon], fatf: null, evidence_ids: [EV-11, EV-14]}]
+    sectors: [{code: "66190", division: "66", description: Activities auxiliary to financial services}]
+    portfolio:
+      - {dimension: "Sector division 66", count: 2, total: 6, requests: [KYB-02, KYB-06]}
+      - {dimension: "Country GB", count: 5, total: 6, requests: [KYB-01, KYB-02, KYB-03, KYB-05, KYB-06]}
+  chat:
+    suggested: ["How has revenue changed?", "Which FCA permissions changed?", "Who owns the company?"]
+    messages:
+      - {role: user, content: "Which FCA permissions changed?", evidence_ids: [], created_at: "2026-11-19 17:00"}
+      - {role: assistant, content: "Account information services was added and issuing payment instruments was removed since the review of 15 October 2025.", evidence_ids: [EV-13], created_at: "2026-11-19 17:00"}

@@ -1,0 +1,40 @@
+{# The decision panel beside the due diligence tabs. The app shows one state at a time; the
+   sketch shows each, so every field they need is listed. The API enforces every rule. #}
+{% set states = case.decision_states %}
+<section>
+  <h2>Decision</h2>
+  <h3>State: waiting for a reviewer</h3>
+  <form>
+    <fieldset><legend>Outcome</legend>
+      <label><input type="radio" name="outcome"> Approve</label>
+      <label><input type="radio" name="outcome"> Reject</label>
+      <label><input type="radio" name="outcome"> Request more information</label>
+      <label><input type="radio" name="outcome"> Escalate</label>
+    </fieldset>
+    <p><label>Risk level
+      <select><option>low</option><option>medium</option><option selected>{{ case.suggested_risk_level }}</option></select></label>
+      <br><small class="muted">Pre-selected: the rules engine suggests {{ case.suggested_risk_level }}.</small></p>
+    <p><label>Reason for changing the level <input></label></p>
+    <button type="button">Submit decision</button>
+    <p><small class="muted">A high-risk approval needs a second, different reviewer.</small></p>
+  </form>
+
+  <h3>State: submitted</h3>
+  <p>{{ states.submitted.outcome }} at {{ states.submitted.risk_level }} risk, by
+    {{ states.submitted.decided_by }} on {{ states.submitted.decided_at }}
+    {%- if states.submitted.second_reviewer %}, confirmed by {{ states.submitted.second_reviewer }}{% endif %}.
+    {% if states.submitted.override_reason %}Reason for the level: {{ states.submitted.override_reason }}{% endif %}</p>
+
+  <h3>State: waiting for the second review</h3>
+  <p>{{ states.second_review.first_reviewer }} chose to {{ states.second_review.outcome }} at
+    {{ states.second_review.risk_level }} risk. <button type="button">Confirm as second reviewer</button></p>
+
+  <h3>State: confirm the company (analysts)</h3>
+  <form>
+    {% for candidate in states.candidates %}
+      <label><input type="radio" name="company"> {{ candidate.name }} ({{ candidate.company_number }}),
+        {{ candidate.status }}, match {{ "%.2f" | format(candidate.match_score) }}</label><br>
+    {% endfor %}
+    <button type="button">Use this company</button>
+  </form>
+</section>

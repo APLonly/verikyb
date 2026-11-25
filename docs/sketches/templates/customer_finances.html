@@ -1,0 +1,32 @@
+{% extends "_workspace.html" %}
+{% block tab %}
+  {% set finances = case.financials %}
+  {% set names = ["revenue", "operating_profit", "net_income", "total_assets", "total_liabilities", "equity", "cash"] %}
+  <div style="border: 1px dashed #999; padding: 2rem; text-align: center" class="muted">
+    Figures chart (Chart.js in Phase 4). The table below holds the same data.</div>
+  <table>
+    <caption>Filed figures, {{ finances.currency }}, newest first</caption>
+    <tr><th>Figure</th>{% for year in finances.years %}<th>{{ year.period_end }}</th>{% endfor %}</tr>
+    {% for name in names %}
+      <tr><th scope="row">{{ name | replace("_", " ") | capitalize }}</th>
+        {% for year in finances.years %}{% set figure = year[name] %}
+          <td>{% if figure %}{{ "{:,}".format(figure.value) }}<br><small class="muted">{{ figure.source_element }}</small><span class="chip">{{ figure.evidence_id }}</span>
+            {% else %}<span class="muted">missing</span>{% endif %}</td>
+        {% endfor %}</tr>
+    {% endfor %}
+  </table>
+  <table>
+    <caption>Ratios, computed from the filed figures</caption>
+    <tr><th>Period</th><th>Current ratio</th><th>Debt to equity</th><th>Operating margin</th><th>Revenue growth</th></tr>
+    {% for ratio in finances.ratios %}
+      <tr><td>{{ ratio.period_end }}</td>
+        <td>{{ "%.2f" | format(ratio.current_ratio) if ratio.current_ratio is not none else "missing" }}</td>
+        <td>{{ "%.2f" | format(ratio.debt_to_equity) if ratio.debt_to_equity is not none else "missing" }}</td>
+        <td>{{ "%.1f%%" | format(ratio.operating_margin * 100) if ratio.operating_margin is not none else "missing" }}</td>
+        <td>{{ "%.1f%%" | format(ratio.revenue_growth * 100) if ratio.revenue_growth is not none else "missing" }}</td></tr>
+    {% endfor %}
+  </table>
+  <p class="muted"><small>Current ratio = current assets ÷ current liabilities. Debt to equity = total
+    liabilities ÷ equity. Operating margin = operating profit ÷ revenue. Growth = change in revenue
+    on the year before. "Missing" means an input was not filed, never zero.</small></p>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "_workspace.html" %}
+{% block tab %}
+  <table>
+    <caption>Every risk flag, most severe first. Each cites its evidence and the policy rule it applies.</caption>
+    <tr><th>Severity</th><th>Category</th><th>Flag</th><th>Policy</th><th>Status</th></tr>
+    {% for flag in case.flags %}
+      <tr><td><span class="badge">{{ flag.severity }}</span></td><td>{{ flag.category | replace("_", " ") }}</td>
+        <td>{{ flag.title }}{% for id in flag.evidence_ids %}<span class="chip">{{ id }}</span>{% endfor %}<br>
+          <small class="muted">rule {{ flag.rule_id }}</small></td>
+        <td>{{ flag.policy_citations | join(", ") }}</td>
+        <td>{{ "Open" if flag.status == "open" else "Cleared: " ~ flag.cleared_reason }}</td></tr>
+    {% else %}
+      <tr><td colspan="5">No risk flags.</td></tr>
+    {% endfor %}
+  </table>
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends "_workspace.html" %}
+{% block tab %}
+  {% set customer = case.customer %}
+  <section class="card">
+    <h2>Customer</h2>
+    {% set sources = customer.field_sources %}
+    <dl>
+      <dt>Legal name</dt><dd>{{ customer.legal_name }}{% for id in sources.legal_name or [] %}<span class="chip">{{ id }}</span>{% endfor %}</dd>
+      <dt>Company number</dt><dd>{{ customer.company_number }}{% for id in sources.company_number or [] %}<span class="chip">{{ id }}</span>{% endfor %}</dd>
+      <dt>Registered address</dt><dd>{{ (customer.registered_address.lines + [customer.registered_address.locality, customer.registered_address.postal_code]) | select | join(", ") }}{% for id in sources.registered_address or [] %}<span class="chip">{{ id }}</span>{% endfor %}</dd>
+      <dt>Incorporated</dt><dd>{{ customer.incorporation_date }}{% for id in sources.incorporation_date or [] %}<span class="chip">{{ id }}</span>{% endfor %}</dd>
+      <dt>Legal form</dt><dd>{{ customer.legal_form }}{% for id in sources.legal_form or [] %}<span class="chip">{{ id }}</span>{% endfor %}</dd>
+      <dt>FCA status</dt><dd>{{ customer.fca_status or "not found" }}</dd>
+    </dl>
+  </section>
+
+  <section class="card">
+    <h2>Risk</h2>
+    <p>The rules suggest <strong>{{ case.suggested_risk_level }}</strong> risk from
+      {{ case.flags | length }} flags. A reviewer decides.</p>
+    <p class="muted">Agents: {{ case.run.state }}, waiting for {{ case.run.waiting_for }}.</p>
+  </section>
+
+  <section class="card">
+    <h2>Summary</h2>
+    <p>{{ case.report.summary }}</p>
+  </section>
+
+  <section class="card">
+    <h2>Open issues</h2>
+    <ul>
+      {% for flag in case.flags if flag.status == "open" %}
+        <li><span class="badge">{{ flag.severity }}</span> {{ flag.title }}
+          {% for id in flag.evidence_ids %}<span class="chip">{{ id }}</span>{% endfor %}
+          <span class="muted">({{ flag.policy_citations | join(", ") }})</span></li>
+      {% endfor %}
+      {% for issue in case.document_issues %}<li>{{ issue }}</li>{% endfor %}
+    </ul>
+    <h3>Screening hits</h3>
+    <table>
+      <tr><th>Screened</th><th>Matched</th><th>List</th><th>Score</th><th>Adjudication</th></tr>
+      {% for hit in case.screening_hits %}
+        <tr><td>{{ hit.screened_name }}</td><td>{{ hit.matched_name }} <span class="muted">{{ hit.list_entry_id }}</span></td>
+          <td>{{ hit.list_name }} ({{ hit.kind }})</td><td>{{ "%.2f" | format(hit.match_score) }}</td>
+          <td>{{ hit.adjudication | replace("_", " ") }}: {{ hit.rationale }}{% for id in hit.evidence_ids %}<span class="chip">{{ id }}</span>{% endfor %}</td></tr>
+      {% endfor %}
+    </table>
+    <h3>Could not be checked</h3>
+    <ul>{% for item in case.unavailable %}<li>{{ item }}</li>{% else %}<li>Everything was checked.</li>{% endfor %}</ul>
+  </section>
+
+  <section class="card">
+    <h2>Audit trail</h2>
+    <table>
+      <tr><th>When</th><th>Who</th><th>Action</th><th>Change</th><th>Reason</th></tr>
+      {% for event in case.audit %}
+        <tr><td>{{ event.at }}</td><td>{{ event.user_id }} ({{ event.persona }})</td>
+          <td>{{ event.action | replace("_", " ") | capitalize }}{% if event.target %} <code>{{ event.target }}</code>{% endif %}</td>
+          <td>{% if event.old_value is not none or event.new_value is not none %}<del>{{ event.old_value or "" }}</del> → {{ event.new_value or "" }}{% endif %}</td>
+          <td>{{ event.reason or "" }}</td></tr>
+      {% endfor %}
+    </table>
+  </section>
+{% endblock %}

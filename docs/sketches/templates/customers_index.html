@@ -1,0 +1,20 @@
+{% extends "_frame.html" %}
+{% block content %}
+  <h1>Customers</h1>
+  <form role="search"><label>Search customers <input></label> <button type="button">Search</button></form>
+  <table>
+    <tr><th>Customer</th><th>Request</th><th>Company number</th><th>Jurisdiction</th><th>Risk</th><th>Status</th></tr>
+    {% for kyb in requests %}
+      <tr>
+        <td><a href="customer_summary.html">{{ kyb.customer_name }}</a></td>
+        <td>{{ kyb.request_id }}</td>
+        <td>{{ kyb.company_number or "not found" }}</td>
+        <td>{{ kyb.jurisdiction }}</td>
+        <td>{{ kyb.risk_tier or "pending" }}</td>
+        <td><span class="badge">{{ kyb.status | replace("_", " ") }}</span></td>
+      </tr>
+    {% else %}
+      <tr><td colspan="6">No customers match.</td></tr>
+    {% endfor %}
+  </table>
+{% endblock %}

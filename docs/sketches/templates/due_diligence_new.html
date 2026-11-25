@@ -1,0 +1,14 @@
+{% extends "_frame.html" %}
+{% block content %}
+  <h1>New request</h1>
+  <form>
+    <p><label>Company name <input required maxlength="200"></label></p>
+    <p><label>Company number (optional) <input></label></p>
+    <p><label>Jurisdiction <select><option value="GB">United Kingdom</option><option value="IN">India</option></select></label></p>
+    <p><label>Documents <input type="file" multiple accept=".pdf,.png,.jpg,.jpeg"></label><br>
+      <small class="muted">PDF, PNG or JPEG, up to {{ max_upload_mb }} MB each. An Indian company needs
+        its Certificate of Incorporation, PAN card, GST registration certificate and a current
+        shareholding extract (POL-8.1).</small></p>
+    <button type="button">Create and run the agents</button>
+  </form>
+{% endblock %}
