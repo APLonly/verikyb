@@ -1,0 +1,52 @@
+{# The pieces every page repeats, written once. Each macro takes a model field exactly as the API
+   returns it, so the shapes are the agreement with the backend (README, "Shared macros"). In
+   Phase 3 this file becomes src/verikyb/web/templates/_macros.html; the class names are the ones
+   verikyb.css styles. Import what a page uses: {% from "_macros.html" import cite, fact %} #}
+
+{# Evidence chips, one per ID. None or [] prints nothing, so a field with no source is still safe. #}
+{% macro cite(ids) %}{% for id in ids or [] %} <span class="evidence-id">{{ id }}</span>{% endfor %}{% endmacro %}
+
+{# A word from an enum: "edited_by_analyst" -> "Edited by analyst". #}
+{% macro label(value) %}{{ (value | replace("_", " ")) | capitalize }}{% endmacro %}
+
+{# A RiskLevel: a request's tier or a flag's severity. The word is always printed, so colour is
+   never the only signal; no level yet shows "pending", never a guess. #}
+{% macro risk_badge(level) -%}
+  {%- if level %}<span class="badge risk-{{ level }}">{{ level }} risk</span>
+  {%- else %}<span class="badge">risk pending</span>{% endif -%}
+{%- endmacro %}
+
+{# Any other status: RequestStatus, AnswerStatus, Adjudication, FlagStatus. #}
+{% macro status_badge(status) %}<span class="badge">{{ status | replace("_", " ") }}</span>{% endmacro %}
+
+{# A fact with its sources, as a definition-list row. An empty value shows "not found". #}
+{% macro fact(name, value, ids=none) %}
+  <dt>{{ name }}</dt>
+  <dd>{{ value if value is not none and value != "" else "not found" }}{{ cite(ids) }}</dd>
+{% endmacro %}
+
+{# An Address on one line: the lines, then locality and postcode when present. #}
+{% macro address(value) -%}
+  {%- if value %}{{ (value.lines + [value.locality, value.postal_code]) | select | join(", ") }}{% endif -%}
+{%- endmacro %}
+
+{# A filed Figure: the value with thousands separators, the element it was filed as, and its
+   evidence. A figure that was not filed shows "missing", never 0. #}
+{% macro figure(value, currency="") %}
+  {%- if value is not none -%}
+    {{ currency }} {{ "{:,}".format(value.value) }}<div class="source-element">{{ value.source_element }}{{ cite([value.evidence_id]) }}</div>
+  {%- else -%}
+    <span class="muted">missing</span>
+  {%- endif -%}
+{% endmacro %}
+
+{# A holding band from the PSC register: "25–50%", or "100%" when the band is one value. #}
+{% macro pct_range(min_pct, max_pct) -%}
+  {{ min_pct if min_pct == max_pct else min_pct ~ "–" ~ max_pct }}%
+{%- endmacro %}
+
+{# A score from 0 to 1 (a match score, a confidence), to two places; none prints nothing. #}
+{% macro score(value) %}{{ "%.2f" | format(value) if value is not none else "" }}{% endmacro %}
+
+{# The hidden CSRF input every form that posts carries; csrf_token() comes from Flask-WTF. #}
+{% macro csrf_field() %}<input type="hidden" name="csrf_token" value="{{ csrf_token() }}">{% endmacro %}

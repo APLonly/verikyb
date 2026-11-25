@@ -1,7 +1,9 @@
 {% extends "_frame.html" %}
+{% from "_macros.html" import csrf_field %}
 {% block content %}
   <h1>New request</h1>
-  <form>
+  <form method="post" enctype="multipart/form-data">
+    {{ csrf_field() }}
     <p><label>Company name <input required maxlength="200"></label></p>
     <p><label>Company number (optional) <input></label></p>
     <p><label>Jurisdiction <select><option value="GB">United Kingdom</option><option value="IN">India</option></select></label></p>

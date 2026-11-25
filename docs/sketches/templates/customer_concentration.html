@@ -1,16 +1,17 @@
 {% extends "_workspace.html" %}
+{% from "_macros.html" import cite, pct_range %}
 {% block tab %}
   {% set concentration = case.concentration %}
   <section class="card">
     <h2>Ownership</h2>
-    <p>Largest holder: {{ concentration.largest_holder.name }}, {{ concentration.largest_holder.min_pct }}–{{ concentration.largest_holder.max_pct }}%.</p>
+    <p>Largest holder: {{ concentration.largest_holder.name }}, {{ pct_range(concentration.largest_holder.min_pct, concentration.largest_holder.max_pct) }}.</p>
     <p>Concentration index (HHI): {{ "{:,}".format(concentration.hhi.min) }} to {{ "{:,}".format(concentration.hhi.max) }}:
       {% if concentration.hhi.min >= 2500 %}highly concentrated{% elif concentration.hhi.max < 2500 %}below the line{% else %}depends on the exact holdings within the bands{% endif %}.</p>
     <table>
       <tr><th>Owner</th><th>Holds</th><th>Source</th></tr>
       {% for holding in concentration.shareholdings %}
-        <tr><td>{{ holding.owner }}</td><td>{{ holding.min_pct }}–{{ holding.max_pct }}%</td>
-          <td>{% for id in holding.evidence_ids %}<span class="chip">{{ id }}</span>{% endfor %}</td></tr>
+        <tr><td>{{ holding.owner }}</td><td>{{ pct_range(holding.min_pct, holding.max_pct) }}</td>
+          <td>{{ cite(holding.evidence_ids) }}</td></tr>
       {% endfor %}
     </table>
     <p class="muted"><small>HHI: the sum of the squared shares, from 0 to 10,000; each share is a range, so the index is too.</small></p>
@@ -22,7 +23,7 @@
       {% for place in concentration.geography %}
         <tr><td>{{ place.country }}</td><td>{{ place.parties | join(", ") }}</td>
           <td>{{ place.fatf | replace("_", " ") if place.fatf else "—" }}</td>
-          <td>{% for id in place.evidence_ids %}<span class="chip">{{ id }}</span>{% endfor %}</td></tr>
+          <td>{{ cite(place.evidence_ids) }}</td></tr>
       {% endfor %}
     </table>
   </section>

@@ -1,4 +1,5 @@
 {% extends "_frame.html" %}
+{% from "_macros.html" import risk_badge, status_badge %}
 {% block content %}
   <h1>Customers</h1>
   <form role="search"><label>Search customers <input></label> <button type="button">Search</button></form>
@@ -10,8 +11,8 @@
         <td>{{ kyb.request_id }}</td>
         <td>{{ kyb.company_number or "not found" }}</td>
         <td>{{ kyb.jurisdiction }}</td>
-        <td>{{ kyb.risk_tier or "pending" }}</td>
-        <td><span class="badge">{{ kyb.status | replace("_", " ") }}</span></td>
+        <td>{{ risk_badge(kyb.risk_tier) }}</td>
+        <td>{{ status_badge(kyb.status) }}</td>
       </tr>
     {% else %}
       <tr><td colspan="6">No customers match.</td></tr>
