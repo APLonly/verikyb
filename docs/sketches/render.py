@@ -4,8 +4,9 @@
 
 then open docs/sketches/html/index.html in a browser. The sketches are plain Jinja with no API
 and no app behind them: they show what each page in the README's screen map contains, so the
-backend knows the fields each page needs (fields.md). A field the data does not have stops the
-render (StrictUndefined), which keeps the sketches, the data and fields.md in step.
+backend knows the fields each page needs. A field the data does not have stops the
+render (StrictUndefined), which keeps the sketches, the data and fields.md in step. So does a
+page that writes an evidence chip or a badge by hand instead of using _macros.html.
 """
 
 from pathlib import Path
@@ -39,12 +40,27 @@ PAGES = {
         "customers",
     ),
 }
+# Markup only _macros.html writes: a page that has it skipped the shared macro.
+MACRO_ONLY = ('class="evidence-id"', 'class="badge risk-', 'class="source-element"', "csrf_token")
+
+
+def check_macros_used() -> None:
+    for path in sorted((HERE / "templates").glob("*.html")):
+        if path.name == "_macros.html":
+            continue
+        text = path.read_text(encoding="utf-8")
+        found = [markup for markup in MACRO_ONLY if markup in text]
+        if found:
+            raise SystemExit(f"{path.name} writes {found} by hand: use _macros.html")
 
 
 def main() -> None:
+    check_macros_used()
     data = yaml.safe_load((HERE / "fake_data.yaml").read_text(encoding="utf-8"))
     questions = yaml.safe_load((ROOT / "config" / "questionnaire.yaml").read_text(encoding="utf-8"))
     env = Environment(loader=FileSystemLoader(HERE / "templates"), undefined=StrictUndefined, autoescape=True)
+    # Flask-WTF provides csrf_token() in the app; the sketches have no session to sign.
+    env.globals["csrf_token"] = lambda: "sketch"
     out = HERE / "html"
     out.mkdir(exist_ok=True)
     for name, (title, route, workspace) in PAGES.items():

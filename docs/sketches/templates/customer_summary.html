@@ -1,4 +1,5 @@
 {% extends "_workspace.html" %}
+{% from "_macros.html" import cite, fact, figure, label, risk_badge %}
 {% block tab %}
   {% set customer = case.customer %}
   {% set sources = customer.field_sources %}
@@ -6,20 +7,20 @@
     <section class="card">
       <h2>Identifiers</h2>
       <dl>
-        <dt>Company number</dt><dd>{{ customer.company_number or "not found" }}{% for id in sources.get("company_number", []) %}<span class="chip">{{ id }}</span>{% endfor %}</dd>
-        <dt>LEI</dt><dd>{{ customer.lei or "not found" }}{% for id in sources.get("lei", []) %}<span class="chip">{{ id }}</span>{% endfor %}</dd>
-        <dt>FCA FRN</dt><dd>{{ customer.frn or "not found" }}{% for id in sources.get("frn", []) %}<span class="chip">{{ id }}</span>{% endfor %}</dd>
-        <dt>Jurisdiction</dt><dd>{{ case.request.jurisdiction }}</dd>
+        {{ fact("Company number", customer.company_number, sources.get("company_number")) }}
+        {{ fact("LEI", customer.lei, sources.get("lei")) }}
+        {{ fact("FCA FRN", customer.frn, sources.get("frn")) }}
+        {{ fact("Jurisdiction", case.request.jurisdiction) }}
       </dl>
     </section>
     <section class="card">
       <h2>Regulatory status</h2>
       <dl>
-        <dt>Registry status</dt><dd>{{ customer.registry_status }}</dd>
-        <dt>FCA status</dt><dd>{{ customer.fca_status or "not found" }}{% for id in sources.get("fca_status", []) %}<span class="chip">{{ id }}</span>{% endfor %}</dd>
-        <dt>FCA permissions</dt><dd>{{ customer.fca_permissions | length }}{% for id in sources.get("fca_permissions", []) %}<span class="chip">{{ id }}</span>{% endfor %}</dd>
-        <dt>Risk tier</dt><dd>{{ case.request.risk_tier or "pending" }}</dd>
-        <dt>Last refreshed</dt><dd>{{ customer.last_refreshed }}</dd>
+        {{ fact("Registry status", customer.registry_status) }}
+        {{ fact("FCA status", customer.fca_status, sources.get("fca_status")) }}
+        {{ fact("FCA permissions", customer.fca_permissions | length, sources.get("fca_permissions")) }}
+        {{ fact("Risk tier", risk_badge(case.request.risk_tier)) }}
+        {{ fact("Last refreshed", customer.last_refreshed) }}
       </dl>
     </section>
   </div>
@@ -28,11 +29,7 @@
     <h2>Key financials, year to {{ latest.period_end }}</h2>
     <dl>
       {% for name in ["revenue", "net_income", "total_assets", "equity", "cash"] %}
-        {% set figure = latest[name] %}
-        <dt>{{ name | replace("_", " ") | capitalize }}</dt>
-        <dd>{% if figure %}{{ case.financials.currency }} {{ "{:,}".format(figure.value) }}
-          <small class="muted">{{ figure.source_element }}</small><span class="chip">{{ figure.evidence_id }}</span>
-          {% else %}<span class="muted">missing</span>{% endif %}</dd>
+        <dt>{{ label(name) }}</dt><dd>{{ figure(latest[name], case.financials.currency) }}</dd>
       {% endfor %}
     </dl>
   </section>
@@ -40,7 +37,7 @@
     <h2>Top risks</h2>
     <ul>
       {% for flag in case.flags if flag.status == "open" %}
-        <li><span class="badge">{{ flag.severity }}</span> {{ flag.title }}{% for id in flag.evidence_ids %}<span class="chip">{{ id }}</span>{% endfor %}</li>
+        <li>{{ risk_badge(flag.severity) }} {{ flag.title }}{{ cite(flag.evidence_ids) }}</li>
       {% else %}<li>No open risks.</li>{% endfor %}
     </ul>
   </section>
