@@ -1,0 +1,15 @@
+{
+  "url": "https://api.gleif.org/api/v1/lei-records/SYNT00BRIGHTWATR0394/ultimate-parent",
+  "status": 404,
+  "content_type": "application/vnd.api+json",
+  "recorded_at": "2026-10-01T00:00:00Z",
+  "synthetic": true,
+  "body": {
+    "errors": [
+      {
+        "status": "404",
+        "title": "Not Found"
+      }
+    ]
+  }
+}

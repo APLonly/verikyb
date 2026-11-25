@@ -1,0 +1,47 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/99000103/officers?items_per_page=100&start_index=0",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-10-01T00:00:00Z",
+  "synthetic": true,
+  "body": {
+    "kind": "officer-list",
+    "total_results": 2,
+    "items": [
+      {
+        "name": "VONDREL, Kasimir",
+        "officer_role": "director",
+        "appointed_on": "2016-02-29",
+        "nationality": "Latvian",
+        "country_of_residence": "Cyprus",
+        "occupation": "Company Director",
+        "date_of_birth": {
+          "month": 11,
+          "year": 1966
+        },
+        "links": {
+          "officer": {
+            "appointments": "/officers/uPH3QEkpph209GsVixFDhi2Pegh/appointments"
+          }
+        }
+      },
+      {
+        "name": "OKAFOR, Helen",
+        "officer_role": "director",
+        "appointed_on": "2016-02-29",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "occupation": "Company Director",
+        "date_of_birth": {
+          "month": 5,
+          "year": 1979
+        },
+        "links": {
+          "officer": {
+            "appointments": "/officers/pZW6pqmi3rGQovKJOtCO-QAwfMb/appointments"
+          }
+        }
+      }
+    ]
+  }
+}

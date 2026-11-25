@@ -1,0 +1,30 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/99000201/officers?items_per_page=100&start_index=0",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-10-01T00:00:00Z",
+  "synthetic": true,
+  "body": {
+    "kind": "officer-list",
+    "total_results": 1,
+    "items": [
+      {
+        "name": "MARSH, Eleanor",
+        "officer_role": "director",
+        "appointed_on": "2018-06-02",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "occupation": "Company Director",
+        "date_of_birth": {
+          "month": 4,
+          "year": 1971
+        },
+        "links": {
+          "officer": {
+            "appointments": "/officers/h5bP6FebgdVV1VmnamUEYKxLL-p/appointments"
+          }
+        }
+      }
+    ]
+  }
+}

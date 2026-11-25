@@ -1,0 +1,47 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/99000106/officers?items_per_page=100&start_index=0",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-10-01T00:00:00Z",
+  "synthetic": true,
+  "body": {
+    "kind": "officer-list",
+    "total_results": 2,
+    "items": [
+      {
+        "name": "HOLLIS, Fenella",
+        "officer_role": "director",
+        "appointed_on": "2018-11-27",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "occupation": "Company Director",
+        "date_of_birth": {
+          "month": 3,
+          "year": 1969
+        },
+        "links": {
+          "officer": {
+            "appointments": "/officers/ai19xG53JU9RMKAZ6_tjXApt6sg/appointments"
+          }
+        }
+      },
+      {
+        "name": "MENON, Rajiv",
+        "officer_role": "director",
+        "appointed_on": "2018-11-27",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "occupation": "Company Director",
+        "date_of_birth": {
+          "month": 10,
+          "year": 1977
+        },
+        "links": {
+          "officer": {
+            "appointments": "/officers/P0q_ob-OWwZUk8OCEWqjP51vwLT/appointments"
+          }
+        }
+      }
+    ]
+  }
+}

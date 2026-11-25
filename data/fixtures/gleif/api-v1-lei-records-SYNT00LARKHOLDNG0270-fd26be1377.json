@@ -1,0 +1,36 @@
+{
+  "url": "https://api.gleif.org/api/v1/lei-records/SYNT00LARKHOLDNG0270",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-10-01T00:00:00Z",
+  "synthetic": true,
+  "body": {
+    "data": {
+      "type": "lei-records",
+      "id": "SYNT00LARKHOLDNG0270",
+      "attributes": {
+        "lei": "SYNT00LARKHOLDNG0270",
+        "entity": {
+          "legalName": {
+            "name": "Larkfield Holdings Ltd",
+            "language": "en"
+          },
+          "legalAddress": {
+            "addressLines": [
+              "12 Harbour Walk"
+            ],
+            "city": "Bristol",
+            "postalCode": "BS1 5DB",
+            "country": "GB"
+          },
+          "registeredAs": "99000201",
+          "jurisdiction": "GB",
+          "status": "ACTIVE"
+        },
+        "registration": {
+          "status": "ISSUED"
+        }
+      }
+    }
+  }
+}

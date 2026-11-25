@@ -1,0 +1,22 @@
+{
+  "url": "https://register.fca.org.uk/services/V0.1/Firm/9900006",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-10-01T00:00:00Z",
+  "synthetic": true,
+  "body": {
+    "Status": "FSR-API-SYNTHETIC",
+    "ResultInfo": null,
+    "Message": "Ok",
+    "Data": [
+      {
+        "Organisation Name": "Hollin Bay Money Ltd",
+        "FRN": "9900006",
+        "Status": "Authorised",
+        "Status Effective Date": "14/06/2019",
+        "Business Type": "Regulated",
+        "Companies House Number": "99000106"
+      }
+    ]
+  }
+}

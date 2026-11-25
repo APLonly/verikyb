@@ -1,0 +1,15 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/99000102/insolvency",
+  "status": 404,
+  "content_type": "application/json",
+  "recorded_at": "2026-10-01T00:00:00Z",
+  "synthetic": true,
+  "body": {
+    "errors": [
+      {
+        "type": "ch:service",
+        "error": "company-insolvencies-not-found"
+      }
+    ]
+  }
+}

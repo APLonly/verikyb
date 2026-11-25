@@ -1,0 +1,47 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/99000102/officers?items_per_page=100&start_index=0",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-10-01T00:00:00Z",
+  "synthetic": true,
+  "body": {
+    "kind": "officer-list",
+    "total_results": 2,
+    "items": [
+      {
+        "name": "RAMAN, Priya",
+        "officer_role": "director",
+        "appointed_on": "2020-09-01",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "occupation": "Company Director",
+        "date_of_birth": {
+          "month": 2,
+          "year": 1983
+        },
+        "links": {
+          "officer": {
+            "appointments": "/officers/_puvzWs5aAl3yP8zjgqhi2TkvZ8/appointments"
+          }
+        }
+      },
+      {
+        "name": "ASHWORTH, Gideon",
+        "officer_role": "director",
+        "appointed_on": "2020-09-01",
+        "nationality": "British",
+        "country_of_residence": "Jersey",
+        "occupation": "Company Director",
+        "date_of_birth": {
+          "month": 7,
+          "year": 1959
+        },
+        "links": {
+          "officer": {
+            "appointments": "/officers/rDjMJNWCfOgzfmuxjhrQCFuKnfd/appointments"
+          }
+        }
+      }
+    ]
+  }
+}

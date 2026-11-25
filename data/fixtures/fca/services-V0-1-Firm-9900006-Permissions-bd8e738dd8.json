@@ -1,0 +1,41 @@
+{
+  "url": "https://register.fca.org.uk/services/V0.1/Firm/9900006/Permissions",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-10-01T00:00:00Z",
+  "synthetic": true,
+  "body": {
+    "Status": "FSR-API-SYNTHETIC",
+    "ResultInfo": null,
+    "Message": "Ok",
+    "Data": [
+      {
+        "Issuing electronic money": [
+          {
+            "Limitation": [
+              "Not applicable"
+            ]
+          }
+        ]
+      },
+      {
+        "Payment services - money remittance": [
+          {
+            "Limitation": [
+              "Not applicable"
+            ]
+          }
+        ]
+      },
+      {
+        "Payment services - account information services": [
+          {
+            "Limitation": [
+              "Not applicable"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "url": "https://api.company-information.service.gov.uk/search/companies?q=Brightwater+Holdings+Ltd&items_per_page=20",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-10-01T00:00:00Z",
+  "synthetic": true,
+  "body": {
+    "kind": "search#companies",
+    "total_results": 1,
+    "items": [
+      {
+        "kind": "searchresults#company",
+        "company_number": "99000202",
+        "title": "BRIGHTWATER HOLDINGS LTD",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2015-01-20",
+        "address": {
+          "address_line_1": "4 Queen Square",
+          "locality": "Bath",
+          "postal_code": "BA1 2HN",
+          "country": "United Kingdom"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.registeredAs%5D=U13209MP2018PTC990108",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-10-01T00:00:00Z",
+  "synthetic": true,
+  "body": {
+    "data": []
+  }
+}

@@ -226,3 +226,6 @@ temp/
 # Downloaded lists and what they are parsed into: large and not all may be redistributed.
 data/raw/
 data/processed/
+
+# The synthetic documents: `make data` draws them again, the same every time.
+data/synthetic/documents/

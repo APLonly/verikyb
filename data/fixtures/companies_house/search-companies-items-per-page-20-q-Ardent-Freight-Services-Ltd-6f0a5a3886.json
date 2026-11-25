@@ -1,0 +1,28 @@
+{
+  "url": "https://api.company-information.service.gov.uk/search/companies?q=Ardent+Freight+Services+Ltd&items_per_page=20",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-10-01T00:00:00Z",
+  "synthetic": true,
+  "body": {
+    "kind": "search#companies",
+    "total_results": 1,
+    "items": [
+      {
+        "kind": "searchresults#company",
+        "company_number": "99000103",
+        "title": "ARDENT FREIGHT SERVICES LTD",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2016-02-29",
+        "address": {
+          "address_line_1": "Unit 7",
+          "address_line_2": "Dockside Trading Estate",
+          "locality": "Felixstowe",
+          "postal_code": "IP11 3SY",
+          "country": "United Kingdom"
+        }
+      }
+    ]
+  }
+}

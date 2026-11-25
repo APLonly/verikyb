@@ -1,0 +1,27 @@
+{
+  "url": "https://api.company-information.service.gov.uk/search/companies?q=Tarnov+Shipping+Ltd&items_per_page=20",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-10-01T00:00:00Z",
+  "synthetic": true,
+  "body": {
+    "kind": "search#companies",
+    "total_results": 1,
+    "items": [
+      {
+        "kind": "searchresults#company",
+        "company_number": "99000203",
+        "title": "TARNOV SHIPPING LTD",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2014-05-06",
+        "address": {
+          "address_line_1": "40 Dock Road",
+          "locality": "Tilbury",
+          "postal_code": "RM18 7BX",
+          "country": "United Kingdom"
+        }
+      }
+    ]
+  }
+}

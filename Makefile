@@ -48,5 +48,6 @@ run: ## Run the API and the UI together; Ctrl+C stops both
 record: ## Record the demo firms from the live APIs into data/fixtures (needs the API keys)
 	uv run $(ENV_FILE) python data/scripts/record.py
 
-data: ## Download the sanctions and PEP lists and turn them into one shape (network)
+data: ## Build the synthetic world, then download the sanctions and PEP lists (network)
+	uv run python data/synthetic/generate.py
 	uv run python data/scripts/download.py

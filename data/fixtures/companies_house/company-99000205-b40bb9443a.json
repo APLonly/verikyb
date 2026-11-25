@@ -1,0 +1,37 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/99000205",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-10-01T00:00:00Z",
+  "synthetic": true,
+  "body": {
+    "company_number": "99000205",
+    "company_name": "Pellmont Ltd",
+    "company_status": "active",
+    "type": "ltd",
+    "jurisdiction": "england-wales",
+    "date_of_creation": "2017-04-11",
+    "registered_office_address": {
+      "address_line_1": "3 Esplanade",
+      "locality": "London",
+      "postal_code": "EC3M 4BY",
+      "country": "United Kingdom"
+    },
+    "sic_codes": [
+      "64209"
+    ],
+    "accounts": {
+      "next_due": "2026-12-31",
+      "overdue": false,
+      "last_accounts": {
+        "made_up_to": "2025-03-31"
+      }
+    },
+    "confirmation_statement": {
+      "next_due": "2027-01-31",
+      "overdue": false
+    },
+    "has_charges": false,
+    "has_insolvency_history": false
+  }
+}

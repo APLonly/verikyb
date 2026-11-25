@@ -1,0 +1,587 @@
+{
+  "source": "data/synthetic/companies.yaml",
+  "companies": [
+    {
+      "jurisdiction": "GB",
+      "number": "99000101",
+      "name": "Larkfield Ventures Ltd",
+      "scenario": "Ownership three levels deep",
+      "expected": {
+        "ubos": [
+          {
+            "name": "Eleanor Marsh",
+            "min_pct": 28.125,
+            "max_pct": 75
+          }
+        ],
+        "needs_review": [
+          {
+            "name": "Tomas Varga",
+            "min_pct": 14.0625,
+            "max_pct": 50,
+            "reason": "band straddles the 25% threshold"
+          }
+        ],
+        "circular_ownership": false
+      },
+      "reported_accounts": []
+    },
+    {
+      "jurisdiction": "GB",
+      "number": "99000102",
+      "name": "Quillon Trade Finance Ltd",
+      "scenario": "Circular ownership",
+      "expected": {
+        "ubos": [
+          {
+            "name": "Priya Raman",
+            "min_pct": 25,
+            "max_pct": 50
+          }
+        ],
+        "needs_review": [
+          {
+            "name": "Gideon Ashworth",
+            "reason": "holds through a circular chain"
+          }
+        ],
+        "circular_ownership": true,
+        "cycle": [
+          "Quillon Trade Finance Ltd",
+          "Pellmont Ltd",
+          "Quillon Group Ltd"
+        ]
+      },
+      "reported_accounts": []
+    },
+    {
+      "jurisdiction": "GB",
+      "number": "99000103",
+      "name": "Ardent Freight Services Ltd",
+      "scenario": "Director shared with a sanctioned company",
+      "expected": {
+        "ubos": [
+          {
+            "name": "Kasimir Vondrel",
+            "min_pct": 50,
+            "max_pct": 75
+          },
+          {
+            "name": "Helen Okafor",
+            "min_pct": 25,
+            "max_pct": 50
+          }
+        ],
+        "screening": [
+          {
+            "name": "Tarnov Shipping Ltd",
+            "list_entry_id": "SYN-0001",
+            "adjudication": "true_match",
+            "via": "director Kasimir Vondrel"
+          }
+        ],
+        "adverse_media": true
+      },
+      "reported_accounts": []
+    },
+    {
+      "jurisdiction": "GB",
+      "number": "99000104",
+      "name": "Brookmere Analytics Ltd",
+      "scenario": "Name close to a sanctioned person, but a different person",
+      "expected": {
+        "ubos": [
+          {
+            "name": "Viktor Halvorsen",
+            "min_pct": 75,
+            "max_pct": 100
+          }
+        ],
+        "screening": [
+          {
+            "name": "Viktor Halvorsen",
+            "list_entry_id": "SYN-0002",
+            "adjudication": "false_positive",
+            "reason": "listed person born 1961 in Belarus; director born 1985, Norwegian"
+          }
+        ]
+      },
+      "reported_accounts": []
+    },
+    {
+      "jurisdiction": "GB",
+      "number": "99000105",
+      "name": "Calder & Finch Payments Ltd",
+      "scenario": "Overdue accounts; small company that files a balance sheet only",
+      "expected": {
+        "ubos": [
+          {
+            "name": "Morag Calder",
+            "min_pct": 50,
+            "max_pct": 75
+          },
+          {
+            "name": "Samuel Finch",
+            "min_pct": 25,
+            "max_pct": 50
+          }
+        ],
+        "accounts_overdue": true,
+        "revenue_reported": false
+      },
+      "reported_accounts": [
+        {
+          "period_end": "2024-09-30",
+          "turnover": null,
+          "operating_profit": null,
+          "profit_loss": null,
+          "fixed_assets": 18500,
+          "current_assets": 412300,
+          "cash": 251870,
+          "creditors": 286400,
+          "net_assets": 144400
+        },
+        {
+          "period_end": "2023-09-30",
+          "turnover": null,
+          "operating_profit": null,
+          "profit_loss": null,
+          "fixed_assets": 22100,
+          "current_assets": 356900,
+          "cash": 198440,
+          "creditors": 248150,
+          "net_assets": 130850
+        }
+      ]
+    },
+    {
+      "jurisdiction": "GB",
+      "number": "99000106",
+      "name": "Hollin Bay Money Ltd",
+      "scenario": "FCA permissions changed since the last review",
+      "expected": {
+        "ubos": [
+          {
+            "name": "Fenella Hollis",
+            "min_pct": 75,
+            "max_pct": 100
+          }
+        ],
+        "fca_permission_changes": {
+          "added": [
+            "Payment services - account information services"
+          ],
+          "removed": [
+            "Payment services - issuing payment instruments"
+          ]
+        }
+      },
+      "reported_accounts": [
+        {
+          "period_end": "2025-03-31",
+          "turnover": 4815200,
+          "operating_profit": 612400,
+          "profit_loss": 488900,
+          "fixed_assets": 905000,
+          "current_assets": 6120400,
+          "cash": 3984100,
+          "creditors": 3540700,
+          "net_assets": 3484700
+        },
+        {
+          "period_end": "2024-03-31",
+          "turnover": 3902750,
+          "operating_profit": -118300,
+          "profit_loss": -131650,
+          "fixed_assets": 812300,
+          "current_assets": 4877900,
+          "cash": 2911200,
+          "creditors": 2694400,
+          "net_assets": 2995800
+        },
+        {
+          "period_end": "2023-03-31",
+          "turnover": 3105600,
+          "operating_profit": 275900,
+          "profit_loss": 219400,
+          "fixed_assets": 690800,
+          "current_assets": 3988200,
+          "cash": 2470300,
+          "creditors": 1551550,
+          "net_assets": 3127450
+        }
+      ]
+    },
+    {
+      "jurisdiction": "IN",
+      "number": "U46201MH2016PTC990107",
+      "name": "Saraswati Agro Exports Private Limited",
+      "scenario": "Transliterated name variant",
+      "expected": {
+        "ubos": [
+          {
+            "name": "Mohammed Yusuf Qureshi",
+            "min_pct": 60,
+            "max_pct": 60
+          },
+          {
+            "name": "Lakshmi Narayanan",
+            "min_pct": 40,
+            "max_pct": 40
+          }
+        ],
+        "name_matches": [
+          {
+            "registry": "Mohammed Yusuf Qureshi",
+            "document": "Muhammad Yousuf Kureshi",
+            "same_person": true
+          }
+        ]
+      }
+    },
+    {
+      "jurisdiction": "IN",
+      "number": "U13209MP2018PTC990108",
+      "name": "Vindhya Textiles Private Limited",
+      "scenario": "Missing GST certificate",
+      "expected": {
+        "ubos": [
+          {
+            "name": "Arjun Malhotra",
+            "min_pct": 70,
+            "max_pct": 70
+          },
+          {
+            "name": "Sunita Malhotra",
+            "min_pct": 30,
+            "max_pct": 30
+          }
+        ],
+        "document_issues": [
+          {
+            "document": "gst_certificate",
+            "issue": "missing"
+          }
+        ]
+      }
+    },
+    {
+      "jurisdiction": "IN",
+      "number": "U46309GA2015PTC990109",
+      "name": "Konkan Spice Traders Private Limited",
+      "scenario": "Expired document",
+      "expected": {
+        "ubos": [
+          {
+            "name": "Francis D'Souza",
+            "min_pct": 45,
+            "max_pct": 45
+          },
+          {
+            "name": "Maria Fernandes",
+            "min_pct": 43,
+            "max_pct": 43
+          },
+          {
+            "name": "Rohan Naik",
+            "min_pct": 12,
+            "max_pct": 12
+          }
+        ],
+        "document_issues": [
+          {
+            "document": "shareholding_extract",
+            "issue": "expired",
+            "valid_until": "2025-03-31"
+          }
+        ]
+      }
+    },
+    {
+      "jurisdiction": "IN",
+      "number": "U22209MH2017PTC990110",
+      "name": "Deccan Polymer Works Private Limited",
+      "scenario": "Address on the document differs from the registry",
+      "expected": {
+        "ubos": [
+          {
+            "name": "Vikram Joshi",
+            "min_pct": 52,
+            "max_pct": 52
+          },
+          {
+            "name": "Neha Kulkarni",
+            "min_pct": 40,
+            "max_pct": 40
+          }
+        ],
+        "below_threshold": [
+          {
+            "name": "Anil Deshpande",
+            "pct": 8,
+            "threshold_pct": 10
+          }
+        ],
+        "document_issues": [
+          {
+            "document": "certificate_of_incorporation",
+            "issue": "address_mismatch"
+          }
+        ]
+      }
+    }
+  ],
+  "documents": [
+    {
+      "company": "U46201MH2016PTC990107",
+      "doc_type": "certificate_of_incorporation",
+      "pdf": "U46201MH2016PTC990107_certificate_of_incorporation.pdf",
+      "scan": "U46201MH2016PTC990107_certificate_of_incorporation_scan.png",
+      "fields": {
+        "company_name": "Saraswati Agro Exports Private Limited",
+        "cin": "U46201MH2016PTC990107",
+        "pan": "AAPCS9901K",
+        "roc": "RoC-Mumbai",
+        "incorporation_date": "2016-08-12",
+        "registered_office": "Plot 22, Vashi Industrial Area, Navi Mumbai, Maharashtra 400703, India"
+      }
+    },
+    {
+      "company": "U46201MH2016PTC990107",
+      "doc_type": "gst_certificate",
+      "pdf": "U46201MH2016PTC990107_gst_certificate.pdf",
+      "scan": "U46201MH2016PTC990107_gst_certificate_scan.png",
+      "fields": {
+        "gstin": "27AAPCS9901K1ZO",
+        "legal_name": "Saraswati Agro Exports Private Limited",
+        "trade_name": "Saraswati Agro Exports Private Limited",
+        "constitution": "Private Limited Company",
+        "address": "Plot 22, Vashi Industrial Area, Navi Mumbai, Maharashtra 400703, India",
+        "liability_date": "2017-07-01",
+        "registration_type": "Regular"
+      }
+    },
+    {
+      "company": "U46201MH2016PTC990107",
+      "doc_type": "pan_card",
+      "pdf": "U46201MH2016PTC990107_pan_card.pdf",
+      "scan": "U46201MH2016PTC990107_pan_card_scan.png",
+      "fields": {
+        "pan": "AAPCS9901K",
+        "name": "Saraswati Agro Exports Private Limited",
+        "incorporation_date": "2016-08-12"
+      }
+    },
+    {
+      "company": "U46201MH2016PTC990107",
+      "doc_type": "shareholding_extract",
+      "pdf": "U46201MH2016PTC990107_shareholding_extract.pdf",
+      "scan": "U46201MH2016PTC990107_shareholding_extract_scan.png",
+      "fields": {
+        "company_name": "Saraswati Agro Exports Private Limited",
+        "cin": "U46201MH2016PTC990107",
+        "as_at": "2026-03-31",
+        "valid_until": "2027-03-31",
+        "shareholders": [
+          {
+            "name": "Muhammad Yousuf Kureshi",
+            "shares": 6000,
+            "pct": 60.0
+          },
+          {
+            "name": "Lakshmi Narayanan",
+            "shares": 4000,
+            "pct": 40.0
+          }
+        ]
+      }
+    },
+    {
+      "company": "U13209MP2018PTC990108",
+      "doc_type": "certificate_of_incorporation",
+      "pdf": "U13209MP2018PTC990108_certificate_of_incorporation.pdf",
+      "scan": "U13209MP2018PTC990108_certificate_of_incorporation_scan.png",
+      "fields": {
+        "company_name": "Vindhya Textiles Private Limited",
+        "cin": "U13209MP2018PTC990108",
+        "pan": "AAPCV9902L",
+        "roc": "RoC-Gwalior",
+        "incorporation_date": "2018-01-22",
+        "registered_office": "14 Pologround Industrial Estate, Indore, Madhya Pradesh 452015, India"
+      }
+    },
+    {
+      "company": "U13209MP2018PTC990108",
+      "doc_type": "pan_card",
+      "pdf": "U13209MP2018PTC990108_pan_card.pdf",
+      "scan": "U13209MP2018PTC990108_pan_card_scan.png",
+      "fields": {
+        "pan": "AAPCV9902L",
+        "name": "Vindhya Textiles Private Limited",
+        "incorporation_date": "2018-01-22"
+      }
+    },
+    {
+      "company": "U13209MP2018PTC990108",
+      "doc_type": "shareholding_extract",
+      "pdf": "U13209MP2018PTC990108_shareholding_extract.pdf",
+      "scan": "U13209MP2018PTC990108_shareholding_extract_scan.png",
+      "fields": {
+        "company_name": "Vindhya Textiles Private Limited",
+        "cin": "U13209MP2018PTC990108",
+        "as_at": "2026-03-31",
+        "valid_until": "2027-03-31",
+        "shareholders": [
+          {
+            "name": "Arjun Malhotra",
+            "shares": 7000,
+            "pct": 70.0
+          },
+          {
+            "name": "Sunita Malhotra",
+            "shares": 3000,
+            "pct": 30.0
+          }
+        ]
+      }
+    },
+    {
+      "company": "U46309GA2015PTC990109",
+      "doc_type": "certificate_of_incorporation",
+      "pdf": "U46309GA2015PTC990109_certificate_of_incorporation.pdf",
+      "scan": "U46309GA2015PTC990109_certificate_of_incorporation_scan.png",
+      "fields": {
+        "company_name": "Konkan Spice Traders Private Limited",
+        "cin": "U46309GA2015PTC990109",
+        "pan": "AAPCK9903M",
+        "roc": "RoC-Goa",
+        "incorporation_date": "2015-05-04",
+        "registered_office": "House 112, Rua de Ourem, Panaji, Goa 403001, India"
+      }
+    },
+    {
+      "company": "U46309GA2015PTC990109",
+      "doc_type": "gst_certificate",
+      "pdf": "U46309GA2015PTC990109_gst_certificate.pdf",
+      "scan": "U46309GA2015PTC990109_gst_certificate_scan.png",
+      "fields": {
+        "gstin": "30AAPCK9903M1Z3",
+        "legal_name": "Konkan Spice Traders Private Limited",
+        "trade_name": "Konkan Spice Traders Private Limited",
+        "constitution": "Private Limited Company",
+        "address": "House 112, Rua de Ourem, Panaji, Goa 403001, India",
+        "liability_date": "2017-07-01",
+        "registration_type": "Regular"
+      }
+    },
+    {
+      "company": "U46309GA2015PTC990109",
+      "doc_type": "pan_card",
+      "pdf": "U46309GA2015PTC990109_pan_card.pdf",
+      "scan": "U46309GA2015PTC990109_pan_card_scan.png",
+      "fields": {
+        "pan": "AAPCK9903M",
+        "name": "Konkan Spice Traders Private Limited",
+        "incorporation_date": "2015-05-04"
+      }
+    },
+    {
+      "company": "U46309GA2015PTC990109",
+      "doc_type": "shareholding_extract",
+      "pdf": "U46309GA2015PTC990109_shareholding_extract.pdf",
+      "scan": "U46309GA2015PTC990109_shareholding_extract_scan.png",
+      "fields": {
+        "company_name": "Konkan Spice Traders Private Limited",
+        "cin": "U46309GA2015PTC990109",
+        "as_at": "2024-03-31",
+        "valid_until": "2025-03-31",
+        "shareholders": [
+          {
+            "name": "Francis D'Souza",
+            "shares": 4500,
+            "pct": 45.0
+          },
+          {
+            "name": "Maria Fernandes",
+            "shares": 4300,
+            "pct": 43.0
+          },
+          {
+            "name": "Rohan Naik",
+            "shares": 1200,
+            "pct": 12.0
+          }
+        ]
+      }
+    },
+    {
+      "company": "U22209MH2017PTC990110",
+      "doc_type": "certificate_of_incorporation",
+      "pdf": "U22209MH2017PTC990110_certificate_of_incorporation.pdf",
+      "scan": "U22209MH2017PTC990110_certificate_of_incorporation_scan.png",
+      "fields": {
+        "company_name": "Deccan Polymer Works Private Limited",
+        "cin": "U22209MH2017PTC990110",
+        "pan": "AAPCD9904P",
+        "roc": "RoC-Pune",
+        "incorporation_date": "2017-02-15",
+        "registered_office": "Plot 14, MIDC Bhosari, Pune, Maharashtra 411026, India"
+      }
+    },
+    {
+      "company": "U22209MH2017PTC990110",
+      "doc_type": "gst_certificate",
+      "pdf": "U22209MH2017PTC990110_gst_certificate.pdf",
+      "scan": "U22209MH2017PTC990110_gst_certificate_scan.png",
+      "fields": {
+        "gstin": "27AAPCD9904P1ZQ",
+        "legal_name": "Deccan Polymer Works Private Limited",
+        "trade_name": "Deccan Polymer Works Private Limited",
+        "constitution": "Private Limited Company",
+        "address": "Plot 14, MIDC Bhosari, Pune, Maharashtra 411026, India",
+        "liability_date": "2017-07-01",
+        "registration_type": "Regular"
+      }
+    },
+    {
+      "company": "U22209MH2017PTC990110",
+      "doc_type": "pan_card",
+      "pdf": "U22209MH2017PTC990110_pan_card.pdf",
+      "scan": "U22209MH2017PTC990110_pan_card_scan.png",
+      "fields": {
+        "pan": "AAPCD9904P",
+        "name": "Deccan Polymer Works Private Limited",
+        "incorporation_date": "2017-02-15"
+      }
+    },
+    {
+      "company": "U22209MH2017PTC990110",
+      "doc_type": "shareholding_extract",
+      "pdf": "U22209MH2017PTC990110_shareholding_extract.pdf",
+      "scan": "U22209MH2017PTC990110_shareholding_extract_scan.png",
+      "fields": {
+        "company_name": "Deccan Polymer Works Private Limited",
+        "cin": "U22209MH2017PTC990110",
+        "as_at": "2026-03-31",
+        "valid_until": "2027-03-31",
+        "shareholders": [
+          {
+            "name": "Vikram Joshi",
+            "shares": 5200,
+            "pct": 52.0
+          },
+          {
+            "name": "Neha Kulkarni",
+            "shares": 4000,
+            "pct": 40.0
+          },
+          {
+            "name": "Anil Deshpande",
+            "shares": 800,
+            "pct": 8.0
+          }
+        ]
+      }
+    }
+  ]
+}
