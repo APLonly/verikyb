@@ -1,0 +1,37 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/99000101",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-10-01T00:00:00Z",
+  "synthetic": true,
+  "body": {
+    "company_number": "99000101",
+    "company_name": "Larkfield Ventures Ltd",
+    "company_status": "active",
+    "type": "ltd",
+    "jurisdiction": "england-wales",
+    "date_of_creation": "2019-03-14",
+    "registered_office_address": {
+      "address_line_1": "12 Harbour Walk",
+      "locality": "Bristol",
+      "postal_code": "BS1 5DB",
+      "country": "United Kingdom"
+    },
+    "sic_codes": [
+      "66190"
+    ],
+    "accounts": {
+      "next_due": "2026-12-31",
+      "overdue": false,
+      "last_accounts": {
+        "made_up_to": "2025-03-31"
+      }
+    },
+    "confirmation_statement": {
+      "next_due": "2027-01-31",
+      "overdue": false
+    },
+    "has_charges": false,
+    "has_insolvency_history": false
+  }
+}

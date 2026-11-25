@@ -1,0 +1,26 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/99000101/filing-history?category=accounts&items_per_page=25",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-10-01T00:00:00Z",
+  "synthetic": true,
+  "body": {
+    "filing_history_status": "filing-history-available",
+    "total_count": 1,
+    "items": [
+      {
+        "transaction_id": "zDxxm8_mbwai_mtcQ4FBy8s4jCf",
+        "category": "accounts",
+        "type": "AA",
+        "date": "2025-11-20",
+        "description": "accounts-with-accounts-type-micro-entity",
+        "description_values": {
+          "made_up_date": "2025-03-31"
+        },
+        "links": {
+          "document_metadata": "https://document-api.company-information.service.gov.uk/document/U9_67ueaMsGy-H-lHVv6g42UGOI"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "url": "https://api.company-information.service.gov.uk/officers/P0q_ob-OWwZUk8OCEWqjP51vwLT/appointments?items_per_page=50",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-10-01T00:00:00Z",
+  "synthetic": true,
+  "body": {
+    "kind": "personal-appointment",
+    "name": "Rajiv Menon",
+    "total_results": 1,
+    "items": [
+      {
+        "appointed_to": {
+          "company_number": "99000106",
+          "company_name": "Hollin Bay Money Ltd",
+          "company_status": "active"
+        },
+        "officer_role": "director",
+        "appointed_on": "2018-11-27"
+      }
+    ]
+  }
+}

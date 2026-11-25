@@ -1,0 +1,23 @@
+{
+  "url": "https://document-api.company-information.service.gov.uk/document/SxeljVzkA0bOj3sar1iHTJMwDWM",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-10-01T00:00:00Z",
+  "synthetic": true,
+  "body": {
+    "company_number": "99000106",
+    "category": "accounts",
+    "significant_date": "2024-03-31",
+    "links": {
+      "document": "https://document-api.company-information.service.gov.uk/document/SxeljVzkA0bOj3sar1iHTJMwDWM/content"
+    },
+    "resources": {
+      "application/pdf": {
+        "content_length": 48211
+      },
+      "application/xhtml+xml": {
+        "content_length": 8550
+      }
+    }
+  }
+}

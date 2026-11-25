@@ -1,0 +1,32 @@
+{
+  "url": "https://api.company-information.service.gov.uk/officers/rDjMJNWCfOgzfmuxjhrQCFuKnfd/appointments?items_per_page=50",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-10-01T00:00:00Z",
+  "synthetic": true,
+  "body": {
+    "kind": "personal-appointment",
+    "name": "Gideon Ashworth",
+    "total_results": 2,
+    "items": [
+      {
+        "appointed_to": {
+          "company_number": "99000102",
+          "company_name": "Quillon Trade Finance Ltd",
+          "company_status": "active"
+        },
+        "officer_role": "director",
+        "appointed_on": "2020-09-01"
+      },
+      {
+        "appointed_to": {
+          "company_number": "99000205",
+          "company_name": "Pellmont Ltd",
+          "company_status": "active"
+        },
+        "officer_role": "director",
+        "appointed_on": "2017-04-11"
+      }
+    ]
+  }
+}

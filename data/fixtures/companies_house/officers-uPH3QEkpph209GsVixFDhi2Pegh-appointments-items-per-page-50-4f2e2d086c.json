@@ -1,0 +1,32 @@
+{
+  "url": "https://api.company-information.service.gov.uk/officers/uPH3QEkpph209GsVixFDhi2Pegh/appointments?items_per_page=50",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-10-01T00:00:00Z",
+  "synthetic": true,
+  "body": {
+    "kind": "personal-appointment",
+    "name": "Kasimir Vondrel",
+    "total_results": 2,
+    "items": [
+      {
+        "appointed_to": {
+          "company_number": "99000103",
+          "company_name": "Ardent Freight Services Ltd",
+          "company_status": "active"
+        },
+        "officer_role": "director",
+        "appointed_on": "2016-02-29"
+      },
+      {
+        "appointed_to": {
+          "company_number": "99000203",
+          "company_name": "Tarnov Shipping Ltd",
+          "company_status": "active"
+        },
+        "officer_role": "director",
+        "appointed_on": "2014-05-06"
+      }
+    ]
+  }
+}

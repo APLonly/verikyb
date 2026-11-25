@@ -1,0 +1,23 @@
+{
+  "url": "https://api.company-information.service.gov.uk/officers/c6lZ-TM4MRv9cIcyXGY0q_k6R9a/appointments?items_per_page=50",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-10-01T00:00:00Z",
+  "synthetic": true,
+  "body": {
+    "kind": "personal-appointment",
+    "name": "Morag Calder",
+    "total_results": 1,
+    "items": [
+      {
+        "appointed_to": {
+          "company_number": "99000105",
+          "company_name": "Calder & Finch Payments Ltd",
+          "company_status": "active"
+        },
+        "officer_role": "director",
+        "appointed_on": "2017-10-03"
+      }
+    ]
+  }
+}

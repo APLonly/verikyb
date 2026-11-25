@@ -1,0 +1,27 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/99000201/persons-with-significant-control?items_per_page=100&start_index=0",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-10-01T00:00:00Z",
+  "synthetic": true,
+  "body": {
+    "total_results": 1,
+    "items": [
+      {
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent",
+          "voting-rights-75-to-100-percent"
+        ],
+        "notified_on": "2018-06-02",
+        "kind": "corporate-entity-person-with-significant-control",
+        "name": "Brightwater Holdings Ltd",
+        "identification": {
+          "legal_authority": "Companies Act 2006",
+          "legal_form": "Private Limited Company",
+          "country_registered": "England",
+          "registration_number": "99000202"
+        }
+      }
+    ]
+  }
+}

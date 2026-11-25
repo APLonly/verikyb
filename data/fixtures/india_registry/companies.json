@@ -1,0 +1,261 @@
+[
+  {
+    "company": {
+      "number": "U46201MH2016PTC990107",
+      "name": "Saraswati Agro Exports Private Limited",
+      "jurisdiction": "IN",
+      "status": "Active",
+      "incorporated_on": "2016-08-12",
+      "legal_form": "Private Limited Company",
+      "address": {
+        "lines": [
+          "Plot 22",
+          "Vashi Industrial Area"
+        ],
+        "locality": "Navi Mumbai",
+        "postal_code": "400703",
+        "country": "IN"
+      },
+      "activity_codes": [
+        "46201"
+      ]
+    },
+    "officers": [
+      {
+        "name": "Mohammed Yusuf Qureshi",
+        "role": "Director",
+        "officer_id": "09900071",
+        "appointed_on": "2016-08-12",
+        "nationality": "Indian"
+      },
+      {
+        "name": "Lakshmi Narayanan",
+        "role": "Director",
+        "officer_id": "09900072",
+        "appointed_on": "2016-08-12",
+        "nationality": "Indian"
+      }
+    ],
+    "owners": [
+      {
+        "name": "Mohammed Yusuf Qureshi",
+        "kind": "person",
+        "min_pct": 60.0,
+        "max_pct": 60.0,
+        "controls": [
+          "6000 equity shares"
+        ],
+        "country": "India"
+      },
+      {
+        "name": "Lakshmi Narayanan",
+        "kind": "person",
+        "min_pct": 40.0,
+        "max_pct": 40.0,
+        "controls": [
+          "4000 equity shares"
+        ],
+        "country": "India"
+      }
+    ]
+  },
+  {
+    "company": {
+      "number": "U13209MP2018PTC990108",
+      "name": "Vindhya Textiles Private Limited",
+      "jurisdiction": "IN",
+      "status": "Active",
+      "incorporated_on": "2018-01-22",
+      "legal_form": "Private Limited Company",
+      "address": {
+        "lines": [
+          "14 Pologround Industrial Estate"
+        ],
+        "locality": "Indore",
+        "postal_code": "452015",
+        "country": "IN"
+      },
+      "activity_codes": [
+        "13209"
+      ]
+    },
+    "officers": [
+      {
+        "name": "Arjun Malhotra",
+        "role": "Director",
+        "officer_id": "09900081",
+        "appointed_on": "2018-01-22",
+        "nationality": "Indian"
+      },
+      {
+        "name": "Sunita Malhotra",
+        "role": "Director",
+        "officer_id": "09900082",
+        "appointed_on": "2018-01-22",
+        "nationality": "Indian"
+      }
+    ],
+    "owners": [
+      {
+        "name": "Arjun Malhotra",
+        "kind": "person",
+        "min_pct": 70.0,
+        "max_pct": 70.0,
+        "controls": [
+          "7000 equity shares"
+        ],
+        "country": "India"
+      },
+      {
+        "name": "Sunita Malhotra",
+        "kind": "person",
+        "min_pct": 30.0,
+        "max_pct": 30.0,
+        "controls": [
+          "3000 equity shares"
+        ],
+        "country": "India"
+      }
+    ]
+  },
+  {
+    "company": {
+      "number": "U46309GA2015PTC990109",
+      "name": "Konkan Spice Traders Private Limited",
+      "jurisdiction": "IN",
+      "status": "Active",
+      "incorporated_on": "2015-05-04",
+      "legal_form": "Private Limited Company",
+      "address": {
+        "lines": [
+          "House 112",
+          "Rua de Ourem"
+        ],
+        "locality": "Panaji",
+        "postal_code": "403001",
+        "country": "IN"
+      },
+      "activity_codes": [
+        "46309"
+      ]
+    },
+    "officers": [
+      {
+        "name": "Francis D'Souza",
+        "role": "Director",
+        "officer_id": "09900091",
+        "appointed_on": "2015-05-04",
+        "nationality": "Indian"
+      },
+      {
+        "name": "Maria Fernandes",
+        "role": "Director",
+        "officer_id": "09900092",
+        "appointed_on": "2015-05-04",
+        "nationality": "Indian"
+      }
+    ],
+    "owners": [
+      {
+        "name": "Francis D'Souza",
+        "kind": "person",
+        "min_pct": 45.0,
+        "max_pct": 45.0,
+        "controls": [
+          "4500 equity shares"
+        ],
+        "country": "India"
+      },
+      {
+        "name": "Maria Fernandes",
+        "kind": "person",
+        "min_pct": 43.0,
+        "max_pct": 43.0,
+        "controls": [
+          "4300 equity shares"
+        ],
+        "country": "India"
+      },
+      {
+        "name": "Rohan Naik",
+        "kind": "person",
+        "min_pct": 12.0,
+        "max_pct": 12.0,
+        "controls": [
+          "1200 equity shares"
+        ],
+        "country": "India"
+      }
+    ]
+  },
+  {
+    "company": {
+      "number": "U22209MH2017PTC990110",
+      "name": "Deccan Polymer Works Private Limited",
+      "jurisdiction": "IN",
+      "status": "Active",
+      "incorporated_on": "2017-02-15",
+      "legal_form": "Private Limited Company",
+      "address": {
+        "lines": [
+          "Survey No. 52",
+          "Hinjewadi Phase 2"
+        ],
+        "locality": "Pune",
+        "postal_code": "411057",
+        "country": "IN"
+      },
+      "activity_codes": [
+        "22209"
+      ]
+    },
+    "officers": [
+      {
+        "name": "Vikram Joshi",
+        "role": "Director",
+        "officer_id": "09900101",
+        "appointed_on": "2017-02-15",
+        "nationality": "Indian"
+      },
+      {
+        "name": "Neha Kulkarni",
+        "role": "Director",
+        "officer_id": "09900102",
+        "appointed_on": "2019-06-01",
+        "nationality": "Indian"
+      }
+    ],
+    "owners": [
+      {
+        "name": "Vikram Joshi",
+        "kind": "person",
+        "min_pct": 52.0,
+        "max_pct": 52.0,
+        "controls": [
+          "5200 equity shares"
+        ],
+        "country": "India"
+      },
+      {
+        "name": "Neha Kulkarni",
+        "kind": "person",
+        "min_pct": 40.0,
+        "max_pct": 40.0,
+        "controls": [
+          "4000 equity shares"
+        ],
+        "country": "India"
+      },
+      {
+        "name": "Anil Deshpande",
+        "kind": "person",
+        "min_pct": 8.0,
+        "max_pct": 8.0,
+        "controls": [
+          "800 equity shares"
+        ],
+        "country": "India"
+      }
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/99000105/officers?items_per_page=100&start_index=0",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-10-01T00:00:00Z",
+  "synthetic": true,
+  "body": {
+    "kind": "officer-list",
+    "total_results": 2,
+    "items": [
+      {
+        "name": "CALDER, Morag",
+        "officer_role": "director",
+        "appointed_on": "2017-10-03",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "occupation": "Company Director",
+        "date_of_birth": {
+          "month": 8,
+          "year": 1975
+        },
+        "links": {
+          "officer": {
+            "appointments": "/officers/c6lZ-TM4MRv9cIcyXGY0q_k6R9a/appointments"
+          }
+        }
+      },
+      {
+        "name": "FINCH, Samuel",
+        "officer_role": "director",
+        "appointed_on": "2017-10-03",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "occupation": "Company Director",
+        "date_of_birth": {
+          "month": 12,
+          "year": 1981
+        },
+        "links": {
+          "officer": {
+            "appointments": "/officers/yneOm0-g-RxFONaUZPtxjfX8sMa/appointments"
+          }
+        }
+      }
+    ]
+  }
+}

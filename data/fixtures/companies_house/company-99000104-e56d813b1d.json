@@ -1,0 +1,37 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/99000104",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-10-01T00:00:00Z",
+  "synthetic": true,
+  "body": {
+    "company_number": "99000104",
+    "company_name": "Brookmere Analytics Ltd",
+    "company_status": "active",
+    "type": "ltd",
+    "jurisdiction": "england-wales",
+    "date_of_creation": "2021-07-19",
+    "registered_office_address": {
+      "address_line_1": "5 Wharf Lane",
+      "locality": "Manchester",
+      "postal_code": "M3 4AE",
+      "country": "United Kingdom"
+    },
+    "sic_codes": [
+      "62012"
+    ],
+    "accounts": {
+      "next_due": "2026-12-31",
+      "overdue": false,
+      "last_accounts": {
+        "made_up_to": "2025-03-31"
+      }
+    },
+    "confirmation_statement": {
+      "next_due": "2027-01-31",
+      "overdue": false
+    },
+    "has_charges": false,
+    "has_insolvency_history": false
+  }
+}

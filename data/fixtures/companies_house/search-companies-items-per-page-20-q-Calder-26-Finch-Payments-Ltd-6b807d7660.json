@@ -1,0 +1,27 @@
+{
+  "url": "https://api.company-information.service.gov.uk/search/companies?q=Calder+%26+Finch+Payments+Ltd&items_per_page=20",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-10-01T00:00:00Z",
+  "synthetic": true,
+  "body": {
+    "kind": "search#companies",
+    "total_results": 1,
+    "items": [
+      {
+        "kind": "searchresults#company",
+        "company_number": "99000105",
+        "title": "CALDER & FINCH PAYMENTS LTD",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_creation": "2017-10-03",
+        "address": {
+          "address_line_1": "21 Rose Street",
+          "locality": "Edinburgh",
+          "postal_code": "EH2 2PR",
+          "country": "United Kingdom"
+        }
+      }
+    ]
+  }
+}

@@ -2361,6 +2361,19 @@ wheels = [
 ]
 
 [[package]]
+name = "reportlab"
+version = "5.1.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "charset-normalizer" },
+    { name = "pillow" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/71/eb/176ef5717ebf0af4745a64501ff0d925341e9ae5560fa369bf20ec37abd8/reportlab-5.1.1.tar.gz", hash = "sha256:4bc6d7e5a961cabd320850637fa469c81dd9d6e32d0fe4191446086c6ea9a8d3", size = 4110241, upload-time = "2026-11-24T16:12:59.636Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/35/40/3b11dfcb2443a90c01f45e87c6e72f79bae3405a08bb9df61784f563f8af/reportlab-5.1.1-py3-none-any.whl", hash = "sha256:43af899b836179032807f68aa83b410182e8e6b1221e4339560c5ec44da843ab", size = 2015997, upload-time = "2026-11-24T16:13:20.33Z" },
+]
+
+[[package]]
 name = "requests"
 version = "2.34.2"
 source = { registry = "https://pypi.org/simple" }
@@ -2753,10 +2766,12 @@ dependencies = [
     { name = "langgraph" },
     { name = "litellm" },
     { name = "mcp" },
+    { name = "pillow" },
     { name = "pydantic" },
     { name = "python-multipart" },
     { name = "pyyaml" },
     { name = "qdrant-client" },
+    { name = "reportlab" },
 ]
 
 [package.dev-dependencies]
@@ -2777,10 +2792,12 @@ requires-dist = [
     { name = "langgraph", specifier = ">=1.2.18" },
     { name = "litellm", specifier = ">=1.106.6" },
     { name = "mcp", specifier = ">=2.3.0" },
+    { name = "pillow", specifier = ">=13.0.0" },
     { name = "pydantic", specifier = ">=2.14.1" },
     { name = "python-multipart", specifier = ">=0.0.32" },
     { name = "pyyaml", specifier = ">=6.0.3" },
     { name = "qdrant-client", specifier = ">=1.20.0" },
+    { name = "reportlab", specifier = ">=5.1.1" },
 ]
 
 [package.metadata.requires-dev]

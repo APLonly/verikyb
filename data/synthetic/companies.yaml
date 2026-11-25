@@ -1,0 +1,324 @@
+# Synthetic demo world. Every company, person, article and list entry here is fictional.
+#
+# Identifiers follow the real format rules (and check digits) but are documented test values:
+#   UK company numbers 99xxxxxx  (not yet issued by Companies House)
+#   FCA FRNs           99000xx   (seven digits)
+#   LEIs               prefix SYNT (no LEI issuer uses it); valid ISO 7064 check digits
+#   Indian CINs        registration numbers 99xxxx; PANs AAPC?99xx?; GSTINs with valid checksums
+#   Indian DINs        0990xxxx
+#
+# `customer: true` marks the ten demo KYB customers; the other companies exist because an ownership chain or a directorship points at them. `expected` is ground truth written by hand, so evaluations check the pipeline against something it did not compute itself.
+
+people:
+  eleanor_marsh: {name: Eleanor Marsh, nationality: British, residence: United Kingdom, born: 1971-04}
+  daniel_okoro: {name: Daniel Okoro, nationality: British, residence: United Kingdom, born: 1984-11}
+  tomas_varga: {name: Tomas Varga, nationality: Hungarian, residence: United Kingdom, born: 1968-09}
+  priya_raman: {name: Priya Raman, nationality: British, residence: United Kingdom, born: 1983-02}
+  gideon_ashworth: {name: Gideon Ashworth, nationality: British, residence: Jersey, born: 1959-07}
+  kasimir_vondrel: {name: Kasimir Vondrel, nationality: Latvian, residence: Cyprus, born: 1966-11}
+  helen_okafor: {name: Helen Okafor, nationality: British, residence: United Kingdom, born: 1979-05}
+  viktor_halvorsen: {name: Viktor Halvorsen, nationality: Norwegian, residence: United Kingdom, born: 1985-06}
+  amara_nwosu: {name: Amara Nwosu, nationality: British, residence: United Kingdom, born: 1990-01}
+  morag_calder: {name: Morag Calder, nationality: British, residence: United Kingdom, born: 1975-08}
+  samuel_finch: {name: Samuel Finch, nationality: British, residence: United Kingdom, born: 1981-12}
+  fenella_hollis: {name: Fenella Hollis, nationality: British, residence: United Kingdom, born: 1969-03}
+  rajiv_menon: {name: Rajiv Menon, nationality: British, residence: United Kingdom, born: 1977-10}
+
+uk_companies:
+  - number: "99000101"
+    name: Larkfield Ventures Ltd
+    customer: true
+    scenario: Ownership three levels deep
+    incorporated_on: 2019-03-14
+    sic_codes: ["66190"]
+    address: {lines: [12 Harbour Walk], locality: Bristol, postal_code: BS1 5DB}
+    directors: [eleanor_marsh, daniel_okoro]
+    owners:
+      - {company: "99000201", min_pct: 75, max_pct: 100}
+    lei: SYNT00LARKVENTUR0189
+    gleif_direct_parent: "99000201"
+    gleif_ultimate_parent: "99000202"
+    expected:
+      ubos: [{name: Eleanor Marsh, min_pct: 28.125, max_pct: 75}]
+      needs_review: [{name: Tomas Varga, min_pct: 14.0625, max_pct: 50, reason: band straddles the 25% threshold}]
+      circular_ownership: false
+
+  - number: "99000201"
+    name: Larkfield Holdings Ltd
+    incorporated_on: 2018-06-02
+    sic_codes: ["64209"]
+    address: {lines: [12 Harbour Walk], locality: Bristol, postal_code: BS1 5DB}
+    directors: [eleanor_marsh]
+    owners:
+      - {company: "99000202", min_pct: 75, max_pct: 100}
+    lei: SYNT00LARKHOLDNG0270
+    gleif_direct_parent: "99000202"
+    gleif_ultimate_parent: "99000202"
+
+  - number: "99000202"
+    name: Brightwater Holdings Ltd
+    incorporated_on: 2015-01-20
+    sic_codes: ["64209"]
+    address: {lines: [4 Queen Square], locality: Bath, postal_code: BA1 2HN}
+    directors: [eleanor_marsh, tomas_varga]
+    owners:
+      - {person: eleanor_marsh, min_pct: 50, max_pct: 75}
+      - {person: tomas_varga, min_pct: 25, max_pct: 50}
+    lei: SYNT00BRIGHTWATR0394
+
+  - number: "99000102"
+    name: Quillon Trade Finance Ltd
+    customer: true
+    scenario: Circular ownership
+    incorporated_on: 2020-09-01
+    sic_codes: ["64921"]
+    address: {lines: [88 Fenchurch Street], locality: London, postal_code: EC3M 4BY}
+    directors: [priya_raman, gideon_ashworth]
+    owners:
+      - {company: "99000204", min_pct: 50, max_pct: 75}
+      - {person: priya_raman, min_pct: 25, max_pct: 50}
+    expected:
+      ubos: [{name: Priya Raman, min_pct: 25, max_pct: 50}]
+      needs_review: [{name: Gideon Ashworth, reason: holds through a circular chain}]
+      circular_ownership: true
+      cycle: [Quillon Trade Finance Ltd, Pellmont Ltd, Quillon Group Ltd]  # each owns the next
+
+  - number: "99000204"
+    name: Quillon Group Ltd
+    incorporated_on: 2020-08-15
+    sic_codes: ["64209"]
+    address: {lines: [88 Fenchurch Street], locality: London, postal_code: EC3M 4BY}
+    directors: [priya_raman]
+    owners:
+      - {company: "99000205", min_pct: 50, max_pct: 75}
+
+  - number: "99000205"
+    name: Pellmont Ltd
+    incorporated_on: 2017-04-11
+    sic_codes: ["64209"]
+    address: {lines: [3 Esplanade], locality: London, postal_code: EC3M 4BY}
+    directors: [gideon_ashworth]
+    owners:
+      - {company: "99000102", min_pct: 25, max_pct: 50}
+      - {person: gideon_ashworth, min_pct: 50, max_pct: 75}
+
+  - number: "99000103"
+    name: Ardent Freight Services Ltd
+    customer: true
+    scenario: Director shared with a sanctioned company
+    incorporated_on: 2016-02-29
+    sic_codes: ["52290"]
+    address: {lines: [Unit 7, Dockside Trading Estate], locality: Felixstowe, postal_code: IP11 3SY}
+    directors: [kasimir_vondrel, helen_okafor]
+    owners:
+      - {person: kasimir_vondrel, min_pct: 50, max_pct: 75}
+      - {person: helen_okafor, min_pct: 25, max_pct: 50}
+    news:
+      - title: Freight forwarder questioned over shipments for sanctioned Tarnov Shipping
+        url: https://www.example.com/news/2026/08/ardent-freight-tarnov-shipments
+        domain: example.com
+        seen_at: 2026-08-14T09:30:00Z
+      - title: Customs officers search Felixstowe warehouse used by Ardent Freight
+        url: https://news.example.org/2026/09/felixstowe-warehouse-search
+        domain: example.org
+        seen_at: 2026-09-02T16:05:00Z
+    expected:
+      ubos: [{name: Kasimir Vondrel, min_pct: 50, max_pct: 75}, {name: Helen Okafor, min_pct: 25, max_pct: 50}]
+      screening:
+        - {name: Tarnov Shipping Ltd, list_entry_id: SYN-0001, adjudication: true_match, via: director Kasimir Vondrel}
+      adverse_media: true
+
+  - number: "99000203"
+    name: Tarnov Shipping Ltd
+    incorporated_on: 2014-05-06
+    sic_codes: ["50200"]
+    address: {lines: [40 Dock Road], locality: Tilbury, postal_code: RM18 7BX}
+    directors: [kasimir_vondrel]
+    owners:
+      - {person: kasimir_vondrel, min_pct: 75, max_pct: 100}
+
+  - number: "99000104"
+    name: Brookmere Analytics Ltd
+    customer: true
+    scenario: Name close to a sanctioned person, but a different person
+    incorporated_on: 2021-07-19
+    sic_codes: ["62012"]
+    address: {lines: [5 Wharf Lane], locality: Manchester, postal_code: M3 4AE}
+    directors: [viktor_halvorsen, amara_nwosu]
+    owners:
+      - {person: viktor_halvorsen, min_pct: 75, max_pct: 100}
+    expected:
+      ubos: [{name: Viktor Halvorsen, min_pct: 75, max_pct: 100}]
+      screening:
+        - {name: Viktor Halvorsen, list_entry_id: SYN-0002, adjudication: false_positive,
+           reason: "listed person born 1961 in Belarus; director born 1985, Norwegian"}
+
+  - number: "99000105"
+    name: Calder & Finch Payments Ltd
+    customer: true
+    scenario: Overdue accounts; small company that files a balance sheet only
+    incorporated_on: 2017-10-03
+    sic_codes: ["66190"]
+    address: {lines: [21 Rose Street], locality: Edinburgh, postal_code: EH2 2PR}
+    directors: [morag_calder, samuel_finch]
+    owners:
+      - {person: morag_calder, min_pct: 50, max_pct: 75}
+      - {person: samuel_finch, min_pct: 25, max_pct: 50}
+    accounts_next_due: 2026-06-30
+    accounts_overdue: true
+    accounts:
+      - filed_on: 2025-06-24
+        balance_sheet_only: true
+        years:
+          - {period_end: 2024-09-30, fixed_assets: 18500, current_assets: 412300, cash: 251870,
+             creditors: 286400, net_assets: 144400}
+          - {period_end: 2023-09-30, fixed_assets: 22100, current_assets: 356900, cash: 198440,
+             creditors: 248150, net_assets: 130850}
+    expected:
+      ubos: [{name: Morag Calder, min_pct: 50, max_pct: 75}, {name: Samuel Finch, min_pct: 25, max_pct: 50}]
+      accounts_overdue: true
+      revenue_reported: false
+
+  - number: "99000106"
+    name: Hollin Bay Money Ltd
+    customer: true
+    scenario: FCA permissions changed since the last review
+    incorporated_on: 2018-11-27
+    sic_codes: ["66190"]
+    address: {lines: [9 St Paul's Square], locality: Birmingham, postal_code: B3 1QU}
+    directors: [fenella_hollis, rajiv_menon]
+    owners:
+      - {person: fenella_hollis, min_pct: 75, max_pct: 100}
+    fca:
+      frn: "9900006"
+      status: Authorised
+      status_effective_date: 2019-06-14
+      permissions:
+        - Issuing electronic money
+        - Payment services - money remittance
+        - Payment services - account information services
+      last_review: {reviewed_on: 2025-10-15, permissions: [Issuing electronic money, Payment services - money remittance, Payment services - issuing payment instruments]}
+    accounts:
+      - filed_on: 2025-09-30
+        years:
+          - {period_end: 2025-03-31, turnover: 4815200, operating_profit: 612400, profit_loss: 488900,
+             fixed_assets: 905000, current_assets: 6120400, cash: 3984100, creditors: 3540700, net_assets: 3484700}
+          - {period_end: 2024-03-31, turnover: 3902750, operating_profit: -118300, profit_loss: -131650,
+             fixed_assets: 812300, current_assets: 4877900, cash: 2911200, creditors: 2694400, net_assets: 2995800}
+      - filed_on: 2024-09-26
+        years:
+          - {period_end: 2024-03-31, turnover: 3902750, operating_profit: -118300, profit_loss: -131650,
+             fixed_assets: 812300, current_assets: 4877900, cash: 2911200, creditors: 2694400, net_assets: 2995800}
+          - {period_end: 2023-03-31, turnover: 3105600, operating_profit: 275900, profit_loss: 219400,
+             fixed_assets: 690800, current_assets: 3988200, cash: 2470300, creditors: 1551550, net_assets: 3127450}
+    expected:
+      ubos: [{name: Fenella Hollis, min_pct: 75, max_pct: 100}]
+      fca_permission_changes:
+        added: [Payment services - account information services]
+        removed: [Payment services - issuing payment instruments]
+
+india_companies:
+  - cin: U46201MH2016PTC990107
+    name: Saraswati Agro Exports Private Limited
+    scenario: Transliterated name variant
+    incorporated_on: 2016-08-12
+    roc: RoC-Mumbai
+    state: Maharashtra
+    gst_state_code: "27"
+    pan: AAPCS9901K
+    gstin: 27AAPCS9901K1ZO
+    nic_codes: ["46201"]
+    address: {lines: [Plot 22, Vashi Industrial Area], locality: Navi Mumbai, postal_code: "400703"}
+    directors:
+      - {name: Mohammed Yusuf Qureshi, din: "09900071", appointed_on: 2016-08-12}
+      - {name: Lakshmi Narayanan, din: "09900072", appointed_on: 2016-08-12}
+    shareholders:
+      - {name: Mohammed Yusuf Qureshi, document_name: Muhammad Yousuf Kureshi, shares: 6000, pct: 60}
+      - {name: Lakshmi Narayanan, shares: 4000, pct: 40}
+    shareholding: {as_at: 2026-03-31, valid_until: 2027-03-31}
+    documents: [certificate_of_incorporation, gst_certificate, pan_card, shareholding_extract]
+    expected:
+      ubos: [{name: Mohammed Yusuf Qureshi, min_pct: 60, max_pct: 60}, {name: Lakshmi Narayanan, min_pct: 40, max_pct: 40}]
+      name_matches: [{registry: Mohammed Yusuf Qureshi, document: Muhammad Yousuf Kureshi, same_person: true}]
+
+  - cin: U13209MP2018PTC990108
+    name: Vindhya Textiles Private Limited
+    scenario: Missing GST certificate
+    incorporated_on: 2018-01-22
+    roc: RoC-Gwalior
+    state: Madhya Pradesh
+    gst_state_code: "23"
+    pan: AAPCV9902L
+    nic_codes: ["13209"]
+    address: {lines: [14 Pologround Industrial Estate], locality: Indore, postal_code: "452015"}
+    directors:
+      - {name: Arjun Malhotra, din: "09900081", appointed_on: 2018-01-22}
+      - {name: Sunita Malhotra, din: "09900082", appointed_on: 2018-01-22}
+    shareholders:
+      - {name: Arjun Malhotra, shares: 7000, pct: 70}
+      - {name: Sunita Malhotra, shares: 3000, pct: 30}
+    shareholding: {as_at: 2026-03-31, valid_until: 2027-03-31}
+    documents: [certificate_of_incorporation, pan_card, shareholding_extract]
+    expected:
+      ubos: [{name: Arjun Malhotra, min_pct: 70, max_pct: 70}, {name: Sunita Malhotra, min_pct: 30, max_pct: 30}]
+      document_issues: [{document: gst_certificate, issue: missing}]
+
+  - cin: U46309GA2015PTC990109
+    name: Konkan Spice Traders Private Limited
+    scenario: Expired document
+    incorporated_on: 2015-05-04
+    roc: RoC-Goa
+    state: Goa
+    gst_state_code: "30"
+    pan: AAPCK9903M
+    gstin: 30AAPCK9903M1Z3
+    nic_codes: ["46309"]
+    address: {lines: [House 112, Rua de Ourem], locality: Panaji, postal_code: "403001"}
+    directors:
+      - {name: Francis D'Souza, din: "09900091", appointed_on: 2015-05-04}
+      - {name: Maria Fernandes, din: "09900092", appointed_on: 2015-05-04}
+    shareholders:
+      - {name: Francis D'Souza, shares: 4500, pct: 45}
+      - {name: Maria Fernandes, shares: 4300, pct: 43}
+      - {name: Rohan Naik, shares: 1200, pct: 12}
+    shareholding: {as_at: 2024-03-31, valid_until: 2025-03-31}
+    documents: [certificate_of_incorporation, gst_certificate, pan_card, shareholding_extract]
+    expected:
+      ubos:
+        - {name: Francis D'Souza, min_pct: 45, max_pct: 45}
+        - {name: Maria Fernandes, min_pct: 43, max_pct: 43}
+        - {name: Rohan Naik, min_pct: 12, max_pct: 12}
+      document_issues: [{document: shareholding_extract, issue: expired, valid_until: 2025-03-31}]
+
+  - cin: U22209MH2017PTC990110
+    name: Deccan Polymer Works Private Limited
+    scenario: Address on the document differs from the registry
+    incorporated_on: 2017-02-15
+    roc: RoC-Pune
+    state: Maharashtra
+    gst_state_code: "27"
+    pan: AAPCD9904P
+    gstin: 27AAPCD9904P1ZQ
+    nic_codes: ["22209"]
+    address: {lines: [Survey No. 52, Hinjewadi Phase 2], locality: Pune, postal_code: "411057"}
+    document_address: {lines: [Plot 14, MIDC Bhosari], locality: Pune, postal_code: "411026"}
+    directors:
+      - {name: Vikram Joshi, din: "09900101", appointed_on: 2017-02-15}
+      - {name: Neha Kulkarni, din: "09900102", appointed_on: 2019-06-01}
+    shareholders:
+      - {name: Vikram Joshi, shares: 5200, pct: 52}
+      - {name: Neha Kulkarni, shares: 4000, pct: 40}
+      - {name: Anil Deshpande, shares: 800, pct: 8}
+    shareholding: {as_at: 2026-03-31, valid_until: 2027-03-31}
+    documents: [certificate_of_incorporation, gst_certificate, pan_card, shareholding_extract]
+    expected:
+      ubos: [{name: Vikram Joshi, min_pct: 52, max_pct: 52}, {name: Neha Kulkarni, min_pct: 40, max_pct: 40}]
+      below_threshold: [{name: Anil Deshpande, pct: 8, threshold_pct: 10}]
+      document_issues: [{document: certificate_of_incorporation, issue: address_mismatch}]
+
+# The synthetic sanctions list that drives the screening scenarios.
+sanctions:
+  - {entry_id: SYN-0001, kind: entity, name: Tarnov Shipping Ltd, aliases: [Tarnov Maritime Services],
+     countries: [GB], programs: [SYNTHETIC-DEMO]}
+  - {entry_id: SYN-0002, kind: person, name: Viktor Halvorson, aliases: [Viktor Halvorsson],
+     birth_dates: ["1961-03-14"], countries: [BY], programs: [SYNTHETIC-DEMO]}

@@ -1,0 +1,41 @@
+{
+  "url": "https://api.company-information.service.gov.uk/officers/h5bP6FebgdVV1VmnamUEYKxLL-p/appointments?items_per_page=50",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-10-01T00:00:00Z",
+  "synthetic": true,
+  "body": {
+    "kind": "personal-appointment",
+    "name": "Eleanor Marsh",
+    "total_results": 3,
+    "items": [
+      {
+        "appointed_to": {
+          "company_number": "99000101",
+          "company_name": "Larkfield Ventures Ltd",
+          "company_status": "active"
+        },
+        "officer_role": "director",
+        "appointed_on": "2019-03-14"
+      },
+      {
+        "appointed_to": {
+          "company_number": "99000201",
+          "company_name": "Larkfield Holdings Ltd",
+          "company_status": "active"
+        },
+        "officer_role": "director",
+        "appointed_on": "2018-06-02"
+      },
+      {
+        "appointed_to": {
+          "company_number": "99000202",
+          "company_name": "Brightwater Holdings Ltd",
+          "company_status": "active"
+        },
+        "officer_role": "director",
+        "appointed_on": "2015-01-20"
+      }
+    ]
+  }
+}

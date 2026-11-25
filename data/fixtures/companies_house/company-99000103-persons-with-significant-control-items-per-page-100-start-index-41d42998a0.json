@@ -1,0 +1,42 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/99000103/persons-with-significant-control?items_per_page=100&start_index=0",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-10-01T00:00:00Z",
+  "synthetic": true,
+  "body": {
+    "total_results": 2,
+    "items": [
+      {
+        "natures_of_control": [
+          "ownership-of-shares-50-to-75-percent",
+          "voting-rights-50-to-75-percent"
+        ],
+        "notified_on": "2016-02-29",
+        "kind": "individual-person-with-significant-control",
+        "name": "Kasimir Vondrel",
+        "nationality": "Latvian",
+        "country_of_residence": "Cyprus",
+        "date_of_birth": {
+          "month": 11,
+          "year": 1966
+        }
+      },
+      {
+        "natures_of_control": [
+          "ownership-of-shares-25-to-50-percent",
+          "voting-rights-25-to-50-percent"
+        ],
+        "notified_on": "2016-02-29",
+        "kind": "individual-person-with-significant-control",
+        "name": "Helen Okafor",
+        "nationality": "British",
+        "country_of_residence": "United Kingdom",
+        "date_of_birth": {
+          "month": 5,
+          "year": 1979
+        }
+      }
+    ]
+  }
+}

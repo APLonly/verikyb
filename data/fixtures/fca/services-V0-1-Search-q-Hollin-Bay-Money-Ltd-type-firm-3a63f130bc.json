@@ -1,0 +1,25 @@
+{
+  "url": "https://register.fca.org.uk/services/V0.1/Search?q=Hollin+Bay+Money+Ltd&type=firm",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-10-01T00:00:00Z",
+  "synthetic": true,
+  "body": {
+    "Status": "FSR-API-04-01-00",
+    "Message": "Ok. Search successful",
+    "ResultInfo": {
+      "page": "1",
+      "per_page": "20",
+      "total_count": "1"
+    },
+    "Data": [
+      {
+        "Name": "Hollin Bay Money Ltd (Postcode: B3 1QU)",
+        "Reference Number": "9900006",
+        "Status": "Authorised",
+        "Type of business or Individual": "Firm",
+        "URL": "https://register.fca.org.uk/services/V0.1/Firm/9900006"
+      }
+    ]
+  }
+}

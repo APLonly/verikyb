@@ -1,0 +1,37 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/99000105",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-10-01T00:00:00Z",
+  "synthetic": true,
+  "body": {
+    "company_number": "99000105",
+    "company_name": "Calder & Finch Payments Ltd",
+    "company_status": "active",
+    "type": "ltd",
+    "jurisdiction": "england-wales",
+    "date_of_creation": "2017-10-03",
+    "registered_office_address": {
+      "address_line_1": "21 Rose Street",
+      "locality": "Edinburgh",
+      "postal_code": "EH2 2PR",
+      "country": "United Kingdom"
+    },
+    "sic_codes": [
+      "66190"
+    ],
+    "accounts": {
+      "next_due": "2026-06-30",
+      "overdue": true,
+      "last_accounts": {
+        "made_up_to": "2024-09-30"
+      }
+    },
+    "confirmation_statement": {
+      "next_due": "2027-01-31",
+      "overdue": false
+    },
+    "has_charges": false,
+    "has_insolvency_history": false
+  }
+}

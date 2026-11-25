@@ -1,0 +1,39 @@
+{
+  "url": "https://api.company-information.service.gov.uk/company/99000106/filing-history?category=accounts&items_per_page=25",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-10-01T00:00:00Z",
+  "synthetic": true,
+  "body": {
+    "filing_history_status": "filing-history-available",
+    "total_count": 2,
+    "items": [
+      {
+        "transaction_id": "KltcjjqG02RBN8R-l2LpTexp-ko",
+        "category": "accounts",
+        "type": "AA",
+        "date": "2025-09-30",
+        "description": "accounts-with-accounts-type-full",
+        "description_values": {
+          "made_up_date": "2025-03-31"
+        },
+        "links": {
+          "document_metadata": "https://document-api.company-information.service.gov.uk/document/Ockpa2pxB6OEZ0W6eiU5k7IPMNK"
+        }
+      },
+      {
+        "transaction_id": "b5xW7K9lQsCf6WW8r50C6tXQXRf",
+        "category": "accounts",
+        "type": "AA",
+        "date": "2024-09-26",
+        "description": "accounts-with-accounts-type-full",
+        "description_values": {
+          "made_up_date": "2024-03-31"
+        },
+        "links": {
+          "document_metadata": "https://document-api.company-information.service.gov.uk/document/SxeljVzkA0bOj3sar1iHTJMwDWM"
+        }
+      }
+    ]
+  }
+}

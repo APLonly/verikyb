@@ -1,0 +1,31 @@
+{
+  "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=%22Ardent+Freight+Services+Ltd%22&mode=artlist&format=json&maxrecords=75&sort=datedesc",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-10-01T00:00:00Z",
+  "synthetic": true,
+  "body": {
+    "articles": [
+      {
+        "url": "https://www.example.com/news/2026/08/ardent-freight-tarnov-shipments",
+        "url_mobile": "",
+        "title": "Freight forwarder questioned over shipments for sanctioned Tarnov Shipping",
+        "seendate": "20260814T093000Z",
+        "socialimage": "",
+        "domain": "example.com",
+        "language": "English",
+        "sourcecountry": "United Kingdom"
+      },
+      {
+        "url": "https://news.example.org/2026/09/felixstowe-warehouse-search",
+        "url_mobile": "",
+        "title": "Customs officers search Felixstowe warehouse used by Ardent Freight",
+        "seendate": "20260902T160500Z",
+        "socialimage": "",
+        "domain": "example.org",
+        "language": "English",
+        "sourcecountry": "United Kingdom"
+      }
+    ]
+  }
+}

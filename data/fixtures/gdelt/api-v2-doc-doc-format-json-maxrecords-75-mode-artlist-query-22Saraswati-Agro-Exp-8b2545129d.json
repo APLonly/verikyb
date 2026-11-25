@@ -1,0 +1,8 @@
+{
+  "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=%22Saraswati+Agro+Exports+Private+Limited%22&mode=artlist&format=json&maxrecords=75&sort=datedesc",
+  "status": 200,
+  "content_type": "application/json",
+  "recorded_at": "2026-10-01T00:00:00Z",
+  "synthetic": true,
+  "body": {}
+}
