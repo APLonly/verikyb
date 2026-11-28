@@ -49,6 +49,7 @@ stages:
               import json
               import os
               import subprocess
+              import urllib.error
               import urllib.parse
               import urllib.request
               import uuid
@@ -120,16 +121,29 @@ stages:
                       try:
                           with urllib.request.urlopen(request, timeout=30) as response:
                               return json.load(response)
-                      except (urllib.error.URLError, ValueError):
-                          raise SystemExit("Azure DevOps evidence/configuration read failed. Check build/environment/check-view permissions.")
+                      except urllib.error.HTTPError as error:
+                          raise SystemExit(f"Azure DevOps metadata request failed: HTTP {error.code} ({path}).")
+                      except urllib.error.URLError:
+                          raise SystemExit(f"Azure DevOps metadata network request failed ({path}).")
+                      except ValueError:
+                          raise SystemExit(f"Azure DevOps metadata response was not valid JSON ({path}).")
 
                   run = get(f"build/builds/{run_id}", **{"api-version": "7.1"})
                   validate_ci(run, definition, commit, branch, os.environ["BUILD_REPOSITORY_ID"])
                   qa_requested = os.environ["PROMOTE_QA"].casefold() == "true"
                   for name in (["verikyb-dev", "verikyb-qa"] if qa_requested else ["verikyb-dev"]):
                       response = get("distributedtask/environments", name=name, **{"api-version": "7.1"})
-                      environments = [e for e in response.get("value", []) if e.get("name") == name]
-                      require(len(environments) == 1, f"Pre-create and authorize the Azure DevOps environment {name}.")
+                      require(isinstance(response, dict) and isinstance(response.get("value"), list),
+                              "Unexpected environment-list JSON: expected an object with a value array; refusing deployment.")
+                      items = response["value"]
+                      require(all(isinstance(e, dict) and isinstance(e.get("name"), str)
+                                  and type(e.get("id")) is int and e["id"] > 0 for e in items),
+                              "Unexpected environment entry structure; refusing deployment.")
+                      environments = [e for e in items if e["name"] == name]
+                      require(len(environments) == 1,
+                              f"Environment lookup for {name!r}: returned={len(items)}, exact_matches={len(environments)}, "
+                              f"collection={os.environ['SYSTEM_COLLECTIONURI']}, project_id={os.environ['SYSTEM_TEAMPROJECTID']}. "
+                              "Expected one visible exact-name match. Check project, environment name and Build Service Reader access.")
                       if name == "verikyb-qa":
                           environment_id = environments[0]["id"]
                           checks = get("pipelines/checks/configurations", resourceType="environment",
