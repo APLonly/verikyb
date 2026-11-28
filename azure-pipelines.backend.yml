@@ -259,7 +259,7 @@ stages:
 
               def inspect(state, app_id, environment_id, registry):
                   require(state["id"].casefold() == app_id.casefold(), "Unexpected app resource ID.")
-                  require(state["location"].casefold() == "centralindia", "Unexpected app region.")
+                  require(state["location"].casefold() in ("centralindia", "central india"), "Unexpected app region.")
                   require(state["environment"].casefold() == environment_id.casefold(), "Unexpected app environment.")
                   require(state["mode"] == "Single", "Single-revision mode is required.")
                   ingress = state["ingress"]
