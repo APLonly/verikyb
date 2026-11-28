@@ -473,7 +473,7 @@ stages:
                         with urllib.request.urlopen(base + "/health", timeout=2) as response:
                             if response.status == 200 and json.load(response).get("status") == "ok":
                                 break
-                    except (urllib.error.URLError, TimeoutError, ValueError):
+                    except (urllib.error.URLError, TimeoutError, ConnectionResetError, ValueError):
                         pass
                     time.sleep(1)
                 else:
