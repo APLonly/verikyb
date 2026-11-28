@@ -1,11 +1,12 @@
 {% extends "_workspace.html" %}
+{% from "_macros.html" import cite, label, risk_badge %}
 {% block tab %}
   <table>
     <caption>Every risk flag, most severe first. Each cites its evidence and the policy rule it applies.</caption>
     <tr><th>Severity</th><th>Category</th><th>Flag</th><th>Policy</th><th>Status</th></tr>
     {% for flag in case.flags %}
-      <tr><td><span class="badge">{{ flag.severity }}</span></td><td>{{ flag.category | replace("_", " ") }}</td>
-        <td>{{ flag.title }}{% for id in flag.evidence_ids %}<span class="chip">{{ id }}</span>{% endfor %}<br>
+      <tr><td>{{ risk_badge(flag.severity) }}</td><td>{{ label(flag.category) }}</td>
+        <td>{{ flag.title }}{{ cite(flag.evidence_ids) }}<br>
           <small class="muted">rule {{ flag.rule_id }}</small></td>
         <td>{{ flag.policy_citations | join(", ") }}</td>
         <td>{{ "Open" if flag.status == "open" else "Cleared: " ~ flag.cleared_reason }}</td></tr>

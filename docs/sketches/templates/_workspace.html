@@ -1,11 +1,11 @@
 {% extends "_frame.html" %}
+{% from "_macros.html" import risk_badge, status_badge %}
 {# One request: its ID and status in the header on every tab, the tab bar, and a side column:
    the decision panel (due diligence only) and the chat (every tab). #}
 {% set kyb = case.request %}
 {% block header %}
   <span id="request-status"><strong>{{ kyb.request_id }}</strong>
-    <span class="badge">{{ kyb.status | replace("_", " ") }}</span>
-    {% if kyb.risk_tier %}<span class="badge">{{ kyb.risk_tier }} risk</span>{% endif %}</span>
+    {{ status_badge(kyb.status) }} {{ risk_badge(kyb.risk_tier) }}</span>
 {% endblock %}
 {% block content %}
   <h1>{{ case.customer.legal_name or kyb.customer_name }}</h1>

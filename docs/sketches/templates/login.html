@@ -1,10 +1,12 @@
 {% extends "_frame.html" %}
+{% from "_macros.html" import csrf_field %}
 {% block content %}
   <h1>Sign in</h1>
   <div class="card">
     <p>Pick a demo user. Analysts create requests and run the agents; reviewers decide; admins
       manage users and thresholds.</p>
-    <form>
+    <form method="post">
+      {{ csrf_field() }}
       {% for user in users %}
         <p><button type="button">{{ user.name }}</button> <span class="muted">{{ user.persona }} · {{ user.id }}</span></p>
       {% endfor %}

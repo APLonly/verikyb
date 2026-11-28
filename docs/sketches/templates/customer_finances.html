@@ -1,4 +1,12 @@
 {% extends "_workspace.html" %}
+{% from "_macros.html" import figure, label %}
+{# A piece only this page uses stays in the page: a ratio as a number or a percentage, or
+   "missing" when an input was not filed. #}
+{% macro ratio(value, percent=false) -%}
+  {%- if value is none %}<span class="muted">missing</span>
+  {%- elif percent %}{{ "%.1f%%" | format(value * 100) }}
+  {%- else %}{{ "%.2f" | format(value) }}{% endif -%}
+{%- endmacro %}
 {% block tab %}
   {% set finances = case.financials %}
   {% set names = ["revenue", "operating_profit", "net_income", "total_assets", "total_liabilities", "equity", "cash"] %}
@@ -8,22 +16,19 @@
     <caption>Filed figures, {{ finances.currency }}, newest first</caption>
     <tr><th>Figure</th>{% for year in finances.years %}<th>{{ year.period_end }}</th>{% endfor %}</tr>
     {% for name in names %}
-      <tr><th scope="row">{{ name | replace("_", " ") | capitalize }}</th>
-        {% for year in finances.years %}{% set figure = year[name] %}
-          <td>{% if figure %}{{ "{:,}".format(figure.value) }}<br><small class="muted">{{ figure.source_element }}</small><span class="chip">{{ figure.evidence_id }}</span>
-            {% else %}<span class="muted">missing</span>{% endif %}</td>
-        {% endfor %}</tr>
+      <tr><th scope="row">{{ label(name) }}</th>
+        {% for year in finances.years %}<td>{{ figure(year[name]) }}</td>{% endfor %}</tr>
     {% endfor %}
   </table>
   <table>
     <caption>Ratios, computed from the filed figures</caption>
     <tr><th>Period</th><th>Current ratio</th><th>Debt to equity</th><th>Operating margin</th><th>Revenue growth</th></tr>
-    {% for ratio in finances.ratios %}
-      <tr><td>{{ ratio.period_end }}</td>
-        <td>{{ "%.2f" | format(ratio.current_ratio) if ratio.current_ratio is not none else "missing" }}</td>
-        <td>{{ "%.2f" | format(ratio.debt_to_equity) if ratio.debt_to_equity is not none else "missing" }}</td>
-        <td>{{ "%.1f%%" | format(ratio.operating_margin * 100) if ratio.operating_margin is not none else "missing" }}</td>
-        <td>{{ "%.1f%%" | format(ratio.revenue_growth * 100) if ratio.revenue_growth is not none else "missing" }}</td></tr>
+    {% for row in finances.ratios %}
+      <tr><td>{{ row.period_end }}</td>
+        <td>{{ ratio(row.current_ratio) }}</td>
+        <td>{{ ratio(row.debt_to_equity) }}</td>
+        <td>{{ ratio(row.operating_margin, percent=true) }}</td>
+        <td>{{ ratio(row.revenue_growth, percent=true) }}</td></tr>
     {% endfor %}
   </table>
   <p class="muted"><small>Current ratio = current assets ÷ current liabilities. Debt to equity = total
