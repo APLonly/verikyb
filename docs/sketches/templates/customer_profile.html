@@ -1,6 +1,9 @@
 {% extends "_workspace.html" %}
+{% from "_macros.html" import address, cite, fact, pct_range %}
 {% block tab %}
   {% set ownership = case.ownership %}
+  {% set customer = case.customer %}
+  {% set sources = customer.field_sources %}
   <section class="card">
     <h2>Corporate hierarchy</h2>
     <div style="border: 1px dashed #999; padding: 2rem; text-align: center" class="muted">
@@ -11,9 +14,9 @@
       {% for edge in ownership.edges %}
         <tr><td>{{ ownership.nodes | selectattr("id", "equalto", edge.owner_id) | map(attribute="label") | first }}
             <span class="muted">({{ edge.owner_kind }})</span></td>
-          <td>{{ edge.min_pct }}–{{ edge.max_pct }}% {{ edge.kind | replace("_", " ") }}</td>
+          <td>{{ pct_range(edge.min_pct, edge.max_pct) }} {{ edge.kind | replace("_", " ") }}</td>
           <td>{{ ownership.nodes | selectattr("id", "equalto", edge.owned_id) | map(attribute="label") | first }}</td>
-          <td>{% for id in edge.evidence_ids %}<span class="chip">{{ id }}</span>{% endfor %}</td></tr>
+          <td>{{ cite(edge.evidence_ids) }}</td></tr>
       {% endfor %}
     </table>
   </section>
@@ -24,20 +27,19 @@
       {% for person in case.persons %}
         <tr><td>{{ person.full_name }}</td><td>{{ person.roles | join(", ") }}</td><td>{{ person.appointed_on }}</td>
           <td>{{ "%02d" | format(person.birth_month) }}/{{ person.birth_year }}</td><td>{{ person.nationality }}</td>
-          <td>{{ person.country_of_residence }}</td><td>{% for id in person.evidence_ids %}<span class="chip">{{ id }}</span>{% endfor %}</td></tr>
+          <td>{{ person.country_of_residence }}</td><td>{{ cite(person.evidence_ids) }}</td></tr>
       {% endfor %}
     </table>
   </section>
   <section class="card">
     <h2>Identifiers and address</h2>
-    {% set customer = case.customer %}
     <dl>
-      <dt>Legal form</dt><dd>{{ customer.legal_form }}</dd>
-      <dt>Incorporated</dt><dd>{{ customer.incorporation_date }}</dd>
-      <dt>Registered address</dt><dd>{{ (customer.registered_address.lines + [customer.registered_address.locality, customer.registered_address.postal_code]) | select | join(", ") }}</dd>
-      <dt>SIC codes</dt><dd>{{ customer.sic_codes | join(", ") }}</dd>
+      {{ fact("Legal form", customer.legal_form, sources.get("legal_form")) }}
+      {{ fact("Incorporated", customer.incorporation_date, sources.get("incorporation_date")) }}
+      {{ fact("Registered address", address(customer.registered_address), sources.get("registered_address")) }}
+      {{ fact("SIC codes", customer.sic_codes | join(", "), sources.get("sic_codes")) }}
     </dl>
-    <h3>FCA permissions</h3>
+    <h3>FCA permissions{{ cite(sources.get("fca_permissions")) }}</h3>
     <ul>{% for permission in customer.fca_permissions %}<li>{{ permission }}</li>{% endfor %}</ul>
   </section>
 {% endblock %}

@@ -1,4 +1,5 @@
 {% extends "_workspace.html" %}
+{% from "_macros.html" import cite, csrf_field, label, score, status_badge %}
 {% block tab %}
   <p class="muted">The questions come from <code>config/questionnaire.yaml</code>; the answers are fake.
     An analyst can edit an answer, with a reason, while the request waits for review.</p>
@@ -7,15 +8,16 @@
     {% for question in questions %}
       {% set answer = case.answers.get(question.id) %}
       <tr>
-        <th scope="row">{{ question.text }}<br><small class="muted">{{ question.section }}</small></th>
+        <th scope="row">{{ question.text }}<br><small class="muted">{{ label(question.section) }}</small></th>
         {% if answer %}
-          <td>{{ answer.value or "—" }}{% for id in answer.evidence_ids %}<span class="chip">{{ id }}</span>{% endfor %}
+          <td>{{ answer.value or "—" }}{{ cite(answer.evidence_ids) }}
             <details><summary>Edit</summary>
-              <label>New value <textarea></textarea></label><label>Reason <input></label>
-              <button type="button">Save</button></details></td>
+              <form method="post">{{ csrf_field() }}
+                <label>New value <textarea></textarea></label><label>Reason <input></label>
+                <button type="button">Save</button></form></details></td>
           <td>{{ answer.source or "" }}</td>
-          <td>{{ "%.2f" | format(answer.confidence) if answer.confidence is not none else "" }}</td>
-          <td><span class="badge">{{ answer.status | replace("_", " ") }}</span></td>
+          <td>{{ score(answer.confidence) }}</td>
+          <td>{{ status_badge(answer.status) }}</td>
         {% else %}
           <td colspan="4" class="muted">No answer yet{% if question.get("customer_input") %}: the customer provides it{% endif %}.</td>
         {% endif %}

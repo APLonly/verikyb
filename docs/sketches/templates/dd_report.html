@@ -1,4 +1,5 @@
 {% extends "_workspace.html" %}
+{% from "_macros.html" import cite %}
 {% block tab %}
   {% set report = case.report %}
   <p><a href="#">Download PDF</a> <span class="muted">version {{ report.version }}, {{ report.generated_at }}
@@ -9,8 +10,7 @@
     <h2>{{ section.title }}</h2>
     <ul>
       {% for claim in section.claims %}
-        <li>{{ claim.text }}
-          {% for id in claim.evidence_ids %}<span class="chip">{{ id }}</span>{% else %}<span class="badge">unsupported</span>{% endfor %}</li>
+        <li>{{ claim.text }}{% if claim.evidence_ids %}{{ cite(claim.evidence_ids) }}{% else %} <span class="badge">unsupported</span>{% endif %}</li>
       {% endfor %}
     </ul>
   {% endfor %}
@@ -18,7 +18,7 @@
   <table>
     <tr><th>ID</th><th>Source</th><th>Where to find it again</th><th>Excerpt</th><th>Retrieved</th></tr>
     {% for item in case.evidence %}
-      <tr><td>{{ item.evidence_id }}</td><td>{{ item.source }}</td><td><code>{{ item.locator }}</code></td>
+      <tr><td>{{ cite([item.evidence_id]) }}</td><td>{{ item.source }}</td><td><code>{{ item.locator }}</code></td>
         <td>{{ item.excerpt }}</td><td>{{ item.retrieved_at }}</td></tr>
     {% endfor %}
   </table>
